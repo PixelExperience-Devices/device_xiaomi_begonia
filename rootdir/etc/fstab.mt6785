@@ -57,4 +57,4 @@
 /dev/block/platform/bootdevice/by-name/cam_vpu3 /cam_vpu3   emmc   defaults    defaults
 
 # ZRAM - Compressed RAM based Block Device (SWAP)
-/dev/block/zram0                                none        swap   defaults    zramsize=2147483648
+/dev/block/zram0                                none        swap   defaults    zramsize=2147483648,max_comp_streams=8
