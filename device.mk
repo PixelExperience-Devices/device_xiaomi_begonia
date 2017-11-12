@@ -67,10 +67,6 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0_system
 
-# Init
-PRODUCT_PACKAGES += \
-    init.mtk.rc
-
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc \
@@ -189,7 +185,8 @@ PRODUCT_PACKAGES += \
     multi_init.rc \
     fstab.enableswap \
     fstab.mt6785 \
-    ueventd.mtk.rc
+    ueventd.mtk.rc \
+    init.safailnet.rc
 
 # RenderScript
 PRODUCT_PACKAGES += \
