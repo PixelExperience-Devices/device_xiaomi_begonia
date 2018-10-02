@@ -138,5 +138,8 @@ BOARD_VNDK_RUNTIME_DISABLE := true
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 SELINUX_IGNORE_NEVERALLOWS := true
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/begonia/BoardConfigVendor.mk
