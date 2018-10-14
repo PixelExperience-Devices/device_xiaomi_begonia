@@ -143,7 +143,6 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 BOARD_VNDK_VERSION := current
 BOARD_VNDK_RUNTIME_DISABLE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
-PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/begonia/BoardConfigVendor.mk
