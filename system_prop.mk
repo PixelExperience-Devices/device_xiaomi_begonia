@@ -26,7 +26,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.vendor.audio.sos=true \
     ro.vendor.audio.game.effect=true \
     ro.vendor.audio.soundtrigger=mtk \
-    ro.vendor.audio.soundtrigger.lowpower=true
+    ro.vendor.audio.soundtrigger.lowpower=true \
+    ro.config.vc_call_vol_steps=7
 
 # Display
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
