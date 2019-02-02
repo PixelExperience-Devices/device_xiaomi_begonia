@@ -95,6 +95,8 @@ persist.vendor.vilte_support=1
 persist.vendor.viwifi_support=1
 persist.vendor.volte_support=1
 ro.vendor.md_auto_setup_ims=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
 
 # LMK
 ro.lmk.downgrade_pressure=60
@@ -201,3 +203,4 @@ ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.gen=gen4m
 persist.vendor.mtk_wfc_support=1
 ro.vendor.mtk_wfd_support=1
+persist.dbg.wfc_avail_ovr=1
