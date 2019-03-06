@@ -437,4 +437,7 @@
     <dimen name="rounded_corner_radius_top">95.0px</dimen>
     <dimen name="rounded_corner_radius_bottom">90.0px</dimen>
 
+    <!-- True if the firmware supports connected MAC randomization -->
+    <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
+
 </resources>
