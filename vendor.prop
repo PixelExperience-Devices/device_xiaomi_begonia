@@ -67,6 +67,7 @@ ro.vendor.mtk_tee_gp_support=1
 drm.service.enabled=true
 
 # Display
+debug.cpurend.vsync=false
 debug.sf.disable_backpressure=1
 ro.surface_flinger.primary_display_orientation=0
 ro.vendor.jpeg_decode_sw_opt=1
