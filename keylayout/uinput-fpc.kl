@@ -8,7 +8,7 @@
 # as published by the Free Software Foundation.
 #
 
-key  304    DPAD_CENTER  VIRTUAL
+#key  304    DPAD_CENTER  VIRTUAL
 #key  102   HOME         VIRTUAL
 #key  108   SYSTEM_NAVIGATION_DOWN
 #key  103   SYSTEM_NAVIGATION_DOWN
