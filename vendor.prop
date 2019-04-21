@@ -4,6 +4,9 @@ persist.adb.nonblocking_ffs=0
 # Audio
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
+af.fast_track_multiplier=1
+audio.adm.buffering.ms=3
+audio_hal.period_multiplier=2
 persist.vendor.audio.button_jack.profile=volume
 persist.vendor.audio.button_jack.switch=0
 ro.vendor.mtk_audio_alac_support=1
@@ -12,6 +15,7 @@ ro.vendor.mtk_audio_tuning_tool_ver=V2.2
 ro.vendor.mtk_besloudness_support=1
 ro.vendor.mtk_hifiaudio_support=1
 vendor.audio.spkcal.copy.inhal=true
+vendor.audio.adm.buffering.ms=3
 
 # Camera
 persist.vendor.camera3.operationMode.superNightMode=0x800A
