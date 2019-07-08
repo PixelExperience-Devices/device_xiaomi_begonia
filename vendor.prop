@@ -58,6 +58,7 @@ drm.service.enabled=true
 
 # Display
 debug.sf.disable_backpressure=1
+debug.sf.latch_unsignaled=1
 ro.surface_flinger.primary_display_orientation=0
 ro.vendor.jpeg_decode_sw_opt=1
 ro.surface_flinger.has_HDR_display=true
