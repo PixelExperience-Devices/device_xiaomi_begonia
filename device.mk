@@ -97,5 +97,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vr@1.0-impl
 
+# TODO: Move to vendor_prop.mk once we build vendor image
+# OMX: Rank OMX SW codecs lower than OMX HW codecs
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0
+
 # Inherit vendor
 $(call inherit-product, vendor/redmi/begonia/begonia-vendor.mk)
