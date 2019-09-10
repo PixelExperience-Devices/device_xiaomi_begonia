@@ -113,6 +113,7 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # VNDK
 BOARD_VNDK_VERSION := current
+PRODUCT_EXTRA_VNDK_VERSIONS := 28
 BOARD_VNDK_RUNTIME_DISABLE := true
 
 # Inherit from the proprietary version
