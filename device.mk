@@ -13,6 +13,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Properties
 -include $(DEVICE_PATH)/system_prop.mk
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
