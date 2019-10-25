@@ -148,7 +148,8 @@ PRODUCT_PACKAGES += \
 # OMX: Rank OMX SW codecs lower than OMX HW codecs
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
-    debug.stagefright.omx_default_rank=0
+    debug.stagefright.omx_default_rank=0 \
+    debug.stagefright.ccodec=0
 
 # Inherit vendor
 $(call inherit-product, vendor/redmi/begonia/begonia-vendor.mk)
