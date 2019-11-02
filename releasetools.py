@@ -32,7 +32,14 @@ def AddImage(info, basename, dest):
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
 
 def OTA_InstallEnd(info):
+  PatchSELinux(info)
   info.script.Print("Patching firmware images...")
   AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta")
   AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo")
   return
+
+def PatchSELinux(info):
+  info.script.Print("Patching Duplicate SELinux Defines...")
+  info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/platform/bootdevice/by-name/system", "/system_root");')
+  info.script.AppendExtra('run_program("/sbin/sed", "-i", "/fuseblk/d", "/system_root/system/etc/selinux/plat_sepolicy.cil");')
+  info.script.AppendExtra('unmount("/system_root");')
