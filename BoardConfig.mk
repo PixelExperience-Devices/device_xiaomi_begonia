@@ -139,5 +139,8 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 PRODUCT_VENDOR_MOVE_ENABLED := true
 BOARD_VNDK_RUNTIME_DISABLE := true
 
+# Sepolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
 # Inherit from the proprietary version
 -include vendor/redmi/begonia/BoardConfigVendor.mk
