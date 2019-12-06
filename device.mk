@@ -7,6 +7,9 @@
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/begonia/begonia-vendor.mk)
 
+# Setup dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 # APN
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/apns/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
