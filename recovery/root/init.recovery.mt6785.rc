@@ -1,0 +1,3 @@
+on fs
+    wait /dev/block/platform/bootdevice/
+    symlink /dev/block/platform/bootdevice/ /dev/block/bootdevice
