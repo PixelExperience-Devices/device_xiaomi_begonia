@@ -5,4 +5,4 @@ The tree has a lot of unused files, since it once was compiling vendor image.
 
 Bricc counter: 3
 
-Current status: bricked
+Current status: unbricked
