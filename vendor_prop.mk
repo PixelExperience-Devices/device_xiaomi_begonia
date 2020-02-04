@@ -417,3 +417,4 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     vendor.camera.mdp.dre.enable=1 \
     vendor.connsys.driver.ready=no \
     vendor.mtk.vdec.waitkeyframeforplay=1 \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.android.GoogleCamera
