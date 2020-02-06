@@ -117,6 +117,10 @@
     <!-- The restoring is handled by modem if it is true-->
     <bool name="skip_restoring_network_selection">true</bool>
 
+    <!-- Delay that allows some content to arrive at the display before switching
+         from DOZE to ON, in millis. -->
+    <integer name="config_wakeUpDelayDoze">32</integer>
+
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">78.0px</dimen>
     <dimen name="status_bar_height_landscape">24.0dp</dimen>
