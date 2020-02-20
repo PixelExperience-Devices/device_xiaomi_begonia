@@ -230,9 +230,6 @@
     <!-- The restoring is handled by modem if it is true-->
      <bool name="skip_restoring_network_selection">true</bool>
 
-    <!-- Height of the status bar -->
-     <dimen name="status_bar_height_portrait">27.629974dip</dimen>
-
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
      <fraction name="config_autoBrightnessAdjustmentMaxGamma">100.0%</fraction>
@@ -681,5 +678,9 @@
         <item>7,1</item>
         <item>9,1</item>
     </string-array>
+
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">89.0px</dimen>
+    <dimen name="status_bar_height_landscape">24.0dp</dimen>
 
 </resources>
