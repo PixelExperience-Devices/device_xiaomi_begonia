@@ -683,4 +683,9 @@
     <dimen name="status_bar_height_portrait">89.0px</dimen>
     <dimen name="status_bar_height_landscape">24.0dp</dimen>
 
+    <!-- Rounded corner padding and radius -->
+    <dimen name="rounded_corner_radius_top">95.0px</dimen>
+    <dimen name="rounded_corner_radius_bottom">90.0px</dimen>
+    <dimen name="rounded_corner_content_padding">10dp</dimen>
+
 </resources>
