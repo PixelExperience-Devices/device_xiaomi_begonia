@@ -686,6 +686,5 @@
     <!-- Rounded corner padding and radius -->
     <dimen name="rounded_corner_radius_top">95.0px</dimen>
     <dimen name="rounded_corner_radius_bottom">90.0px</dimen>
-    <dimen name="rounded_corner_content_padding">10dp</dimen>
 
 </resources>
