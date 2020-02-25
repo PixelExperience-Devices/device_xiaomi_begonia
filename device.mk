@@ -44,6 +44,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
     $(DEVICE_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.begonia
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
