@@ -89,6 +89,9 @@ dalvik.vm.dex2oat64.enabled=true
 # EGL
 ro.hardware.egl=meow
 
+# Fastbootd
+ro.fastbootd.available=true
+
 # FRP
 ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
 
