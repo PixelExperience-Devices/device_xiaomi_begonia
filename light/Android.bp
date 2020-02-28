@@ -16,7 +16,6 @@ cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
     name: "android.hardware.light@2.0-service.begonia",
-    proprietary: true,
     init_rc: ["android.hardware.light@2.0-service.begonia.rc"],
     srcs: ["service.cpp", "Light.cpp"],
     shared_libs: [
