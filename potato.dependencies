@@ -1,0 +1,11 @@
+[
+  {
+    "repository" : "AgentFabulous/begonia",
+    "target_path": "kernel/xiaomi/mt6785",
+    "branch" : "master"
+  },
+  {
+    "repository" : "vendor_redmi_begonia",
+    "target_path": "vendor/redmi/begonia"
+  }
+]
