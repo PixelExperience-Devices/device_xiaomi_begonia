@@ -10,6 +10,9 @@ DEVICE_PATH := device/redmi/begonia
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# Properties
+-include $(DEVICE_PATH)/system_prop.mk
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
