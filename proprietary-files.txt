@@ -1,0 +1,44 @@
+# HotwordEnrollment
+-priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
+-priv-app/HotwordEnrollmentXGoogleCORTEXM4/HotwordEnrollmentXGoogleCORTEXM4.apk
+
+# CITSensor
+etc/permissions/vendor-xiaomi-hardware-citsensorservice.xml
+lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
+lib/vendor.xiaomi.hardware.citsensorservice@1.1.so
+lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
+
+# Display
+lib/vendor.xiaomi.hardware.displayfeature@1.0.so
+lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+
+# MTD
+etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.0-java-permission.xml
+etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.1-java-permission.xml
+framework/vendor.xiaomi.hardware.mtdservice-V1.0-java.jar
+framework/vendor.xiaomi.hardware.mtdservice-V1.1-java.jar
+
+# MIsys
+etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
+etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml
+framework/vendor.xiaomi.hardware.misys-V1.0-java.jar
+framework/vendor.xiaomi.hardware.misys-V2.0-java.jar
+lib/vendor.xiaomi.hardware.misys@1.0.so
+lib/vendor.xiaomi.hardware.misys@2.0.so
+lib64/vendor.xiaomi.hardware.misys@1.0.so
+lib64/vendor.xiaomi.hardware.misys@2.0.so
+
+# Simapp
+etc/permissions/vendor.xiaomi.hardware.vsimapp-V1.0-java-permission.xml
+framework/vendor.xiaomi.hardware.vsimapp-V1.0-java.jar
+
+# Soter
+-app/SoterService/SoterService.apk
+
+# Touch
+lib/vendor.xiaomi.hardware.touchfeature@1.0.so
+lib64/vendor.xiaomi.hardware.touchfeature@1.0.so
+
+# WCNSS
+bin/iwpriv
