@@ -27,8 +27,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libvulkan \
-    vendor.display.config@1.0
+    libvulkan
 
 # HIDL
 PRODUCT_PACKAGES += \
