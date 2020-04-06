@@ -1,27 +1,38 @@
+#
+# from device/xiaomi/begonia/special_ro.prop
+#
+# For special ro override property
+# White Point Calibration
+ro.whitepoint_calibration_enable=false
+#Property for display feature histogram
+ro.displayfeature.histogram.enable=false
+# support unlimited color temperature adjust
+ro.colorpick_adjust=true
+ro.all_modes.colorpick_adjust=true
+# displayfeature use poll to monitor backlight brightness
+ro.xiaomi.bl.poll=true
+
+ro.netflix.bsp_rev=MTK6785-18758-1
+
+#
+# from device/mediatek/mt6785/common_ro.prop
+#
+# For common ro override property
+
+
+#
+# from device/mediatek/system/common/system.prop
+#
+ro.product.property_source_order=odm,vendor,product,system
+
 vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
 
-# Memory optimization
-ro.sys.fw.bservice_enable=true
-ro.sys.fw.bservice_limit=5
-ro.sys.fw.bservice_age=5000
-ro.am.reschedule_service=true
-ro.sys.fw.bg_apps_limit=24
 
-# MTK, Infinity, 20090720 {
 wifi.interface=wlan0
-# MTK, Infinity, 20090720 }
-
-# MTK, mtk03034, 20101210 {
 ro.mediatek.wlan.wsc=1
-# MTK, mtk03034 20101210}
-# MTK, mtk03034, 20110318 {
 ro.mediatek.wlan.p2p=1
-# MTK, mtk03034 20110318}
-
-# MTK, mtk03034, 20101213 {
 mediatek.wlan.ctia=0
-# MTK, mtk03034 20101213}
 
 
 #
@@ -29,8 +40,8 @@ wifi.tethering.interface=ap0
 #
 
 ro.opengles.version=196610
-#ro.kernel.qemu=1
-#ro.kernel.qemu.gles=0
+# ro.kernel.qemu=1
+# ro.kernel.qemu.gles=0
 
 wifi.direct.interface=p2p0
 #dalvik.vm.heapgrowthlimit=256m
@@ -53,8 +64,6 @@ ro.sys.usb.charging.only=yes
 # audio
 ro.camera.sound.forced=0
 ro.audio.silent=0
-aaudio.mmap_policy=2
-aaudio.mmap_exclusive_policy=2
 
 ro.zygote.preload.enable=0
 
@@ -69,6 +78,8 @@ ro.kernel.zio=38,108,105,16
 # Disable dirty region for Mali
 #debug.hwui.render_dirty_regions=false
 
+#logd buffer size
+ro.logd.size=2M
 
 # performance
 ro.mtk_perf_simple_start_win=1
@@ -78,34 +89,27 @@ ro.mtk_perf_response_time=1
 # disable ipo for development
 sys.ipo.disable=1
 
-#system property for displayfeature hidl
-sys.displayfeature_hidl=true
-# White Point Calibration
-ro.whitepoint_calibration_enable=false
-#Property for display feature histogram
-ro.displayfeature.histogram.enable=false
-# displayfeature use poll to monitor backlight brightness
-ro.xiaomi.bl.poll=true
-# support unlimited color temperature adjust
-ro.colorpick_adjust=true
-# displayfeature and displayfeatureservice use it to debug pq effect
-sys.displayfeature.entry.enable=true
-
-#logd buffer size
-ro.logd.size=2M
+# identity
+Build.BRAND=MTK
 
 #audio-add for misound
 ro.vendor.audio.soundfx.type=mi
 ro.vendor.audio.soundfx.usb=true
+
 #volume boost feature, 3 modes are auto, manual, none
 ro.vendor.audio.voice.volume.boost=manual
-#enable SoS
-ro.vendor.audio.sos=true
+
 #enable game affect
 ro.vendor.audio.game.effect=true
-#soudtrigger
-ro.vendor.audio.soundtrigger=mtk
-ro.vendor.audio.soundtrigger.lowpower=true
+
+#enable SoS
+ro.vendor.audio.sos=true
+
+#default value is true
+#Android Q copy prop set by audio hal
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.audio.spkcal.copy.inhal=true
+# end of device/mediatek/system/common/system.prop
 #
 # from device/mediatek/mt6785/common_rw.prop
 #
@@ -114,10 +118,18 @@ ro.vendor.audio.soundtrigger.lowpower=true
 # from device/xiaomi/begonia/special_rw.prop
 #
 # For special rw override property
-persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 persist.sys.mdlog_dumpback=2
 
 #enable sar feature
 persist.radio.sar_sar_sensor=true
+#system property for displayfeature hidl
+sys.displayfeature_hidl=true
+# displayfeature and displayfeatureservice use it to debug pq effect
+sys.displayfeature.entry.enable=true
+
+persist.sys.mcd_config_file=/system/etc/mcd_default.conf
+
+#quick charge type detect
+persist.vendor.quick.charge=1
 
 #

@@ -78,7 +78,7 @@ Only the three quirks included above are recognized at this point:
 
 <Included>
     <Decoders>
-        <MediaCodec name="OMX.MTK.AUDIO.DECODER.MP3" type="audio/mpeg" >
+        <MediaCodec name="OMX.MTK.AUDIO.DECODER.MP3" type="audio/mpeg" rank="6" >
             <Quirk name="decoder-lies-about-number-of-channels" />
             <Quirk name="supports-multiple-frames-per-input-buffer" />
         </MediaCodec>

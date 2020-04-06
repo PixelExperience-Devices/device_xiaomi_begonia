@@ -1,0 +1,105 @@
+# MTK project .rc configure
+
+import init.mi_thermald.rc
+import init.mishow.ctl.rc
+
+on init
+    mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
+    mkdir /storage/usbotg 0700 root root
+
+on post-fs-data
+    mkdir /data/vendor/thermal 0771 root system
+    mkdir /data/vendor/thermal/config 0771 root system
+    #Audio-add:Create directory used by audio cit
+    mkdir /data/vendor/cit 0770 system system
+
+    #thermal
+    chown system system /sys/class/thermal/thermal_message/sconfig
+    #mishow
+    chmod 0777 /sys/class/power_supply/battery/input_suspend
+    chown root root /sys/class/power_supply/battery/input_suspend
+
+#Camera
+    chmod 0660 /dev/MAINAF
+    chown system camera /dev/MAINAF
+
+    chmod 0660 /dev/MAINAF2
+    chown system camera /dev/MAINAF2
+
+    chmod 0660 /dev/SUBAF
+    chown system camera /dev/SUBAF
+
+    chmod 0660 /dev/GAF001AF
+    chown system camera /dev/GAF001AF
+
+    chmod 0660 /dev/DW9714AF
+    chown system camera /dev/DW9714AF
+
+    chmod 0660 /dev/LC898212AF
+    chown system camera /dev/LC898212AF
+
+    chmod 0660 /dev/BU64745GWZAF
+    chown system camera /dev/BU64745GWZAF
+
+#SMB
+    chown system system /proc/smb/ScreenComm
+    chmod 0660 /proc/smb/ScreenComm
+
+    chmod 0660 /dev/spm
+    chown system system /dev/spm
+
+#Audio TFA 98xx
+    chown system system /dev/tfa_reg
+    chown system system /dev/tfa_rw
+    chown system system /dev/tfa_rpc
+    chown system system /dev/tfa_control
+    chown system system /dev/tfa_profile
+    chmod 0660 /dev/tfa_reg
+    chmod 0660 /dev/tfa_rw
+    chmod 0660 /dev/tfa_rpc
+    chmod 0660 /dev/tfa_control
+    chmod 0660 /dev/tfa_profile
+
+on init
+    # Refer to http://source.android.com/devices/tech/storage/index.html
+    # It said, "Starting in Android 4.4, multiple external storage devices are surfaced to developers through
+    #           Context.getExternalFilesDirs(), Context.getExternalCacheDirs(), and Context.getObbDirs().
+    #           External storage devices surfaced through these APIs must be a semi-permanent part of the device (such as an SD card slot in a battery compartment).
+    #           Developers expect data stored in these locations to be available over long periods of time."
+    # Therefore, if the target doesn't support sd hot-plugging (Ex: the SD card slot in a battery compartment), we need to export SECONDARY_STORAGE in 'boot' section
+    #
+    # export SECONDARY_STORAGE /storage/sdcard1
+
+chown system system /proc/tp_selftest
+
+#torch_light
+chown system system /sys/devices/platform/flashlights_mt6360/leds/torch-light0/brightness
+chown system system /sys/devices/platform/flashlights_mt6360/leds/torch-light1/brightness
+
+service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/usbotg /storage/usbotg
+    class late_start
+    disabled
+
+service panel-info-sh /system/vendor/bin/sh /vendor/etc/init_panel_info.sh
+    class core
+    user root
+    oneshot
+
+service displayfeature /system/bin/displayfeature
+    class late_start
+    user root
+    group root
+
+on property:init.svc.surfaceflinger=stopped
+    stop displayfeature
+
+on property:init.svc.surfaceflinger=running
+    start displayfeature
+
+on property:init.svc.surfaceflinger=restarting
+    stop displayfeature
+
+#spkcal cit
+on property:vendor.audio.cit.spkcal.copy=true
+    copy /data/vendor/cit/tfa9874_chk.txt /mnt/vendor/persist/audio/tfa9874_chk.txt
+    chmod 666 /mnt/vendor/persist/audio/tfa9874_chk.txt

@@ -58,7 +58,7 @@
         </MediaCodec>
         <MediaCodec name="OMX.google.raw.decoder" type="audio/raw">
             <Limit name="channel-count" max="8" />
-            <Limit name="sample-rate" ranges="8000-96000" />
+            <Limit name="sample-rate" ranges="8000-192000" />
             <Limit name="bitrate" range="1-10000000" />
         </MediaCodec>
         <MediaCodec name="OMX.google.flac.decoder" type="audio/flac">

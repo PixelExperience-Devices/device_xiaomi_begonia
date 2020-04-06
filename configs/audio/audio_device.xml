@@ -1181,16 +1181,20 @@
             <kctl name="I2S5_HD_Mux" value="Normal" />
         </path>
         <path name="MD1_ECHO_REF_I2S0_ON" value="setting">
-            <kctl name="PCM_2_PB_CH4 I2S0_CH2" value="1" />
+            <kctl name="PCM_2_PB_CH4 I2S0_CH1" value="1" />
+            <kctl name="PCM_2_PB_CH5 I2S0_CH2" value="1" />
         </path>
         <path name="MD1_ECHO_REF_I2S0_OFF" value="setting">
-            <kctl name="PCM_2_PB_CH4 I2S0_CH2" value="0" />
+            <kctl name="PCM_2_PB_CH4 I2S0_CH1" value="0" />
+            <kctl name="PCM_2_PB_CH5 I2S0_CH2" value="0" />
         </path>
         <path name="MD1_ECHO_REF_I2S2_ON" value="setting">
-            <kctl name="PCM_2_PB_CH4 I2S2_CH2" value="1" />
+            <kctl name="PCM_2_PB_CH4 I2S2_CH1" value="1" />
+            <kctl name="PCM_2_PB_CH5 I2S2_CH2" value="1" />
         </path>
         <path name="MD1_ECHO_REF_I2S2_OFF" value="setting">
-            <kctl name="PCM_2_PB_CH4 I2S2_CH2" value="0" />
+            <kctl name="PCM_2_PB_CH4 I2S2_CH1" value="0" />
+            <kctl name="PCM_2_PB_CH5 I2S2_CH2" value="0" />
         </path>
         <path name="MD2_ECHO_REF_I2S0_ON" value="setting">
             <kctl name="PCM_1_PB_CH4 I2S0_CH2" value="1" />
