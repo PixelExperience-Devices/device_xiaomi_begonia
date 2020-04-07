@@ -2415,8 +2415,6 @@ vendor/etc/init/android.hardware.drm@1.2-service.clearkey.rc
 vendor/etc/init/hostapd.android.rc
 vendor/etc/permissions/android.hardware.microphone.xml
 vendor/lib/hw/lights.mt6785.so
-vendor/lib/hw/vulkan.mt6785.so
 vendor/lib/libwpa_client.so
-vendor/lib64/hw/vulkan.mt6785.so
 vendor/lib64/libwifi-hal.so
 vendor/lib64/libwpa_client.so
