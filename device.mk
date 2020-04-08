@@ -26,15 +26,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
 
-# Camera
-PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-service
-
-# Context Hub
-PRODUCT_PACKAGES += \
-    android.hardware.contexthub@1.0-impl.generic \
-    android.hardware.contexthub@1.0-service
-
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
@@ -204,15 +195,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
 
 # Sensors
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
-
-# Symlinks
-PRODUCT_PACKAGES += \
-    vendor_symlinks
 
 # Thermal
 PRODUCT_PACKAGES += \
