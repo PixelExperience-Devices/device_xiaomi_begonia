@@ -31,13 +31,5 @@ def AddImage(info, basename, dest):
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
 
 def OTA_InstallEnd(info):
-  PatchVendor(info)
   AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta")
   AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo")
-
-def PatchVendor(info):
-  info.script.Print("Patching vendor init scripts...")
-  info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/platform/bootdevice/by-name/vendor", "/vendor");')
-  info.script.AppendExtra('run_program("/sbin/sed", "-i", "s/wait,check,formattable,quota,resize/latemount,wait,check,formattable,quota/", "/vendor/etc/fstab.mt6785");')
-  info.script.AppendExtra('run_program("/sbin/sed", "-i", "s/fstab.mt6785$/fstab.mt6785 --early\\n    mount_all \/vendor\/etc\/fstab.mt6785 --late/", "/vendor/etc/init/hw/init.mt6785.rc");')
-  info.script.AppendExtra('unmount("/vendor");')

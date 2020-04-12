@@ -117,7 +117,8 @@ on fs
     write /sys/kernel/debug/tracing/trace_marker "B|1|Mount"
     wait_for_prop hwservicemanager.ready "true"
     start vendor.boot-hal-1-0
-    mount_all /vendor/etc/fstab.mt6785
+    mount_all /vendor/etc/fstab.mt6785 --early
+    mount_all /vendor/etc/fstab.mt6785 --late
     exec /system/bin/tune2fs -O has_journal -u 10010 -r 4096 /dev/block/platform/bootdevice/by-name/userdata
     write /sys/kernel/debug/tracing/trace_marker "E"
     write /proc/bootprof "INIT:Mount_END"
