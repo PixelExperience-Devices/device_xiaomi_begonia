@@ -82,6 +82,7 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
+    WifiOverlay \
     TetheringConfigOverlay
 
 # VNDK
