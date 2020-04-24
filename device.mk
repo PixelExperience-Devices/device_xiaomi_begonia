@@ -316,6 +316,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
+    WifiOverlay \
     TetheringConfigOverlay
 
 PRODUCT_COPY_FILES += \
