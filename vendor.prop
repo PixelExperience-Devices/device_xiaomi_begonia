@@ -78,6 +78,7 @@ ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 ro.surface_flinger.running_without_sync_framework=true
 
 # Dalvik
+dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt
 
 # EGL
