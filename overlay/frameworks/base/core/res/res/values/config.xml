@@ -484,4 +484,11 @@
     <integer-array name="config_keyboardTapVibePattern">
         <item>35</item>
     </integer-array>
+
+    <!-- The list of components which should be automatically disabled for a specific device. -->
+    <string-array name="config_disabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+        <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
+    </string-array>
+
 </resources>
