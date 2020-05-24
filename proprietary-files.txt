@@ -796,7 +796,6 @@ vendor/lib64/libstagefrighthw.so
 
 # Mediatek
 vendor/bin/hw/android.hardware.audio@5.0-service-mediatek
-vendor/bin/hw/android.hardware.light@2.0-service-mediatek
 vendor/bin/hw/android.hardware.sensors@1.0-service-mediatek
 vendor/bin/hw/android.hardware.usb@1.1-service-mediatek
 vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek
@@ -811,7 +810,6 @@ vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.audio@5.0-service-mediatek.rc
-vendor/etc/init/android.hardware.light@2.0-service-mediatek.rc
 vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc
 vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc
 vendor/etc/init/android.hardware.wifi@1.0-service-lazy-mediatek.rc
@@ -831,7 +829,6 @@ vendor/etc/media_codecs_mediatek_video.xml
 vendor/etc/permissions/com.mediatek.hardware.vow.xml
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml
 vendor/lib/hw/android.hardware.audio@5.0-impl-mediatek.so
-vendor/lib/hw/android.hardware.light@2.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.power@1.3-impl-mediatek.so
 vendor/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
@@ -913,7 +910,6 @@ vendor/lib/vendor.mediatek.hardware.pq@2.3.so
 vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/hw/android.hardware.audio@5.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-mediatek.so
-vendor/lib64/hw/android.hardware.light@2.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.power@1.3-impl-mediatek.so
 vendor/lib64/hw/android.hardware.sensors@1.0-impl-mediatek.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
@@ -1291,8 +1287,6 @@ vendor/bin/nvram_daemon
 vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
-vendor/etc/fstab.enableswap
-vendor/etc/fstab.mt6785
 vendor/etc/init/aee_aedv.rc
 vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/microtrust.rc
@@ -2414,7 +2408,6 @@ vendor/etc/default_volume_tables.xml
 vendor/etc/init/android.hardware.drm@1.2-service.clearkey.rc
 vendor/etc/init/hostapd.android.rc
 vendor/etc/permissions/android.hardware.microphone.xml
-vendor/lib/hw/lights.mt6785.so
 vendor/lib/libwpa_client.so
 vendor/lib64/libwifi-hal.so
 vendor/lib64/libwpa_client.so
