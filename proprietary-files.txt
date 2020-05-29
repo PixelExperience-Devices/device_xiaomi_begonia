@@ -755,7 +755,6 @@ vendor/lib/modules/fmradio_drv.ko:vendor/lib/modules_prebuilt/fmradio_drv.ko|009
 vendor/lib/modules/fpsgo.ko:vendor/lib/modules_prebuilt/fpsgo.ko|fdd78c7a20fb3461e47fafd5d5ee890090d572a7
 vendor/lib/modules/gps_drv.ko:vendor/lib/modules_prebuilt/gps_drv.ko|33abde1b511bff909537fc252569328f423892ce
 vendor/lib/modules/met.ko:vendor/lib/modules_prebuilt/met.ko|ef69a50407256e85d5a9f312982255b099da71ab
-vendor/lib/modules/udc_lib.ko:vendor/lib/modules_prebuilt/udc_lib.ko
 vendor/lib/modules/wlan_drv_gen4m.ko:vendor/lib/modules_prebuilt/wlan_drv_gen4m.ko|656fa28ba6ccba920e93c936970394711d485abd
 vendor/lib/modules/wmt_chrdev_wifi.ko:vendor/lib/modules_prebuilt/wmt_chrdev_wifi.ko|177d4e3f052d5b9be2cb026f166b4ab292c129d0
 vendor/lib/modules/wmt_drv.ko:vendor/lib/modules_prebuilt/wmt_drv.ko|f7f616600567c5e069973ce92563fe17472d1da2
@@ -1419,7 +1418,6 @@ vendor/etc/init/init.cccirpcd.rc
 vendor/etc/init/init.fmradio_drv.rc
 vendor/etc/init/init.gps_drv.rc
 vendor/etc/init/init.md_apps.rc
-vendor/etc/init/init.udc_lib.rc
 vendor/etc/init/init.volte_imcb.rc
 vendor/etc/init/init.volte_imsm_93.rc
 vendor/etc/init/init.volte_md_status.rc
