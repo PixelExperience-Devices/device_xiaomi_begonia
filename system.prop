@@ -107,7 +107,6 @@ ro.vendor.audio.sos=true
 
 #default value is true
 #Android Q copy prop set by audio hal
-PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.spkcal.copy.inhal=true
 # end of device/mediatek/system/common/system.prop
 #
@@ -132,4 +131,3 @@ persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 #quick charge type detect
 persist.vendor.quick.charge=1
 
-#
