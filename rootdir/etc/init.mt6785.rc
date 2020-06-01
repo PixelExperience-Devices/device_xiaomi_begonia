@@ -385,9 +385,9 @@ on post-fs-data
     #VideoCodec
     chmod 0660 /dev/vcu
     chown media system /dev/vcu
-    chmod 0660 /dev/video0
+    chmod 0666 /dev/video0
     chown media system /dev/video0
-    chmod 0660 /dev/video1
+    chmod 0666 /dev/video1
     chown media system /dev/video1
     mkdir /data/vendor/vcodec 0770 media system
     mkdir /data/vendor/vcodec/log 0770 media system
