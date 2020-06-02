@@ -46,6 +46,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.1-impl
 
+# DT2W
+PRODUCT_PACKAGES += \
+    DT2W-Service-Begonia
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
