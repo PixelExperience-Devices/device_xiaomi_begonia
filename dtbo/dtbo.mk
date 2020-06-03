@@ -1,7 +1,7 @@
 BOARD_PREBUILT_DTBOIMAGE := $(PRODUCT_OUT)/dtbo-pre.img
 BOARD_KERNEL_DTBO_CFG := dtboimg.cfg
 MKDTBOIMG := system/libufdt/utils/src/mkdtboimg.py
-APPEND_CERTS := $(DEVICE_PATH)/append_certs.py
+APPEND_CERTS := $(DEVICE_PATH)/dtbo/append_certs.py
 
 # BUG: mkdtboimg.py doesn't support absolute paths yet. Fix this later.
 define build-dtboimage-target-from-cfg
@@ -14,7 +14,7 @@ define append-dtboimage-certs
     $(call pretty,"Target signed dtbo image: $(BOARD_PREBUILT_DTBOIMAGE)")
     $(hide) mv $(BOARD_PREBUILT_DTBOIMAGE) $(BOARD_PREBUILT_DTBOIMAGE).tmp
     $(hide) $(APPEND_CERTS) --image $(BOARD_PREBUILT_DTBOIMAGE).tmp --cert1 \
-        $(DEVICE_PATH)/security/cert1.der --cert2 $(DEVICE_PATH)/security/cert2.der --output $(BOARD_PREBUILT_DTBOIMAGE)
+        $(DEVICE_PATH)/dtbo/security/cert1.der --cert2 $(DEVICE_PATH)/dtbo/security/cert2.der --output $(BOARD_PREBUILT_DTBOIMAGE)
     $(hide) chmod a+r $@
 endef
 
