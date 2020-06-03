@@ -1,0 +1,1 @@
+genfscon proc /ged u:object_r:proc_ged:s0
