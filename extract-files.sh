@@ -8,17 +8,15 @@
 set -e
 
 DEVICE=begonia
-VENDOR=redmi
-
-INITIAL_COPYRIGHT_YEAR=2019
+VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-POTATO_ROOT="${MY_DIR}"/../../..
+AOSP_ROOT="${MY_DIR}"/../../..
 
-HELPER="${POTATO_ROOT}/vendor/potato/build/tools/extract_utils.sh"
+HELPER="${AOSP_ROOT}/vendor/aosp/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -62,10 +60,12 @@ function blob_fixup() {
     esac
 }
 
-# Initialize the helper for common device
-setup_vendor "${DEVICE}" "${VENDOR}" "${POTATO_ROOT}" true "${CLEAN_VENDOR}"
+# Initialize the helper
+setup_vendor "${DEVICE}" "${VENDOR}" "${AOSP_ROOT}" true "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
+
+BLOB_ROOT="${AOSP_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
 
 "${MY_DIR}/setup-makefiles.sh"

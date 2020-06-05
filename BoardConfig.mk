@@ -1,20 +1,10 @@
 #
-# Copyright (C) 2019 Potato Open Sauce Project
+# Copyright (C) 2020 The PixelExperience Project
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-# http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/redmi/begonia
+DEVICE_PATH := device/xiaomi/begonia
 
 # Architecture
 TARGET_ARCH := arm64
@@ -72,7 +62,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_BOOTIMG_HEADER_VERSION := 1
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6785
+TARGET_KERNEL_SOURCE := kernel/xiaomi/begonia
 TARGET_KERNEL_CONFIG := begonia_user_defconfig
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
@@ -143,4 +133,4 @@ BOARD_VNDK_RUNTIME_DISABLE := true
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Inherit from the proprietary version
--include vendor/redmi/begonia/BoardConfigVendor.mk
+-include vendor/xiaomi/begonia/BoardConfigVendor.mk
