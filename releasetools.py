@@ -18,18 +18,22 @@ import common
 import re
 
 def FullOTA_InstallEnd(info):
-  OTA_InstallEnd(info)
+  OTA_InstallEnd(info, False)
 
 def IncrementalOTA_InstallEnd(info):
-  OTA_InstallEnd(info)
+  OTA_InstallEnd(info, True)
 
-def AddImage(info, basename, dest):
+def AddImage(info, basename, dest, incremental):
   name = basename
-  data = info.input_zip.read("IMAGES/" + basename)
+  if incremental:
+    input_zip = info.source_zip
+  else:
+    input_zip = info.input_zip
+  data = input_zip.read("IMAGES/" + basename)
   common.ZipWriteStr(info.output_zip, name, data)
   info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
 
-def OTA_InstallEnd(info):
-  AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta")
-  AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo")
+def OTA_InstallEnd(info, incremental):
+  AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta", incremental)
+  AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo", incremental)
