@@ -1,3 +1,5 @@
+import /init.recovery.mtk.usb.rc
+
 on fs
     wait /dev/block/platform/bootdevice/
     symlink /dev/block/platform/bootdevice/ /dev/block/bootdevice
