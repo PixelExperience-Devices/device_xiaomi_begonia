@@ -1,3 +1,4 @@
+-priv-app/ImsService/ImsService.apk
 -product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
 -product/priv-app/HotwordEnrollmentXGoogleCORTEXM4/HotwordEnrollmentXGoogleCORTEXM4.apk
 etc/permissions/vendor-xiaomi-hardware-citsensorservice.xml
