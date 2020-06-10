@@ -8,6 +8,11 @@ etc/permissions/vendor.xiaomi.hardware.misys.V3_0-permission.xml
 etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.0-java-permission.xml
 etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.1-java-permission.xml
 etc/permissions/vendor.xiaomi.hardware.vsimapp-V1.0-java-permission.xml
+framework/mediatek-ims-base.jar
+framework/mediatek-ims-common.jar
+framework/mediatek-ims-extension-plugin.jar
+framework/mediatek-ims-legacy.jar
+framework/mediatek-ims-wwop-common.jar
 framework/vendor.xiaomi.hardware.misys-V1.0-java.jar
 framework/vendor.xiaomi.hardware.misys-V2.0-java.jar
 framework/vendor.xiaomi.hardware.misys.V3_0.jar
