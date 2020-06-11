@@ -113,6 +113,10 @@ vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/audio.usb.mt6785.so
 vendor/lib64/hw/audio_policy.stub.so
 
+# aptX
+lib64/libaptX_encoder.so|01379a17d29c1bbc7f6b0325709940ca8cdd7ab8
+lib64/libaptXHD_encoder.so|fdbca5626fee8607d90bea2a6903eeebf396a7cf
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
 vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
