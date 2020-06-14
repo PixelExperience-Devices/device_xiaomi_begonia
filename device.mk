@@ -104,9 +104,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pe
 
-# Overlay from mtk-telephony-ext
-include vendor/mediatek/hardware/telephony-ext/overlay.mk
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -213,13 +210,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
-# Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext \
-    mtk-telephony-ext
-
+# Telephony Jars
 PRODUCT_BOOT_JARS += \
-    telephony-ext \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
