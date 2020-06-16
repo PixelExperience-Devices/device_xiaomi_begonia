@@ -1,0 +1,24 @@
+reset 0
+reset 1
+interval 50
+
+#flushing i2c buffer
+# core reset
+send 20000101
+# core init
+send 2001020000
+send 2F0200
+
+trigger 6F3E02
+trigger 4F3E01
+send 2F3E0100
+
+trigger 6F3E02
+trigger 4F3E01
+send 2F3E0101
+
+trigger 6F3E02
+trigger 4F3E01
+send 2F3E0102
+
+reset 0

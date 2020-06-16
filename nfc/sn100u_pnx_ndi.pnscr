@@ -1,0 +1,16 @@
+reset 0
+reset 1
+interval 50
+
+#flushing i2c buffer
+# core reset
+send 20000101
+# core init
+send 2001020000
+# enable standby mode
+send 2F000101
+# read die-id
+trigger 4003150001A00110
+send 20030301A001
+
+reset 0

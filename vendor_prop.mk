@@ -330,6 +330,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.crypto.volume.filenames_mode=aes-256-cts \
     ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp \
     ro.hardware.egl=mali \
+    ro.hardware.nfc_nci=nqx.default \
     ro.lmk.downgrade_pressure=60 \
     ro.mtk_cam_dualzoom_support=1 \
     ro.mtk_cam_stereo_camera_support=1 \
