@@ -19,16 +19,4 @@
         </interface>
         <fqname>@1.0::INqNfc/default</fqname>
     </hal>
-	<hal format="hidl">
-        <name>android.hardware.secure_element</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISecureElement</name>
-            <instance>SIM1</instance>
-            <instance>eSE1</instance>
-        </interface>
-        <fqname>@1.0::ISecureElement/SIM1</fqname>
-        <fqname>@1.0::ISecureElement/eSE1</fqname>
-    </hal>
 </manifest>
