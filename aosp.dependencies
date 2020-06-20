@@ -16,18 +16,6 @@
    "branch": "ten"
  },
  {
-   "repository": "PixelExperience/vendor_mediatek_hardware_telephony-ext",
-   "target_path": "vendor/mediatek/hardware/telephony-ext",
-   "branch": "ten",
-   "remote": "github"
- },
- {
-   "repository": "PixelExperience/vendor_mediatek_hardware_interfaces",
-   "target_path": "vendor/mediatek/hardware/interfaces",
-   "branch": "ten",
-   "remote": "github"
- },
- {
    "repository":"LineageOS/android_vendor_nxp_interfaces_opensource_nfc",
    "target_path":"vendor/nxp/opensource/interfaces/nfc",
    "branch":"lineage-17.1",
