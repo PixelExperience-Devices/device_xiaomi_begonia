@@ -10,7 +10,6 @@ import /system/etc/init/logcatd.rc
 import /system/etc/init/storagemanagerd.rc
 import /system/etc/init/mobile_log_d.rc
 import /system/etc/init/android.system.suspend@1.0-service.rc
-import /vendor/etc/init/storageproxyd.rc
 import /vendor/etc/init/android.hardware.keymaster@3.0-service.rc
 import /vendor/etc/init/android.hardware.keymaster@3.0-service.trustonic.rc
 import /vendor/etc/init/android.hardware.keymaster@4.0-service.rc

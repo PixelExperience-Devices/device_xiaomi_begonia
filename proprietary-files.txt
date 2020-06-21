@@ -1405,7 +1405,6 @@ vendor/etc/init/aee_aedv.rc
 vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/microtrust.rc
 vendor/etc/init/nvram_daemon.rc
-vendor/etc/init/storageproxyd.rc
 vendor/etc/init/vendor.microtrust.hardware.capi@2.0-service.rc
 vendor/etc/init_panel_info.sh
 vendor/etc/partition_permission.sh
@@ -1475,7 +1474,6 @@ vendor/bin/rttv
 vendor/bin/setup_fct
 vendor/bin/setup_fct_normal
 vendor/bin/starter
-vendor/bin/storageproxyd
 vendor/bin/stp_dump3
 vendor/bin/stroke
 vendor/bin/teei_daemon
