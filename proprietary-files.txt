@@ -8,6 +8,8 @@
 -priv-app/ImsService/ImsService.apk
 -product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
 -product/priv-app/HotwordEnrollmentXGoogleCORTEXM4/HotwordEnrollmentXGoogleCORTEXM4.apk
+bin/vtservice
+etc/init/init.vtservice.rc
 etc/permissions/vendor-xiaomi-hardware-citsensorservice.xml
 etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
 etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml
@@ -24,6 +26,11 @@ framework/vendor.xiaomi.hardware.misys.V3_0.jar
 framework/vendor.xiaomi.hardware.mtdservice-V1.0-java.jar
 framework/vendor.xiaomi.hardware.mtdservice-V1.1-java.jar
 framework/vendor.xiaomi.hardware.vsimapp-V1.0-java.jar
+lib/libcomutils.so
+lib/libimsma.so
+lib/libimsma_adapt.so
+lib/libimsma_rtp.so
+lib/libimsma_socketwrapper.so
 lib/libmtk_vt_service.so
 lib/libmtk_vt_wrapper.so
 lib/libmtkaudio_utils.so
@@ -31,8 +38,12 @@ lib/libmtkavenhancements.so
 lib/libmtklimiter.so
 lib/libmtkperf_client.so
 lib/libmtkshifter.so
+lib/libsignal.so
+lib/libsink.so
+lib/libsource.so
 lib/libvcodec_cap.so
 lib/libvcodec_capenc.so
+lib/libvt_avsync.so
 lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
 lib/vendor.xiaomi.hardware.citsensorservice@1.1.so
 lib/vendor.xiaomi.hardware.displayfeature@1.0.so
