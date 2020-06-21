@@ -1,4 +1,9 @@
+ifeq (eng,$(TARGET_BUILD_VARIANT))
 VENDOR_LOG_LEVEL=I
+else
+VENDOR_LOG_LEVEL=S
+endif
+
 
 PRODUCT_PROPERTY_OVERRIDES +=  \
     aaudio.mmap_exclusive_policy=2 \
