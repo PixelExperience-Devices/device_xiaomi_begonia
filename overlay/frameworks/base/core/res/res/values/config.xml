@@ -467,4 +467,12 @@
         <item>7,1</item>
         <item>9,1</item>
     </string-array>
+
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">78.0px</dimen>
+    <dimen name="status_bar_height_landscape">24.0dp</dimen>
+
+    <!-- Rounded corner padding and radius -->
+    <dimen name="rounded_corner_radius_top">95.0px</dimen>
+    <dimen name="rounded_corner_radius_bottom">90.0px</dimen>
 </resources>
