@@ -1,0 +1,14 @@
+type persist_atm_enabled_prop, property_type;
+type omx_core_prop, property_type;
+type panel_display_prop, property_type;
+type mtk_crossmount_support_prop, property_type;
+type mtk_deinterlace_support_prop, property_type;
+type vendor_camera_prop, property_type;
+type persist_camera_prop, property_type, extended_core_property_type;
+type wfd_sys_debug_prop, property_type;
+type persist_displayfeature_prop, property_type;
+type vendor_fp_prop, property_type;
+type vendor_tee_listener_prop, property_type;
+type vendor_system_prop, property_type;
+type thermal_engine_prop, property_type;
+type public_vendor_default_prop, property_type;

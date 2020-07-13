@@ -1,0 +1,2 @@
+allow mtk_hal_usb sysfs_battery_supply:dir { open read search };
+allow mtk_hal_usb sysfs_battery_supply:file { getattr open read };

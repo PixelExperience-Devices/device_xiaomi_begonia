@@ -1,0 +1,13 @@
+type hal_mtdservice_default, domain;
+type hal_mtdservice_default_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(hal_mtdservice_default)
+
+allow hal_mtdservice_default hal_mtdservice_default_exec:file execute_no_trans;
+allow hal_mtdservice_default hwservicemanager_prop:file { read open getattr map };
+allow hal_mtdservice_default hwservicemanager:binder call;
+allow hal_mtdservice_default mnt_vendor_file:dir search;
+allow hal_mtdservice_default property_socket:sock_file write;
+allow hal_mtdservice_default teei_client_device:chr_file { read write open ioctl };
+allow hal_mtdservice_default init:unix_stream_socket connectto;
+allow hal_mtdservice_default persist_data_file:dir getattr;

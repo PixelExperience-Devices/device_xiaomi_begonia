@@ -1,0 +1,9 @@
+type epdg_wod, domain;
+type epdg_wod_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(epdg_wod)
+
+allow epdg_wod epdg_wod_exec:file execute_no_trans;
+allow epdg_wod ccci_device:chr_file { read write open ioctl };
+allow epdg_wod vendor_data_file:dir { read write open add_name };
+allow epdg_wod vendor_data_file:file { write open create };

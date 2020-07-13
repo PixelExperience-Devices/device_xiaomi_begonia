@@ -1,0 +1,5 @@
+init_daemon_domain(toolbox)
+
+allow toolbox toolbox_exec:file execute_no_trans;
+allow toolbox input_device:chr_file { ioctl open read write };
+allow toolbox input_device:dir search;

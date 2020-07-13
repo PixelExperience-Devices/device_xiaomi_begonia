@@ -1,0 +1,8 @@
+type wfca, domain;
+type wfca_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(wfca)
+
+allow wfca wfca_exec:file execute_no_trans;
+allow wfca ccci_device:chr_file { read write open ioctl };
+allow wfca sysfs_wake_lock:file { read write open };

@@ -1,0 +1,1 @@
+allow misc_writer proc_cmdline:file { getattr open };

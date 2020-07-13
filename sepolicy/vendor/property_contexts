@@ -1,0 +1,55 @@
+# Atcid
+persist.atm_enabled                   u:object_r:persist_atm_enabled_prop:s0
+
+# Camera
+persist.vendor.camera.                u:object_r:persist_camera_prop:s0
+persist.vendor.sys.                   u:object_r:vendor_system_prop:s0
+camera.                               u:object_r:vendor_camera_prop:s0
+ro.camera.                            u:object_r:vendor_camera_prop:s0
+vendor.camera.                        u:object_r:vendor_camera_prop:s0
+vidhance.                             u:object_r:vendor_camera_prop:s0
+persist.camera.                       u:object_r:vendor_camera_prop:s0
+debuglog.drv.mfb_drv                  u:object_r:vendor_camera_prop:s0
+debuglog.drv                          u:object_r:vendor_camera_prop:s0
+debuglog.drv.tsf_drv                  u:object_r:vendor_camera_prop:s0
+debuglog.drv.fdvt_drv                 u:object_r:vendor_camera_prop:s0
+debuglog.drv.dpe_drv                  u:object_r:vendor_camera_prop:s0
+debuglog.drv.occ_drv                  u:object_r:vendor_camera_prop:s0
+debuglog.drv.wmfe_drv                 u:object_r:vendor_camera_prop:s0
+debuglog.drv.rsc_drv                  u:object_r:vendor_camera_prop:s0
+
+# Display
+sys.panel.display                             u:object_r:panel_display_prop:s0
+init.svc.displayfeature-hal-1-0               u:object_r:persist_displayfeature_prop:s0
+ro.displayfeature.histogram.enable            u:object_r:persist_displayfeature_prop:s0
+persist.displayfeature.dc_backlight.enable    u:object_r:persist_displayfeature_prop:s0
+ro.eyecare.brightness.threshold               u:object_r:persist_displayfeature_prop:s0
+ro.eyecare.brightness.level                   u:object_r:persist_displayfeature_prop:s0
+ro.hist.brightness.threshold                  u:object_r:persist_displayfeature_prop:s0
+ro.xiaomi.bl.poll                             u:object_r:persist_displayfeature_prop:s0
+
+# Media
+mtk.vendor.omx.core.log          u:object_r:omx_core_prop:s0
+ro.mtk_crossmount_support        u:object_r:mtk_crossmount_support_prop:s0
+ro.mtk_deinterlace_support       u:object_r:mtk_deinterlace_support_prop:s0
+
+# Mlipay
+persist.vendor.sys.pay.ifaa              u:object_r:vendor_tee_listener_prop:s0
+
+# Fingerprint
+fpc_kpi                    u:object_r:vendor_fp_prop:s0
+gf.debug.dump_bigdata_data u:object_r:vendor_fp_prop:s0
+persist.sys.fp.goodix.     u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.     u:object_r:vendor_fp_prop:s0
+ro.hardware.fp             u:object_r:vendor_fp_prop:s0
+vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
+
+# RIL
+ro.vendor.ril              u:object_r:public_vendor_default_prop:s0
+
+# Thermal
+sys.thermal.                u:object_r:thermal_engine_prop:s0
+persist.sys.thermal.        u:object_r:thermal_engine_prop:s0
+
+# WFD
+persist.vendor.setWFDInfo.R2             u:object_r:wfd_sys_debug_prop:s0

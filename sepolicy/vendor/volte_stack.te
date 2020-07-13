@@ -1,0 +1,9 @@
+type volte_stack, domain;
+type volte_stack_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(volte_stack)
+
+allow volte_stack volte_stack_exec:file execute_no_trans;
+allow volte_stack self:capability { setgid net_admin };
+allow volte_stack self:netlink_xfrm_socket { create bind write nlmsg_read };
+allow volte_stack volte_stack_socket:sock_file write;

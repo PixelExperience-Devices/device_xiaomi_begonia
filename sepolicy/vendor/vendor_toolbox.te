@@ -1,0 +1,5 @@
+type vendor_toolbox, domain;
+
+init_daemon_domain(vendor_toolbox)
+
+allow vendor_toolbox vendor_toolbox_exec:file execute_no_trans;

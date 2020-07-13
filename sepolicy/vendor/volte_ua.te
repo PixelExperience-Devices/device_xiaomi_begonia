@@ -1,0 +1,9 @@
+type volte_ua, domain;
+type volte_ua_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(volte_ua)
+
+allow volte_ua volte_ua_exec:file execute_no_trans;
+allow volte_ua self:capability setgid;
+allow volte_ua volte_stack_socket:sock_file write;
+allow volte_ua volte_stack:unix_stream_socket connectto;

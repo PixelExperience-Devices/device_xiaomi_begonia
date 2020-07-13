@@ -1,0 +1,15 @@
+type volte_imcb, domain;
+type volte_imcb_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(volte_imcb)
+
+allow volte_imcb volte_imcb_exec:file execute_no_trans;
+allow volte_imcb device:dir { write add_name };
+allow volte_imcb devpts:chr_file setattr;
+allow volte_imcb self:capability { setgid setuid };
+allow volte_imcb self:capability2 wake_alarm;
+allow volte_imcb volte_ua_socket:sock_file write;
+allow volte_imcb device:lnk_file create;
+allow volte_imcb volte_ua:unix_stream_socket connectto;
+allow volte_imcb sysfs_ccci:dir search;
+allow volte_imcb sysfs_ccci:file read;

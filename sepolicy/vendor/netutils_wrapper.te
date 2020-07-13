@@ -1,0 +1,7 @@
+type netutils_wrapper_exec_bin, system_file_type, exec_type, file_type;
+
+init_daemon_domain(netutils_wrapper)
+
+allow netutils_wrapper netutils_wrapper_exec_bin:file execute_no_trans;
+allow netutils_wrapper epdg_wod:fd use;
+allow netutils_wrapper epdg_wod:unix_stream_socket { read write };

@@ -1,0 +1,1 @@
+allow ccci_fsd nvcfg_file:dir search;

@@ -1,0 +1,2 @@
+add_hwservice(hal_secure_element_default, nxpese_hwservice)
+allow hal_secure_element_default nxpnfc_hwservice:hwservice_manager { find };

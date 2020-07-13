@@ -1,0 +1,3 @@
+allow mnld proc_cmdline:file { getattr open read };
+allow mnld sysfs_dt_firmware_android:dir { open read search };
+allow mnld sysfs_dt_firmware_android:file { getattr open read };

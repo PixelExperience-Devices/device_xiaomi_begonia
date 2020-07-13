@@ -1,0 +1,8 @@
+type hal_tidaservice_default, domain;
+type hal_tidaservice_default_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(hal_tidaservice_default)
+
+allow hal_tidaservice_default hal_tidaservice_default_exec:file execute_no_trans;
+allow hal_tidaservice_default hwservicemanager_prop:file { read open getattr map };
+allow hal_tidaservice_default hwservicemanager:binder call;

@@ -1,0 +1,1 @@
+allow mtk_hal_mms mtk_hal_mms_exec:file execute_no_trans;

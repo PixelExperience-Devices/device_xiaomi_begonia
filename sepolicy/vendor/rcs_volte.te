@@ -1,0 +1,6 @@
+type rcs_volte, domain;
+type rcs_volte_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(rcs_volte)
+
+allow rcs_volte rcs_volte_exec:file execute_no_trans;

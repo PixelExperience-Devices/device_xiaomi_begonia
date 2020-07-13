@@ -1,0 +1,8 @@
+type vpud_native, domain;
+type vpud_native_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(vpud_native)
+
+allow vpud_native vpud_native_exec:file execute_no_trans;
+allow vpud_native vpud_device:chr_file { read write };
+allow vpud_native vcu_device:chr_file { read write open map };

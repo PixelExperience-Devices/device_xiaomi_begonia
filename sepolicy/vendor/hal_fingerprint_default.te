@@ -1,0 +1,14 @@
+allow hal_fingerprint_default init:unix_stream_socket connectto;
+allow hal_fingerprint_default mtee_trusty_file:dir search;
+allow hal_fingerprint_default mtee_trusty_file:file { open read };
+allow hal_fingerprint_default property_socket:sock_file write;
+allow hal_fingerprint_default sysfs_battery_supply:dir search;
+allow hal_fingerprint_default sysfs_battery_supply:file { open read };
+allow hal_fingerprint_default sysfs_pmu:dir search;
+allow hal_fingerprint_default sysfs_pmu:file { open read };
+allow hal_fingerprint_default sysfs_spm:dir search;
+allow hal_fingerprint_default sysfs_spm:file { open read };
+allow hal_fingerprint_default sysfsts_novatek:dir search;
+allow hal_fingerprint_default sysfsts_novatek:file { open read };
+
+set_prop(hal_fingerprint_default, vendor_fp_prop)

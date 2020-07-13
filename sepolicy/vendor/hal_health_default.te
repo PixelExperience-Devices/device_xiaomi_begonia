@@ -1,0 +1,4 @@
+allow hal_health_default sysfs_battery_supply:file { getattr open read };
+allow hal_health_default sysfs_battery_supply:dir search;
+allow hal_health_default sysfs_usb_supply:dir search;
+allow hal_health_default sysfs_usb_supply:file { getattr open read };

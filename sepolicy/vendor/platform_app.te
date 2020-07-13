@@ -1,0 +1,2 @@
+# allow platform_app to read vendor_camera_prop
+get_prop(platform_app, persist_camera_prop)

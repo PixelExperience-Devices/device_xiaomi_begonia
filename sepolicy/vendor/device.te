@@ -1,0 +1,2 @@
+type vpud_device, dev_type;
+type vcu_device, dev_type;

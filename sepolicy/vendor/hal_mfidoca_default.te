@@ -1,0 +1,9 @@
+type hal_mfidoca_default, domain;
+type hal_mfidoca_default_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(hal_mfidoca_default)
+
+allow hal_mfidoca_default hal_mfidoca_default_exec:file execute_no_trans;
+allow hal_mfidoca_default hwservicemanager_prop:file { read open getattr };
+allow hal_mfidoca_default teei_client_device:chr_file { read write open };
+allow hal_mfidoca_default vendor_fp_prop:file { read open };

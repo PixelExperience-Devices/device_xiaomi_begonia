@@ -1,0 +1,2 @@
+allow system_app hal_mlipay_hwservice:hwservice_manager find;
+allow system_app hal_mlipay_default:binder call;

@@ -1,0 +1,9 @@
+type vendor_volte_md_status, domain;
+type vendor_volte_md_status_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(vendor_volte_md_status)
+
+allow vendor_volte_md_status vendor_volte_md_status_exec:file execute_no_trans;
+allow vendor_volte_md_status init:unix_stream_socket connectto;
+allow vendor_volte_md_status property_socket:sock_file write;
+allow vendor_volte_md_status ccci_device:chr_file { ioctl open read write };

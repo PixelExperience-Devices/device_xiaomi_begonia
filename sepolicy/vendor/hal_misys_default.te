@@ -1,0 +1,9 @@
+type hal_misys_default, domain;
+type hal_misys_default_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(hal_misys_default)
+
+allow hal_misys_default persist_data_file:file create_file_perms;
+allow hal_misys_default hal_misys_default_exec:file execute_no_trans;
+allow hal_misys_default hwservicemanager_prop:file { read open getattr map };
+allow hal_misys_default hwservicemanager:binder call;

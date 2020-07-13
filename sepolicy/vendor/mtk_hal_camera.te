@@ -1,0 +1,8 @@
+allow mtk_hal_camera persist_data_file:file r_file_perms;
+allow mtk_hal_camera persist_data_file:dir r_dir_perms;
+allow mtk_hal_camera mnt_vendor_file:file r_file_perms;
+allow mtk_hal_camera mnt_vendor_file:dir r_dir_perms;
+
+get_prop(mtk_hal_camera, persist_displayfeature_prop)
+set_prop(mtk_hal_camera, vendor_camera_prop)
+set_prop(mtk_hal_camera, vendor_video_prop)
