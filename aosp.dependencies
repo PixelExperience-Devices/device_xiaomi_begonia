@@ -11,9 +11,10 @@
    "branch": "ten"
  },
  {
-   "repository": "vendor_xiaomi",
-   "target_path": "vendor/xiaomi",
-   "branch": "ten"
+   "repository": "vendor_xiaomi_begonia",
+   "target_path": "vendor/xiaomi/begonia",
+   "branch": "ten",
+   "remote":"pixel-devices-bitbucket"
  },
  {
    "repository":"LineageOS/android_vendor_nxp_interfaces_opensource_nfc",
