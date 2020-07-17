@@ -23,7 +23,7 @@
 #include <fstream>
 
 #define LCD_LED         "/sys/class/leds/lcd-backlight/"
-#define WHITE_LED       "/sys/class/leds/white/"
+#define NOTIFICATION_LED       "/sys/class/leds/white/"
 
 #define BREATH_MODE     "breath_mode"
 #define BRIGHTNESS      "brightness"
@@ -95,23 +95,23 @@ static void handleNotification(const LightState& state) {
     uint32_t whiteBrightness = getScaledBrightness(state, MAX_LED_BRIGHTNESS);
 
     /* Disable breathing or blinking */
-    set(WHITE_LED BRIGHTNESS, 0);
+    set(NOTIFICATION_LED BRIGHTNESS, 0);
 
     switch (state.flashMode) {
         case Flash::HARDWARE:
-            /* Breathing */  
-            set(WHITE_LED TRIGGER, BREATH_MODE);
+            /* Breathing */
+            set(NOTIFICATION_LED TRIGGER, BREATH_MODE);
             break;
         case Flash::TIMED:
             /* Blinking */
-            set(WHITE_LED TRIGGER, PWM_MODE);
+            set(NOTIFICATION_LED TRIGGER, PWM_MODE);
             break;
         case Flash::NONE:
         default:
-            set(WHITE_LED TRIGGER, CC_MODE);
+            set(NOTIFICATION_LED TRIGGER, CC_MODE);
     }
 
-    set(WHITE_LED BRIGHTNESS, whiteBrightness);
+    set(NOTIFICATION_LED BRIGHTNESS, whiteBrightness);
 }
 
 static inline bool isStateLit(const LightState& state) {
