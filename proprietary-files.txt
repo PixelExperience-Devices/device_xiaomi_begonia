@@ -1169,9 +1169,7 @@ lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
 
 # NFC
-vendor/bin/hw/vendor.nxp.hardware.nfc@1.1-service|86ceb76df5de43e06efc6d767ea80ee19e72279d
 vendor/bin/pnscr|8b1679a6577cc98939284021ba74aab8c7808bcd
-vendor/etc/init/vendor.nxp.hardware.nfc@1.1-service.rc|c2afa78852ed6c2d5a9df9dbc3e3b448a001d57f
 vendor/etc/nxp/Phone_bt_bt.bin
 vendor/etc/nxp/Phone_hsmic_hs.bin
 vendor/etc/nxp/Phone_mic_hp.bin
