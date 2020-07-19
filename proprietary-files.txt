@@ -121,8 +121,6 @@ vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaudiosmartpamtk.so
 vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libtinycompress.so
-vendor/lib/soundfx/libaudiopreprocessing.so
-vendor/lib/soundfx/libmisoundfx.so
 vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocompensationfilterc.so
@@ -136,7 +134,6 @@ vendor/lib64/libaudioprimarydevicehalifclient.so
 vendor/lib64/libaudiosmartpamtk.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libtinycompress.so
-vendor/lib64/soundfx/libaudiopreprocessing.so
 
 # Audio-Hardware
 vendor/lib/hw/audio.primary.default.so
@@ -153,6 +150,25 @@ vendor/lib64/hw/audio.r_submix.mt6785.so
 vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/audio.usb.mt6785.so
 vendor/lib64/hw/audio_policy.stub.so
+
+# Audio Effects - MiSound
+vendor/lib/soundfx/libaudiopreprocessing.so
+vendor/lib/soundfx/libmisoundfx.so
+vendor/lib/soundfx/libbundlewrapper.so
+vendor/lib/soundfx/libdownmix.so
+vendor/lib/soundfx/libdynproc.so
+vendor/lib/soundfx/libeffectproxy.so
+vendor/lib/soundfx/libldnhncr.so
+vendor/lib/soundfx/libreverbwrapper.so
+vendor/lib/soundfx/libvisualizer.so
+vendor/lib64/soundfx/libaudiopreprocessing.so
+vendor/lib64/soundfx/libbundlewrapper.so
+vendor/lib64/soundfx/libdownmix.so
+vendor/lib64/soundfx/libdynproc.so
+vendor/lib64/soundfx/libeffectproxy.so
+vendor/lib64/soundfx/libldnhncr.so
+vendor/lib64/soundfx/libreverbwrapper.so
+vendor/lib64/soundfx/libvisualizer.so
 
 # aptX (From begonia-user 10 QP1A.190711.020 20.6.4 release-keys)
 lib64/libaptX_encoder.so|01379a17d29c1bbc7f6b0325709940ca8cdd7ab8
