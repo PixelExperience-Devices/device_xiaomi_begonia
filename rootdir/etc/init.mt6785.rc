@@ -1,6 +1,5 @@
 # MTK platform .rc configure
 
-import /system/etc/init/init.safailnet.rc
 import /vendor/etc/init/hw/init.connectivity.rc
 import /vendor/etc/init/hw/init.mt6785.usb.rc
 import /vendor/etc/init/hw/init.project.rc

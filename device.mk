@@ -188,8 +188,7 @@ PRODUCT_PACKAGES += \
     multi_init.rc \
     fstab.enableswap \
     fstab.mt6785 \
-    ueventd.mtk.rc \
-    init.safailnet.rc
+    ueventd.mtk.rc
 
 # RenderScript
 PRODUCT_PACKAGES += \
