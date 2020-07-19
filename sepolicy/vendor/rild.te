@@ -2,7 +2,9 @@ dontaudit rild tombstone_data_file:dir search;
 dontaudit rild vendor_file:file ioctl;
 
 set_prop(rild, deviceid_prop)
+set_prop(rild, telephony_prop)
 
 allow rild logmuch_prop:file { read open getattr map };
 allow rild nvram_agent_binder_hwservice:hwservice_manager find;
 allow rild vendor_system_prop:file { getattr map open read };
+allow rild telephony_prop:file { getattr map open read };

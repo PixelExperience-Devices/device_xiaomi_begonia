@@ -1,0 +1,1 @@
+allow crash_dump hwservicemanager_prop:file { getattr map open };

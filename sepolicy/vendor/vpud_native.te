@@ -4,5 +4,14 @@ type vpud_native_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(vpud_native)
 
 allow vpud_native vpud_native_exec:file execute_no_trans;
-allow vpud_native vpud_device:chr_file { read write };
-allow vpud_native vcu_device:chr_file { read write open map };
+allow vpud_native vpud_device:chr_file { ioctl read write };
+allow vpud_native vcu_device:chr_file { ioctl read write open map };
+allow vpud_native sysfs_device_tree_model:file { open read getattr };
+allow vpud_native mtk_hal_power_hwservice:hwservice_manager find;
+allow vpud_native hwservicemanager_prop:file { getattr read map open };
+allow vpud_native hwservicemanager:binder call;
+allow vpud_native ion_device:chr_file { ioctl read open };
+allow vpud_native mtk_hal_power:binder { call transfer };
+allow vpud_native debugfs_ion:dir { search };
+
+set_prop(vpud_native, vendor_video_prop)

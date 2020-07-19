@@ -1,3 +1,7 @@
+allow priv_app vendor_default_prop:file { read open getattr map };
+allow priv_app mtk_cmdq_device:chr_file { read open getattr ioctl };
+allow priv_app mtk_mdp_device:chr_file { read open getattr ioctl };
+allow priv_app render_prop:file { read open getattr map };
 allow priv_app apexd_prop:file { getattr map open };
 allow priv_app atci_sys_prop:file { getattr map open };
 allow priv_app proc_interrupts:file { open };
@@ -5,3 +9,4 @@ allow priv_app proc_modules:file { open };
 allow priv_app sysfs_android_usb:file { open };
 
 get_prop(priv_app, persist_camera_prop)
+get_prop(priv_app, vendor_default_prop)

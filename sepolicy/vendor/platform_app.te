@@ -1,2 +1,10 @@
-# allow platform_app to read vendor_camera_prop
 get_prop(platform_app, persist_camera_prop)
+get_prop(platform_app, vendor_default_prop)
+
+allow platform_app app_data_file:file execute;
+allow platform_app sysfs:dir read;
+allow platform_app sysfs_switch:dir search;
+allow platform_app vendor_default_prop:file { getattr map open read };
+allow platform_app mtk_cmdq_device:chr_file { read open getattr ioctl };
+allow platform_app mtk_mdp_device:chr_file { read open getattr ioctl };
+allow platform_app render_prop:file { read open getattr map };

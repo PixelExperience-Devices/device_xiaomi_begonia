@@ -1,1 +1,2 @@
 allow nfc vendor_hal_nfc_default:binder { call transfer };
+allow nfc nfc_data_file:file open;

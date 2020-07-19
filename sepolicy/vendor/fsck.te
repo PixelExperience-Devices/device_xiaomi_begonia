@@ -1,0 +1,2 @@
+allow fsck tmpfs:blk_file getattr;
+dontaudit fsck self:capability dac_read_search;

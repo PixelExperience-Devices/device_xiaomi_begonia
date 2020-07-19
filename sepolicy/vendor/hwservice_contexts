@@ -10,8 +10,16 @@ vendor.synaptics.fingerprints.interfaces.extensions::ISensorTest              u:
 vendor.synaptics.fingerprints.interfaces.extensions::INavigation              u:object_r:hal_fingerprint_hwservice:s0
 vendor.synaptics.fingerprints.interfaces.extensions::IFpCollection            u:object_r:hal_fingerprint_hwservice:s0
 vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint               u:object_r:hal_fingerprint_hwservice:s0
-
+vendor.xiaomi.hardware.citsensorservice::ICitSensorService                    u:object_r:citsensorservice_hwservice:s0
+vendor.xiaomi.hardware.displayfeature::IDisplayFeature                        u:object_r:displayfeature_hwservice:s0
+vendor.xiaomi.hardware.mfidoca::IFidoService                                  u:object_r:fidoservice_hwservice:s0
+vendor.xiaomi.hardware.misys::IMiSys                                          u:object_r:misys_hwservice:s0
+vendor.xiaomi.hardware.mtdservice::IMTService                                 u:object_r:mtservice_hwservice:s0
+vendor.xiaomi.hardware.tidaservice::ITidaService                              u:object_r:tidaservice_hwservice:s0
+vendor.xiaomi.hardware.touchfeature::ITouchFeature                            u:object_r:touchfeature_hwservice:s0
+vendor.xiaomi.hardware.vsimapp::IVSIMService                                  u:object_r:vsimservice_hwservice:s0
+vendor.microtrust.hardware.soter::ISoter                                      u:object_r:soter_hwservice:s0
 vendor.xiaomi.hardware.mlipay::IMlipayService                                 u:object_r:hal_mlipay_hwservice:s0
-
-vendor.nxp.nxpese::INxpEse                                u:object_r:nxpese_hwservice:s0
-vendor.nxp.nxpnfc::INxpNfc                                u:object_r:nxpnfc_hwservice:s0
+vendor.nxp.hardware.nfc::INqNfc                                               u:object_r:nqnfc_hwservice:s0
+vendor.nxp.nxpese::INxpEse                                                    u:object_r:nxpese_hwservice:s0
+vendor.nxp.nxpnfc::INxpNfc                                                    u:object_r:nxpnfc_hwservice:s0

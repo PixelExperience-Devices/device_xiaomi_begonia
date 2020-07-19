@@ -2,6 +2,7 @@ allow mtk_hal_camera persist_data_file:file r_file_perms;
 allow mtk_hal_camera persist_data_file:dir r_dir_perms;
 allow mtk_hal_camera mnt_vendor_file:file r_file_perms;
 allow mtk_hal_camera mnt_vendor_file:dir r_dir_perms;
+allow mtk_hal_camera render_prop:file { read open getattr map };
 
 get_prop(mtk_hal_camera, persist_displayfeature_prop)
 set_prop(mtk_hal_camera, vendor_camera_prop)

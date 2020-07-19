@@ -5,4 +5,6 @@ init_daemon_domain(hal_wechat)
 
 allow hal_wechat hal_wechat_exec:file execute_no_trans;
 allow hal_wechat hwservicemanager_prop:file { read open getattr map };
-allow hal_wechat hwservicemanager:binder call;
+allow hal_wechat soter_hwservice:hwservice_manager add;
+allow hal_wechat hidl_base_hwservice:hwservice_manager add;
+allow hal_wechat hwservicemanager:binder { call transfer };

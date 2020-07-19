@@ -8,3 +8,4 @@ type volte_stack_socket, file_type;
 type volte_imcb_socket, file_type;
 type touchfeature_device, file_type;
 type wfca_socket, file_type;
+type audio_socket, file_type;

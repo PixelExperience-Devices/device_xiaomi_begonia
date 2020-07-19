@@ -4,6 +4,11 @@ type hal_mfidoca_default_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(hal_mfidoca_default)
 
 allow hal_mfidoca_default hal_mfidoca_default_exec:file execute_no_trans;
-allow hal_mfidoca_default hwservicemanager_prop:file { read open getattr };
-allow hal_mfidoca_default teei_client_device:chr_file { read write open };
-allow hal_mfidoca_default vendor_fp_prop:file { read open };
+allow hal_mfidoca_default fidoservice_hwservice:hwservice_manager add;
+allow hal_mfidoca_default hwservicemanager_prop:file { read open getattr map };
+allow hal_mfidoca_default hidl_base_hwservice:hwservice_manager add;
+allow hal_mfidoca_default hwservicemanager:binder { call transfer };
+allow hal_mfidoca_default init:unix_stream_socket connectto;
+allow hal_mfidoca_default property_socket:sock_file write;
+allow hal_mfidoca_default teei_client_device:chr_file { read write open ioctl };
+allow hal_mfidoca_default vendor_fp_prop:file { read open getattr map };

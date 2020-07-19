@@ -2,9 +2,11 @@
 persist.atm_enabled                   u:object_r:persist_atm_enabled_prop:s0
 
 # Camera
-persist.vendor.camera.                u:object_r:persist_camera_prop:s0
+persist.vendor.camera.privapp.list         u:object_r:persist_camera_prop:s0
 persist.vendor.sys.                   u:object_r:vendor_system_prop:s0
 camera.                               u:object_r:vendor_camera_prop:s0
+cam.egnsavefile.                      u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.                     u:object_r:vendor_camera_prop:s0
 ro.camera.                            u:object_r:vendor_camera_prop:s0
 vendor.camera.                        u:object_r:vendor_camera_prop:s0
 vidhance.                             u:object_r:vendor_camera_prop:s0
@@ -17,6 +19,11 @@ debuglog.drv.dpe_drv                  u:object_r:vendor_camera_prop:s0
 debuglog.drv.occ_drv                  u:object_r:vendor_camera_prop:s0
 debuglog.drv.wmfe_drv                 u:object_r:vendor_camera_prop:s0
 debuglog.drv.rsc_drv                  u:object_r:vendor_camera_prop:s0
+jpeg.exif.                            u:object_r:vendor_camera_prop:s0
+persist.mtk.venc.                     u:object_r:vendor_video_prop:s0
+gce.test                              u:object_r:vendor_video_prop:s0
+vilte.test                            u:object_r:vendor_video_prop:s0
+prepend.test                          u:object_r:vendor_video_prop:s0
 
 # Display
 sys.panel.display                             u:object_r:panel_display_prop:s0
@@ -36,6 +43,9 @@ ro.mtk_deinterlace_support       u:object_r:mtk_deinterlace_support_prop:s0
 # Mlipay
 persist.vendor.sys.pay.ifaa              u:object_r:vendor_tee_listener_prop:s0
 
+# NFC
+persist.factoryota.                  u:object_r:factor_prop:s0
+
 # Fingerprint
 fpc_kpi                    u:object_r:vendor_fp_prop:s0
 gf.debug.dump_bigdata_data u:object_r:vendor_fp_prop:s0
@@ -44,8 +54,14 @@ persist.vendor.sys.fp.     u:object_r:vendor_fp_prop:s0
 ro.hardware.fp             u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
 
+# RenderThread
+ro.vendor.globalpq.       u:object_r:render_prop:s0
+persist.vendor.dp.        u:object_r:render_prop:s0
+vendor.dp.                u:object_r:render_prop:s0
+
 # RIL
 ro.vendor.ril              u:object_r:public_vendor_default_prop:s0
+ro.telephony.              u:object_r:telephony_prop:s0
 
 # Thermal
 sys.thermal.                u:object_r:thermal_engine_prop:s0

@@ -1,3 +1,9 @@
+# Audio socket
+/dev/socket/audio_hw_socket                   u:object_r:audio_socket:s0
+
+# Data Labels
+/data/nfc(/.*)?		         u:object_r:nfc_data_file:s0
+
 # Devices Labels
 /dev/socket/volte_ua(/.*)?	 u:object_r:volte_ua_socket:s0
 /dev/socket/volte_stack(/.*)?	 u:object_r:volte_stack_socket:s0
@@ -6,6 +12,7 @@
 /dev/socket/wfca(/.*)?		 u:object_r:wfca_socket:s0
 /dev/vpud		         u:object_r:vpud_device:s0
 /dev/vcu		         u:object_r:vcu_device:s0
+/dev/nq-nci                      u:object_r:nfc_device:s0
 
 # HALs
 /system/bin/netutils-wrapper-1.0                 u:object_r:netutils_wrapper_exec_bin:s0
@@ -54,6 +61,7 @@
 /sys/devices/platform/mt_charger/power_supply(/.*)?		                           u:object_r:sysfs_usb_supply:s0
 /sys/devices/platform/battery(/.*)?		                                           u:object_r:sysfs_battery_supply:s0
 /sys/devices/platform/ts_novatek(/.*)?                                                     u:object_r:sysfsts_novatek:s0
+/sys/firmware/devicetree/base/model(/.*)?                                                  u:object_r:sysfs_device_tree_model:s0
 
 # Same Process HAL
 /vendor/lib(64)?/vendor\.mediatek\.hardware\.videotelephony@1\.0.so             u:object_r:same_process_hal_file:s0

@@ -6,3 +6,4 @@ init_daemon_domain(hal_dumpstate_impl)
 allow hal_dumpstate_impl hal_dumpstate_impl_exec:file execute_no_trans;
 allow hal_dumpstate_impl hwservicemanager:binder { call transfer };
 allow hal_dumpstate_impl hwservicemanager_prop:file { getattr map open read };
+allow hal_dumpstate_impl hidl_base_hwservice:hwservice_manager add;

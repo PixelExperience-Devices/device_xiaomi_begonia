@@ -1,2 +1,8 @@
 allow system_app hal_mlipay_hwservice:hwservice_manager find;
 allow system_app hal_mlipay_default:binder call;
+allow system_app mtk_cmdq_device:chr_file { read open getattr ioctl };
+allow system_app mtk_mdp_device:chr_file { read open getattr ioctl };
+allow system_app render_prop:file { read open getattr map };
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file { getattr open read };
+allow system_app vendor_default_prop:file map;

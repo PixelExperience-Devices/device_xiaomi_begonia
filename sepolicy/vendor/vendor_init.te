@@ -1,6 +1,12 @@
+typeattribute vendor_init data_between_core_and_vendor_violators;
+
 # Allow vendor_init to set camera_prop
 set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, persist_camera_prop)
 set_prop(vendor_init, system_prop)
+
+allow vendor_init {
+  nfc_socket
+}:dir { create search getattr open read setattr ioctl write add_name remove_name rmdir relabelfrom };
 
 allow vendor_init touchfeature_device:chr_file setattr;

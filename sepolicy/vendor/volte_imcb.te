@@ -12,4 +12,5 @@ allow volte_imcb volte_ua_socket:sock_file write;
 allow volte_imcb device:lnk_file create;
 allow volte_imcb volte_ua:unix_stream_socket connectto;
 allow volte_imcb sysfs_ccci:dir search;
-allow volte_imcb sysfs_ccci:file read;
+allow volte_imcb sysfs_ccci:file { read open };
+allow volte_imcb ccci_device:chr_file { open read write };

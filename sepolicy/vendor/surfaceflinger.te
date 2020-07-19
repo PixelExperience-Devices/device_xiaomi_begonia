@@ -1,1 +1,2 @@
 allow surfaceflinger sysfs_boot_mode:file { open read };
+allow surfaceflinger render_prop:file { read open getattr map };

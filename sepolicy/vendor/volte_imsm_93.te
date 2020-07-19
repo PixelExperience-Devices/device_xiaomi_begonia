@@ -9,3 +9,6 @@ allow volte_imsm_93 volte_imcb:unix_stream_socket connectto;
 allow volte_imsm_93 ccci_device:chr_file { read write open };
 allow volte_imsm_93 self:netlink_generic_socket { create bind read setopt write };
 allow volte_imsm_93 self:udp_socket create;
+allow volte_imsm_93 volte_imsm_93:udp_socket { ioctl };
+allow volte_imsm_93 volte_imsm_93:netlink_route_socket { create connect write nlmsg_write read nlmsg_read };
+allow volte_imsm_93 volte_imsm_93:capability net_admin;

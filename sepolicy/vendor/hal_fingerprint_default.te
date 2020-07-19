@@ -10,5 +10,6 @@ allow hal_fingerprint_default sysfs_spm:dir search;
 allow hal_fingerprint_default sysfs_spm:file { open read };
 allow hal_fingerprint_default sysfsts_novatek:dir search;
 allow hal_fingerprint_default sysfsts_novatek:file { open read };
+allow hal_fingerprint_default rootfs:dir { read open };
 
 set_prop(hal_fingerprint_default, vendor_fp_prop)

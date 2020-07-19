@@ -4,6 +4,8 @@ type hal_displayfeature_xiaomi_default_exec, exec_type, file_type, vendor_file_t
 init_daemon_domain(hal_displayfeature_xiaomi_default)
 
 allow hal_displayfeature_xiaomi_default hal_displayfeature_xiaomi_default_exec:file execute_no_trans;
+allow hal_displayfeature_xiaomi_default displayfeature_hwservice:hwservice_manager { add find };
+allow hal_displayfeature_xiaomi_default hidl_base_hwservice:hwservice_manager add;
 allow hal_displayfeature_xiaomi_default hwservicemanager:binder { call transfer };
 allow hal_displayfeature_xiaomi_default hwservicemanager_prop:file { getattr map open read };
 allow hal_displayfeature_xiaomi_default sysfs_leds:dir search;
@@ -11,3 +13,5 @@ allow hal_displayfeature_xiaomi_default sysfs_leds:file { open read };
 allow hal_displayfeature_xiaomi_default vndbinder_device:chr_file { ioctl map open read write };
 
 get_prop(hal_displayfeature_xiaomi_default, persist_displayfeature_prop)
+
+binder_call(hal_displayfeature_xiaomi_default, mtk_hal_pq)

@@ -2,3 +2,4 @@ allow mtk_hal_audio debugfs_ion:dir search;
 allow mtk_hal_audio sysfs_dt_firmware_android:dir { open read };
 allow mtk_hal_audio sysfs_dt_firmware_android:file { getattr open read };
 allow mtk_hal_audio persist_data_file:dir search;
+allow mtk_hal_audio audio_socket:sock_file rw_file_perms;

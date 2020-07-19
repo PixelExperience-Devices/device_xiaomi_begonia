@@ -1,0 +1,1 @@
+allow adbd adb_keys_file:dir { read };

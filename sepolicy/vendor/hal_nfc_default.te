@@ -2,10 +2,10 @@ typeattribute hal_nfc_default data_between_core_and_vendor_violators;
 allow hal_nfc_default nfc_data_file:dir { search getattr };
 allow hal_nfc_default nfc_data_file:file { rw_file_perms };
 
-allow hal_nfc_default nfc_vendor_data_file:dir { rw_dir_perms };
-allow hal_nfc_default nfc_vendor_data_file:file { create_file_perms rw_file_perms };
+allow hal_nfc_default vendor_data_file:dir { rw_dir_perms };
+allow hal_nfc_default vendor_data_file:file { create_file_perms rw_file_perms };
 
 add_hwservice(hal_nfc_default, nxpnfc_hwservice)
 allow hal_nfc_default nxpese_hwservice:hwservice_manager { find };
 
-binder_call(hal_nfc_default, hal_secure_element_default)
+get_prop(hal_nfc_default, factor_prop)
