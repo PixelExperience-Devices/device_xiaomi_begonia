@@ -43,6 +43,10 @@ ro.mtk_deinterlace_support       u:object_r:mtk_deinterlace_support_prop:s0
 # Mlipay
 persist.vendor.sys.pay.ifaa              u:object_r:vendor_tee_listener_prop:s0
 
+# NET
+net.dns1                          u:object_r:net_dns_prop:s0
+net.dns2                          u:object_r:net_dns_prop:s0
+
 # NFC
 persist.factoryota.                  u:object_r:factor_prop:s0
 

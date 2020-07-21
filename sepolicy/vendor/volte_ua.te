@@ -7,3 +7,5 @@ allow volte_ua volte_ua_exec:file execute_no_trans;
 allow volte_ua self:capability setgid;
 allow volte_ua volte_stack_socket:sock_file write;
 allow volte_ua volte_stack:unix_stream_socket connectto;
+allow volte_ua self:udp_socket create;
+allow volte_ua volte_ua:udp_socket { create getopt setopt read bind name_bind shutdown listen connect };
