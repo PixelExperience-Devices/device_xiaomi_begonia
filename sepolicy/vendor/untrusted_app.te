@@ -3,3 +3,4 @@ allow untrusted_app vendor_default_prop:file { read open getattr map };
 allow untrusted_app mtk_cmdq_device:chr_file { read open getattr ioctl };
 allow untrusted_app mtk_mdp_device:chr_file { read open getattr ioctl };
 allow untrusted_app render_prop:file { read open getattr map };
+allow untrusted_app app_data_file:file execute;

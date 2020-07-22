@@ -3,7 +3,10 @@ type hal_dumpstate_impl_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(hal_dumpstate_impl)
 
-allow hal_dumpstate_impl hal_dumpstate_impl_exec:file execute_no_trans;
+hal_server_domain(hal_dumpstate_impl, hal_dumpstate)
+hal_client_domain(hal_dumpstate_impl, hal_graphics_allocator)
+allow hal_dumpstate_impl hal_dumpstate_hwservice:hwservice_manager add;
+allow hal_dumpstate_impl hal_dumpstate_hwservice:hwservice_manager find;
 allow hal_dumpstate_impl hwservicemanager:binder { call transfer };
 allow hal_dumpstate_impl hwservicemanager_prop:file { getattr map open read };
 allow hal_dumpstate_impl hidl_base_hwservice:hwservice_manager add;

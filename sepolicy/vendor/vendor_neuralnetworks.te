@@ -1,1 +1,0 @@
-allow vendor_neuralnetworks hidl_base_hwservice:hwservice_manager add;

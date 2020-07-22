@@ -1,2 +1,0 @@
-allow mtk_hal_mms mtk_hal_mms_exec:file execute_no_trans;
-allow mtk_hal_mms hidl_base_hwservice:hwservice_manager add;

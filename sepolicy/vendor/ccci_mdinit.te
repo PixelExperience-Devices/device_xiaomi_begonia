@@ -1,2 +1,0 @@
-allow ccci_mdinit sysfs_dt_firmware_android:dir { open read };
-allow ccci_mdinit sysfs_dt_firmware_android:file { getattr open read };

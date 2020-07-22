@@ -1,2 +1,0 @@
-allow mtk_hal_sensors sysfs_scp:dir search;
-allow mtk_hal_sensors sysfs_scp:file { open read write };

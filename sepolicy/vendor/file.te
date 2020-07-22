@@ -1,3 +1,4 @@
+type firmware_file, file_type, contextmount_type, vendor_file_type;
 type nfc_vendor_data_file, file_type, data_file_type;
 type sysfs_battery_supply, sysfs_type, fs_type;
 type sysfs_graphics, sysfs_type, fs_type;
