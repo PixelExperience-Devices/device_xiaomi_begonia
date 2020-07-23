@@ -3,6 +3,7 @@
 
 # Data Labels
 /data/nfc(/.*)?		         u:object_r:nfc_data_file:s0
+/data/gf_data(/.*)?        u:object_r:fp_data_file:s0
 
 # Devices Labels
 /dev/socket/volte_ua(/.*)?	 u:object_r:volte_ua_socket:s0
@@ -13,6 +14,7 @@
 /dev/vpud		         u:object_r:vpud_device:s0
 /dev/vcu		         u:object_r:vcu_device:s0
 /dev/nq-nci                      u:object_r:nfc_device:s0
+/dev/goodix_fp                   u:object_r:fp_device:s0
 
 # HALs
 /system/bin/netutils-wrapper-1.0                 u:object_r:netutils_wrapper_exec_bin:s0
