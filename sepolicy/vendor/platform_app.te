@@ -8,3 +8,5 @@ allow platform_app vendor_default_prop:file { getattr map open read };
 allow platform_app mtk_cmdq_device:chr_file { read open getattr ioctl };
 allow platform_app mtk_mdp_device:chr_file { read open getattr ioctl };
 allow platform_app render_prop:file { read open getattr map };
+allow platform_app sysfs_therm:dir search;
+allow platform_app sysfs_therm:file { getattr open read };

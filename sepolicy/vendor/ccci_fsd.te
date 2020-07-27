@@ -1,0 +1,1 @@
+allow ccci_fsd kernel:system module_request;

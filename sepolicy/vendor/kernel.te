@@ -1,3 +1,4 @@
 dontaudit kernel self:capability dac_override;
 dontaudit kernel self:capability dac_read_search;
 allow kernel debugfs_mmc:dir search;
+allow kernel self:system module_request;

@@ -2,6 +2,7 @@ allow cameraserver vendor_default_prop:file { getattr map open read };
 allow cameraserver init:unix_stream_socket connectto;
 allow cameraserver property_socket:sock_file write;
 allow cameraserver persist_camera_prop:file read;
+allow cameraserver adb_data_file:file read;
 
 get_prop(cameraserver, vendor_camera_prop)
 get_prop(cameraserver, persist_camera_prop)

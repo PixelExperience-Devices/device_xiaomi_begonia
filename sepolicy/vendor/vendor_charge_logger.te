@@ -4,13 +4,13 @@ type vendor_charge_logger_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(vendor_charge_logger)
 
 allow vendor_charge_logger vendor_charge_logger_exec:file execute_no_trans;
-allow vendor_charge_logger kmsg_device:chr_file getattr;
+allow vendor_charge_logger kmsg_device:chr_file { open write getattr };
 allow vendor_charge_logger sysfs_wake_lock:file { write open };
 allow vendor_charge_logger sysfs_battery_supply:dir search;
 allow vendor_charge_logger sysfs_battery_supply:file { getattr open read };
 allow vendor_charge_logger sysfs_usb_supply:dir search;
 allow vendor_charge_logger sysfs_usb_supply:file { getattr open read };
 allow vendor_charge_logger vendor_data_file:file { getattr read write open append };
-allow vendor_charge_logger vendor_data_file:dir write;
+allow vendor_charge_logger vendor_data_file:dir { write add_name };
 allow vendor_charge_logger self:netlink_kobject_uevent_socket { create bind };
 allow vendor_charge_logger vendor_charge_logger:netlink_kobject_uevent_socket { read };
