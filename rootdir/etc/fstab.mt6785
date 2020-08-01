@@ -1,14 +1,6 @@
-# 1 "vendor/mediatek/proprietary/hardware/fstab/mt6785/fstab.in"
-# 1 "<built-in>"
-# 1 "<command-line>"
-# 1 "/usr/include/stdc-predef.h" 1 3 4
-# 1 "<command-line>" 2
-# 1 "vendor/mediatek/proprietary/hardware/fstab/mt6785/fstab.in"
-# 99 "vendor/mediatek/proprietary/hardware/fstab/mt6785/fstab.in"
-
-/dev/block/platform/bootdevice/by-name/system / ext4 ro wait,recoveryonly
-/dev/block/platform/bootdevice/by-name/vendor /vendor ext4 ro wait,recoveryonly
-/dev/block/platform/bootdevice/by-name/userdata /data ext4 noatime,nosuid,nodev,noauto_da_alloc,errors=panic wait,check,formattable,quota,resize,reservedsize=128m,fileencryption=aes-256-xts
+/dev/block/platform/bootdevice/by-name/system /system ext4 ro wait,,avb=vbmeta,,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+/dev/block/platform/bootdevice/by-name/vendor /vendor ext4 ro wait,,avb,,first_stage_mount
+/dev/block/platform/bootdevice/by-name/userdata /data ext4 noatime,nosuid,nodev,noauto_da_alloc,errors=panic wait,check,formattable,quota,resize,reservedsize=128m,,fileencryption=aes-256-xts
 /dev/block/platform/bootdevice/by-name/cache /cache ext4 noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable
 /dev/block/platform/bootdevice/by-name/protect1 /mnt/vendor/protect_f ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
 /dev/block/platform/bootdevice/by-name/protect2 /mnt/vendor/protect_s ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
@@ -22,10 +14,10 @@
 /dev/block/platform/bootdevice/by-name/proinfo /proinfo emmc defaults defaults
 /dev/block/platform/bootdevice/by-name/lk /bootloader emmc defaults defaults
 /dev/block/platform/bootdevice/by-name/lk2 /bootloader2 emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/misc /misc emmc defaults defaults
 /dev/block/platform/bootdevice/by-name/para /para emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/boot /boot emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/recovery /recovery emmc defaults defaults
+/dev/block/platform/bootdevice/by-name/misc /misc emmc defaults defaults
+/dev/block/platform/bootdevice/by-name/recovery /recovery emmc defaults first_stage_mount,nofail,
+/dev/block/platform/bootdevice/by-name/boot /boot emmc defaults first_stage_mount,nofail,
 /dev/block/platform/bootdevice/by-name/logo /logo emmc defaults defaults
 /dev/block/platform/bootdevice/by-name/expdb /expdb emmc defaults defaults
 /dev/block/platform/bootdevice/by-name/seccfg /seccfg emmc defaults defaults
@@ -48,4 +40,3 @@
 /dev/block/platform/bootdevice/by-name/dtbo /dtbo emmc defaults defaults
 /dev/block/platform/bootdevice/by-name/otp /otp emmc defaults defaults
 /dev/block/platform/bootdevice/by-name/vbmeta /vbmeta emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/cust /cust ext4 ro,nosuid,nodev,barrier=1 wait,check
