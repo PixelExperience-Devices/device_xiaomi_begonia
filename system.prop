@@ -1,0 +1,78 @@
+# Audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+ro.vendor.audio.soundfx.type=mi
+ro.vendor.audio.soundfx.usb=true
+ro.vendor.audio.voice.volume.boost=manual
+ro.vendor.audio.game.effect=true
+ro.vendor.audio.sos=true
+vendor.audio.spkcal.copy.inhal=true
+
+# Brand
+Build.BRAND=MTK
+
+# Camera
+ro.camera.sensor.id_rear=0
+ro.camera.sensor.id_front=1
+ro.camera.sensor.highres.0=[[9248:6936:33:0],[9280:6944:32:1]]
+ro.camera.sensor.highres.1=[[5184:3880:33:0],[5184:2920:33:0],[5184:2392:33:0],[3888:3888:33:0]]
+ro.camera.sensor.highres.0.max=9280:6944
+ro.camera.highres.packagelist=org.lineageos.snap
+persist.vendor.camera.privapp.list=com.android.camera
+
+# Display
+ro.opengles.version=196610
+ro.zygote.preload.enable=0
+ro.xiaomi.bl.poll=true
+ro.colorpick_adjust=true
+ro.all_modes.colorpick_adjust=true
+ro.whitepoint_calibration_enable=false
+ro.displayfeature.histogram.enable=false
+sys.displayfeature_hidl=true
+sys.displayfeature.entry.enable=true
+
+# HW
+qemu.hw.mainkeys=0
+
+# IPO
+sys.ipo.disable=1
+
+# Kernel
+ro.kernel.zio=38,108,105,16
+
+# MCD
+persist.sys.mcd_config_file=/system/etc/mcd_default.conf
+
+# Netflix
+ro.netflix.bsp_rev=MTK6785-18758-1
+
+# Order
+ro.product.property_source_order=odm,vendor,product,system
+
+# Perf
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# Power
+sys.ipo.pwrdncap=2
+
+# Radio
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d /dev/ttyC0
+persist.radio.sar_sar_sensor=true
+
+# USB
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+persist.vendor.quick.charge=1
+
+# WiFi
+wifi.interface=wlan0
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+mediatek.wlan.ctia=0
+wifi.tethering.interface=ap0
+wifi.direct.interface=p2p0
