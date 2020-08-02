@@ -1,3 +1,0 @@
-type proc_ged, file_type; # Should be defined in vendor
-# Pretty much every graphics process need to access /proc/ged
-allowxperm domain proc_ged:file ioctl { 0x6700-0x67ff };
