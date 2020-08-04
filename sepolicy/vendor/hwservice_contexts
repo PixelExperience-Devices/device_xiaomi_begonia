@@ -20,6 +20,9 @@ vendor.xiaomi.hardware.touchfeature::ITouchFeature                            u:
 vendor.xiaomi.hardware.vsimapp::IVSIMService                                  u:object_r:vsimservice_hwservice:s0
 vendor.microtrust.hardware.soter::ISoter                                      u:object_r:soter_hwservice:s0
 vendor.xiaomi.hardware.mlipay::IMlipayService                                 u:object_r:hal_mlipay_hwservice:s0
+vendor.display.config::IDisplayConfig                                         u:object_r:hal_configstore_hwservice:s0
+vendor.qti.hardware.wifi.supplicant::ISupplicantVendor                        u:object_r:hal_wifi_supplicant_hwservice:s0
+vendor.qti.hardware.btconfigstore::IBTConfigStore                             u:object_r:hal_btconfigstore_hwservice:s0
 vendor.nxp.hardware.nfc::INqNfc                                               u:object_r:nqnfc_hwservice:s0
 vendor.nxp.nxpese::INxpEse                                                    u:object_r:nxpese_hwservice:s0
 vendor.nxp.nxpnfc::INxpNfc                                                    u:object_r:nxpnfc_hwservice:s0

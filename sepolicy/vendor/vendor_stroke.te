@@ -4,7 +4,6 @@ type vendor_stroke_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(vendor_stroke)
 
 allow vendor_stroke vendor_stroke_exec:file execute_no_trans;
-allow vendor_stroke init:unix_stream_socket { read write };
+allow vendor_stroke init:unix_stream_socket rw_socket_perms_no_ioctl;
 allow vendor_stroke self:capability2 block_suspend;
-allow vendor_stroke sysfs_wake_lock:file { open read write };
-dontaudit vendor_stroke self:capability dac_override;
+allow vendor_stroke sysfs_wake_lock:file rw_file_perms;

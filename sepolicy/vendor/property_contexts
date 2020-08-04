@@ -1,8 +1,16 @@
+# Audio
+vendor.audio.hal.boot.               u:object_r:vendor_audio_prop:s0
+vendor.audio.voice.receiver.         u:object_r:vendor_audio_prop:s0
+vendor.audio.mic.                    u:object_r:vendor_audio_prop:s0
+
 # Atcid
 persist.atm_enabled                   u:object_r:persist_atm_enabled_prop:s0
 
+# BT
+vendor.bt.                           u:object_r:vendor_bt_prop:s0
+persist.vendor.service.bt.           u:object_r:vendor_bt_prop:s0
+
 # Camera
-persist.vendor.camera.privapp.list         u:object_r:persist_camera_prop:s0
 persist.vendor.sys.                   u:object_r:vendor_system_prop:s0
 camera.                               u:object_r:vendor_camera_prop:s0
 cam.egnsavefile.                      u:object_r:vendor_camera_prop:s0
@@ -24,6 +32,7 @@ persist.mtk.venc.                     u:object_r:vendor_video_prop:s0
 gce.test                              u:object_r:vendor_video_prop:s0
 vilte.test                            u:object_r:vendor_video_prop:s0
 prepend.test                          u:object_r:vendor_video_prop:s0
+persist.vendor.camera.privapp.list    u:object_r:exported_default_prop:s0
 
 # Display
 sys.panel.display                             u:object_r:panel_display_prop:s0

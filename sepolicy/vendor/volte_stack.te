@@ -5,17 +5,19 @@ init_daemon_domain(volte_stack)
 
 allow volte_stack volte_stack_exec:file execute_no_trans;
 allow volte_stack self:capability { setgid net_admin };
-allow volte_stack self:netlink_xfrm_socket { create bind write read nlmsg_read nlmsg_write };
-allow volte_stack volte_stack_socket:sock_file write;
-allow volte_stack volte_stack:tcp_socket { create getopt setopt read bind name_bind shutdown listen connect };
-allow volte_stack volte_stack:udp_socket { create getopt setopt read bind name_bind shutdown listen connect };
+allow volte_stack self:netlink_xfrm_socket { nlmsg_read nlmsg_write create_socket_perms_no_ioctl };
+allow volte_stack volte_stack_socket:sock_file rw_file_perms;
+allow volte_stack volte_stack:tcp_socket { name_bind rw_stream_socket_perms };
+allow volte_stack volte_stack:udp_socket { name_bind rw_stream_socket_perms };
 allow volte_stack init:unix_stream_socket connectto;
-allow volte_stack property_socket:sock_file write;
-allow volte_stack fwmarkd_socket:sock_file write;
+allow volte_stack property_socket:sock_file { getattr read write ioctl };
+allow volte_stack fwmarkd_socket:sock_file { getattr read write ioctl };
 allow volte_stack port:tcp_socket name_bind;
 allow volte_stack port:udp_socket name_bind;
 allow volte_stack node:tcp_socket node_bind;
 allow volte_stack node:udp_socket node_bind;
-allow volte_stack self:udp_socket shutdown;
+allow volte_stack self:udp_socket rw_socket_perms_no_ioctl;
 allow volte_stack netd:unix_stream_socket connectto;
 allow volte_stack kernel:system module_request;
+
+set_prop(volte_stack, mtk_network_prop)

@@ -1,0 +1,3 @@
+allow bluetooth hal_btconfigstore_hwservice:hwservice_manager { add find };
+
+get_prop(bluetooth, vendor_bt_prop)

@@ -4,8 +4,9 @@ type bip_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(bip)
 
 allow bip bip_exec:file execute_no_trans;
-allow bip ccci_device:chr_file { read write open };
+allow bip ccci_device:chr_file rw_file_perms;
 allow bip property_socket:sock_file write;
 allow bip init:unix_stream_socket connectto;
-allow bip self:netlink_route_socket { create bind read write nlmsg_read };
-allow bip net_dns_prop:file { getattr map open read };
+allow bip self:netlink_route_socket { create_socket_perms_no_ioctl nlmsg_read };
+
+get_prop(bip, net_dns_prop)

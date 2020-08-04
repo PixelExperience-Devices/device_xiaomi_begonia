@@ -4,7 +4,8 @@ type hal_wechat_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(hal_wechat)
 
 allow hal_wechat hal_wechat_exec:file execute_no_trans;
-allow hal_wechat hwservicemanager_prop:file { read open getattr map };
 allow hal_wechat soter_hwservice:hwservice_manager add;
 allow hal_wechat hidl_base_hwservice:hwservice_manager add;
 allow hal_wechat hwservicemanager:binder { call transfer };
+
+get_prop(hal_wechat, hwservicemanager_prop)

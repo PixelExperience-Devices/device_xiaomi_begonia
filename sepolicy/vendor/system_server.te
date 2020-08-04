@@ -1,10 +1,10 @@
 get_prop(system_server, vendor_camera_prop)
 get_prop(system_server, vendor_default_prop)
-get_prop(system_server, persist_camera_prop)
+get_prop(system_server, exported_default_prop)
 get_prop(system_server, vendor_fp_prop)
-allow system_server persist_camera_prop:file read;
-allow system_server persist_camera_prop:file open;
-allow system_server sysfs_battery_supply:file { getattr open read write };
-allow system_server sysfs_usb_supply:file { getattr open read write };
-allow system_server adb_data_file:dir getattr;
-allow system_server adb_data_file:file { getattr read };
+
+allow system_server sysfs_battery_supply:file rw_file_perms;
+allow system_server sysfs_usb_supply:file rw_file_perms;
+allow system_server adb_data_file:dir r_dir_perms;
+allow system_server adb_data_file:file r_file_perms;
+allow system_server hal_wifi_supplicant_hwservice:hwservice_manager find;

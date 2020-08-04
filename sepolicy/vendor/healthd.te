@@ -1,8 +1,7 @@
 allow healthd device:dir { open read };
 allow healthd hal_light_default:binder call;
-dontaudit healthd self:capability { dac_override dac_read_search };
 allow healthd proc_last_kmsg:file { open read };
-allow healthd sysfs_battery_supply:file { getattr open read };
+allow healthd sysfs_battery_supply:file rw_file_perms;
 allow healthd sysfs_usb_supply:file { getattr open read };
 allow healthd charger_exec:file { execute map read };
 allow healthd charger_exec:file entrypoint;

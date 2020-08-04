@@ -5,5 +5,7 @@ init_daemon_domain(wfca)
 
 allow wfca wfca_exec:file execute_no_trans;
 allow wfca self:capability2 block_suspend;
-allow wfca ccci_device:chr_file { read write open ioctl };
-allow wfca sysfs_wake_lock:file { read write open };
+allow wfca ccci_device:chr_file rw_file_perms;
+allow wfca sysfs_wake_lock:file rw_file_perms;
+allow wfca self:rawip_socket create_socket_perms_no_ioctl;
+allow wfca self:udp_socket create_socket_perms_no_ioctl;

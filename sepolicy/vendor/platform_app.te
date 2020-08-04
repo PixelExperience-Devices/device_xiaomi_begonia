@@ -1,12 +1,11 @@
-get_prop(platform_app, persist_camera_prop)
+get_prop(platform_app, exported_default_prop)
 get_prop(platform_app, vendor_default_prop)
+get_prop(platform_app, render_prop)
 
 allow platform_app app_data_file:file execute;
 allow platform_app sysfs:dir read;
 allow platform_app sysfs_switch:dir search;
-allow platform_app vendor_default_prop:file { getattr map open read };
-allow platform_app mtk_cmdq_device:chr_file { read open getattr ioctl };
-allow platform_app mtk_mdp_device:chr_file { read open getattr ioctl };
-allow platform_app render_prop:file { read open getattr map };
-allow platform_app sysfs_therm:dir search;
-allow platform_app sysfs_therm:file { getattr open read };
+allow platform_app mtk_cmdq_device:chr_file rw_file_perms;
+allow platform_app mtk_mdp_device:chr_file rw_file_perms;
+allow platform_app sysfs_therm:dir r_dir_perms;
+allow platform_app sysfs_therm:file r_file_perms;

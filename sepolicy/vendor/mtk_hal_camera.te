@@ -2,8 +2,11 @@ allow mtk_hal_camera persist_data_file:file r_file_perms;
 allow mtk_hal_camera persist_data_file:dir r_dir_perms;
 allow mtk_hal_camera mnt_vendor_file:file r_file_perms;
 allow mtk_hal_camera mnt_vendor_file:dir r_dir_perms;
-allow mtk_hal_camera render_prop:file { read open getattr map };
+allow mtk_hal_camera sysfs_emi_ctrl:dir r_dir_perms;
+allow mtk_hal_camera sysfs_emi_ctrl:file rw_file_perms;
 
 get_prop(mtk_hal_camera, persist_displayfeature_prop)
 set_prop(mtk_hal_camera, vendor_camera_prop)
 set_prop(mtk_hal_camera, vendor_video_prop)
+get_prop(mtk_hal_camera, render_prop)
+set_prop(mtk_hal_camera, render_prop)

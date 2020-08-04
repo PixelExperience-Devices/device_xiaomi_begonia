@@ -1,5 +1,5 @@
 init_daemon_domain(vendor_shell)
 
 allow vendor_shell vendor_shell_exec:file execute_no_trans;
-allow vendor_shell sysfsts_novatek:file { getattr open read };
-allow vendor_shell sysfsts_novatek:dir search;
+allow vendor_shell sysfsts_novatek:file r_file_perms;
+allow vendor_shell sysfsts_novatek:dir r_dir_perms;

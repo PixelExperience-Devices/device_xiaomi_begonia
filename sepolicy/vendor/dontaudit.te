@@ -1,0 +1,23 @@
+## Let's silent some harmless spolicy
+
+# epdg_wod
+dontaudit epdg_wod self:capability dac_override;
+
+# fsck
+dontaudit fsck self:capability dac_override;
+
+# healthd
+dontaudit healthd self:capability { dac_override dac_read_search };
+
+# kernel
+dontaudit kernel self:capability { dac_override dac_read_search };
+
+# priv_app
+dontaudit priv_app mnt_vendor_file:dir search;
+
+# rild
+dontaudit rild tombstone_data_file:dir search;
+dontaudit rild vendor_file:file ioctl;
+
+# vendor_stroke
+dontaudit vendor_stroke self:capability dac_override;

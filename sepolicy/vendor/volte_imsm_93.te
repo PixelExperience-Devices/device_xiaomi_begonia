@@ -4,11 +4,11 @@ type volte_imsm_93_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(volte_imsm_93)
 
 allow volte_imsm_93 volte_imsm_93_exec:file execute_no_trans;
-allow volte_imsm_93 socket_device:sock_file write;
+allow volte_imsm_93 socket_device:sock_file rw_file_perms;
 allow volte_imsm_93 volte_imcb:unix_stream_socket connectto;
-allow volte_imsm_93 ccci_device:chr_file { read write open };
-allow volte_imsm_93 self:netlink_generic_socket { create bind read setopt write };
-allow volte_imsm_93 self:udp_socket create;
-allow volte_imsm_93 volte_imsm_93:udp_socket { ioctl };
-allow volte_imsm_93 volte_imsm_93:netlink_route_socket { create connect write nlmsg_write read nlmsg_read };
+allow volte_imsm_93 ccci_device:chr_file rw_file_perms;
+allow volte_imsm_93 self:netlink_generic_socket create_socket_perms_no_ioctl;
+allow volte_imsm_93 self:udp_socket create_socket_perms_no_ioctl;
+allow volte_imsm_93 volte_imsm_93:udp_socket rw_socket_perms;
+allow volte_imsm_93 volte_imsm_93:netlink_route_socket { nlmsg_write nlmsg_read create_socket_perms_no_ioctl };
 allow volte_imsm_93 volte_imsm_93:capability net_admin;

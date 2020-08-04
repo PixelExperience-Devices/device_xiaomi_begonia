@@ -1,0 +1,1 @@
+allow hal_configstore_default hal_configstore_hwservice:hwservice_manager { add find };

@@ -1,7 +1,6 @@
 allow hal_graphics_composer_default hal_displayfeature_xiaomi_default:binder { call transfer };
-allow hal_graphics_composer_default persist_displayfeature_prop:file { read open };
 allow hal_graphics_composer_default displayfeature_hwservice:hwservice_manager find;
-allow hal_graphics_composer_default render_prop:file { read open getattr map };
 
 get_prop(hal_graphics_composer_default, panel_display_prop)
 get_prop(hal_graphics_composer_default, persist_displayfeature_prop)
+get_prop(hal_graphics_composer_default, render_prop)

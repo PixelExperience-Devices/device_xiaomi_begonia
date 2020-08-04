@@ -1,1 +1,1 @@
-allow app_zygote app_data_file:dir { open read getattr };
+allow app_zygote app_data_file:dir r_dir_perms;

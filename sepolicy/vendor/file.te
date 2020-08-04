@@ -5,6 +5,8 @@ type sysfs_battery_supply, sysfs_type, fs_type;
 type sysfs_graphics, sysfs_type, fs_type;
 type sysfs_usb_supply, sysfs_type, fs_type;
 type sysfsts_novatek, sysfs_type, fs_type;
+type sysfs_emi_ctrl, sysfs_type, fs_type;
+type sysfs_mtkfb, sysfs_type, fs_type;
 type volte_ua_socket, file_type;
 type volte_stack_socket, file_type;
 type volte_imcb_socket, file_type;

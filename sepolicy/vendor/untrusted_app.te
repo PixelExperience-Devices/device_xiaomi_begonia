@@ -1,6 +1,13 @@
-allow untrusted_app proc_zoneinfo:file { read open getattr };
-allow untrusted_app vendor_default_prop:file { read open getattr map };
-allow untrusted_app mtk_cmdq_device:chr_file { read open getattr ioctl };
-allow untrusted_app mtk_mdp_device:chr_file { read open getattr ioctl };
-allow untrusted_app render_prop:file { read open getattr map };
+allow untrusted_app proc_zoneinfo:file r_file_perms;
+allow untrusted_app mtk_cmdq_device:chr_file rw_file_perms;
+allow untrusted_app mtk_mdp_device:chr_file rw_file_perms;
+allow untrusted_app ashmem_device:chr_file { read getattr ioctl };
+allow untrusted_app sysfs_boot_mode:file r_file_perms;
 allow untrusted_app app_data_file:file execute;
+allow untrusted_app proc_ppm:dir r_dir_perms;
+allow untrusted_app proc_chip:dir r_dir_perms;
+allow untrusted_app proc_asound:dir r_dir_perms;
+
+get_prop(untrusted_app, vendor_default_prop)
+get_prop(untrusted_app, exported_default_prop)
+get_prop(untrusted_app, render_prop)

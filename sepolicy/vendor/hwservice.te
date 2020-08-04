@@ -11,3 +11,5 @@ type soter_hwservice, hwservice_manager_type;
 type nqnfc_hwservice, hwservice_manager_type;
 type nxpese_hwservice, hwservice_manager_type;
 type nxpnfc_hwservice, hwservice_manager_type;
+type hal_configstore_hwservice, hwservice_manager_type;
+type hal_btconfigstore_hwservice, hwservice_manager_type;

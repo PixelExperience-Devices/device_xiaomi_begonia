@@ -1,13 +1,13 @@
-allow untrusted_app_27 proc_zoneinfo:file { read open getattr };
-allow untrusted_app_27 vendor_default_prop:file { read open getattr map };
-allow untrusted_app_27 persist_camera_prop:file read;
-allow untrusted_app_27 persist_camera_prop:file open;
+allow untrusted_app_27 proc_zoneinfo:file r_file_perms;
 allow untrusted_app_27 input_device:chr_file getattr;
-allow untrusted_app_27 input_device:dir search;
-allow untrusted_app_27 render_prop:file { read open getattr map };
-allow untrusted_app_27 mtk_cmdq_device:chr_file { read open getattr ioctl };
-allow untrusted_app_27 mtk_mdp_device:chr_file { read open getattr ioctl };
-allow untrusted_app_27 sysfs_net:dir search;
-allow untrusted_app_27 sysfs_net:file { getattr open read };
+allow untrusted_app_27 input_device:dir r_dir_perms;
+allow untrusted_app_27 mtk_cmdq_device:chr_file rw_file_perms;
+allow untrusted_app_27 mtk_mdp_device:chr_file rw_file_perms;
+allow untrusted_app_27 sysfs_net:dir r_dir_perms;
+allow untrusted_app_27 sysfs_net:file r_file_perms;
+allow untrusted_app_27 sysfs_boot_mode:file r_file_perms;
+allow untrusted_app_27 proc_misc:file r_file_perms;
 
 get_prop(untrusted_app_27, vendor_default_prop)
+get_prop(untrusted_app_27, exported_default_prop)
+get_prop(untrusted_app_27, render_prop)

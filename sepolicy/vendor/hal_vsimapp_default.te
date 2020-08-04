@@ -4,7 +4,8 @@ type hal_vsimapp_default_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(hal_vsimapp_default)
 
 allow hal_vsimapp_default hal_vsimapp_default_exec:file execute_no_trans;
-allow hal_vsimapp_default hwservicemanager_prop:file { read open getattr map };
 allow hal_vsimapp_default vsimservice_hwservice:hwservice_manager add;
 allow hal_vsimapp_default hidl_base_hwservice:hwservice_manager add;
 allow hal_vsimapp_default hwservicemanager:binder { call transfer };
+
+get_prop(hal_vsimapp_default, hwservicemanager_prop)

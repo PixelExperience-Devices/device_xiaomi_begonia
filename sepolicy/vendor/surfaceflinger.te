@@ -1,2 +1,4 @@
-allow surfaceflinger sysfs_boot_mode:file { open read };
-allow surfaceflinger render_prop:file { read open getattr map };
+allow surfaceflinger sysfs_boot_mode:file r_file_perms;
+allow surfaceflinger hal_configstore_hwservice:hwservice_manager { add find };
+
+get_prop(surfaceflinger, render_prop)

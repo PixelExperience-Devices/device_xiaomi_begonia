@@ -1,6 +1,6 @@
-# Allow appdomain to get persist_camera_prop
+# Allow appdomain to get exported_default_prop
 get_prop(appdomain, vendor_camera_prop)
-get_prop(appdomain, persist_camera_prop)
+get_prop(appdomain, exported_default_prop)
 
 # Alipay
 get_prop({ appdomain -isolated_app }, vendor_fp_prop)
@@ -9,5 +9,3 @@ get_prop({ appdomain -isolated_app }, vendor_tee_listener_prop)
 # allow apps to read battery status
 r_dir_file(untrusted_app, sysfs_battery_supply)
 r_dir_file(untrusted_app, sysfs_usb_supply)
-allow system_server sysfs_battery_supply:file { getattr open read write };
-allow system_server sysfs_usb_supply:file { getattr open read write };

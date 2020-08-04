@@ -1,1 +1,1 @@
-allow ueventd touchfeature_device:chr_file { create setattr };
+allow ueventd touchfeature_device:chr_file { create setattr rw_file_perms };

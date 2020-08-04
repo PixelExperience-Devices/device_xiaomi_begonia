@@ -1,12 +1,18 @@
-allow priv_app vendor_default_prop:file { read open getattr map };
-allow priv_app mtk_cmdq_device:chr_file { read open getattr ioctl };
-allow priv_app mtk_mdp_device:chr_file { read open getattr ioctl };
-allow priv_app render_prop:file { read open getattr map };
-allow priv_app apexd_prop:file { getattr map open };
-allow priv_app atci_sys_prop:file { getattr map open };
+allow priv_app mtk_cmdq_device:chr_file rw_file_perms;
+allow priv_app mtk_mdp_device:chr_file rw_file_perms;
 allow priv_app proc_interrupts:file { open };
 allow priv_app proc_modules:file { open };
 allow priv_app sysfs_android_usb:file { open };
+allow priv_app sysfs_therm:file r_file_perms;
+allow priv_app vpu_device:chr_file rw_file_perms;
+allow priv_app displayfeature_hwservice:hwservice_manager find;
+allow priv_app hal_displayfeature_xiaomi_default:binder call;
+allow priv_app hal_misys_default:binder call;
+allow priv_app misys_hwservice:hwservice_manager find;
 
-get_prop(priv_app, persist_camera_prop)
+get_prop(priv_app, exported_default_prop)
 get_prop(priv_app, vendor_default_prop)
+get_prop(priv_app, panel_display_prop)
+get_prop(priv_app, render_prop)
+get_prop(priv_app, apexd_prop)
+get_prop(priv_app, atci_sys_prop)

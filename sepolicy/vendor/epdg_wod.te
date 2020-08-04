@@ -4,20 +4,19 @@ type epdg_wod_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(epdg_wod)
 
 allow epdg_wod epdg_wod_exec:file execute_no_trans;
-allow epdg_wod ccci_device:chr_file { read write open ioctl };
-allow epdg_wod vendor_data_file:dir { read write open add_name remove_name };
-allow epdg_wod vendor_data_file:file { read write open create ioctl };
-allow epdg_wod vendor_data_file:sock_file write;
-allow epdg_wod vendor_configs_file:file ioctl;
+allow epdg_wod ccci_device:chr_file rw_file_perms;
+allow epdg_wod vendor_data_file:dir rw_dir_perms;
+allow epdg_wod vendor_data_file:file create_file_perms;
+allow epdg_wod vendor_data_file:sock_file rw_file_perms;
+allow epdg_wod vendor_configs_file:file r_file_perms;
+allow epdg_wod vendor_file:file x_file_perms;
 allow epdg_wod self:capability net_admin;
-allow epdg_wod sysfs_wake_lock:file { open read write };
+allow epdg_wod sysfs_wake_lock:file rw_file_perms;
 allow epdg_wod self:capability2 { block_suspend wake_alarm };
-allow epdg_wod self:netlink_route_socket { nlmsg_read read write };
+allow epdg_wod self:netlink_route_socket { create_socket_perms_no_ioctl nlmsg_read };
 allow epdg_wod vendor_stroke_exec:file execute_no_trans;
 allow epdg_wod dnsproxyd_socket:unix_stream_socket connectto;
 allow epdg_wod dnsproxyd_socket:sock_file write;
-allow epdg_wod epdg_wod:udp_socket { create setattr };
+allow epdg_wod epdg_wod:udp_socket create_socket_perms_no_ioctl;
+allow epdg_wod self:udp_socket create_socket_perms_no_ioctl;
 allow epdg_wod netd:unix_stream_socket connectto;
-allow epdg_wod self:udp_socket create;
-
-dontaudit epdg_wod self:capability dac_override;
