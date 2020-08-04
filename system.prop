@@ -65,9 +65,6 @@ ro.audio.silent=0
 
 ro.zygote.preload.enable=0
 
-# camera
-camera.disable_zsl_mode=true
-
 # temporary enables NAV bar (soft keys)
 qemu.hw.mainkeys=0
 
