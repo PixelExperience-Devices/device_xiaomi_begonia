@@ -55,6 +55,7 @@
 
 # Sys files
 /sys/devices/platform/11016000.i2c5/i2c-5/5-0034/mt6360_pmu_rgbled.4.auto/leds(/.*)?	   u:object_r:sysfs_leds:s0
+/sys/devices/platform/leds-mt65xx/leds/lcd-backlight(/.*)?                                 u:object_r:sysfs_leds:s0
 /sys/devices/platform/1101b000.i2c8/i2c-8/8-001d/power_supply/wireless(/.*)?		   u:object_r:sysfs_battery_supply:s0
 /sys/devices/platform/1101b000.i2c8/i2c-8/8-001d/power_supply/parallel(/.*)?		   u:object_r:sysfs_battery_supply:s0
 /sys/devices/platform/11016000.i2c5/i2c-5/5-004e/tcpc/type_c_port0(/.*)?		   u:object_r:sysfs_battery_supply:s0

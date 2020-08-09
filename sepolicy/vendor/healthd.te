@@ -1,3 +1,5 @@
+hal_client_domain(healthd, hal_light);
+
 allow healthd device:dir { open read };
 allow healthd hal_light_default:binder call;
 allow healthd proc_last_kmsg:file { open read };
@@ -7,3 +9,4 @@ allow healthd charger_exec:file { execute map read };
 allow healthd charger_exec:file entrypoint;
 allow healthd proc_meminfo:file { open read };
 allow healthd sysfs_leds:dir search;
+allow healthd hal_light_hwservice:hwservice_manager find;

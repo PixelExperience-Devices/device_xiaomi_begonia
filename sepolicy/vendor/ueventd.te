@@ -1,1 +1,2 @@
 allow ueventd touchfeature_device:chr_file { create setattr rw_file_perms };
+allow ueventd ueventd:capability sys_nice;
