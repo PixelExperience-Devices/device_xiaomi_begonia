@@ -4,8 +4,13 @@ type wfca_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(wfca)
 
 allow wfca wfca_exec:file execute_no_trans;
+allow wfca self:capability { net_raw net_admin };
 allow wfca self:capability2 block_suspend;
 allow wfca ccci_device:chr_file rw_file_perms;
 allow wfca sysfs_wake_lock:file rw_file_perms;
 allow wfca self:rawip_socket create_socket_perms_no_ioctl;
 allow wfca self:udp_socket create_socket_perms_no_ioctl;
+allow wfca node:rawip_socket { node_bind create_socket_perms_no_ioctl };
+allow wfca node:udp_socket { node_bind create_socket_perms_no_ioctl };
+allow wfca volte_ua:udp_socket create_socket_perms_no_ioctl;
+allow wfca volte_ua:fd use;

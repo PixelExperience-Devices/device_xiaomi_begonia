@@ -4,4 +4,6 @@ init_daemon_domain(netutils_wrapper)
 
 allow netutils_wrapper netutils_wrapper_exec_bin:file execute_no_trans;
 allow netutils_wrapper epdg_wod:fd use;
-allow netutils_wrapper epdg_wod:unix_stream_socket { read write };
+allow netutils_wrapper epdg_wod:unix_stream_socket { read getattr write setattr lock append bind getopt setopt shutdown map };
+allow netutils_wrapper ccci_device:chr_file rw_file_perms;
+allow netutils_wrapper rild:unix_dgram_socket { read getattr write setattr lock append bind getopt setopt shutdown map };

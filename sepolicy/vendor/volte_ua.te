@@ -11,3 +11,4 @@ allow volte_ua self:udp_socket create;
 allow volte_ua wfca_socket:sock_file rw_file_perms;
 allow volte_ua volte_ua:udp_socket { name_bind create_socket_perms_no_ioctl rw_stream_socket_perms };
 allow volte_ua node:udp_socket node_bind;
+allow volte_ua wfca:unix_stream_socket { connectto create_socket_perms_no_ioctl };
