@@ -174,11 +174,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.1-impl \
-    android.hardware.power@1.2-impl
-
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
