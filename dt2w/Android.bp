@@ -10,4 +10,15 @@ android_app {
         enabled: false,
     },
     privileged: true
+
+    required: [
+        "privapp-permissions_org.pe.dt2w.begonia"
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions_org.pe.dt2w.begonia",
+    sub_dir: "permissions",
+    src: "privapp-permissions_org.pe.dt2w.begonia.xml",
+    filename_from_src: true,
 }
