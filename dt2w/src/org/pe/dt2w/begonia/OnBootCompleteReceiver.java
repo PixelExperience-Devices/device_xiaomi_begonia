@@ -1,4 +1,4 @@
-package co.potatoproject.dt2w.begonia;
+package org.pe.dt2w.begonia;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
