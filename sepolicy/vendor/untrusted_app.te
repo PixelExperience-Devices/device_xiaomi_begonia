@@ -7,6 +7,7 @@ allow untrusted_app app_data_file:file execute;
 allow untrusted_app proc_ppm:dir r_dir_perms;
 allow untrusted_app proc_chip:dir r_dir_perms;
 allow untrusted_app proc_asound:dir r_dir_perms;
+allow untrusted_app proc_vmstat:file { getattr map watch watch_reads };
 
 get_prop(untrusted_app, vendor_default_prop)
 get_prop(untrusted_app, exported_default_prop)

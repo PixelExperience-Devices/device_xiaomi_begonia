@@ -9,6 +9,7 @@ allow priv_app displayfeature_hwservice:hwservice_manager find;
 allow priv_app hal_displayfeature_xiaomi_default:binder call;
 allow priv_app hal_misys_default:binder call;
 allow priv_app misys_hwservice:hwservice_manager find;
+allow priv_app sysfs_net:file r_file_perms;
 
 get_prop(priv_app, exported_default_prop)
 get_prop(priv_app, vendor_default_prop)

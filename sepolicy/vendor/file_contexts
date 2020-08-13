@@ -62,11 +62,14 @@
 /sys/devices/platform/mt_charger/power_supply(/.*)?		                           u:object_r:sysfs_usb_supply:s0
 /sys/devices/platform/battery(/.*)?		                                           u:object_r:sysfs_battery_supply:s0
 /sys/devices/platform/ts_novatek(/.*)?                                                     u:object_r:sysfsts_novatek:s0
+/sys/devices/platform/CONNAC/net/wlan1(/.*)?                                               u:object_r:sysfs_net:s0
 /sys/firmware/devicetree/base/model(/.*)?                                                  u:object_r:sysfs_device_tree_model:s0
 /sys/bus/platform/drivers/emi_ctrl(/.*)?                                                   u:object_r:sysfs_emi_ctrl:s0
 /sys/devices/platform/mtkfb(/.*)?                                                          u:object_r:sysfs_mtkfb:s0
 
 # Same Process HAL
+/vendor/lib/AVCSecureVdecCA\.so                                                 u:object_r:same_process_hal_file:s0
+/vendor/lib/gc2375beta_mipi_raw_tuning\.so                                      u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor\.mediatek\.hardware\.videotelephony@1\.0.so             u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/hw/vendor\.xiaomi\.hardware\.citsensorservice@1\.1-impl\.so    u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/nfc_nci\.nqx\.default\.hw\.so                                  u:object_r:same_process_hal_file:s0
