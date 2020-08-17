@@ -79,10 +79,6 @@ ro.surface_flinger.vsync_event_phase_offset_ns=2000000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 ro.surface_flinger.running_without_sync_framework=true
 
-# Duraspeed
-persist.vendor.duraspeed.app.on=1
-persist.vendor.duraspeed.support=1
-
 # Dalvik
 dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt
 
