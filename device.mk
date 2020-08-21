@@ -80,5 +80,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     libtinyxml
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
+
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
