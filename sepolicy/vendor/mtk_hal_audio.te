@@ -3,6 +3,8 @@ allow mtk_hal_audio sysfs_dt_firmware_android:dir r_dir_perms;
 allow mtk_hal_audio sysfs_dt_firmware_android:file r_file_perms;
 allow mtk_hal_audio persist_data_file:dir search;
 allow mtk_hal_audio audio_socket:sock_file rw_file_perms;
+allow mtk_hal_audio self:process execmem;
+allow mtk_hal_audio dms_hwservice:hwservice_manager find;
 
 get_prop(mtk_hal_audio, vendor_audio_prop)
 set_prop(mtk_hal_audio, vendor_audio_prop)

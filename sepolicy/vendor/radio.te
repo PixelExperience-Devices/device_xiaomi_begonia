@@ -1,7 +1,7 @@
 allow radio gpuservice:binder call;
 allow radio system_app_data_file:dir getattr;
 allow radio debugfs_ion:dir search;
-allow radio adb_data_file:file getattr;
+allow radio adb_data_file:file r_file_perms;
 
 get_prop(radio, telephony_prop)
 set_prop(radio, net_dns_prop)

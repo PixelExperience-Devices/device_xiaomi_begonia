@@ -1,3 +1,4 @@
 type vpud_device, dev_type;
 type vcu_device, dev_type;
 type fp_device, dev_type;
+type SUB2AF_device, dev_type;

@@ -7,8 +7,18 @@ set_prop(vendor_init, system_prop)
 
 allow vendor_init {
   nfc_socket
+  system_data_file
+  media_rw_data_file
+  tombstone_data_file
+  camera_data_file
+  rootfs
+  wifi_data_file
+  wpa_socket
+  dhcp_data_file
 }:dir { create search getattr open read setattr ioctl write add_name remove_name rmdir relabelfrom };
 
+allow vendor_init media_rw_data_file:file create_file_perms;
+allow vendor_init media_rw_data_file:file relabelfrom;
 allow vendor_init touchfeature_device:chr_file setattr;
 allow vendor_init kernel:system module_request;
 

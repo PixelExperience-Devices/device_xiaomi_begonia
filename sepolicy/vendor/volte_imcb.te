@@ -1,4 +1,4 @@
-type volte_imcb, domain;
+type volte_imcb, domain, netdomain;
 type volte_imcb_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(volte_imcb)

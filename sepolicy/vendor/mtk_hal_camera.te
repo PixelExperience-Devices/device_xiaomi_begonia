@@ -4,6 +4,7 @@ allow mtk_hal_camera mnt_vendor_file:file r_file_perms;
 allow mtk_hal_camera mnt_vendor_file:dir r_dir_perms;
 allow mtk_hal_camera sysfs_emi_ctrl:dir r_dir_perms;
 allow mtk_hal_camera sysfs_emi_ctrl:file rw_file_perms;
+allow mtk_hal_camera SUB2AF_device:chr_file rw_file_perms;
 
 get_prop(mtk_hal_camera, persist_displayfeature_prop)
 set_prop(mtk_hal_camera, vendor_camera_prop)

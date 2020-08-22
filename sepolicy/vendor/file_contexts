@@ -11,6 +11,7 @@
 /dev/socket/volte_imcb(/.*)?	 u:object_r:volte_imcb_socket:s0
 /dev/xiaomi-touch		 u:object_r:touchfeature_device:s0
 /dev/socket/wfca(/.*)?		 u:object_r:wfca_socket:s0
+/dev/SUB2AF(/.*)?    u:object_r:SUB2AF_device:s0
 /dev/vpud		         u:object_r:vpud_device:s0
 /dev/vcu		         u:object_r:vcu_device:s0
 /dev/nq-nci                      u:object_r:nfc_device:s0

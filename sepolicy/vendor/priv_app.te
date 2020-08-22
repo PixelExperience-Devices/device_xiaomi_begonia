@@ -10,6 +10,8 @@ allow priv_app hal_displayfeature_xiaomi_default:binder call;
 allow priv_app hal_misys_default:binder call;
 allow priv_app misys_hwservice:hwservice_manager find;
 allow priv_app sysfs_net:file r_file_perms;
+allow priv_app adb_data_file:dir r_dir_perms;
+allow priv_app adb_data_file:file rx_file_perms;
 
 get_prop(priv_app, exported_default_prop)
 get_prop(priv_app, vendor_default_prop)
@@ -17,3 +19,5 @@ get_prop(priv_app, panel_display_prop)
 get_prop(priv_app, render_prop)
 get_prop(priv_app, apexd_prop)
 get_prop(priv_app, atci_sys_prop)
+get_prop(priv_app, atm_ipaddr_prop)
+get_prop(priv_app, atm_mdmode_prop)

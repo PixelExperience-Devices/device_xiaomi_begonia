@@ -1,0 +1,2 @@
+allow rs surfaceflinger:fd use;
+allow rs system_server:fd use;

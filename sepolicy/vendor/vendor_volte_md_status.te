@@ -1,4 +1,4 @@
-type vendor_volte_md_status, domain;
+type vendor_volte_md_status, domain, netdomain;
 type vendor_volte_md_status_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(vendor_volte_md_status)
