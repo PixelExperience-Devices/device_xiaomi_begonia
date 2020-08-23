@@ -19,11 +19,9 @@ ro.netflix.bsp_rev=MTK6785-18758-1
 #
 # For common ro override property
 
-
 #
 # from device/mediatek/system/common/system.prop
 #
-ro.product.property_source_order=odm,vendor,product,system
 
 vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
