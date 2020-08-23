@@ -332,7 +332,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.mtk_cam_dualzoom_support=1 \
     ro.mtk_cam_stereo_camera_support=1 \
     ro.mtk_key_manager_support=1 \
-    ro.opengles.version=196610 \
     ro.sf.lcd_density=440 \
     ro.surface_flinger.primary_display_orientation=0 \
     ro.telephony.default_network=10,10,10,10 \
