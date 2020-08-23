@@ -46,9 +46,6 @@ persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 # Netflix
 ro.netflix.bsp_rev=MTK6785-18758-1
 
-# Order
-ro.product.property_source_order=odm,vendor,product,system
-
 # Perf
 ro.mtk_perf_simple_start_win=1
 ro.mtk_perf_fast_start_win=1
