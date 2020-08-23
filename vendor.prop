@@ -68,7 +68,6 @@ drm.service.enabled=true
 
 # Display
 debug.sf.disable_backpressure=1
-ro.opengles.version=196610
 ro.sf.lcd_density=440
 ro.surface_flinger.primary_display_orientation=0
 ro.vendor.jpeg_decode_sw_opt=1
