@@ -98,9 +98,6 @@ ro.vendor.md_auto_setup_ims=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 
-# LMK
-ro.lmk.downgrade_pressure=60
-
 # MCD
 persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 
