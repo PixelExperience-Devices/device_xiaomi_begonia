@@ -31,9 +31,6 @@ ro.displayfeature.histogram.enable=false
 sys.displayfeature_hidl=true
 sys.displayfeature.entry.enable=true
 
-# HW
-qemu.hw.mainkeys=0
-
 # IPO
 sys.ipo.disable=1
 
