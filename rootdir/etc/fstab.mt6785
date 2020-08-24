@@ -1,42 +1,60 @@
-/dev/block/platform/bootdevice/by-name/system /system ext4 ro wait,,avb=vbmeta,,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
-/dev/block/platform/bootdevice/by-name/vendor /vendor ext4 ro wait,,avb,,first_stage_mount
-/dev/block/platform/bootdevice/by-name/userdata /data ext4 noatime,nosuid,nodev,noauto_da_alloc,errors=panic latemount,wait,check,formattable,quota,reservedsize=128m,fileencryption=aes-256-xts
-/dev/block/platform/bootdevice/by-name/cache /cache ext4 noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable
-/dev/block/platform/bootdevice/by-name/protect1 /mnt/vendor/protect_f ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
-/dev/block/platform/bootdevice/by-name/protect2 /mnt/vendor/protect_s ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
-/dev/block/platform/bootdevice/by-name/nvdata /mnt/vendor/nvdata ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
-/dev/block/platform/bootdevice/by-name/nvcfg /mnt/vendor/nvcfg ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
-/dev/block/platform/bootdevice/by-name/persist /mnt/vendor/persist ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
-/devices/platform/externdevice* auto auto defaults voldmanaged=sdcard1:auto,encryptable=userdata
-/devices/platform/11200000.usb3_xhci* auto vfat defaults voldmanaged=usbotg:auto
-/dev/block/platform/bootdevice/by-name/frp /persistent emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/nvram /nvram emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/proinfo /proinfo emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/lk /bootloader emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/lk2 /bootloader2 emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/para /para emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/misc /misc emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/recovery /recovery emmc defaults first_stage_mount,nofail,
-/dev/block/platform/bootdevice/by-name/boot /boot emmc defaults first_stage_mount,nofail,
-/dev/block/platform/bootdevice/by-name/logo /logo emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/expdb /expdb emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/seccfg /seccfg emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/tee1 /tee1 emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/tee2 /tee2 emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/scp1 /scp1 emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/scp2 /scp2 emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/sspm_1 /sspm_1 emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/sspm_2 /sspm_2 emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/md1img /md1img emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/md1dsp /md1dsp emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/cam_vpu1 /cam_vpu1 emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/cam_vpu2 /cam_vpu2 emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/cam_vpu3 /cam_vpu3 emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/gz1 /gz1 emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/gz2 /gz2 emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/spmfw /spmfw emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/audio_dsp /audio_dsp emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/boot_para /boot_para emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/dtbo /dtbo emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/otp /otp emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/vbmeta /vbmeta emmc defaults defaults
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+#<src>                                           <mnt_point>  <type>  <mnt_flags and options>                             <fs_mgr_flags>
+# Core Partitions
+/dev/block/platform/bootdevice/by-name/system     /system     ext4     ro                                                 wait,first_stage_mount
+/dev/block/platform/bootdevice/by-name/vendor     /vendor     ext4     ro                                                 wait,first_stage_mount
+/dev/block/platform/bootdevice/by-name/userdata   /data       ext4     noatime,nosuid,nodev,noauto_da_alloc,errors=panic  latemount,wait,check,formattable,quota,reservedsize=128m,fileencryption=aes-256-xts
+/dev/block/platform/bootdevice/by-name/cache      /cache      ext4     noatime,nosuid,nodev,noauto_da_alloc,discard       wait,check,formattable
+/dev/block/platform/bootdevice/by-name/recovery   /recovery   emmc     defaults     first_stage_mount,nofail
+/dev/block/platform/bootdevice/by-name/boot       /boot       emmc     defaults     first_stage_mount,nofail
+/dev/block/platform/bootdevice/by-name/misc       /misc       emmc     defaults     defaults
+/dev/block/platform/bootdevice/by-name/audio_dsp  /audio_dsp  emmc     defaults     defaults
+/dev/block/platform/bootdevice/by-name/persist    /mnt/vendor/persist  ext4    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc     wait,check,formattable
+
+# External-Devices (SDCARD | OTG)
+/devices/platform/externdevice*                  auto       auto   defaults    voldmanaged=sdcard1:auto,encryptable=userdata
+/devices/platform/11200000.usb3_xhci*            auto       vfat   defaults    voldmanaged=usbotg:auto
+
+# Factory Reset Protection (FRP)
+/dev/block/platform/bootdevice/by-name/frp      /persistent emmc   defaults    defaults
+
+# Firmware
+/dev/block/platform/bootdevice/by-name/gz1      /gz1        emmc   defaults    defaults
+/dev/block/platform/bootdevice/by-name/gz2      /gz2        emmc   defaults    defaults
+
+# MediaTek Hardware Power Management (SSPM)
+/dev/block/platform/bootdevice/by-name/sspm_1   /sspm_1     emmc   defaults    defaults
+/dev/block/platform/bootdevice/by-name/sspm_2   /sspm_2     emmc   defaults    defaults
+/dev/block/platform/bootdevice/by-name/spmfw    /spmfw      emmc   defaults    defaults
+
+# Modem
+/dev/block/platform/bootdevice/by-name/md1img   /md1img     emmc   defaults    defaults
+/dev/block/platform/bootdevice/by-name/md1dsp   /md1dsp     emmc   defaults    defaults
+
+# Non-Volatile (RAM | DATA | CFG)
+/dev/block/platform/bootdevice/by-name/nvram    /nvram      emmc   defaults    defaults
+/dev/block/platform/bootdevice/by-name/nvdata   /mnt/vendor/nvdata     ext4    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc     wait,check,formattable
+/dev/block/platform/bootdevice/by-name/nvcfg    /mnt/vendor/nvcfg      ext4    noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc     wait,check,formattable
+
+# System Control Processor (SCP)
+/dev/block/platform/bootdevice/by-name/scp1     /scp1       emmc   defaults    defaults
+/dev/block/platform/bootdevice/by-name/scp2     /scp2       emmc   defaults    defaults
+
+# Subscriber Identification Module (SIM)
+/dev/block/platform/bootdevice/by-name/protect1 /mnt/vendor/protect_f   ext4   noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc      wait,check,formattable
+/dev/block/platform/bootdevice/by-name/protect2 /mnt/vendor/protect_s   ext4   noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc      wait,check,formattable
+
+# Trusted Execution Environment (TEE)
+/dev/block/platform/bootdevice/by-name/tee1     /tee1       emmc   defaults    defaults
+/dev/block/platform/bootdevice/by-name/tee2     /tee2       emmc   defaults    defaults
+
+# Vision Processing Unit (VPU)
+/dev/block/platform/bootdevice/by-name/cam_vpu1 /cam_vpu1   emmc   defaults    defaults
+/dev/block/platform/bootdevice/by-name/cam_vpu2 /cam_vpu2   emmc   defaults    defaults
+/dev/block/platform/bootdevice/by-name/cam_vpu3 /cam_vpu3   emmc   defaults    defaults
+
+# ZRAM - Compressed RAM based Block Device (SWAP)
+/dev/block/zram0                                none        swap   defaults    zramsize=55%

@@ -1434,7 +1434,6 @@ vendor/etc/rcv.wav
 vendor/etc/spk.wav
 vendor/etc/spk_hp.wav
 vendor/etc/stereo.wav
-vendor/fstab.enableswap
 
 # Misc
 vendor/bin/aeev
