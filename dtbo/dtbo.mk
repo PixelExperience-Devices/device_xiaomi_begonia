@@ -1,24 +1,18 @@
-BOARD_PREBUILT_DTBOIMAGE := $(PRODUCT_OUT)/dtbo-pre.img
-BOARD_KERNEL_DTBO_CFG := dtboimg.cfg
-MKDTBOIMG := system/libufdt/utils/src/mkdtboimg.py
+#
+# Copyright (C) 2020 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
 APPEND_CERTS := $(DEVICE_PATH)/dtbo/append_certs.py
+BOARD_DTBO_CFG := $(DTBO_OUT)/dtboimg.cfg
+MKDTIMG := $(HOST_OUT_EXECUTABLES)/mkdtimg$(HOST_EXECUTABLE_SUFFIX)
+MKDTBOIMG := $(HOST_OUT_EXECUTABLES)/mkdtboimg.py$(HOST_EXECUTABLE_SUFFIX)
 
-# BUG: mkdtboimg.py doesn't support absolute paths yet. Fix this later.
-define build-dtboimage-target-from-cfg
-    $(call pretty,"Target dtbo image from cfg: $(BOARD_PREBUILT_DTBOIMAGE)")
-    $(hide) $(MKDTBOIMG) cfg_create $@ $(KERNEL_OUT)/$(BOARD_KERNEL_DTBO_CFG) -d /
-    $(hide) chmod a+r $@
-endef
-
-define append-dtboimage-certs
-    $(call pretty,"Target signed dtbo image: $(BOARD_PREBUILT_DTBOIMAGE)")
-    $(hide) mv $(BOARD_PREBUILT_DTBOIMAGE) $(BOARD_PREBUILT_DTBOIMAGE).tmp
-    $(hide) $(APPEND_CERTS) --image $(BOARD_PREBUILT_DTBOIMAGE).tmp --cert1 \
-        $(DEVICE_PATH)/dtbo/security/cert1.der --cert2 $(DEVICE_PATH)/dtbo/security/cert2.der --output $(BOARD_PREBUILT_DTBOIMAGE)
-    $(hide) chmod a+r $@
-endef
-
-
-$(BOARD_PREBUILT_DTBOIMAGE): $(MKDTBOIMG) $(INSTALLED_KERNEL_TARGET)
-	$(build-dtboimage-target-from-cfg)
-	$(append-dtboimage-certs)
+$(BOARD_PREBUILT_DTBOIMAGE): $(DTC) $(MKDTIMG) $(MKDTBOIMG)
+$(BOARD_PREBUILT_DTBOIMAGE):
+	@echo "Building dtbo.img"
+	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
+	$(call make-dtbo-target,dtbs)
+	$(MKDTBOIMG) cfg_create $@ $(BOARD_DTBO_CFG) -d $(DTBO_OUT)/arch/$(KERNEL_ARCH)/boot/dts
+	$(APPEND_CERTS) --alignment 16 --cert1 $(DEVICE_PATH)/dtbo/security/cert1.der --cert2 $(DEVICE_PATH)/dtbo/security/cert2.der --dtbo $(BOARD_PREBUILT_DTBOIMAGE)
