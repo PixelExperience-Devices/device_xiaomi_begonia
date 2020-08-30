@@ -205,9 +205,7 @@ PRODUCT_PACKAGES += \
     setup_headsetmic2headphone.sh \
     setup_mainmic2headphone.sh \
     setup_topmic2headphone.sh \
-    teardown_loopback.sh \
-    tp_data_collect.sh \
-    tp_selftest.sh
+    teardown_loopback.sh
 
 PRODUCT_PACKAGES += \
     init.aee.rc \
