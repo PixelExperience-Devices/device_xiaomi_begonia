@@ -5,3 +5,4 @@ init_daemon_domain(xcap)
 
 allow xcap xcap_exec:file execute_no_trans;
 allow xcap ccci_device:chr_file rw_file_perms;
+allow xcap self:capability sys_admin;

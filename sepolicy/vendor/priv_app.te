@@ -4,6 +4,7 @@ allow priv_app proc_interrupts:file { open };
 allow priv_app proc_modules:file { open };
 allow priv_app sysfs_android_usb:file { open };
 allow priv_app sysfs_therm:file r_file_perms;
+allow priv_app sysfs_boot_mode:file r_file_perms;
 allow priv_app vpu_device:chr_file rw_file_perms;
 allow priv_app displayfeature_hwservice:hwservice_manager find;
 allow priv_app hal_displayfeature_xiaomi_default:binder call;

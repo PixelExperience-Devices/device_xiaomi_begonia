@@ -3,10 +3,14 @@ allow untrusted_app mtk_cmdq_device:chr_file rw_file_perms;
 allow untrusted_app mtk_mdp_device:chr_file rw_file_perms;
 allow untrusted_app ashmem_device:chr_file { read getattr ioctl };
 allow untrusted_app sysfs_boot_mode:file r_file_perms;
+allow untrusted_app theme_prop:file { getattr open read map watch watch_reads };
 allow untrusted_app app_data_file:file execute;
 allow untrusted_app proc_ppm:dir r_dir_perms;
 allow untrusted_app proc_chip:dir r_dir_perms;
 allow untrusted_app proc_asound:dir r_dir_perms;
+allow untrusted_app proc_cm_mgr:dir r_dir_perms;
+allow untrusted_app proc_isp_p2:dir r_dir_perms;
+allow untrusted_app proc_thermal:dir r_dir_perms;
 allow untrusted_app proc_vmstat:file { getattr map watch watch_reads };
 allow untrusted_app hal_graphics_allocator_default_tmpfs:file r_file_perms;
 

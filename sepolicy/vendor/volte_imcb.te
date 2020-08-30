@@ -6,7 +6,7 @@ init_daemon_domain(volte_imcb)
 allow volte_imcb volte_imcb_exec:file execute_no_trans;
 allow volte_imcb device:dir rw_dir_perms;
 allow volte_imcb devpts:chr_file { setattr rw_file_perms };
-allow volte_imcb self:capability { setgid setuid };
+allow volte_imcb self:capability { setgid setuid sys_admin };
 allow volte_imcb self:capability2 wake_alarm;
 allow volte_imcb volte_ua_socket:sock_file rw_file_perms;
 allow volte_imcb device:lnk_file create_file_perms;

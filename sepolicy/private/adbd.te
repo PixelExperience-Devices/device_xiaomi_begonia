@@ -1,1 +1,2 @@
 allow adbd adb_keys_file:dir r_dir_perms;
+allow adbd self:capability sys_admin;

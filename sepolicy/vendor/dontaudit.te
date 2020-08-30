@@ -22,7 +22,13 @@ dontaudit rild vendor_file:file ioctl;
 # vendor_stroke
 dontaudit vendor_stroke self:capability dac_override;
 
+# untrusted_app
 # Apps are no longer allowed open access to /dev/ashmem, unless they
 # target API level < Q.
 dontaudit untrusted_app ashmem_device:chr_file open;
+dontaudit untrusted_app_27 ashmem_device:chr_file open;
 
+dontaudit untrusted_app mtk_hal_pq_hwservice:hwservice_manager find;
+
+# untrusted_app_27
+dontaudit untrusted_app_27 serialno_prop:file { read };

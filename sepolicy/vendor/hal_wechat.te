@@ -7,5 +7,6 @@ allow hal_wechat hal_wechat_exec:file execute_no_trans;
 allow hal_wechat soter_hwservice:hwservice_manager add;
 allow hal_wechat hidl_base_hwservice:hwservice_manager add;
 allow hal_wechat hwservicemanager:binder { call transfer };
+allow hal_wechat teei_client_device:chr_file rw_file_perms;
 
 get_prop(hal_wechat, hwservicemanager_prop)

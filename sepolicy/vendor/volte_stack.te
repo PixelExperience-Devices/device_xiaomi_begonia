@@ -4,7 +4,7 @@ type volte_stack_exec, exec_type, file_type, vendor_file_type;
 init_daemon_domain(volte_stack)
 
 allow volte_stack volte_stack_exec:file execute_no_trans;
-allow volte_stack self:capability { setgid net_admin };
+allow volte_stack self:capability { setgid net_admin sys_admin };
 allow volte_stack self:netlink_xfrm_socket { nlmsg_read nlmsg_write create_socket_perms_no_ioctl };
 allow volte_stack volte_stack_socket:sock_file rw_file_perms;
 allow volte_stack volte_stack:tcp_socket { name_bind rw_stream_socket_perms };
