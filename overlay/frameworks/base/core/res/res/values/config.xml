@@ -334,7 +334,6 @@
         <item>/system/framework/arm64/boot-framework.oat</item>
         <item>/system/framework/arm64/boot.oat</item>
         <item>/system/framework/framework.jar</item>
-        <item>/system/framework/oat/arm/services.odex</item>
         <item>/system/framework/oat/arm64/services.odex</item>
         <item>/system/framework/services.jar</item>
         <item>/apex/com.android.media/javalib/updatable-media.jar</item>
