@@ -681,9 +681,6 @@ vendor/lib64/libarcsoft_portrait_lighting_c.so
 vendor/lib64/libarcsoft_preview_deflicker.so
 
 # Camera-configs
-vendor/camera/fonts/MFYueYuan-Regular.ttf
-vendor/camera/fonts/MI+LanTing_GB+Outside+YS_V2.3_20160322.ttf
-vendor/camera/fonts/MIUI_Time.ttf
 vendor/etc/camera/beauty_ui9_intelligent_params.config
 vendor/etc/camera/CFR_para_T.bin
 vendor/etc/camera/CFR_para_UW.bin
