@@ -106,7 +106,6 @@ vendor/etc/audio_param/tfa98xx_music.bin
 vendor/etc/audio_param/tfa98xx_ringtone.bin
 vendor/etc/audio_param/tfa98xx_voice.bin
 vendor/etc/default_volume_tables.xml
-vendor/etc/permissions/android.hardware.microphone.xml
 vendor/firmware/tfa98xx.cnt
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib/libaudiocompensationfilter_vendor.so
@@ -889,7 +888,6 @@ vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
 vendor/etc/media_codecs_mediatek_audio.xml
 vendor/etc/media_codecs_mediatek_video.xml
-vendor/etc/permissions/com.mediatek.hardware.vow.xml
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml
 vendor/lib/hw/android.hardware.audio@5.0-impl-mediatek.so
 vendor/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
