@@ -1425,10 +1425,6 @@ vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/vendor.microtrust.hardware.capi@2.0-service.rc
 vendor/etc/init_panel_info.sh
 vendor/etc/partition_permission.sh
-vendor/etc/rcv.wav
-vendor/etc/spk.wav
-vendor/etc/spk_hp.wav
-vendor/etc/stereo.wav
 
 # Misc
 vendor/bin/aeev
@@ -1897,10 +1893,6 @@ vendor/etc/security/cacerts_supl/lab/ef4b31e6.0
 vendor/etc/slp_conf
 vendor/etc/smsdbvisitor.xml
 vendor/etc/special_pws_channel.xml
-vendor/etc/spk_cal_pinknoise.wav
-vendor/etc/spk_cal_silence.wav
-vendor/etc/spk_cal_sweep.wav
-vendor/etc/spk_cal_whitenoise.wav
 vendor/etc/spn-conf-op09.xml
 vendor/etc/throttle.sh
 vendor/etc/tianma_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml
@@ -2355,8 +2347,6 @@ vendor/lib64/wechat.beanpod.so
 vendor/res/images/lcd_test_00.png
 vendor/res/images/lcd_test_01.png
 vendor/res/images/lcd_test_02.png
-vendor/res/sound/ringtone.wav
-vendor/res/sound/testpattern1.wav
 vendor/ro.prop
 vendor/rw.prop
 vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta
