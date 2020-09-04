@@ -2344,9 +2344,6 @@ vendor/lib64/s5kgw1sunny_mipi_raw_IdxMgr.so
 vendor/lib64/s5kgw1sunny_mipi_raw_tuning.so
 vendor/lib64/vendor.microtrust.hardware.capi@2.0.so
 vendor/lib64/wechat.beanpod.so
-vendor/res/images/lcd_test_00.png
-vendor/res/images/lcd_test_01.png
-vendor/res/images/lcd_test_02.png
 vendor/ro.prop
 vendor/rw.prop
 vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta
