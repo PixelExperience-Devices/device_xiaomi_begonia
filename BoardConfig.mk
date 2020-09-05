@@ -130,6 +130,7 @@ VENDOR_SECURITY_PATCH := 2020-12-01
 # Sepolicy
 include device/mediatek/sepolicy/sepolicy.mk
 
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Soong namespaces
