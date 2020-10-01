@@ -770,6 +770,7 @@ vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin
 vendor/firmware/soc1_0_ram_mcu_2a_1_hdr.bin
 vendor/firmware/soc1_0_ram_wifi_2a_1_hdr.bin
 vendor/firmware/WIFI_RAM_CODE_soc1_0_2a_1.bin
+vendor/firmware/wifi.cfg|00b8e7e7db1006d7f9af3e9711c2325a4f8c7ee3
 vendor/firmware/WMT_SOC.cfg
 
 # GPS
