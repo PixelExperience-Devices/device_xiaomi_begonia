@@ -1,0 +1,36 @@
+# Bluetooth-AptX
+lib64/libaptX_encoder.so|01379a17d29c1bbc7f6b0325709940ca8cdd7ab8
+lib64/libaptXHD_encoder.so|fdbca5626fee8607d90bea2a6903eeebf396a7cf
+
+# HotwordEnrollment
+-product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
+-product/priv-app/HotwordEnrollmentXGoogleCORTEXM4/HotwordEnrollmentXGoogleCORTEXM4.apk
+
+# Xiaomi
+etc/permissions/vendor-xiaomi-hardware-citsensorservice.xml
+etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
+etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml
+etc/permissions/vendor.xiaomi.hardware.misys.V3_0-permission.xml
+etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.0-java-permission.xml
+etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.1-java-permission.xml
+etc/permissions/vendor.xiaomi.hardware.vsimapp-V1.0-java-permission.xml
+-framework/vendor.xiaomi.hardware.misys-V1.0-java.jar
+-framework/vendor.xiaomi.hardware.misys-V2.0-java.jar
+-framework/vendor.xiaomi.hardware.misys.V3_0.jar
+-framework/vendor.xiaomi.hardware.mtdservice-V1.0-java.jar
+-framework/vendor.xiaomi.hardware.mtdservice-V1.1-java.jar
+-framework/vendor.xiaomi.hardware.vsimapp-V1.0-java.jar
+lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
+lib/vendor.xiaomi.hardware.citsensorservice@1.1.so
+lib/vendor.xiaomi.hardware.displayfeature@1.0.so
+lib/vendor.xiaomi.hardware.misys@1.0.so
+lib/vendor.xiaomi.hardware.misys@2.0.so
+lib/vendor.xiaomi.hardware.misys@3.0.so
+lib/vendor.xiaomi.hardware.touchfeature@1.0.so
+lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
+lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+lib64/vendor.xiaomi.hardware.misys@1.0.so
+lib64/vendor.xiaomi.hardware.misys@2.0.so
+lib64/vendor.xiaomi.hardware.misys@3.0.so
+lib64/vendor.xiaomi.hardware.touchfeature@1.0.so
