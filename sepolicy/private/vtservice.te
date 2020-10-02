@@ -1,0 +1,15 @@
+# Policy File of /system/bin/vtservice Executable File
+type vtservice_exec, system_file_type, exec_type, file_type;
+type vtservice ,domain;
+typeattribute vtservice coredomain;
+type vtservice_hidl_exec , exec_type, file_type, vendor_file_type;
+type vtservice_hidl ,domain, mtkimsapdomain;
+
+init_daemon_domain(vtservice)
+binder_use(vtservice)
+binder_call(vtservice, mediaserver)
+binder_service(vtservice)
+init_daemon_domain(vtservice_hidl)
+
+allow vtservice radio_service:service_manager find;
+allow vtservice vtservice_service:service_manager add;

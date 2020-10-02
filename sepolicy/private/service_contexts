@@ -1,0 +1,15 @@
+mwis u:object_r:radio_service:s0
+imsa u:object_r:radio_service:s0
+mtkIms u:object_r:radio_service:s0
+GbaService u:object_r:radio_service:s0
+isubstub u:object_r:radio_service:s0
+wfo u:object_r:radio_service:s0
+imtksms u:object_r:radio_service:s0
+iphonesubinfotedongle u:object_r:radio_service:s0
+isubtedongle u:object_r:radio_service:s0
+simphonebooktedongle u:object_r:radio_service:s0
+ismstedongle u:object_r:radio_service:s0
+tedongleservice u:object_r:radio_service:s0
+sh u:object_r:radio_service:s0
+media.VTS u:object_r:vtservice_service:s0
+media.VTS.HiDL u:object_r:vtservice_hidl_service:s0

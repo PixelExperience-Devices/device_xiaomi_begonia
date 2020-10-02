@@ -1,0 +1,5 @@
+genfscon proc /last_kmsg u:object_r:proc_kmsg:s0
+genfscon debugfs /ion/client_history u:object_r:debugfs_ion_mm_heap:s0
+genfscon debugfs /ion/clients u:object_r:debugfs_ion:s0
+genfscon debugfs /ion/heaps u:object_r:debugfs_ion_mm_heap:s0
+genfscon debugfs /ion/ion_mm_heap u:object_r:debugfs_ion_mm_heap:s0

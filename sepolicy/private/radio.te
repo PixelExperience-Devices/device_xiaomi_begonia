@@ -1,0 +1,1 @@
+allow radio vtservice_service:service_manager find;

@@ -1,0 +1,31 @@
+allow untrusted_app_all proc_zoneinfo:file r_file_perms;
+allow untrusted_app_all input_device:chr_file getattr;
+allow untrusted_app_all input_device:dir r_dir_perms;
+allow untrusted_app_all mtk_cmdq_device:chr_file rw_file_perms;
+allow untrusted_app_all mtk_mdp_device:chr_file rw_file_perms;
+allow untrusted_app_all sysfs_net:dir r_dir_perms;
+allow untrusted_app_all sysfs_boot_mode:file r_file_perms;
+allow untrusted_app_all proc_misc:file r_file_perms;
+allow untrusted_app_all proc_vmstat:file { getattr map };
+allow untrusted_app_all sysfs_battery_supply:dir r_dir_perms;
+allow untrusted_app_all sysfs_battery_supply:file r_file_perms;
+allow untrusted_app_all sysfs_therm:dir r_dir_perms;
+allow untrusted_app_all sysfs_therm:file r_file_perms;
+allow untrusted_app_all sysfs_usb_supply:dir r_dir_perms;
+allow untrusted_app_all cache_file:lnk_file r_file_perms;
+allow untrusted_app_all proc_battery_cmd:dir r_dir_perms;
+allow untrusted_app_all proc_cpufreq:dir r_dir_perms;
+allow untrusted_app_all proc_mtkcooler:dir r_dir_perms;
+allow untrusted_app_all dalvikcache_data_file:file execute;
+allow untrusted_app_all ashmem_device:chr_file { read getattr ioctl };
+allow untrusted_app_all theme_prop:file { getattr open read map };
+allow untrusted_app_all proc_ppm:dir r_dir_perms;
+allow untrusted_app_all proc_chip:dir r_dir_perms;
+allow untrusted_app_all proc_asound:dir r_dir_perms;
+allow untrusted_app_all proc_cm_mgr:dir r_dir_perms;
+allow untrusted_app_all proc_isp_p2:dir r_dir_perms;
+allow untrusted_app_all proc_thermal:dir r_dir_perms;
+
+get_prop(untrusted_app_all, vendor_default_prop)
+get_prop(untrusted_app_all, exported_default_prop)
+get_prop(untrusted_app_all, render_prop)
