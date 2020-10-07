@@ -8,6 +8,10 @@ ro.vendor.audio.game.effect=true
 ro.vendor.audio.sos=true
 vendor.audio.spkcal.copy.inhal=true
 
+# Blur
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
+
 # Brand
 Build.BRAND=MTK
 
