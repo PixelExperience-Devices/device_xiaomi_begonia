@@ -7,6 +7,10 @@
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/begonia/begonia-vendor.mk)
 
+# APN
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/apns/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
