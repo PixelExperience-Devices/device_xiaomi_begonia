@@ -109,12 +109,11 @@ debug.stagefright.omx_default_rank=0
 # Mediatek (Misc)
 debug.mediatek.disp_decompress=1
 debug.mediatek.game_pq_enable=1
-ro.mtk_key_manager_support=1
 bsp.mishow.ctl=true
 vendor.mtk.vdec.waitkeyframeforplay=1
 ro.vendor.mediatek.platform=MT6785
 ro.vendor.mediatek.version.branch=alps-mp-q0.mp1.tc8sp
-ro.vendor.mediatek.version.release=alps-mp-q0.mp1.tc8sp-V1.0.1_xiaomi.q0mp1.k85v1.64_P54
+ro.vendor.mediatek.version.release=alps-mp-q0.mp1.tc8sp-V1.0.1_xiaomi.q0mp1.k85v1.64_P93
 ro.vendor.md_log_memdump_wait=15
 ro.vendor.md_prop_ver=1
 ro.vendor.mtk.bt_sap_enable=true
