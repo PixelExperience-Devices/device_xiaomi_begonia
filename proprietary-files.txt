@@ -1071,6 +1071,11 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so
 
+# MTK-EngineerMode
+lib/libem_support_jni.so
+lib64/libem_support_jni.so
+-priv-app/EngineerMode/EngineerMode.apk
+
 # MTK-IMS
 -framework/mediatek-common.jar
 -framework/mediatek-framework.jar
