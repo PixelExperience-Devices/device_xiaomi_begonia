@@ -6,6 +6,11 @@ lib64/libaptXHD_encoder.so|fdbca5626fee8607d90bea2a6903eeebf396a7cf
 -product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
 -product/priv-app/HotwordEnrollmentXGoogleCORTEXM4/HotwordEnrollmentXGoogleCORTEXM4.apk
 
+# MTK-EngineerMode
+lib/libem_support_jni.so
+lib64/libem_support_jni.so
+-priv-app/EngineerMode/EngineerMode.apk
+
 # Xiaomi
 etc/permissions/vendor-xiaomi-hardware-citsensorservice.xml
 etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
