@@ -70,7 +70,8 @@
 /sys/devices/platform/mtkfb(/.*)?                                                          u:object_r:sysfs_mtkfb:s0
 
 # Same Process HAL
-/vendor/lib(64)?/vendor\.mediatek\.hardware\.videotelephony@1\.0.so             u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/vendor\.mediatek\.hardware\.videotelephony@1\.0\.so            u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/vendor\.mediatek\.hardware\.camera\.atms@1\.0\.so              u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/hw/vendor\.xiaomi\.hardware\.citsensorservice@1\.1-impl\.so    u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/nfc_nci\.nqx\.default\.hw\.so                                  u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libTEECommon\.so                                               u:object_r:same_process_hal_file:s0
