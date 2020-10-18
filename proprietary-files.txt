@@ -1180,10 +1180,6 @@ vendor/etc/thermal-youtube.conf
 vendor/etc/thermald-devices.conf
 vendor/lib/libthermalalgo.so
 
-# Thermal-Hardware | From begonia QP1A.190711.020 V12.0.3.0.QGGMIXM release-keys
-vendor/lib/hw/thermal.mt6785.so
-vendor/lib64/hw/thermal.mt6785.so
-
 # WiFi
 vendor/bin/hostapd_cli
 vendor/bin/hw/hostapd

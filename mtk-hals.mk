@@ -49,3 +49,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common
+
+# Thermal
+PRODUCT_PACKAGES += \
+    thermal.mt6785
