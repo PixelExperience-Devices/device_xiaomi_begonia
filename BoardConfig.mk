@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/begonia
+MTK_HALS_PATH := vendor/mediatek/opensource
 
 # Architecture
 TARGET_ARCH := arm64
@@ -138,7 +139,9 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+PRODUCT_SOONG_NAMESPACES +=  \
+    $(DEVICE_PATH) \
+    $(MTK_HALS_PATH)
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/begonia/BoardConfigVendor.mk
