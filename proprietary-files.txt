@@ -661,10 +661,6 @@ vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/visidon_clearshot_params_algoup.xml
 
-# Consumerir
-vendor/lib/hw/consumerir.mt6785.so
-vendor/lib64/hw/consumerir.mt6785.so
-
 # DRM
 vendor/lib/liboemcrypto.so
 vendor/lib64/liboemcrypto.so
