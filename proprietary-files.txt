@@ -801,7 +801,6 @@ vendor/lib64/libstagefrighthw.so
 # Mediatek
 vendor/bin/hw/android.hardware.audio@5.0-service-mediatek
 vendor/bin/hw/android.hardware.sensors@1.0-service-mediatek
-vendor/bin/hw/android.hardware.usb@1.1-service-mediatek
 vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service
@@ -813,7 +812,6 @@ vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.audio@5.0-service-mediatek.rc
 vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc
-vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc
 vendor/etc/init/android.hardware.wifi@1.0-service-lazy-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc

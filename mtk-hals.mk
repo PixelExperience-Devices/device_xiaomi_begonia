@@ -53,3 +53,7 @@ PRODUCT_BOOT_JARS += \
 # Thermal
 PRODUCT_PACKAGES += \
     thermal.mt6785
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.1-service-mediatek
