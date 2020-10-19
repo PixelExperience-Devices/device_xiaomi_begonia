@@ -678,10 +678,8 @@ vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
 # Display-Hardware
-vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/gralloc.mt6785.so
 vendor/lib/hw/memtrack.mt6785.so
-vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/gralloc.mt6785.so
 vendor/lib64/hw/hwcomposer.mt6785.so
 vendor/lib64/hw/memtrack.mt6785.so
