@@ -2031,7 +2031,6 @@ vendor/lib/libstrongswan.so
 vendor/lib/libsysenv.so
 vendor/lib/libteeclientjni@1.1.so
 vendor/lib/libTEECommon.so
-vendor/lib/libtextclassifier_hash.so
 vendor/lib/libtflite_mtk.so
 vendor/lib/libtflite_mtk_static.so
 vendor/lib/libthha.so
@@ -2233,7 +2232,6 @@ vendor/lib64/libstrongswan.so
 vendor/lib64/libsysenv.so
 vendor/lib64/libteeclientjni@1.1.so
 vendor/lib64/libTEECommon.so
-vendor/lib64/libtextclassifier_hash.so
 vendor/lib64/libtflite_mtk.so
 vendor/lib64/libtflite_mtk_static.so
 vendor/lib64/libthha.so
