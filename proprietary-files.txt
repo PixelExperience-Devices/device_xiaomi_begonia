@@ -1236,10 +1236,6 @@ vendor/lib/libthermalalgo.so
 vendor/lib/hw/thermal.mt6785.so
 vendor/lib64/hw/thermal.mt6785.so
 
-# Vibrator
-vendor/lib/hw/vibrator.default.so
-vendor/lib64/hw/vibrator.default.so
-
 # WiFi
 vendor/bin/hostapd_cli
 vendor/bin/hw/hostapd
