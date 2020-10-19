@@ -767,12 +767,8 @@ vendor/lib/libgeofence.so
 vendor/lib64/hw/android.hardware.gnss@2.0-impl-mediatek.so
 
 # Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib/hw/gatekeeper.mt6785.so
 vendor/lib/hw/libSoftGatekeeper.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/hw/gatekeeper.mt6785.so
 vendor/lib64/hw/libSoftGatekeeper.so
 
@@ -802,18 +798,12 @@ vendor/lib/modules/wmt_chrdev_wifi.ko:vendor/lib/modules_prebuilt/wmt_chrdev_wif
 vendor/lib/modules/wmt_drv.ko:vendor/lib/modules_prebuilt/wmt_drv.ko|f7f616600567c5e069973ce92563fe17472d1da2
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@3.0-service
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
-vendor/etc/init/android.hardware.keymaster@3.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
-vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
-vendor/lib/libkeymaster3device.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
-vendor/lib64/libkeymaster3device.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 

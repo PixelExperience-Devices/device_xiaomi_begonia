@@ -83,6 +83,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DT2W-Service-Begonia
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0-impl
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
@@ -108,6 +113,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0-service
 
 # Light
 PRODUCT_PACKAGES += \
