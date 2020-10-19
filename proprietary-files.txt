@@ -2013,7 +2013,6 @@ vendor/lib/libnvram.so
 vendor/lib/libnvram_daemon_callback.so
 vendor/lib/libnvram_platform.so
 vendor/lib/libnvram_sec.so
-vendor/lib/libopus.so
 vendor/lib/libperfctl_vendor.so
 vendor/lib/libpixelflinger.so
 vendor/lib/libpq_cust_base.so
@@ -2044,7 +2043,6 @@ vendor/lib/libverno.so
 vendor/lib/libviagpsrpc.so
 vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so
-vendor/lib/libvorbisidec.so
 vendor/lib/libvowp23_sid_testing_alexa.vendor.so
 vendor/lib/libvowp23_sid_training_alexa.vendor.so
 vendor/lib/libvowp25testing_alexa.vendor.so
@@ -2055,7 +2053,6 @@ vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libvpu.so
 vendor/lib/libvpud_vcodec.so
-vendor/lib/libvpx.so
 vendor/lib/libvt_custom.so
 vendor/lib/libwapi.so
 vendor/lib/libwo.so
