@@ -793,10 +793,7 @@ vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
 # Keystore
 vendor/lib/hw/keystore.mt6785.so
-vendor/lib/libkeystore-wifi-hidl.so
 vendor/lib64/hw/keystore.mt6785.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.mt6785.so
