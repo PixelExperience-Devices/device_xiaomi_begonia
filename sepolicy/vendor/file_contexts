@@ -53,6 +53,7 @@
 /(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.misys@3.0-service		             u:object_r:hal_misys_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.misys@1.0-service		             u:object_r:hal_misys_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service	     u:object_r:hal_touchfeature_xiaomi_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.begonia      u:object_r:hal_fingerprint_default_exec:s0
 
 # Sys files
 /sys/devices/platform/11016000.i2c5/i2c-5/5-0034/mt6360_pmu_rgbled.4.auto/leds(/.*)?	   u:object_r:sysfs_leds:s0
