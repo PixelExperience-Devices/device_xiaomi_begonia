@@ -68,4 +68,6 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
 
 BLOB_ROOT="${AOSP_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
 
+patchelf --replace-needed libwifi-hal.so libwifi-hal-mtk.so $BLOB_ROOT/vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek
+
 "${MY_DIR}/setup-makefiles.sh"

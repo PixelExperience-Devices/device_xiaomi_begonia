@@ -1237,7 +1237,7 @@ vendor/bin/hw/wpa_supplicant
 vendor/bin/wpa_cli
 vendor/etc/init/hostapd.android.rc
 vendor/lib/libwpa_client.so
-vendor/lib64/libwifi-hal.so
+vendor/lib64/libwifi-hal-mtk.so|da8e624fe22b9702e0df1470968674c3ba578ec2
 vendor/lib64/libwpa_client.so
 
 # Xiaomi
