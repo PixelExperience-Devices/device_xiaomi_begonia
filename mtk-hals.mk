@@ -8,6 +8,14 @@
 PRODUCT_PACKAGES += \
     consumerir.mt6785
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    libkmsetkey \
+    vendor.mediatek.hardware.keymaster_attestation@1.0 \
+    vendor.mediatek.hardware.keymaster_attestation@1.1 \
+    vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
+    vendor.mediatek.hardware.keymaster_attestation@1.1-service
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_mediatek_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_audio.xml \
