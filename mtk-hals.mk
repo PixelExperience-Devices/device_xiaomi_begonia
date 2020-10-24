@@ -4,6 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl-mediatek \
+    android.hardware.bluetooth@1.0-service-mediatek
+
 # Consumerir
 PRODUCT_PACKAGES += \
     consumerir.mt6785
