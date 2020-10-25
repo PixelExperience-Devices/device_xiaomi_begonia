@@ -217,6 +217,7 @@ PRODUCT_PACKAGES += \
     teardown_loopback.sh \
     init.ago.rc \
     init.connectivity.rc \
+    init.mi_thermald.rc \
     init.modem.rc \
     init.mt6785.rc \
     init.mt6785.usb.rc \
