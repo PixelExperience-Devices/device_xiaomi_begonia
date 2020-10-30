@@ -4,6 +4,37 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Audio
+PRODUCT_PACKAGES += \
+    libfile_op \
+    libmtk_drvb \
+    libccci_util \
+    libaudioloudc \
+    libmtkshifter \
+    libmtklimiter \
+    libaudiofmtconv \
+    lib_speech_enh \
+    libMtkSpeechEnh \
+    libblisrc32_vendor \
+    libmtkaudio_utils \
+    libspeech_enh_lib \
+    libaudiosmartpamtk \
+    libmtkshifter_vendor \
+    libmtklimiter_vendor \
+    libaudiotoolkit_vendor \
+    libaudiodcrflt_vendor \
+    libspeechparser_vendor \
+    libaudiocustparam_vendor \
+    libaudiocomponentenginec \
+    libbessound_hd_mtk_vendor \
+    libaudio_param_parser-vnd \
+    libaudiocompensationfilterc \
+    libaudiocomponentengine_vendor \
+    libaudioprimarydevicehalifclient \
+    libaudiocompensationfilter_vendor \
+    vendor.mediatek.hardware.audio@5.1 \
+    android.hardware.audio@5.0-impl-mediatek
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-mediatek \
@@ -25,6 +56,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_mediatek_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_audio.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_video.xml
+
+# Nvram
+PRODUCT_PACKAGES += \
+    libnvram \
+    libnvram_sec \
+    libcustom_nvram \
+    libnvram_platform \
+    libnvram_daemon_callback
 
 # Permissions
 PRODUCT_COPY_FILES += \
