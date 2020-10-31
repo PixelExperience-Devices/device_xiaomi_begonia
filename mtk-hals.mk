@@ -63,7 +63,11 @@ PRODUCT_PACKAGES += \
     libnvram_sec \
     libcustom_nvram \
     libnvram_platform \
-    libnvram_daemon_callback
+    libnvram_daemon_callback \
+    vendor.mediatek.hardware.nvram@1.1-impl \
+    vendor.mediatek.hardware.nvram@1.1-service \
+    vendor.mediatek.hardware.nvram@1.0 \
+    vendor.mediatek.hardware.nvram@1.1
 
 # Permissions
 PRODUCT_COPY_FILES += \
