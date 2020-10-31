@@ -44,6 +44,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     consumerir.mt6785
 
+# Dplanner
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.dplanner@2.0 \
+    vendor.mediatek.hardware.dplanner@2.0-service
+
 # Keymaster
 PRODUCT_PACKAGES += \
     libkmsetkey \

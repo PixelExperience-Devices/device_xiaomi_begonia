@@ -472,6 +472,15 @@
         <fqname>@1.0::IFpsPolicyService/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.mediatek.hardware.dplanner</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IDPlanner</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.mediatek.hardware.engineermode</name>
         <transport>hwbinder</transport>
         <version>1.2</version>
