@@ -1108,6 +1108,7 @@ lib/libsource.so
 lib/libvcodec_cap.so
 lib/libvcodec_capenc.so
 lib/libvt_avsync.so
+lib/vendor.mediatek.hardware.videotelephony@1.0.so
 lib64/libmtk_vt_wrapper.so
 lib64/libmtkaudio_utils.so
 lib64/libmtkavenhancements.so
@@ -1116,6 +1117,7 @@ lib64/libmtkperf_client.so
 lib64/libmtkshifter.so
 lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
+lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # NFC | From begonia QP1A.190711.020 V12.0.3.0.QGGMIXM release-keys
 vendor/bin/pnscr
