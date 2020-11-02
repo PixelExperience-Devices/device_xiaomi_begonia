@@ -40,6 +40,12 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-mediatek \
     android.hardware.bluetooth@1.0-service-mediatek
 
+# Ccci
+PRODUCT_PACKAGES += \
+    ccci_fsd \
+    ccci_mdinit \
+    ccci_rpcd
+
 # Consumerir
 PRODUCT_PACKAGES += \
     consumerir.mt6785
@@ -100,6 +106,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0 \
     vendor.mediatek.hardware.mtkpower@1.0-impl \
     vendor.mediatek.hardware.mtkpower@1.0-service
+
+# Ril
+PRODUCT_PACKAGES += \
+    libsysenv
 
 # Telephony Jars
 PRODUCT_BOOT_JARS += \

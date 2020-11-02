@@ -1221,9 +1221,6 @@ vendor/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.vsimapp@1.0.so
 
 # rootdir
-vendor/bin/ccci_fsd
-vendor/bin/ccci_mdinit
-vendor/bin/ccci_rpcd
 vendor/bin/charge_logger
 vendor/bin/factory
 vendor/bin/fuelgauged
@@ -1350,9 +1347,6 @@ vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/etc/init/gsm0710muxd.rc
 vendor/etc/init/init.bip.rc
 vendor/etc/init/init.bt_drv.rc
-vendor/etc/init/init.cccifsd.rc
-vendor/etc/init/init.cccimdinit.rc
-vendor/etc/init/init.cccirpcd.rc
 vendor/etc/init/init.fmradio_drv.rc
 vendor/etc/init/init.gps_drv.rc
 vendor/etc/init/init.md_apps.rc
@@ -1887,9 +1881,7 @@ vendor/lib/libscltm.so
 vendor/lib/libsimaka.so
 vendor/lib/libssl-md.so
 vendor/lib/libssl-ss.so
-vendor/lib/libstorage_otp.so
 vendor/lib/libstrongswan.so
-vendor/lib/libsysenv.so
 vendor/lib/libteeclientjni@1.1.so
 vendor/lib/libTEECommon.so
 vendor/lib/libtflite_mtk.so
@@ -2075,7 +2067,6 @@ vendor/lib64/libssl-md.so
 vendor/lib64/libssl-ss.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
 vendor/lib64/libstrongswan.so
-vendor/lib64/libsysenv.so
 vendor/lib64/libteeclientjni@1.1.so
 vendor/lib64/libTEECommon.so
 vendor/lib64/libtflite_mtk.so
