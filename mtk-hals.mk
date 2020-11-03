@@ -4,6 +4,22 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# AEE Config
+$(call inherit-product, vendor/mediatek/opensource/external/aee/config_external/aee.mk)
+
+# AEE
+PRODUCT_PACKAGES += \
+    rttv \
+    aeev \
+    libaedv \
+    aee_aedv \
+    aee_aedv64 \
+    aee_archivev \
+    aee_dumpstatev \
+    libdirect-coredump \
+    libdirect-coredump.vendor \
+    vendor.mediatek.hardware.log@1.0-service
+
 # Audio
 PRODUCT_PACKAGES += \
     libfile_op \

@@ -215,7 +215,6 @@ PRODUCT_PACKAGES += \
     setup_mainmic2headphone.sh \
     setup_topmic2headphone.sh \
     teardown_loopback.sh \
-    init.aee.rc \
     init.ago.rc \
     init.connectivity.rc \
     init.modem.rc \

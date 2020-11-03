@@ -766,7 +766,6 @@ vendor/bin/hw/android.hardware.sensors@1.0-service-mediatek
 vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.gpu@1.0-service
-vendor/bin/hw/vendor.mediatek.hardware.log@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.3-service
 vendor/bin/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
@@ -775,7 +774,6 @@ vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc
 vendor/etc/init/android.hardware.wifi@1.0-service-lazy-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc
-vendor/etc/init/vendor.mediatek.hardware.log@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mms@1.3-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
@@ -941,7 +939,6 @@ vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so
 vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so
 vendor/lib64/vendor.mediatek.hardware.gpu@1.0.so
 vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
-vendor/lib64/vendor.mediatek.hardware.log@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.1.so
@@ -1231,8 +1228,6 @@ vendor/bin/nvram_daemon
 vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
-vendor/etc/init/aee_aedv.rc
-vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/microtrust.rc
 vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/vendor.microtrust.hardware.capi@2.0-service.rc
@@ -1240,11 +1235,6 @@ vendor/etc/init_panel_info.sh
 vendor/etc/partition_permission.sh
 
 # Misc
-vendor/bin/aeev
-vendor/bin/aee_aedv
-vendor/bin/aee_aedv64
-vendor/bin/aee_archivev
-vendor/bin/aee_dumpstatev
 vendor/bin/atcid
 vendor/bin/atci_service
 vendor/bin/audiocmdservice_atci
@@ -1294,7 +1284,6 @@ vendor/bin/mtk_agpsd
 vendor/bin/muxreport
 vendor/bin/netdagent
 vendor/bin/netdc
-vendor/bin/rttv
 vendor/bin/setup_fct
 vendor/bin/setup_fct_normal
 vendor/bin/starter
@@ -1312,7 +1301,6 @@ vendor/bin/wfca
 vendor/bin/xcap
 vendor/data/misc/ProjectConfig.mk
 vendor/etc/.tp/.ht120.mtc
-vendor/etc/aee-config
 vendor/etc/agps_profiles_conf2.xml
 vendor/etc/apdb/APDB_MT6785_S01__W1943
 vendor/etc/apdb/APDB_MT6785_S01__W1943_ENUM
@@ -1799,7 +1787,6 @@ vendor/lib/lib3a.n3d3a.so
 vendor/lib/libaalservice.so
 vendor/lib/libaal_cust.so
 vendor/lib/libaal_mtk.so
-vendor/lib/libaedv.so
 vendor/lib/libakm.so
 vendor/lib/libaurisysdemo.so
 vendor/lib/libBnMtkCodec.so
@@ -1819,7 +1806,6 @@ vendor/lib/libcvsd_mtk.so
 vendor/lib/libdip_drv.so
 vendor/lib/libdip_imem.so
 vendor/lib/libdip_postproc.so
-vendor/lib/libdirect-coredump.so
 vendor/lib/libdpframework.so
 vendor/lib/libDR.so
 vendor/lib/libdre.so
@@ -1968,7 +1954,6 @@ vendor/lib64/libaal_cust.so
 vendor/lib64/libaal_mtk.so
 vendor/lib64/libabfadp.so
 vendor/lib64/libacdk.so
-vendor/lib64/libaedv.so
 vendor/lib64/libakm.so
 vendor/lib64/libalCFR.so
 vendor/lib64/libalhLDC.so
@@ -1996,7 +1981,6 @@ vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libdip_drv.so
 vendor/lib64/libdip_imem.so
 vendor/lib64/libdip_postproc.so
-vendor/lib64/libdirect-coredump.so
 vendor/lib64/libdpframework.so
 vendor/lib64/libdre.so
 vendor/lib64/libeffecthal.base.so
