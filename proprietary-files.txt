@@ -633,6 +633,10 @@ vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/visidon_clearshot_params_algoup.xml
 
+# DRM-L1
+vendor/lib/libtlcWidevineModularDrm.so|84af67adbc80fbc1bed46c800cc17c272f9f34f3
+vendor/lib64/libtlcWidevineModularDrm.so|b6a428b4b8be54fc497736a376deec110ae63d02
+
 # DRM
 vendor/lib/liboemcrypto.so
 vendor/lib64/liboemcrypto.so
@@ -1873,7 +1877,6 @@ vendor/lib/libTEECommon.so
 vendor/lib/libtflite_mtk.so
 vendor/lib/libtflite_mtk_static.so
 vendor/lib/libthha.so
-vendor/lib/libtlcWidevineModularDrm.so
 vendor/lib/libudf.so
 vendor/lib/libvc1dec_sa.ca7.so
 vendor/lib/libvcodecdrv.so
@@ -2056,7 +2059,6 @@ vendor/lib64/libTEECommon.so
 vendor/lib64/libtflite_mtk.so
 vendor/lib64/libtflite_mtk_static.so
 vendor/lib64/libthha.so
-vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/libudf.so
 vendor/lib64/libvcodec_oal.so
 vendor/lib64/libverno.so
