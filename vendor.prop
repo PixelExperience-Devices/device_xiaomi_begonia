@@ -9,15 +9,15 @@ aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
 persist.vendor.audio.button_jack.profile=volume
 persist.vendor.audio.button_jack.switch=0
-ro.vendor.audio.game.effect=true
+ro.vendor.audio.game.effect=false
 ro.vendor.audio.sos=true
 ro.vendor.audio.soundfx.type=mi
 ro.vendor.audio.voice.volume.boost=manual
 ro.vendor.mtk_audio_alac_support=1
 ro.vendor.mtk_audio_ape_support=1
 ro.vendor.mtk_audio_tuning_tool_ver=V2.2
-ro.vendor.mtk_besloudness_support=1
-ro.vendor.mtk_hifiaudio_support=1
+ro.vendor.mtk_besloudness_support=0
+ro.vendor.mtk_hifiaudio_support=0
 
 # Background
 persist.vendor.heavy.loading.support=1
@@ -137,7 +137,7 @@ ro.vendor.mtk_md1_support=12
 ro.vendor.mtk_nn.option=B,D,E,F,Z
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_pq_color_mode=1
-ro.vendor.mtk_pq_support=2
+ro.vendor.mtk_pq_support=0
 ro.vendor.mtk_protocol1_rat_config=C/Lf/Lt/W/T/G
 ro.vendor.mtk_ps1_rat=C/Lf/Lt/W/T/G
 ro.vendor.num_md_protocol=2
