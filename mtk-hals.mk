@@ -200,6 +200,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsysenv
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl-mediatek \
+    android.hardware.sensors@1.0-service-mediatek
+
 # Telephony Jars
 PRODUCT_BOOT_JARS += \
     mediatek-common \
