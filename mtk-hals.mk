@@ -56,6 +56,17 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-mediatek \
     android.hardware.bluetooth@1.0-service-mediatek
 
+# Camera
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.camera.atms@1.0.vendor \
+    vendor.mediatek.hardware.camera.bgservice@1.0.vendor \
+    vendor.mediatek.hardware.camera.bgservice@1.1.vendor \
+    vendor.mediatek.hardware.camera.ccap@1.0.vendor \
+    vendor.mediatek.hardware.camera.frhandler@1.0.vendor \
+    vendor.mediatek.hardware.camera.lomoeffect@1.0.vendor \
+    vendor.mediatek.hardware.camera.postproc@1.0.vendor \
+    vendor.mediatek.hardware.camera.security@1.0.vendor
+
 # Ccci
 PRODUCT_PACKAGES += \
     ccci_fsd \
@@ -66,10 +77,24 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     consumerir.mt6785
 
+# Dfps
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.dfps@1.0.vendor
+
 # Dplanner
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.dplanner@2.0 \
     vendor.mediatek.hardware.dplanner@2.0-service
+
+# Engineermode
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.engineermode@1.0.vendor \
+    vendor.mediatek.hardware.engineermode@1.1.vendor \
+    vendor.mediatek.hardware.engineermode@1.2.vendor
+
+# Gpu
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.gpu@1.0.vendor
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -79,10 +104,43 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service
 
+# Lbs
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.lbs@1.0.vendor
+
+# Mdmonitor
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mdmonitor@1.0.vendor
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_mediatek_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_audio.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_video.xml
+
+# Mms
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mms@1.0.vendor \
+    vendor.mediatek.hardware.mms@1.1.vendor \
+    vendor.mediatek.hardware.mms@1.2.vendor \
+    vendor.mediatek.hardware.mms@1.3.vendor
+
+# Mtkcodecservice
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mtkcodecservice@1.1.vendor
+
+# Mtkradioex
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mtkradioex@1.0.vendor \
+    vendor.mediatek.hardware.mtkradioex@1.1.vendor \
+    vendor.mediatek.hardware.mtkradioex@1.2.vendor \
+    vendor.mediatek.hardware.mtkradioex@1.3.vendor \
+    vendor.mediatek.hardware.mtkradioex@1.4.vendor \
+    vendor.mediatek.hardware.mtkradioex@1.5.vendor
+
+# Neuropilot
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.neuropilot@1.0.vendor \
+    vendor.mediatek.hardware.neuropilot@1.1.vendor
 
 # Nvram
 PRODUCT_PACKAGES += \
@@ -123,6 +181,21 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0-impl \
     vendor.mediatek.hardware.mtkpower@1.0-service
 
+# Pq
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.pq@2.0.vendor \
+    vendor.mediatek.hardware.pq@2.1.vendor \
+    vendor.mediatek.hardware.pq@2.2.vendor \
+    vendor.mediatek.hardware.pq@2.3.vendor
+
+# Radio OP
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.radio_op@1.1.vendor \
+    vendor.mediatek.hardware.radio_op@1.2.vendor \
+    vendor.mediatek.hardware.radio_op@1.3.vendor \
+    vendor.mediatek.hardware.radio_op@1.4.vendor \
+    vendor.mediatek.hardware.radio_op@2.0.vendor
+
 # Ril
 PRODUCT_PACKAGES += \
     libsysenv
@@ -144,3 +217,8 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.1-service-mediatek
+
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.wifi.supplicant@2.0.vendor \
+    vendor.mediatek.hardware.wifi.supplicant@2.1.vendor
