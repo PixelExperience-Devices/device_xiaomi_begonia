@@ -79,7 +79,11 @@ PRODUCT_PACKAGES += \
 
 # Dfps
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.dfps@1.0.vendor
+    dfps.mt6785 \
+    libfpspolicy \
+    vendor.mediatek.hardware.dfps@1.0-impl \
+    vendor.mediatek.hardware.dfps@1.0.vendor \
+    vendor.mediatek.hardware.dfps@1.0-service
 
 # Dplanner
 PRODUCT_PACKAGES += \

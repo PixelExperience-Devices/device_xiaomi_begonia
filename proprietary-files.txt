@@ -767,14 +767,12 @@ vendor/lib64/libstagefrighthw.so
 # Mediatek
 vendor/bin/hw/android.hardware.audio@5.0-service-mediatek
 vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek
-vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.gpu@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.3-service
 vendor/bin/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.audio@5.0-service-mediatek.rc
 vendor/etc/init/android.hardware.wifi@1.0-service-lazy-mediatek.rc
-vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mms@1.3-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc
@@ -784,7 +782,6 @@ vendor/etc/media_codecs_mediatek_video.xml
 vendor/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.camera.postproc@1.0-impl.so
-vendor/lib/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.mms@1.3-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.3-impl.so
@@ -832,7 +829,6 @@ vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.postproc@1.0-impl.so
-vendor/lib64/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.mms@1.3-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.3-impl.so
@@ -1710,7 +1706,6 @@ vendor/lib/gc2375beta_mipi_raw_IdxMgr.so
 vendor/lib/gc2375beta_mipi_raw_tuning.so
 vendor/lib/gc5035_mipi_raw_IdxMgr.so
 vendor/lib/gc5035_mipi_raw_tuning.so
-vendor/lib/hw/dfps.mt6785.so
 vendor/lib/hw/displayfeature.default.so
 vendor/lib/hw/flp.default.so
 vendor/lib/hw/gps.default.so
@@ -1756,7 +1751,6 @@ vendor/lib/libDR.so
 vendor/lib/libdre.so
 vendor/lib/libfeature.stereo.provider.so
 vendor/lib/libfgauge_gm30.so
-vendor/lib/libfpspolicy.so
 vendor/lib/libfvaudio.so
 vendor/lib/libged.so
 vendor/lib/libgpud.so
@@ -1873,7 +1867,6 @@ vendor/lib64/gc2375beta_mipi_raw_IdxMgr.so
 vendor/lib64/gc2375beta_mipi_raw_tuning.so
 vendor/lib64/gc5035_mipi_raw_IdxMgr.so
 vendor/lib64/gc5035_mipi_raw_tuning.so
-vendor/lib64/hw/dfps.mt6785.so
 vendor/lib64/hw/displayfeature.default.so
 vendor/lib64/hw/flp.default.so
 vendor/lib64/hw/gps.default.so
@@ -1939,7 +1932,6 @@ vendor/lib64/libfeature_lmv.so
 vendor/lib64/libfeature_rss.so
 vendor/lib64/libfft_vendor.so
 vendor/lib64/libforkexecwrap.so
-vendor/lib64/libfpspolicy.so
 vendor/lib64/libfvaudio.so
 vendor/lib64/libged.so
 vendor/lib64/libgpud.so
