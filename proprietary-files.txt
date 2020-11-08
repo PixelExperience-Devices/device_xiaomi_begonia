@@ -1161,16 +1161,13 @@ vendor/lib64/vendor.xiaomi.hardware.vsimapp@1.0.so
 # rootdir
 vendor/bin/charge_logger
 vendor/bin/factory
-vendor/bin/fuelgauged
 vendor/bin/loghidlvendorservice
 vendor/bin/meta_tst
 vendor/bin/mnld
-vendor/bin/nvram_daemon
 vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
 vendor/etc/init/microtrust.rc
-vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/vendor.microtrust.hardware.capi@2.0-service.rc
 vendor/etc/init_panel_info.sh
 vendor/etc/partition_permission.sh
@@ -1191,7 +1188,6 @@ vendor/bin/dtc_vendor
 vendor/bin/em_hidl
 vendor/bin/epdg_wod
 vendor/bin/flashlessd
-vendor/bin/fuelgauged_nvram
 vendor/bin/gsm0710muxd
 vendor/bin/hw/mtkfusionrild
 vendor/bin/hw/vendor.microtrust.hardware.capi@2.0-service
@@ -1271,8 +1267,6 @@ vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bootperf.rc
 vendor/etc/init/camerahalserver.rc
 vendor/etc/init/em_hidl_user.rc
-vendor/etc/init/fuelgauged_init.rc
-vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/etc/init/gsm0710muxd.rc
 vendor/etc/init/init.bip.rc
 vendor/etc/init/init.bt_drv.rc
@@ -1750,7 +1744,6 @@ vendor/lib/libdpframework.so
 vendor/lib/libDR.so
 vendor/lib/libdre.so
 vendor/lib/libfeature.stereo.provider.so
-vendor/lib/libfgauge_gm30.so
 vendor/lib/libfvaudio.so
 vendor/lib/libged.so
 vendor/lib/libgpud.so
@@ -1766,7 +1759,6 @@ vendor/lib/libh264enc_sa.ca7.so
 vendor/lib/libhdrvideo.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/lib/libhevce_sb.ca7.android.so
-vendor/lib/libhwm.so
 vendor/lib/libhydra.so
 vendor/lib/libimageio.so
 vendor/lib/libimageio_plat_drv.so
@@ -1941,7 +1933,6 @@ vendor/lib64/libgz_gp_client.so
 vendor/lib64/libgz_uree.so
 vendor/lib64/libhdrvideo.so
 vendor/lib64/libhevce_sb.ca7.android.so
-vendor/lib64/libhwm.so
 vendor/lib64/libhydra.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/libimageio.so

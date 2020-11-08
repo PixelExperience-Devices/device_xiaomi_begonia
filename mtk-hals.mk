@@ -96,6 +96,12 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.engineermode@1.1.vendor \
     vendor.mediatek.hardware.engineermode@1.2.vendor
 
+# Fuelgauged
+PRODUCT_PACKAGES += \
+    fuelgauged \
+    libfgauge_gm30 \
+    fuelgauged_nvram \
+
 # Gpu
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.gpu@1.0.vendor
@@ -150,6 +156,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libnvram \
     libnvram_sec \
+    nvram_daemon \
     libcustom_nvram \
     libnvram_platform \
     libnvram_daemon_callback \
@@ -206,6 +213,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    libhwm \
     android.hardware.sensors@1.0-impl-mediatek \
     android.hardware.sensors@1.0-service-mediatek
 
