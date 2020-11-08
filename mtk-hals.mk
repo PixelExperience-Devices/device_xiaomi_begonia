@@ -237,5 +237,8 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
+    wpa_supplicant.conf \
+    wpa_supplicant_overlay.conf \
+    p2p_supplicant_overlay.conf \
     vendor.mediatek.hardware.wifi.supplicant@2.0.vendor \
     vendor.mediatek.hardware.wifi.supplicant@2.1.vendor
