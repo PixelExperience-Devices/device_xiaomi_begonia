@@ -40,8 +40,8 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Fingerprint
-BUILD_FINGERPRINT := google/sunfish/sunfish:11/RP1A.201005.006/6828489:user/release-keys
-BUILD_DESCRIPTION := sunfish-user 11 RP1A.201005.006 6828489 release-keys
+BUILD_FINGERPRINT := google/sunfish/sunfish:11/RP1A.201105.002/6869500:user/release-keys
+BUILD_DESCRIPTION := sunfish-user 11 RP1A.201105.002 6869500 release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
