@@ -6,6 +6,7 @@
 # Core Partitions
 /dev/block/platform/bootdevice/by-name/system     /system     ext4     ro                                                 wait,first_stage_mount
 /dev/block/platform/bootdevice/by-name/vendor     /vendor     ext4     ro                                                 wait,first_stage_mount
+/dev/block/by-name/metadata                       /metadata   ext4     noatime,nosuid,nodev,discard                       wait,formattable,first_stage_mount
 /dev/block/platform/bootdevice/by-name/userdata   /data       ext4     noatime,nosuid,nodev,noauto_da_alloc,errors=panic  latemount,wait,check,formattable,quota,reservedsize=128m,fileencryption=aes-256-xts
 /dev/block/platform/bootdevice/by-name/cache      /cache      ext4     noatime,nosuid,nodev,noauto_da_alloc,discard       wait,check,formattable
 /dev/block/platform/bootdevice/by-name/recovery   /recovery   emmc     defaults     first_stage_mount,nofail

@@ -275,6 +275,8 @@ on late-init
    start vold
 
 on fs
+    mount_all /vendor/etc/fstab.mt6785 --early
+
     ## USB configfs
     mkdir /dev/usb-ffs 0770 shell shell
     mkdir /dev/usb-ffs/adb 0770 shell shell
@@ -379,6 +381,12 @@ on late-fs
     start vendor.keymaster-4-0-trustonic
     start vendor.keymaster-4-0-beanpod
     start keymaster_attestation-1-1
+
+    # Wait for keymaster HALs (TEE and StrongBox)
+    exec_start wait_for_strongbox
+
+    # Mount RW partitions which need run fsck
+    mount_all /vendor/etc/fstab.mt6785 --late
 
 on post-fs-data
     write /proc/bootprof "INIT:post-fs-data"
