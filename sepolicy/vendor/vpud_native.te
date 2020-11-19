@@ -15,7 +15,16 @@ allow vpud_native teei_client_device:chr_file rw_file_perms;
 allow vpud_native mtk_hal_power_hwservice:hwservice_manager find;
 allow vpud_native hwservicemanager:binder call;
 allow vpud_native mtk_hal_power:binder { call transfer };
-allow vpud_native proc_m4u:file rw_file_perms;
+allow vpud_native proc_m4u:file r_file_perms;
+allowxperm vpud_native proc_m4u:file ioctl{
+MTK_M4U_T_ALLOC_MVA
+MTK_M4U_T_DEALLOC_MVA
+MTK_M4U_T_CONFIG_PORT
+MTK_M4U_T_DMA_OP
+MTK_M4U_T_SEC_INIT
+MTK_M4U_T_CONFIG_PORT_ARRAY
+MTK_M4U_T_CACHE_SYNC
+};
 
 get_prop(vpud_native, hwservicemanager_prop)
 set_prop(vpud_native, vendor_video_prop)
