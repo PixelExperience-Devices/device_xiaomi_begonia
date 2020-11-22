@@ -182,7 +182,7 @@ PRODUCT_PACKAGES += \
     power_native_test_v_1_0 \
     power_legacy_test_v_1_0 \
     libmtkperf_client_vendor \
-    vendor.mediatek.hardware.power@1.1 \
+    vendor.mediatek.hardware.power@1.1.vendor \
     vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.power@2.1 \
     vendor.mediatek.hardware.netdagent@1.0 \
