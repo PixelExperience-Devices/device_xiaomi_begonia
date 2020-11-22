@@ -19,6 +19,8 @@ ro.camera.sensor.highres.1=[[5184:3880:33:0],[5184:2920:33:0],[5184:2392:33:0],[
 ro.camera.sensor.highres.0.max=9280:6944
 ro.camera.highres.packagelist=org.lineageos.snap
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
+vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
 
 # Display
 ro.opengles.version=196610
