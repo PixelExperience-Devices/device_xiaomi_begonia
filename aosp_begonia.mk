@@ -19,6 +19,7 @@ $(call inherit-product, device/xiaomi/begonia/device.mk)
 
 # Inherit some common PE stuff.
 TARGET_GAPPS_ARCH := arm64
+TARGET_USES_AOSP_RECOVERY := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
