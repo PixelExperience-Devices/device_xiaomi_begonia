@@ -21,8 +21,7 @@ $(call inherit-product, device/xiaomi/begonia/device.mk)
 $(call inherit-product, device/xiaomi/begonia/mtk-hals.mk)
 
 # Inherit some PE source stuff
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
+TARGET_USES_AOSP_RECOVERY := true
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
