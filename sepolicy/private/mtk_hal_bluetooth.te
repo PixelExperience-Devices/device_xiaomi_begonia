@@ -1,0 +1,5 @@
+type mtk_hal_bluetooth, domain;
+type mtk_hal_bluetooth_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(mtk_hal_bluetooth)
+
+allow mtk_hal_bluetooth metadata_file:dir r_dir_perms;

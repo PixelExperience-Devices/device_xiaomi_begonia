@@ -1,0 +1,6 @@
+type mtk_hal_pq, domain;
+type mtk_hal_pq_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(mtk_hal_pq)
+
+set_prop(mtk_hal_pq, mtk_pq_prop)

@@ -1,1 +1,2 @@
 attribute mtkimsapdomain;
+attribute mtk_core_property_type;

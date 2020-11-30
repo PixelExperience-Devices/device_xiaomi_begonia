@@ -1,1 +1,2 @@
 type render_prop, property_type;
+type mtk_pq_prop, property_type, mtk_core_property_type;

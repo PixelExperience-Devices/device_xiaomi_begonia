@@ -1,0 +1,1 @@
+allow permissioncontroller_app debugfs_ion:dir rw_dir_perms;
