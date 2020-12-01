@@ -44,17 +44,17 @@ lib64/libmtkshifter.so
 lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
 
-# MTK-IMS [Compiled From Alps Against A11 Libstagefright]
-lib/libcomutils.so|0e9e2643001b7d32a661c0e47c5ebd526fac0a70
-lib/libimsma.so|5761c99bceadb6fb399f44c11d710a4b9d9e2f30
-lib/libimsma_adapt.so|f860d9d72484baa934fea0a78b4b1ef40c83b22c
-lib/libimsma_rtp.so|d1f433b0bd828b3af71636055660b8335e8a9dbf
-lib/libimsma_socketwrapper.so|0c10293b6a75ddfa1ac57dee5badb6cdbb8a0e87
-lib/libsignal.so|995894c58d09f9818737b57943db8099d38a8f46
-lib/libsink.so|e9f4758b525759e2301de563498d5f6aca24072e
-lib/libsource.so|58d7d4db83440354bcb7a94407e370e52fab0623
-lib/vendor.mediatek.hardware.videotelephony@1.0.so
-lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+# MTK-IMS | From bomb RP1A.200720.011 release-keys
+lib/libcomutils.so|be7c7b0901119cb260186061b90ef5b6a8292ae2
+lib/libimsma.so|c9e524600acb37296d7c73aa9db56d21e1a88d5b
+lib/libimsma_adapt.so|25159303e5d6404f08bda6456c8fcc2150005a9b
+lib/libimsma_rtp.so|ce2515dfb4802b4c6a121bae848e57342f0d43b9
+lib/libimsma_socketwrapper.so|5c63d8ec795fd0b7b9efcdc1adf4d81c5853c73a
+lib/libsignal.so|e008452949ea9bf486bf9892f024f82edcec5819
+lib/libsink.so|a7f8fa44abac16851dc83c58a13407e65c6a2cb0
+lib/libsource.so|0e01c6c5d76e21629463d1f94d28d1b8f91c4c30
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so|ecb6326c2a040b930a6bfc744ca761b7856154cd
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|5ed11753481998f26a6e39a9bd270dac3f0da46f
 
 # Xiaomi
 etc/permissions/vendor-xiaomi-hardware-citsensorservice.xml
