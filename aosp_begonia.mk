@@ -18,6 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 # Inherit from begonia device makefile
 $(call inherit-product, device/xiaomi/begonia/device.mk)
+$(call inherit-product, device/xiaomi/begonia/mtk-hals.mk)
 
 # Inherit some PE source stuff
 TARGET_GAPPS_ARCH := arm64
