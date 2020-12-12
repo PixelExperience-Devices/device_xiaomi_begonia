@@ -8,6 +8,9 @@
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
 
+# Radio IMS
+$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
+
 # Radio Jar
 PRODUCT_BOOT_JARS += \
     mediatek-common \

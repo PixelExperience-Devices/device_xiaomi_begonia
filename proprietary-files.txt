@@ -67,27 +67,14 @@ lib/libmtkavenhancements.so
 lib/libmtklimiter.so
 lib/libmtkperf_client.so
 lib/libmtkshifter.so
-lib/libvcodec_cap.so
-lib/libvcodec_capenc.so
-lib/libvt_avsync.so
 lib64/libmtk_vt_wrapper.so
 lib64/libmtkaudio_utils.so
 lib64/libmtkavenhancements.so
 lib64/libmtklimiter.so
 lib64/libmtkperf_client.so
 lib64/libmtkshifter.so
-lib64/libvcodec_cap.so
-lib64/libvcodec_capenc.so
 
-# MTK-IMS | From bomb RP1A.200720.011 release-keys
-lib/libcomutils.so|be7c7b0901119cb260186061b90ef5b6a8292ae2
-lib/libimsma.so|c9e524600acb37296d7c73aa9db56d21e1a88d5b
-lib/libimsma_adapt.so|25159303e5d6404f08bda6456c8fcc2150005a9b
-lib/libimsma_rtp.so|ce2515dfb4802b4c6a121bae848e57342f0d43b9
-lib/libimsma_socketwrapper.so|5c63d8ec795fd0b7b9efcdc1adf4d81c5853c73a
-lib/libsignal.so|e008452949ea9bf486bf9892f024f82edcec5819
-lib/libsink.so|a7f8fa44abac16851dc83c58a13407e65c6a2cb0
-lib/libsource.so|0e01c6c5d76e21629463d1f94d28d1b8f91c4c30
+# MTK Video Telephony | From bomb RP1A.200720.011 release-keys
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so|ecb6326c2a040b930a6bfc744ca761b7856154cd
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|5ed11753481998f26a6e39a9bd270dac3f0da46f
 
