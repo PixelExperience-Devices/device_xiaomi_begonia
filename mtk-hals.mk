@@ -20,3 +20,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common
+
+# Video Telephony
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.videotelephony@1.0

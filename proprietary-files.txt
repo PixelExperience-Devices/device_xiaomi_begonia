@@ -74,10 +74,6 @@ lib64/libmtklimiter.so
 lib64/libmtkperf_client.so
 lib64/libmtkshifter.so
 
-# MTK Video Telephony | From bomb RP1A.200720.011 release-keys
-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so|ecb6326c2a040b930a6bfc744ca761b7856154cd
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|5ed11753481998f26a6e39a9bd270dac3f0da46f
-
 # Touch
 lib/vendor.xiaomi.hardware.touchfeature@1.0.so
 lib64/vendor.xiaomi.hardware.touchfeature@1.0.so
