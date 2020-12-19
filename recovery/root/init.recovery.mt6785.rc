@@ -3,3 +3,8 @@ import /init.recovery.mtk.usb.rc
 on fs
     wait /dev/block/platform/bootdevice/
     symlink /dev/block/platform/bootdevice/ /dev/block/bootdevice
+
+on boot
+    # Turn backlight on and switch to backlight trigger
+    write /sys/class/leds/lcd-backlight/brightness "1000"
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
