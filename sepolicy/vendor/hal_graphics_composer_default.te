@@ -1,0 +1,6 @@
+allow hal_graphics_composer_default {
+    mtk_hal_pq_hwservice
+    hidl_memory_hwservice
+}:hwservice_manager { find };
+
+binder_call(hal_graphics_composer_default, mtk_hal_pq)
