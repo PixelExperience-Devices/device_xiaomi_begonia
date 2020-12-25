@@ -1,0 +1,1 @@
+allow mtk_hal_camera mtk_hal_pq_hwservice:hwservice_manager find;
