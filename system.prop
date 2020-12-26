@@ -39,9 +39,6 @@ sys.ipo.disable=1
 # Kernel
 ro.kernel.zio=38,108,105,16
 
-# MCD
-persist.sys.mcd_config_file=/system/etc/mcd_default.conf
-
 # Netflix
 ro.netflix.bsp_rev=MTK6785-18758-1
 
