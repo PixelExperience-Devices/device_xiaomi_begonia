@@ -99,9 +99,6 @@ ro.vendor.md_auto_setup_ims=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 
-# MCD
-persist.sys.mcd_config_file=/system/etc/mcd_default.conf
-
 # Media
 debug.stagefright.ccodec=0
 debug.stagefright.omx_default_rank.sw-audio=1
