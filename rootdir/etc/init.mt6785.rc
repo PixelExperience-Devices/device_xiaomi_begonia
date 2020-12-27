@@ -1121,3 +1121,7 @@ on property:persist.sys.begonia.dt2w=0
 
 on property:persist.sys.begonia.dt2w=1
     exec /system/bin/sendevent /dev/input/event2 0 1 5
+
+# Disable AOSP RIL if MTK RIL is up
+on property:vendor.ril.mtk=1
+    stop vendor.ril-daemon
