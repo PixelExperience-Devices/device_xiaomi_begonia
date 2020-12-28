@@ -1,3 +1,3 @@
 allow hal_fingerprint_default sysfs:file rw_file_perms;
 
-allowxperm hal_fingerprint_default device:chr_file ioctl SNDCTL_TMR_START;
+#allowxperm hal_fingerprint_default device:chr_file ioctl SNDCTL_TMR_START;
