@@ -2,44 +2,9 @@
 system_ext/lib64/libaptX_encoder.so|9e87fed4eac0e9fe428eaf8d0db7a1af89d521e1
 system_ext/lib64/libaptXHD_encoder.so|043c055498f6e6e2b0564ad35ea17b012844cbce
 
-# Citsensor
-etc/permissions/vendor-xiaomi-hardware-citsensorservice.xml
-lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
-lib/vendor.xiaomi.hardware.citsensorservice@1.1.so
-lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
-lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
-
-# Display
-lib/vendor.xiaomi.hardware.displayfeature@1.0.so
-lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
 -product/priv-app/HotwordEnrollmentXGoogleCORTEXM4/HotwordEnrollmentXGoogleCORTEXM4.apk
-
-# Misys
-etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
-etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml
-etc/permissions/vendor.xiaomi.hardware.misys.V3_0-permission.xml
--framework/vendor.xiaomi.hardware.misys-V1.0-java.jar
--framework/vendor.xiaomi.hardware.misys-V2.0-java.jar
--framework/vendor.xiaomi.hardware.misys.V3_0.jar
-lib/vendor.xiaomi.hardware.misys@1.0.so
-lib/vendor.xiaomi.hardware.misys@2.0.so
-lib/vendor.xiaomi.hardware.misys@3.0.so
-lib64/vendor.xiaomi.hardware.misys@1.0.so
-lib64/vendor.xiaomi.hardware.misys@2.0.so
-lib64/vendor.xiaomi.hardware.misys@3.0.so
-
-# Mlipay
-etc/permissions/vendor.xiaomi.hardware.vsimapp-V1.0-java-permission.xml
--framework/vendor.xiaomi.hardware.vsimapp-V1.0-java.jar
-
-# Mtd Service
-etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.0-java-permission.xml
-etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.1-java-permission.xml
--framework/vendor.xiaomi.hardware.mtdservice-V1.0-java.jar
--framework/vendor.xiaomi.hardware.mtdservice-V1.1-java.jar
 
 # MTK-EngineerMode
 lib/libem_support_jni.so
@@ -73,7 +38,3 @@ lib64/libmtkavenhancements.so
 lib64/libmtklimiter.so
 lib64/libmtkperf_client.so
 lib64/libmtkshifter.so
-
-# Touch
-lib/vendor.xiaomi.hardware.touchfeature@1.0.so
-lib64/vendor.xiaomi.hardware.touchfeature@1.0.so
