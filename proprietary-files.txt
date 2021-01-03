@@ -1092,6 +1092,22 @@ vendor/lib64/lib_smartpa_nxp_ap.so
 vendor/lib64/libgwsd-ril.so
 vendor/lib64/secure_element-impl.so
 
+# Neural Networks
+vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron|53f8ed2c6c007b4dd77b9ef803571c679f50beb0
+vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc|ebdc6355d6d4b243161f536aeafb9392373bde11
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-mdla-dsp-gpu.xml|c1e88704965364242e4151ea9e4a7a47c977b7b4
+vendor/lib64/libneuroeara.so|c446ef167e59fac98abbbbb5ef07375412d5deaf
+vendor/lib64/libneuron_adapter.so|4b022e738f4dde8b627388e85036d446994215a5
+vendor/lib64/libneuron_aidepth.so|ce35794aa0588b5f35f222c036d6f6013476f9ca
+vendor/lib64/libneuron_platform.so|51ce090d32acc2f5b5420dc33468e32248ca71ab
+vendor/lib64/libneuron_runainr.so|f4ca0f4ed0f2a4c01f9d05d2463bcdba8dee4f6c
+vendor/lib64/libneuron_runtime.so|cb9e66583deacdb1536248aac33eb4e3e34fb711
+vendor/lib64/libneuropilot_hal_utils.so|1eb2933feaff2e8060e841c74cacf1817c4889ef
+vendor/lib64/libneuropilot_jni_R.so|e8a78a81eaefd073c75d9648c30c74579dae947e
+vendor/lib/libneuroeara.so|bda7ec7fc57384bbba916fa18e183ffb8a8e93a1
+vendor/lib/libneuropilot_hal_utils.so|10e6f2088cc67a3240b3ea34ad691bdaae440f22
+vendor/lib/libneuropilot_jni_R.so|0d8f1078339b551124250eeb5c9bcc4eb4cd3f9b
+
 # Sensors
 vendor/lib/hw/sensors.touch.so
 vendor/lib/libssccalapi.so
