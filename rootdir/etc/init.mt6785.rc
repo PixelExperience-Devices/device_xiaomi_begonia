@@ -61,6 +61,7 @@ on init
     write /dev/cpuset/system-background/cpus 0-5
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/top-app/boost/cpus 6-7
+    chown system system /dev/input/event2
 
 on late-init
     write /proc/bootprof "INIT:late-init"
