@@ -8,6 +8,9 @@ on init
     mkdir /storage/usbotg 0700 root root
 
 on post-fs-data
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/secure_element 0770 nfc nfc
+    mkdir /data/nfc_socket 0771 nfc radio
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
     #Audio-add:Create directory used by audio cit
@@ -40,6 +43,12 @@ on post-fs-data
 
     chmod 0660 /dev/BU64745GWZAF
     chown system camera /dev/BU64745GWZAF
+
+#NFC
+    chmod 0660 /dev/nq-nci
+    chown nfc nfc /dev/nq-nci
+    chmod 0660 /dev/p73
+    chown nfc nfc /dev/p73
 
 #SMB
     chown system system /proc/smb/ScreenComm

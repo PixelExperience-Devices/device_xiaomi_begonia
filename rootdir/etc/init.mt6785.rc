@@ -1115,6 +1115,16 @@ service charger /bin/charger
     group system graphics
     seclabel u:r:healthd:s0
 
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.1-service
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
+
+on property:ro.boot.product.hardware.sku=begonia
+    start vendor.nfc_hal_service
+
 # Disable AOSP RIL if MTK RIL is up
 on property:vendor.ril.mtk=1
     stop vendor.ril-daemon
