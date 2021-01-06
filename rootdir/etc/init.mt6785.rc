@@ -1103,7 +1103,3 @@ on post-fs && property:ro.boot.hwc=India_PA
     mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
     mount none /dev/null /system/etc/permissions/android.software.nfc.beam.xml bind
     mount none /dev/null /system/etc/permissions/com.android.nfc_extras.xml bind
-
-# Disable AOSP RIL if MTK RIL is up
-on property:vendor.ril.mtk=1
-    stop vendor.ril-daemon
