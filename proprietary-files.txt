@@ -1144,9 +1144,7 @@ lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
 
 # NFC
-vendor/bin/hw/vendor.nxp.hardware.nfc@1.1-service|86ceb76df5de43e06efc6d767ea80ee19e72279d
 vendor/bin/pnscr|8b1679a6577cc98939284021ba74aab8c7808bcd
-vendor/etc/init/vendor.nxp.hardware.nfc@1.1-service.rc|c2afa78852ed6c2d5a9df9dbc3e3b448a001d57f
 vendor/etc/nxp/Phone_bt_bt.bin
 vendor/etc/nxp/Phone_hsmic_hs.bin
 vendor/etc/nxp/Phone_mic_hp.bin
@@ -1185,7 +1183,6 @@ vendor/lib/libteeclientjni.so|f5323b48c4fcba3afb3bd231424a5bb288334eab
 vendor/lib/nfc_nci.nqx.default.hw.so|df4edc97a6d7362fb309ecd1b16b4b5a4d52fe64
 vendor/lib/se_extn_client.so|e009018d0c0768a36df219526fc0c44b82c111a9
 vendor/lib/secure_element-impl.so|1efda3e2eae92983fabddaaefb1d3b86767dcdca
-vendor/lib/vendor.nxp.hardware.nfc@1.0.so|e8c05f952af993d96d5d39d43798066c3c50fd7d
 vendor/lib64/hw/nfc_nci.nqx.default.so|4cb2ef4eefad3816f58247bc37c68130ad264c49
 vendor/lib64/jcos_client.so|a9ffd477ce0be9887b6c54fdea1a1bbb85d7fe3d
 vendor/lib64/lib_smartpa_nxp_ap.so
@@ -1198,7 +1195,6 @@ vendor/lib64/libteeclientjni.so|a7c4b2f62fe68b76970849c63877ce28ea2cf481
 vendor/lib64/nfc_nci.nqx.default.hw.so|7593439e7cf53666691b4be5014c7e3eb3014b01
 vendor/lib64/se_extn_client.so|7b7596727e9b72a5ca023adf126ddbc88d225fee
 vendor/lib64/secure_element-impl.so|eeb158f3bba4b0690683246ddd1a94bf8a2a0294
-vendor/lib64/vendor.nxp.hardware.nfc@1.0.so|a5538536513ac2aecf90f9942ff424014ed28e3e
 
 # Neural-networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-gpunn
