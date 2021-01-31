@@ -74,7 +74,7 @@ on charger
     write /sys/class/leds/lcd-backlight/brightness "1000"
     write /sys/class/leds/lcd-backlight/trigger "backlight"
 
-    exec /system/bin/e2fsck -f -p /dev/block/platform/bootdevice/by-name/cache
+    exec /bin/e2fsck -f -p /dev/block/platform/bootdevice/by-name/cache
     mount ext4 /dev/block/platform/bootdevice/by-name/cache /cache rw wait
     chmod 0660 /dev/spm
     chown system system /dev/spm
@@ -107,8 +107,6 @@ on charger
     chown system system /sys/class/leds/white/brightness
     chown system system /sys/class/leds/green/brightness
 
-    start servicemanager
-    start hwservicemanager
     start light-hal-2-0
     start health-hal-2-0
 
@@ -123,7 +121,7 @@ on fs
     start vendor.boot-hal-1-0
     mount_all /vendor/etc/fstab.mt6785 --early
     mount_all /vendor/etc/fstab.mt6785 --late
-    exec /system/bin/tune2fs -O has_journal -u 10010 -r 4096 /dev/block/platform/bootdevice/by-name/userdata
+    exec /bin/tune2fs -O has_journal -u 10010 -r 4096 /dev/block/platform/bootdevice/by-name/userdata
     write /sys/kernel/debug/tracing/trace_marker "E"
     write /proc/bootprof "INIT:Mount_END"
     write /sys/block/zram0/comp_algorithm lz4
@@ -956,7 +954,7 @@ on property:persist.vendor.uartconsole.enable=*
     write /proc/mtprintk ${persist.vendor.uartconsole.enable}
 
 # bugreport is triggered by holding down volume down, volume up and power
-service bugreport /system/bin/dumpstate -d -p -B -z \
+service bugreport /bin/dumpstate -d -p -B -z \
         -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
     class late_start
     disabled
@@ -1017,7 +1015,7 @@ on property:sys.boot_completed=1
 #  Modem related services (Begin)
 #
 ##Add by T.Zh for ppp daemon
-#service pppd /system/bin/pppd file /data/misc/ppp/ppp_options
+#service pppd /bin/pppd file /data/misc/ppp/ppp_options
 #    user root
 #    disabled
 #    oneshot
@@ -1058,7 +1056,7 @@ on property:persist.vendor.mediatek.fg.log.enable=1
     write /proc/sys/kernel/printk 8
 
 # add loghidl client
-service loghidlsysservice /system/bin/loghidlsysservice
+service loghidlsysservice /bin/loghidlsysservice
     class main
     user root
     group system
@@ -1102,14 +1100,14 @@ on init
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
 
 # VSIM service (vendor OSI)
-service osi /system/bin/osi
+service osi /bin/osi
     class main
     user root
     disabled
     oneshot
     #seclabel u:r:osi:s0
 
-service charger system/bin/charger
+service charger /bin/charger
     class charger
     critical
     #seclabel u:r:charger:s0
