@@ -218,7 +218,6 @@ PRODUCT_PACKAGES += \
     teardown_loopback.sh
 
 PRODUCT_PACKAGES += \
-    init.aee.rc \
     init.ago.rc \
     init.connectivity.rc \
     init.modem.rc \
