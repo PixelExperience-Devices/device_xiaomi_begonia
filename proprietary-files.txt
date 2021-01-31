@@ -1101,48 +1101,6 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so
 
-# MTK-IMS
--framework/mediatek-common.jar
--framework/mediatek-framework.jar
--framework/mediatek-ims-base.jar
--framework/mediatek-ims-common.jar
--framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
--framework/mediatek-telephony-common.jar
--priv-app/ImsService/ImsService.apk
-bin/vtservice
-etc/init/init.vtservice.rc
-framework/mediatek-ims-extension-plugin.jar
-framework/mediatek-ims-legacy.jar
-framework/mediatek-ims-wwop-common.jar
-lib/libcomutils.so
-lib/libimsma.so
-lib/libimsma_adapt.so
-lib/libimsma_rtp.so
-lib/libimsma_socketwrapper.so
-lib/libmtk_vt_service.so
-lib/libmtk_vt_wrapper.so
-lib/libmtkaudio_utils.so
-lib/libmtkavenhancements.so
-lib/libmtklimiter.so
-lib/libmtkperf_client.so
-lib/libmtkshifter.so
-lib/libsignal.so
-lib/libsink.so
-lib/libsource.so
-lib/libvcodec_cap.so
-lib/libvcodec_capenc.so
-lib/libvt_avsync.so
-lib64/libmtk_serialnum.so
-lib64/libmtk_vt_wrapper.so
-lib64/libmtkaudio_utils.so
-lib64/libmtkavenhancements.so
-lib64/libmtklimiter.so
-lib64/libmtkperf_client.so
-lib64/libmtkshifter.so
-lib64/libvcodec_cap.so
-lib64/libvcodec_capenc.so
-
 # NFC
 vendor/bin/pnscr|8b1679a6577cc98939284021ba74aab8c7808bcd
 vendor/etc/nxp/Phone_bt_bt.bin
@@ -1201,45 +1159,6 @@ vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-gpunn
 vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-neuron-ann
 vendor/etc/init/android.hardware.neuralnetworks@1.1-service-gpunn.rc
 vendor/etc/init/android.hardware.neuralnetworks@1.1-service-neuron-ann.rc
-
-# Power (Hardware)
-vendor/bin/hw/power_legacy_test_v_1_0
-vendor/bin/hw/power_native_test_v_1_0
-vendor/etc/powercontable.xml
-vendor/etc/powerscntbl.xml
-vendor/etc/power_whitelist_cfg.xml
-vendor/lib/hw/power.default.so
-vendor/lib/hw/power.mt6785.so
-vendor/lib64/hw/power.default.so
-vendor/lib64/hw/power.mt6785.so
-
-# Power (Interfaces - mtkpower)
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
-vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
-vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.0-impl.so
-vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so
-vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.0-impl.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower@1.0.so
-
-# Power (Interfaces - android)
-vendor/lib/hw/android.hardware.power@1.3-impl-mediatek.so
-vendor/lib64/hw/android.hardware.power@1.3-impl-mediatek.so
-
-# Power (Interfaces - vendor.mediatek)
-vendor/lib/hw/vendor.mediatek.hardware.power@2.1-impl.so
-vendor/lib/vendor.mediatek.hardware.power@2.0.so
-vendor/lib/vendor.mediatek.hardware.power@2.1.so
-vendor/lib64/hw/vendor.mediatek.hardware.power@2.1-impl.so
-vendor/lib64/vendor.mediatek.hardware.power@1.1.so
-vendor/lib64/vendor.mediatek.hardware.power@2.0.so
-vendor/lib64/vendor.mediatek.hardware.power@2.1.so
-
-# Power (Libraries)
-vendor/lib/libpowerhal.so
-vendor/lib/libpowerhalwrap_vendor.so
-vendor/lib64/libpowerhal.so
-vendor/lib64/libpowerhalwrap_vendor.so
 
 # Radio
 vendor/lib/libvsim.so
