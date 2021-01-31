@@ -109,14 +109,14 @@ debug.stagefright.omx_default_rank=0
 # Mediatek (Misc)
 debug.mediatek.disp_decompress=1
 debug.mediatek.game_pq_enable=1
-ro.mtk_key_manager_support=1
 bsp.mishow.ctl=true
 vendor.mtk.vdec.waitkeyframeforplay=1
 ro.vendor.mediatek.platform=MT6785
 ro.vendor.mediatek.version.branch=alps-mp-q0.mp1.tc8sp
-ro.vendor.mediatek.version.release=alps-mp-q0.mp1.tc8sp-V1.0.1_xiaomi.q0mp1.k85v1.64_P54
+ro.vendor.mediatek.version.release=alps-mp-q0.mp1.tc8sp-V1.0.1_xiaomi.q0mp1.k85v1.64_P104
 ro.vendor.md_log_memdump_wait=15
 ro.vendor.md_prop_ver=1
+ro.se.type=eSE,HCE,UICC
 ro.vendor.mtk.bt_sap_enable=true
 ro.vendor.mtk_aal_support=1
 ro.vendor.mtk_agps_app=1
@@ -128,8 +128,11 @@ ro.vendor.mtk_dre30_support=1
 ro.vendor.mtk_eccci_c2k=1
 ro.vendor.mtk_embms_support=1
 ro.vendor.mtk_emmc_support=1
+ro.vendor.mtk_shutdown_support=0
 ro.vendor.mtk_exchange_support=1
+ro.vendor.mtk_external_sim_support=1
 ro.vendor.mtk_external_sim_only_slots=0
+ro.vendor.mtk_sim_hot_swap_common_slot=1
 ro.vendor.mtk_f2fs_enable=0
 ro.vendor.mtk_fd_support=1
 ro.vendor.mtk_gps_support=1
@@ -147,6 +150,7 @@ ro.vendor.smvr.p2batch.hd=8
 ro.vendor.smvr.p2batch.vga=16
 
 # NFC
+ro.vendor.nfc.repair=1
 ro.hardware.nfc_nci=nqx.default
 
 # Radio

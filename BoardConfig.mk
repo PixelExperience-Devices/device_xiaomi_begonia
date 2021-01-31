@@ -125,7 +125,7 @@ TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2020-02-01
+VENDOR_SECURITY_PATCH := 2020-12-01
 
 # Sepolicy
 include device/mediatek/sepolicy/sepolicy.mk
@@ -136,6 +136,8 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 # VNDK
 BOARD_VNDK_VERSION := current
 BOARD_VNDK_RUNTIME_DISABLE := true
+PRODUCT_VENDOR_MOVE_ENABLED := true
+PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/begonia/BoardConfigVendor.mk
