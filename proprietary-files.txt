@@ -706,11 +706,14 @@ vendor/lib64/hw/consumerir.mt6785.so
 vendor/lib/liboemcrypto.so
 vendor/lib64/liboemcrypto.so
 
-# DRM Widevine
-vendor/lib/libwvhidl.so
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib64/libwvhidl.so
-vendor/lib64/mediadrm/libwvdrmengine.so
+# DRM Widevine | From begonia 11-RP1A.200720.011-21.1.22
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|bb1ee465a6608d2704fbe9a787acbc7c4dc0aa85
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+vendor/lib/libwvhidl.so|59ff645d0d92cd13268cc5d70ca775048b49bd48
+vendor/lib/mediadrm/libwvdrmengine.so|a076bfd92c2721dda59face28b3268cf9717819a
+vendor/lib64/libwvhidl.so|a2c94646a2c4861222a1e8e9a802c68824e6f0f4
+vendor/lib64/mediadrm/libwvdrmengine.so|57c12b5dcfa7098718e3a7b39b2f6eae33b68dcd
 
 # Display Hardware
 vendor/lib/hw/gralloc.default.so

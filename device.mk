@@ -125,10 +125,9 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service \
-    android.hardware.drm@1.2-service.clearkey \
-    android.hardware.drm@1.2-service.widevine
+    android.hardware.drm@1.0-impl:64 \
+    android.hardware.drm@1.0-service-lazy \
+    android.hardware.drm@1.3-service.clearkey
 
 # Health
 PRODUCT_PACKAGES += \
