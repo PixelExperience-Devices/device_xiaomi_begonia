@@ -844,9 +844,11 @@ vendor/lib64/egl/libGLES_meow.so
 vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/libOpenCL.so
 
-# HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
--product/priv-app/HotwordEnrollmentXGoogleCORTEXM4/HotwordEnrollmentXGoogleCORTEXM4.apk
+# HotwordEnrollment | From Redfin 11 RQ1A.210205.004-7038034
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
+system_ext/framework/com.android.hotwordenrollment.common.util.jar|bef92589e75a6da6043f85f4b9b0e85866429624
+-product/priv-app/HotwordEnrollmentOKGoogleRT5514P/HotwordEnrollmentOKGoogleRT5514P.apk|beafe7d37af7e5ac3ff7384f9bdb7fc78de39939
+-product/priv-app/HotwordEnrollmentXGoogleRT5514P/HotwordEnrollmentXGoogleRT5514P.apk|f591fbb457d07a725a59fe36dced4790566568f2
 
 # Kernel Prebuild Modules
 vendor/lib/modules/bt_drv.ko:vendor/lib/modules_prebuilt/bt_drv.ko
