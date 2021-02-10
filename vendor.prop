@@ -48,7 +48,7 @@ ro.vendor.mtk_video_hevc_enc_support=1
 # Camera (Aux list)
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera,org.pixelexperience.faceunlock
-vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,com.microsoft.teams,com.discord
 
 # CONNSYS (connectivity)
 persist.vendor.connsys.chipid=-1
