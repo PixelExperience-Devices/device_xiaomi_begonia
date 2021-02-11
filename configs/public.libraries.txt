@@ -26,3 +26,5 @@ libmibokeh_mt6785.so
 libalhLDC.so
 libapu-platform.so
 libapu-frontend.so
+libprotobuf-cpp-full.so
+libprotobuf-cpp-lite.so
