@@ -1,1 +1,2 @@
 get_prop(vendor_init, persist_atm_prop)
+get_prop(vendor_init, persist_recovery_update_prop)

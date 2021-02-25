@@ -15,3 +15,6 @@ persist.sys.fp.goodix.     u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.     u:object_r:vendor_fp_prop:s0
 ro.hardware.fp             u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
+
+# Recovery
+persist.sys.recovery_update  u:object_r:persist_recovery_update_prop:s0
