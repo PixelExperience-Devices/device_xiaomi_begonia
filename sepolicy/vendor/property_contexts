@@ -1,7 +1,3 @@
-# Camera
-camera.sensor. u:object_r:mtk_camera_prop:s0
-persist.camera. u:object_r:mtk_camera_prop:s0
-
 # Fingerprint
 fpc_kpi                    u:object_r:vendor_fp_prop:s0
 gf.debug.dump_bigdata_data u:object_r:vendor_fp_prop:s0
@@ -9,6 +5,3 @@ persist.sys.fp.goodix.     u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.     u:object_r:vendor_fp_prop:s0
 ro.hardware.fp             u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
-
-# MediaTek
-ro.mtk_key_manager_support u:object_r:mediatek_prop:s0
