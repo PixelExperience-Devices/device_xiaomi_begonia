@@ -1,3 +1,27 @@
-allow hal_fingerprint_default sysfs:file rw_file_perms;
+typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 
-#allowxperm hal_fingerprint_default device:chr_file ioctl SNDCTL_TMR_START;
+allow hal_fingerprint_default init:unix_stream_socket connectto;
+allow hal_fingerprint_default mtee_trusty_file:dir r_dir_perms;
+allow hal_fingerprint_default mtee_trusty_file:file r_file_perms;
+allow hal_fingerprint_default property_socket:sock_file write;
+allow hal_fingerprint_default sysfs:file rw_file_perms;
+allow hal_fingerprint_default sysfs_batteryinfo:dir r_dir_perms;
+allow hal_fingerprint_default sysfs_batteryinfo:file r_file_perms;
+allow hal_fingerprint_default sysfs_pmu:dir r_dir_perms;
+allow hal_fingerprint_default sysfs_pmu:file r_file_perms;
+allow hal_fingerprint_default sysfs_spm:dir r_dir_perms;
+allow hal_fingerprint_default sysfs_spm:file r_file_perms;
+allow hal_fingerprint_default debugfs_fb:dir r_dir_perms;
+allow hal_fingerprint_default debugfs_fb:file r_file_perms;
+allow hal_fingerprint_default sysfs_net:dir r_dir_perms;
+allow hal_fingerprint_default sysfs_net:file r_file_perms;
+allow hal_fingerprint_default fp_data_file:dir r_dir_perms;
+allow hal_fingerprint_default fp_data_file:file rw_file_perms;
+allow hal_fingerprint_default vendor_data_file:dir rw_dir_perms;
+allow hal_fingerprint_default vendor_data_file:file { create_file_perms rw_file_perms };
+allow hal_fingerprint_default rootfs:dir r_dir_perms;
+allow hal_fingerprint_default fp_device:chr_file rw_file_perms;
+allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
+
+set_prop(hal_fingerprint_default, vendor_fp_prop)

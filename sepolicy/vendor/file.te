@@ -1,2 +1,3 @@
 type sysfs_light, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_graphics, sysfs_type, fs_type, mlstrustedobject;
+type fp_data_file, file_type, data_file_type, core_data_file_type;
