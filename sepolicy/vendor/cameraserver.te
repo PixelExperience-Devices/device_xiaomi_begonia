@@ -1,0 +1,9 @@
+allow cameraserver init:unix_stream_socket connectto;
+allow cameraserver property_socket:sock_file write;
+allow cameraserver adb_data_file:file read;
+
+get_prop(cameraserver, mtk_camera_prop)
+get_prop(cameraserver, exported_default_prop)
+get_prop(cameraserver, vendor_audio_prop)
+get_prop(cameraserver, vendor_default_prop)
+set_prop(cameraserver, system_prop)

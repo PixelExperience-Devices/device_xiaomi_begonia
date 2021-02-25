@@ -1,3 +1,6 @@
+# Camera
+persist.vendor.camera.privapp.list    u:object_r:exported_default_prop:s0
+
 # Display
 sys.panel.display                             u:object_r:vendor_displayfeature_prop:s0
 init.svc.displayfeature-hal-1-0               u:object_r:vendor_displayfeature_prop:s0
