@@ -1,6 +1,10 @@
 allow hal_graphics_composer_default {
     mtk_hal_pq_hwservice
     hidl_memory_hwservice
+    hal_displayfeature_hwservice
 }:hwservice_manager { find };
 
 binder_call(hal_graphics_composer_default, mtk_hal_pq)
+binder_call(hal_graphics_composer_default, hal_displayfeature_default)
+
+get_prop(hal_graphics_composer_default, vendor_displayfeature_prop)

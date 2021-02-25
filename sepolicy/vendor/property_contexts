@@ -1,3 +1,13 @@
+# Display
+sys.panel.display                             u:object_r:vendor_displayfeature_prop:s0
+init.svc.displayfeature-hal-1-0               u:object_r:vendor_displayfeature_prop:s0
+ro.displayfeature.histogram.enable            u:object_r:vendor_displayfeature_prop:s0
+persist.displayfeature.dc_backlight.enable    u:object_r:vendor_displayfeature_prop:s0
+ro.eyecare.brightness.threshold               u:object_r:vendor_displayfeature_prop:s0
+ro.eyecare.brightness.level                   u:object_r:vendor_displayfeature_prop:s0
+ro.hist.brightness.threshold                  u:object_r:vendor_displayfeature_prop:s0
+ro.xiaomi.bl.poll                             u:object_r:vendor_displayfeature_prop:s0
+
 # Fingerprint
 fpc_kpi                    u:object_r:vendor_fp_prop:s0
 gf.debug.dump_bigdata_data u:object_r:vendor_fp_prop:s0
