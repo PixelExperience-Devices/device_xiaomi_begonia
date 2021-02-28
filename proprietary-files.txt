@@ -1147,7 +1147,6 @@ vendor/lib64/libwpa_client.so
 vendor/bin/ccci_fsd
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
-vendor/bin/charge_logger
 vendor/bin/factory
 vendor/bin/fuelgauged
 vendor/bin/loghidlvendorservice

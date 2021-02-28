@@ -111,10 +111,6 @@ on charger
     start light-hal-2-0
     start health-hal-2-0
 
-    #Charge logger
-    mkdir /data/vendor/charge_logger 0771 system system
-    start charge_logger
-
 on fs
     write /proc/bootprof "INIT:Mount_START"
     write /sys/kernel/debug/tracing/trace_marker "B|1|Mount"
@@ -698,9 +694,6 @@ on post-fs-data
     write /sys/power/pm_async 0
     write /sys/power/pm_freeze_timeout 2000
 
-    #Charge logger
-    mkdir /data/vendor/charge_logger 0771 system system
-
     # RTC
     chmod 660 /dev/alarm
     chown root system /dev/alarm
@@ -717,17 +710,6 @@ on post-fs-data
 
 # End of adding by MTK drivers
 # -----------------------
-
-# add charge_logger service for dump charge message
-service charge_logger /vendor/bin/charge_logger
-    class last_start
-    user system
-    group system system wakelock
-    disabled
-    oneshot
-
-on property:sys.boot_completed=1
-    start charge_logger
 
 on boot
     write /proc/bootprof "INIT:boot"
