@@ -1212,7 +1212,6 @@ vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
 vendor/bin/MI_IC
 vendor/bin/mrdump_tool
-vendor/bin/mtkcam-debug
 vendor/bin/mtk_agpsd
 vendor/bin/muxreport
 vendor/bin/netdagent
