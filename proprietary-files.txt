@@ -1151,7 +1151,6 @@ vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/vendor.microtrust.hardware.capi@2.0-service.rc
 vendor/etc/init_panel_info.sh
 vendor/etc/partition_permission.sh
-vendor/fstab.enableswap
 
 # Misc
 vendor/bin/atcid
@@ -1159,7 +1158,6 @@ vendor/bin/atci_service
 vendor/bin/audiocmdservice_atci
 vendor/bin/bip
 vendor/bin/charon
-vendor/bin/dconfig
 vendor/bin/dc_cal
 vendor/bin/devmem
 vendor/bin/dexecutor
@@ -1240,7 +1238,6 @@ vendor/etc/ecc_list_OP17.xml
 vendor/etc/ecc_list_OP18.xml
 vendor/etc/ecc_list_OP20.xml
 vendor/etc/factory.ini
-vendor/etc/FV-SAM-MTK2.dat
 vendor/etc/init/atcid.rc
 vendor/etc/init/atci_service.rc
 vendor/etc/init/audiocmdservice_atci.rc
@@ -1441,7 +1438,6 @@ vendor/etc/mdota/MTK_OPOTA_SBPID_9.mcfopota
 vendor/etc/mdota/MTK_OTA.mcfota
 vendor/etc/mpe.conf
 vendor/etc/mtk_omx_core.cfg
-vendor/etc/pm_test_item_config.xml
 vendor/etc/security/cacerts/00673b5b.0
 vendor/etc/security/cacerts/04f60c28.0
 vendor/etc/security/cacerts/0d69c7e1.0
@@ -1604,15 +1600,8 @@ vendor/etc/security/cacerts_supl/lab/c9dbfc2e.0
 vendor/etc/security/cacerts_supl/lab/ed7b215e.0
 vendor/etc/security/cacerts_supl/lab/ef4b31e6.0
 vendor/etc/slp_conf
-vendor/etc/smsdbvisitor.xml
-vendor/etc/special_pws_channel.xml
-vendor/etc/spn-conf-op09.xml
 vendor/etc/throttle.sh
 vendor/etc/tianma_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml
-vendor/etc/virtual-spn-conf-by-efgid1.xml
-vendor/etc/virtual-spn-conf-by-efpnn.xml
-vendor/etc/virtual-spn-conf-by-efspn.xml
-vendor/etc/virtual-spn-conf-by-imsi.xml
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/gc2375af_mipi_raw_IdxMgr.so
 vendor/lib/gc2375af_mipi_raw_tuning.so
