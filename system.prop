@@ -1,11 +1,6 @@
 # Audio
 ro.camera.sound.forced=0
 ro.audio.silent=0
-ro.vendor.audio.soundfx.type=mi
-ro.vendor.audio.soundfx.usb=true
-ro.vendor.audio.voice.volume.boost=manual
-ro.vendor.audio.game.effect=true
-ro.vendor.audio.sos=true
 vendor.audio.spkcal.copy.inhal=true
 
 # Brand

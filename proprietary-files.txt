@@ -128,7 +128,6 @@ vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib/libtinycompress.so
 vendor/lib/soundfx/libaudiopreprocessing.so
-vendor/lib/soundfx/libmisoundfx.so
 vendor/lib64/libaudiocompensationfilterc.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocomponentenginec.so
@@ -1440,7 +1439,6 @@ vendor/etc/mdota/MTK_OPOTA_SBPID_7.mcfopota
 vendor/etc/mdota/MTK_OPOTA_SBPID_8.mcfopota
 vendor/etc/mdota/MTK_OPOTA_SBPID_9.mcfopota
 vendor/etc/mdota/MTK_OTA.mcfota
-vendor/etc/misound_res.bin
 vendor/etc/mpe.conf
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/pm_test_item_config.xml
@@ -1707,7 +1705,6 @@ vendor/lib/libjpeg-alpha_vendor.so
 vendor/lib/libJpgEncPipe.so
 vendor/lib/liblogwrap_vendor.so
 vendor/lib/libminiui.so
-vendor/lib/libmisound.so
 vendor/lib/libmmprofile.so
 vendor/lib/libmnetlink_v104.so
 vendor/lib/libmnl.so
@@ -1899,7 +1896,6 @@ vendor/lib64/liblogwrap_vendor.so
 vendor/lib64/liblpcnr.so
 vendor/lib64/libmfllcore.so
 vendor/lib64/libminiui.so
-vendor/lib64/libmisound.so
 vendor/lib64/libmmprofile.so
 vendor/lib64/libmnetlink_v104.so
 vendor/lib64/libmsbc_mtk.so
