@@ -1110,9 +1110,6 @@ vendor/bin/mi_thermald
 vendor/bin/thermal
 vendor/bin/thermalloadalgod
 vendor/bin/thermal_manager
-vendor/etc/.tp/.thermal_policy_08
-vendor/etc/.tp/thermal.conf
-vendor/etc/.tp/thermal.off.conf
 vendor/etc/init/init.thermal.rc
 vendor/etc/init/init.thermalloadalgod.rc
 vendor/etc/init/init.thermal_manager.rc
@@ -1230,9 +1227,6 @@ vendor/bin/volte_ua
 vendor/bin/vpud
 vendor/bin/wfca
 vendor/bin/xcap
-vendor/data/misc/ProjectConfig.mk
-vendor/etc/.tp/.ht120.mtc
-vendor/etc/aee-config
 vendor/etc/agps_profiles_conf2.xml
 vendor/etc/apdb/APDB_MT6785_S01__W1943
 vendor/etc/apdb/APDB_MT6785_S01__W1943_ENUM
@@ -1458,9 +1452,7 @@ vendor/etc/mdota/MTK_OTA.mcfota
 vendor/etc/misound_res.bin
 vendor/etc/mpe.conf
 vendor/etc/mtk_omx_core.cfg
-vendor/etc/pdc.txt
 vendor/etc/pm_test_item_config.xml
-vendor/etc/screen_light.xml
 vendor/etc/security/cacerts/00673b5b.0
 vendor/etc/security/cacerts/04f60c28.0
 vendor/etc/security/cacerts/0d69c7e1.0
@@ -1628,7 +1620,6 @@ vendor/etc/special_pws_channel.xml
 vendor/etc/spn-conf-op09.xml
 vendor/etc/throttle.sh
 vendor/etc/tianma_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml
-vendor/etc/vendor-apns-conf.xml
 vendor/etc/virtual-spn-conf-by-efgid1.xml
 vendor/etc/virtual-spn-conf-by-efpnn.xml
 vendor/etc/virtual-spn-conf-by-efspn.xml
