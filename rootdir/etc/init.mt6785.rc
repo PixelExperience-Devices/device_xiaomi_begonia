@@ -1038,13 +1038,6 @@ on property:persist.vendor.mediatek.fg.log.enable=1
     write /sys/bus/platform/devices/battery/FG_daemon_log_level 7
     write /proc/sys/kernel/printk 8
 
-# add loghidl client
-service loghidlsysservice /bin/loghidlsysservice
-    class main
-    user root
-    group system
-    disabled
-
 # add meta_tst for ATM
 service meta_tst /vendor/bin/meta_tst
     class main
@@ -1052,24 +1045,6 @@ service meta_tst /vendor/bin/meta_tst
     group radio gps system wifi audio bluetooth media
     disabled
     oneshot
-
-# start meta_tst for ATM
-on property:sys.boot_completed=1 && property:ro.boot.atm=enable
-    start meta_tst
-    start loghidlvendorservice
-    start loghidlsysservice
-
-on property:sys.boot_completed=1 && property:persist.atm_enabled=true
-    setprop vendor.usb.atm 1
-    start meta_tst
-    start loghidlvendorservice
-    start loghidlsysservice
-
-on property:sys.boot_completed=1 && property:persist.atm_enabled=false
-    setprop vendor.usb.atm 0
-    stop meta_tst
-    stop loghidlvendorservice
-    stop loghidlsysservice
 
 # reset mdmode when modem crash happens in ATM
 on property:vendor.mtk.md1.status=reset
