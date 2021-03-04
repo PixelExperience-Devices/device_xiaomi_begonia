@@ -1,0 +1,8 @@
+allow gmscore_app debugfs_ion:dir rw_dir_perms;
+allow gmscore_app mtk_cmdq_device:chr_file rw_file_perms;
+allow gmscore_app mtk_mdp_device:chr_file rw_file_perms;
+
+get_prop(gmscore_app, render_prop)
+
+# Silent harmless spolicy
+dontaudit gmscore_app hal_memtrack_hwservice:hwservice_manager find;
