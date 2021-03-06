@@ -21,3 +21,6 @@ vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
 
 # Recovery
 persist.sys.recovery_update  u:object_r:persist_recovery_update_prop:s0
+
+# Thermal
+vendor.sys.thermal.     u:object_r:thermal_engine_prop:s0
