@@ -2,6 +2,9 @@
 /data/gf_data(/.*)?              u:object_r:fp_data_file:s0
 /dev/goodix_fp                   u:object_r:fp_device:s0
 
+# FPS Info
+/sys/module/primary_display/parameters/display_framerate_main      u:object_r:sysfs_fpsinfo:s0
+
 # Hals
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service    u:object_r:hal_displayfeature_default_exec:s0
 

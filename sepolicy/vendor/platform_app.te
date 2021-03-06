@@ -1,0 +1,1 @@
+allow platform_app sysfs_fpsinfo:file rw_file_perms;
