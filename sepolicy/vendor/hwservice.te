@@ -1,1 +1,2 @@
 type hal_displayfeature_hwservice, hwservice_manager_type;
+type citsensorservice_hwservice, hwservice_manager_type;
