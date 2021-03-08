@@ -14,8 +14,8 @@ on post-fs-data
     mkdir /data/md3	0770 root system
 
 #  Build-in Modified - S
-#    insmod /vendor/lib/modules_prebuilt/ccci_plat.ko
-#    insmod /vendor/lib/modules_prebuilt/ccci.ko
+#    insmod /vendor/lib/modules/ccci_plat.ko
+#    insmod /vendor/lib/modules/ccci.ko
 #  Build-in Modified - E
     chown radio radio /sys/kernel/ccci/boot
 

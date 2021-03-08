@@ -1,0 +1,31 @@
+#
+on early-init
+
+on post-fs-data
+
+    # Modem related device nodes
+    mkdir /mnt/vendor/nvdata/md  0770 root system
+    mkdir /mnt/vendor/nvdata/md3  0770 root system
+    mkdir /data/vendor/md3	0770 root system
+#  Build-in Modified - S
+#    insmod /vendor/lib/modules/ccci_plat.ko
+#    insmod /vendor/lib/modules/ccci.ko
+#  Build-in Modified - E
+#   chown radio radio /sys/class/BOOT/BOOT/boot/md
+    chown radio radio /sys/kernel/ccci/boot
+
+#SeLinux
+    mkdir /data/vendor/ccci_cfg 0770 system radio
+    restorecon /data/vendor/ccci_cfg
+
+service ccci_mdinit /vendor/bin/ccci_mdinit 0
+    user system
+    group radio system
+    class core
+    oneshot
+
+service ccci3_mdinit /vendor/bin/ccci_mdinit 2
+    user system
+    group radio system
+    class core
+    oneshot

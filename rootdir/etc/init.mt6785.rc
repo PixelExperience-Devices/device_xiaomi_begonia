@@ -305,7 +305,7 @@ on post-fs-data
     chmod 444 /etc/radvd/radvd.conf
 
     # Mali 3D GPU driver
-    #insmod /vendor/lib/modules_prebuilt/mali.ko
+    #insmod /vendor/lib/modules/mali.ko
     chmod 666 /dev/mali0
     #chown system graphics /dev/mali
 
@@ -335,7 +335,7 @@ on post-fs-data
     chown root radio /dev/ptmx
 
     # M4U
-    #insmod /vendor/lib/modules_prebuilt/m4u.ko
+    #insmod /vendor/lib/modules/m4u.ko
     #mknod /dev/M4U_device c 188 0
     chmod 0444 /dev/m4u
     #chown system media /dev/M4U_device
@@ -392,7 +392,7 @@ on post-fs-data
     mkdir /data/vendor/vcodec/log 0770 media system
 
     #MJC
-    #insmod /vendor/lib/modules_prebuilt/mjc_kernel_driver.ko
+    #insmod /vendor/lib/modules/mjc_kernel_driver.ko
     #mknod /dev/MJC c 168 0
     chmod 0660 /dev/MJC
     chown media system /dev/MJC
@@ -1052,7 +1052,7 @@ on property:vendor.mtk.md1.status=reset
 
 # FPSGO FBT Game
 on boot
-    insmod /vendor/lib/modules_prebuilt/fpsgo.ko
+    insmod /vendor/lib/modules/fpsgo.ko
 
 on init
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
