@@ -4,3 +4,4 @@ allow init self:netlink_kobject_uevent_socket read;
 allow init sysfs_wake_lock:file r_file_perms;
 allow init same_process_hal_file:file execute;
 allow init vendor_data_file:file w_file_perms;
+allow init vendor_configs_file:file mounton;

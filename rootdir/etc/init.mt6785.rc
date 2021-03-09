@@ -1072,6 +1072,40 @@ service charger /bin/charger
     group system graphics
     seclabel u:r:healthd:s0
 
+# Bind NFC on Indian device
+on post-fs && property:ro.product.device=begoniain
+    mount none /dev/null /system/app/NfcNci/NfcNci.apk bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.ese.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hce.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hcef.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.uicc.xml bind
+    mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
+    mount none /dev/null /system/etc/permissions/android.software.nfc.beam.xml bind
+    mount none /dev/null /system/etc/permissions/com.android.nfc_extras.xml bind
+
+on post-fs && property:ro.boot.hwc=India
+    mount none /dev/null /system/app/NfcNci/NfcNci.apk bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.ese.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hce.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hcef.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.uicc.xml bind
+    mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
+    mount none /dev/null /system/etc/permissions/android.software.nfc.beam.xml bind
+    mount none /dev/null /system/etc/permissions/com.android.nfc_extras.xml bind
+
+on post-fs && property:ro.boot.hwc=India_PA
+    mount none /dev/null /system/app/NfcNci/NfcNci.apk bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.ese.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hce.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.hcef.xml bind
+    mount none /dev/null /vendor/etc/permissions/android.hardware.nfc.uicc.xml bind
+    mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
+    mount none /dev/null /system/etc/permissions/android.software.nfc.beam.xml bind
+    mount none /dev/null /system/etc/permissions/com.android.nfc_extras.xml bind
+
 # Disable AOSP RIL if MTK RIL is up
 on property:vendor.ril.mtk=1
     stop vendor.ril-daemon
