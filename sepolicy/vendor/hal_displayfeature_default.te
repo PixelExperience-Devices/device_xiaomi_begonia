@@ -10,6 +10,8 @@ allow hal_displayfeature_default hal_displayfeature_hwservice:hwservice_manager 
 allow hal_displayfeature_default hwservicemanager:binder { call transfer };
 allow hal_displayfeature_default hidl_base_hwservice:hwservice_manager add;
 
+allow hal_displayfeature_default mtk_hal_pq_hwservice:hwservice_manager find;
+
 allow hal_displayfeature_default sysfs_leds:dir r_dir_perms;
 allow hal_displayfeature_default sysfs_leds:file rw_file_perms;
 
