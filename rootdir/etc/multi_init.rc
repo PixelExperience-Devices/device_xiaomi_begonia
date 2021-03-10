@@ -1,9 +1,5 @@
 # import AOSP service related rc in meta mode and factory mode.
 #
-import /system/etc/init/aee_aed.rc
-import /system/etc/init/aee_aed64.rc
-import /vendor/etc/init/aee_aedv.rc
-import /vendor/etc/init/aee_aedv64.rc
 import /system/etc/init/logd.rc
 import /system/etc/init/logd_e.rc
 import /system/etc/init/logcatd.rc

@@ -1,9 +1,6 @@
 # ADB
 persist.adb.nonblocking_ffs=0
 
-# AEEV
-ro.vendor.have_aeev_feature=1
-
 # Audio
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
