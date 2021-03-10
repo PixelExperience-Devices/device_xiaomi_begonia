@@ -960,9 +960,9 @@ vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
 vendor/lib64/libgralloc_extra.so
 
-# DP Framework // Compiled With begonia q-oss Kernel Changes //
-vendor/lib/libdpframework.so|dae0139d552862938dd0ac476941b361104d8992
-vendor/lib64/libdpframework.so|d507b8c2bdd0e9ffa4958240bb83c888a7282524
+# DP Framework
+vendor/lib/libdpframework.so
+vendor/lib64/libdpframework.so
 
 # DPlanner Hardware
 vendor/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service
