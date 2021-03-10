@@ -59,14 +59,6 @@ if [ -z "${SRC}" ]; then
     SRC=adb
 fi
 
-function blob_fixup() {
-    case "${1}" in
-    *.rc)
-        sed -i "s/vendor\/lib\/modules\//vendor\/lib\/modules_prebuilt\//g" ${2}
-        ;;
-    esac
-}
-
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${AOSP_ROOT}" false "${CLEAN_VENDOR}"
 

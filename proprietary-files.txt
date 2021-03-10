@@ -1099,26 +1099,6 @@ vendor/lib/libjpeg-alpha_vendor.so
 vendor/lib64/libjpeg-alpha-oal_vendor.so
 vendor/lib64/libjpeg-alpha_vendor.so
 
-# Kernel Prebuild Modules (RC)
-vendor/etc/init/init.bt_drv.rc
-vendor/etc/init/init.cccimdinit.rc
-vendor/etc/init/init.fmradio_drv.rc
-vendor/etc/init/init.gps_drv.rc
-vendor/etc/init/init.udc_lib.rc
-vendor/etc/init/init.wlan_drv.rc
-vendor/etc/init/init.wmt_drv.rc
-
-# Kernel Prebuild Modules (.ko)
-vendor/lib/modules/bt_drv.ko:vendor/lib/modules_prebuilt/bt_drv.ko
-vendor/lib/modules/fmradio_drv.ko:vendor/lib/modules_prebuilt/fmradio_drv.ko
-vendor/lib/modules/fpsgo.ko:vendor/lib/modules_prebuilt/fpsgo.ko
-vendor/lib/modules/gps_drv.ko:vendor/lib/modules_prebuilt/gps_drv.ko
-vendor/lib/modules/met.ko:vendor/lib/modules_prebuilt/met.ko
-vendor/lib/modules/udc_lib.ko:vendor/lib/modules_prebuilt/udc_lib.ko
-vendor/lib/modules/wlan_drv_gen4m.ko:vendor/lib/modules_prebuilt/wlan_drv_gen4m.ko
-vendor/lib/modules/wmt_chrdev_wifi.ko:vendor/lib/modules_prebuilt/wmt_chrdev_wifi.ko
-vendor/lib/modules/wmt_drv.ko:vendor/lib/modules_prebuilt/wmt_drv.ko
-
 # Keymaster
 vendor/bin/kmsetkey
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
