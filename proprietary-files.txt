@@ -905,6 +905,9 @@ vendor/lib64/libfeature_rss.so
 vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
 
+# Charger | From begonia 11-RP1A.200720.011 21.3.3
+bin/charger:bin/chargeonlymode|bb74c36cee72b1f2e2c8090eb6f21352eba8e83f
+
 # Consumerir
 vendor/lib/hw/consumerir.mt6785.so
 vendor/lib64/hw/consumerir.mt6785.so
