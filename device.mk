@@ -228,17 +228,6 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    capture.sh \
-    capture_headsetmic.sh \
-    playback.sh \
-    playback_headset.sh \
-    setup_headset2rcv.sh \
-    setup_headsetmic2headphone.sh \
-    setup_mainmic2headphone.sh \
-    setup_topmic2headphone.sh \
-    teardown_loopback.sh
-
-PRODUCT_PACKAGES += \
     init.ago.rc \
     init.connectivity.rc \
     init.mi_thermald.rc \
