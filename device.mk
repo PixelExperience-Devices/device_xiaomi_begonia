@@ -317,7 +317,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 # Kernel
-$(call inherit-product, device/xiaomi/begonia/kernel/kernel.mk)
+$(call inherit-product, device/xiaomi/begonia-kernel/kernel.mk)
 
 # Inherit vendor
 $(call inherit-product, vendor/xiaomi/begonia/begonia-vendor.mk)

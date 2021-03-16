@@ -1,2 +1,0 @@
-on early-init
-  insmod /vendor/lib/modules/udc_lib.ko

@@ -6,6 +6,12 @@
    "branch"      : "eleven"
  },
  {
+   "repository"  : "device_xiaomi_begonia-kernel",
+   "target_path" : "device/xiaomi/begonia-kernel",
+   "remote"      : "pixel-devices",
+   "branch"      : "eleven"
+ },
+ {
    "repository"  : "vendor_xiaomi_begonia",
    "target_path" : "vendor/xiaomi/begonia",
    "remote"      : "pixel-devices-blobs",

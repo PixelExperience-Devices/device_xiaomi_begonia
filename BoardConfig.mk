@@ -52,7 +52,7 @@ TARGET_BOARD_PLATFORM := mt6785
 TARGET_BOARD_PLATFORM_GPU := mali-g76mc4
 
 # Kernel
-include device/xiaomi/begonia/kernel/BoardConfigKernel.mk
+include device/xiaomi/begonia-kernel/BoardConfigKernel.mk
 
 # AVB
 BOARD_AVB_ENABLE := true
