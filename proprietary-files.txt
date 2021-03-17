@@ -943,7 +943,7 @@ vendor/lib64/libwvhidl.so|a2c94646a2c4861222a1e8e9a802c68824e6f0f4
 vendor/lib64/mediadrm/libwvdrmengine.so|57c12b5dcfa7098718e3a7b39b2f6eae33b68dcd
 
 # Display
-vendor/etc/init_panel_info.sh|aec4f25dd4b61557f12bb574f7f3bff647b30736
+vendor/etc/init_panel_info.sh
 vendor/etc/ebbg_fhd_ft8719_dsi_vdo_lcm_drv_mi.xml
 vendor/etc/csot_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml
 vendor/etc/tianma_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml
