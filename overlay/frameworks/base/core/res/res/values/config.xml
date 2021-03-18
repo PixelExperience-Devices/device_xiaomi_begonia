@@ -321,17 +321,6 @@
         <item>/system/bin/surfaceflinger</item>
     </string-array>
 
-    <!-- List of files pinned by the Pinner Service with the apex boot image b/119800099 -->
-    <string-array translatable="false" name="config_apexBootImagePinnerServiceFiles">
-        <item>/system/framework/framework.jar</item>
-        <item>/system/framework/services.jar</item>
-        <item>/apex/com.android.art/javalib/core-oj.jar</item>
-        <item>/apex/com.android.art/javalib/core-libart.jar</item>
-        <item>/apex/com.android.media/javalib/updatable-media.jar</item>
-        <item>/system_ext/priv-app/SystemUI/SystemUI.apk</item>
-        <item>/system/bin/surfaceflinger</item>
-    </string-array>
-
     <!-- An Array of "[Connection name],[ConnectivityManager.TYPE_xxxx],
          [associated radio-type],[priority],[restoral-timer(ms)],[dependencyMet]  -->
     <!-- the 5th element "resore-time" indicates the number of milliseconds to delay
