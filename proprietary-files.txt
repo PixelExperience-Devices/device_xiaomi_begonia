@@ -1,3 +1,5 @@
+# Device proprietary files - from Begonia MIUI V12.0.7.0.QGGMIXM, unless pinned
+
 # Audio
 vendor/lib/libaudiocompensationfilterc.so
 vendor/lib/libaudiocompensationfilter_vendor.so
