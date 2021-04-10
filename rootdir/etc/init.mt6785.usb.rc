@@ -116,8 +116,6 @@ on property:sys.usb.config=hid && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idProduct 0x20FF
     write /config/usb_gadget/g1/functions/hid.gs0/protocol 0
     write /config/usb_gadget/g1/functions/hid.gs0/subclass 0
-    #write /config/usb_gadget/g1/functions/hid.gs0/report_length 4
-    #write /config/usb_gadget/g1/functions/hid.gs0/report_desc \\x05\\x01\\x09\\x00\\xa1\\x01\\xc0
     symlink /config/usb_gadget/g1/functions/hid.gs0 /config/usb_gadget/g1/configs/b.1/f1
     write /config/usb_gadget/g1/UDC ${vendor.usb.controller}
     setprop sys.usb.state ${sys.usb.config}
@@ -807,8 +805,6 @@ property:vendor.usb.clear=2 && property:sys.usb.configfs=1
     symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f2
     symlink /config/usb_gadget/g1/functions/acm.gs0 /config/usb_gadget/g1/configs/b.1/f3
     write /config/usb_gadget/g1/UDC ${vendor.usb.controller}
-    #setprop sys.usb.state ${sys.usb.config}
-    #setprop vendor.usb.pid 0x200A
     setprop vendor.usb.clear 0
     setprop vendor.usb.acm_idx "1"
 
@@ -834,8 +830,6 @@ property:vendor.usb.clear=2 && property:sys.usb.configfs=1
     symlink /config/usb_gadget/g1/functions/acm.gs0 /config/usb_gadget/g1/configs/b.1/f3
     symlink /config/usb_gadget/g1/functions/acm.gs3 /config/usb_gadget/g1/configs/b.1/f4
     write /config/usb_gadget/g1/UDC ${vendor.usb.controller}
-    #setprop sys.usb.state ${sys.usb.config}
-    #setprop vendor.usb.pid 0x2026
     setprop vendor.usb.clear 0
     setprop vendor.usb.acm_idx "1,4"
 
@@ -960,5 +954,3 @@ on property:persist.vendor.usb.dbg.lv=*
 
 on property:vendor.usb.dbg.lv=*
 	write /sys/module/musb_hdrc/parameters/debug_level ${vendor.usb.dbg.lv}
-
-### PLATFORM VARIANT, cat $rc_file | grep write | sort | grep -vE "android0|usb20_phy" | awk '{print $2}' | uniq ###
