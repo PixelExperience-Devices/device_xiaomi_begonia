@@ -1,10 +1,6 @@
 # Audio
-ro.camera.sound.forced=0
 ro.audio.silent=0
 vendor.audio.spkcal.copy.inhal=true
-
-# Brand
-Build.BRAND=MTK
 
 # Camera
 ro.camera.sensor.id_rear=0
@@ -65,6 +61,3 @@ mediatek.wlan.ctia=0
 wifi.tethering.interface=ap0
 wifi.direct.interface=p2p0
 ro.vendor.net.enable_dual_wifi=1
-
-# Zygote Preforking
-persist.device.config.runtime_native.uasp_pool_enabled=true

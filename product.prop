@@ -1,4 +1,7 @@
-# Blurs | Hidden under dev option
+# Blurs (hidden under dev option)
 ro.surface_flinger.supports_background_blur=1
 persist.sys.sf.disable_blurs=1
 ro.sf.blurs_are_expensive=1
+
+# Zygote Preforking
+persist.device.config.runtime_native.uasp_pool_enabled=true
