@@ -331,6 +331,26 @@
         <fqname>@2.1::IGoodixFingerprintDaemonExt/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.mediatek.hardware.apuware.utils</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IApuwareUtils</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IApuwareUtils/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.apuware.xrp</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>INeuronXrp</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::INeuronXrp/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.mediatek.hardware.atci</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
