@@ -133,6 +133,9 @@ ro.vendor.smvr.p2batch.fhd=4
 ro.vendor.smvr.p2batch.hd=8
 ro.vendor.smvr.p2batch.vga=16
 
+# Neural Networks
+ro.vendor.mtk_nn_support=1
+
 # NFC
 ro.vendor.nfc.repair=1
 ro.hardware.nfc_nci=nqx.default
