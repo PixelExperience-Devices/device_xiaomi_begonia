@@ -154,7 +154,6 @@ vendor/etc/audio_param/tfa98xx_device.bin
 vendor/etc/audio_param/tfa98xx_music.bin
 vendor/etc/audio_param/tfa98xx_ringtone.bin
 vendor/etc/audio_param/tfa98xx_voice.bin
-vendor/etc/default_volume_tables.xml
 vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_hifi3.xml
 vendor/etc/aurisys_param/FV-SAM-MTKXX.dat
