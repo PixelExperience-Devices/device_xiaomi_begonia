@@ -24,8 +24,8 @@
    "branch"      : "eleven"
  },
  {
-   "repository"  : "device_mediatek_sepolicy",
-   "target_path" : "device/mediatek/sepolicy",
+   "repository"  : "device_mediatek_sepolicy_vndr",
+   "target_path" : "device/mediatek/sepolicy_vndr",
    "remote"      : "pixel",
    "branch"      : "eleven"
  },
