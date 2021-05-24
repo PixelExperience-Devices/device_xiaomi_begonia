@@ -118,4 +118,4 @@ BOARD_VNDK_RUNTIME_DISABLE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/begonia/BoardConfigVendor.mk
+include vendor/xiaomi/begonia/BoardConfigVendor.mk
