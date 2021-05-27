@@ -1,4 +1,4 @@
-# Device proprietary files - from Begonia MIUI V12.0.7.0.QGGMIXM, unless pinned
+# Device proprietary files - from Begonia MIUI V12.0.8.0.QGGMIXM, unless pinned
 
 # APU | From begonia 11 RP1A.200720.011 21.5.25
 vendor/lib64/APUWareUtilsServer.so|4a0e60dc06aee805464ac90dbd9c39be9e6de9e6
