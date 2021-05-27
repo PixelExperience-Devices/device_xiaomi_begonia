@@ -1,7 +1,7 @@
 # Device proprietary files - from Begonia MIUI V12.0.7.0.QGGMIXM, unless pinned
 
-# APU | From begonia 11 RP1A.200720.011 21.3.31
-vendor/lib64/APUWareUtilsServer.so|1acb9401b204532a695a37cb0e507c5cdf5d8431
+# APU | From begonia 11 RP1A.200720.011 21.5.25
+vendor/lib64/APUWareUtilsServer.so|4a0e60dc06aee805464ac90dbd9c39be9e6de9e6
 vendor/lib64/APUWareXrpServer.so|9423f2bcb9c3b11402bde6ffdc900871cc0e543d
 vendor/lib64/libapusys.so|cce16a3c03f928a52a73dbdb21a11495e71a142f
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so|9f82b45c2f1b3a5dfdd43a8ded044301c8b7e812
@@ -913,7 +913,7 @@ vendor/lib64/libfeature_rss.so
 vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
 
-# Charger | From begonia 11 RP1A.200720.011 21.3.31
+# Charger | From begonia 11 RP1A.200720.011 21.5.25
 bin/charger:bin/chargeonlymode|bb74c36cee72b1f2e2c8090eb6f21352eba8e83f
 
 # Consumerir
@@ -941,7 +941,7 @@ vendor/lib64/libwvkeyboxext.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 
-# DRM Widevine | From begonia 11 RP1A.200720.011 21.3.31
+# DRM Widevine | From begonia 11 RP1A.200720.011 21.5.25
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine|bb1ee465a6608d2704fbe9a787acbc7c4dc0aa85
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
@@ -1620,12 +1620,16 @@ vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib64/libwifitest.so
 
-# Neural Networks | From begonia 11 RP1A.200720.011 21.3.31
+# Neural Networks | From begonia 11 RP1A.200720.011 21.5.25
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron|daf5ca0c840fc178f8bea9b62c39312c1242fb40
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc|ebdc6355d6d4b243161f536aeafb9392373bde11
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml|a80dd77a57e04713e4746edbb0db261736aabd21
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml|21d66455f0f9e399b6ce05865080da8b912436ac
+vendor/lib/libnir_neon_driver.so|536ce67903fd659d8b6dc43c0650b78230f35b08
+vendor/lib/libnir_neon_driver_ndk.mtk.so|91f50af9d26c3e011adef5cc9ca5e8f52ea21b9d
 vendor/lib/libarmnn_ndk.mtk.so|264e74895a7261f0795e8d304016f45133df4906
 vendor/lib/libcmdl_ndk.mtk.so|28af41508eb702223f5bc7a767403e2dd3413176
+vendor/lib64/libnir_neon_driver.so|70872b1f25ff209df449ca3ddb5390f3660f273e
+vendor/lib64/libnir_neon_driver_ndk.mtk.so|58a4322988d1f224e126a42897a0289a14b50262
 vendor/lib64/libneuroeara.so|8f34993802344f6a3106206ef72cac838e1c093b
 vendor/lib64/libneuron_adapter.so|27deb18d03937dc2a8e6f8a47d09e715083b26e5
 vendor/lib64/libneuron_platform.so|f8d08c56765998f8745bcaa6be844291512ca72b
@@ -2023,17 +2027,17 @@ vendor/etc/init/init.volte_ua.rc
 vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so
 
-# WiFi | From begonia 11 RP1A.200720.011 21.3.31
-vendor/bin/hw/wpa_supplicant|457beb4d6f5a4d0f2843f79b4e9fa520b00ff9ba
-vendor/bin/hw/hostapd|457df15ebdf02231602275077a74c0e5bf86c83b
-vendor/bin/stp_dump3|6dace620ae94a4f5721a6244818da4e9929f3f44
-vendor/bin/wlan_assistant|f0e654b3324db2d0f2ff45e593e2e23ce33087f9
+# WiFi | From begonia 11 RP1A.200720.011 21.5.25
+vendor/bin/hw/wpa_supplicant|b3695c96ff1f216fe170342970a29ce30aec9f26
+vendor/bin/hw/hostapd|006da6d6a5b87eb09b77d9671609a27b68dc9a08
+vendor/bin/stp_dump3|73ff60240688d76fc005a59716db1bdcdf63627f
+vendor/bin/wlan_assistant|79b03b7525d0cd46f1235787d532acfc628951f4
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc|72d2b6a5e0f74bb1b8bceb5d11935b15c09814cb
 vendor/etc/init/hostapd.android.rc|a11c6ea552094117e9c5a65ffafa2820a949f638
 vendor/etc/init/wlan_assistant.rc|32ed0c40b58acc747c83bf467dde7f72634e9732
-vendor/lib/libwpa_client.so|d71e128a25f99e6248981b7008b65faf99bf4f94
-vendor/lib64/libwpa_client.so|f193a891b5ad7089887bad0a3d24462ddcd0bb78
-vendor/lib64/libwifi-hal.so|e9c5450bc0b29b9a31474dd95e09226715b7c3ca
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so|24e1fdbb2a59d0e94e6e2364ff7163cb9dc91e44
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so|6f8f19430e122ae46615b8a8f560852cc46f3f23
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.2.so|24cd1b0bed14dcc9896400f01cc4b5e67396464b
+vendor/lib/libwpa_client.so|749c548e3e8098d5a0446b46d91021badd2a4c22
+vendor/lib64/libwpa_client.so|63ced1886a6b7858aec6b6466c3b0c8b6d533c81
+vendor/lib64/libwifi-hal.so|e2f6ff7a054982880b9902cae684bcf0dad509fb
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so|cbf9bd9a24c96e9af056b02ee4752a5a05e3bd47
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so|a2d1f545a8372a4812a5c075b8138b605c893cdd
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.2.so|4e468b73726587e3de1dd0324b291f32a2ef9406
