@@ -117,5 +117,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_VNDK_RUNTIME_DISABLE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
+# Wi-Fi
+WIFI_HIDL_FEATURE_AWARE := true
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+
 # Inherit from the proprietary version
 include vendor/xiaomi/begonia/BoardConfigVendor.mk

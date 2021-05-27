@@ -1119,13 +1119,10 @@ vendor/lib/hw/kmsetkey.default.so
 vendor/lib/hw/kmsetkey.mt6785.so
 vendor/lib/hw/keystore.mt6785.so
 vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
-vendor/lib64/libwifi-hal.so
 vendor/lib64/libkmsetkey.so
 vendor/lib64/hw/kmsetkey.default.so
 vendor/lib64/hw/kmsetkey.mt6785.so
 vendor/lib64/hw/keystore.mt6785.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 
 # Listen
@@ -1314,7 +1311,6 @@ vendor/bin/rttv
 vendor/bin/setup_fct
 vendor/bin/setup_fct_normal
 vendor/bin/starter
-vendor/bin/stp_dump3
 vendor/bin/stroke
 vendor/bin/vpud
 vendor/etc/apdb/APDB_MT6785_S01__W1943
@@ -1533,7 +1529,6 @@ vendor/lib64/libvcodec_oal.so
 vendor/lib64/libverno.so
 vendor/lib64/libvpu.so
 vendor/lib64/libwapi.so
-vendor/lib64/libwifitest.so
 vendor/lib64/libwo.so
 vendor/lib64/libwpfa.so
 vendor/lib64/lib_iir.so
@@ -1623,6 +1618,7 @@ vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
+vendor/lib64/libwifitest.so
 
 # Neural Networks | From begonia 11 RP1A.200720.011 21.3.31
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron|daf5ca0c840fc178f8bea9b62c39312c1242fb40
@@ -2027,18 +2023,17 @@ vendor/etc/init/init.volte_ua.rc
 vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so
 
-# WiFi
-bin/iwpriv
-vendor/bin/wlan_assistant
-vendor/bin/hostapd_cli
-vendor/bin/hw/hostapd
-vendor/bin/hw/wpa_supplicant
-vendor/bin/wpa_cli
-vendor/etc/init/hostapd.android.rc
-vendor/etc/init/wlan_assistant.rc
-vendor/lib/libwpa_client.so
-vendor/lib64/libwpa_client.so
-
-# Wi-Fi Hardware
-vendor/bin/hw/android.hardware.wifi@1.0-service-lazy-mediatek
-vendor/etc/init/android.hardware.wifi@1.0-service-lazy-mediatek.rc
+# WiFi | From begonia 11 RP1A.200720.011 21.3.31
+vendor/bin/hw/wpa_supplicant|457beb4d6f5a4d0f2843f79b4e9fa520b00ff9ba
+vendor/bin/hw/hostapd|457df15ebdf02231602275077a74c0e5bf86c83b
+vendor/bin/stp_dump3|6dace620ae94a4f5721a6244818da4e9929f3f44
+vendor/bin/wlan_assistant|f0e654b3324db2d0f2ff45e593e2e23ce33087f9
+vendor/etc/init/android.hardware.wifi.supplicant-service.rc|72d2b6a5e0f74bb1b8bceb5d11935b15c09814cb
+vendor/etc/init/hostapd.android.rc|a11c6ea552094117e9c5a65ffafa2820a949f638
+vendor/etc/init/wlan_assistant.rc|32ed0c40b58acc747c83bf467dde7f72634e9732
+vendor/lib/libwpa_client.so|d71e128a25f99e6248981b7008b65faf99bf4f94
+vendor/lib64/libwpa_client.so|f193a891b5ad7089887bad0a3d24462ddcd0bb78
+vendor/lib64/libwifi-hal.so|e9c5450bc0b29b9a31474dd95e09226715b7c3ca
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so|24e1fdbb2a59d0e94e6e2364ff7163cb9dc91e44
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so|6f8f19430e122ae46615b8a8f560852cc46f3f23
+vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.2.so|24cd1b0bed14dcc9896400f01cc4b5e67396464b
