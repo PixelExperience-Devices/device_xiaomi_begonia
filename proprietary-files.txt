@@ -1102,7 +1102,6 @@ vendor/lib64/libjpeg-alpha_vendor.so
 vendor/bin/kmsetkey
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
-vendor/lib/libkeystore-wifi-hidl.so
 vendor/lib/hw/kmsetkey.default.so
 vendor/lib/hw/kmsetkey.mt6785.so
 vendor/lib/hw/keystore.mt6785.so
