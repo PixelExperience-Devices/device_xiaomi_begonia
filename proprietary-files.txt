@@ -1278,7 +1278,6 @@ vendor/bin/atcid
 vendor/bin/atci_service
 vendor/bin/charon
 vendor/bin/dc_cal
-vendor/bin/devmem
 vendor/bin/dexecutor
 vendor/bin/doeapp-memtester
 vendor/bin/doeapp-sat
