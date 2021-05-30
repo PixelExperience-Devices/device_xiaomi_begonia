@@ -945,13 +945,11 @@ vendor/etc/csot_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml
 vendor/etc/tianma_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml
 
 # Display Hardware
-vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/gralloc.mt6785.so
 vendor/lib/hw/memtrack.mt6785.so
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
 vendor/lib/libgralloc_extra.so
-vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/gralloc.mt6785.so
 vendor/lib64/hw/hwcomposer.mt6785.so
 vendor/lib64/hw/memtrack.mt6785.so
