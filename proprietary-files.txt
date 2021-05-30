@@ -1985,12 +1985,6 @@ vendor/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta
 vendor/bin/hw/android.hardware.usb@1.1-service-mediatek
 vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc
 
-# Videotelephony Hardware
-vendor/bin/hw/vtservice_hidl
-vendor/etc/init/init.vtservice_hidl.rc
-vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-
 # Volte
 vendor/bin/bip
 vendor/bin/wfca
