@@ -84,6 +84,10 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.2-impl \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.a2dp.default \
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    audio_policy.stub \
     libaudiopreprocessing \
     libbundlewrapper \
     libdownmix \
@@ -91,7 +95,9 @@ PRODUCT_PACKAGES += \
     libeffectproxy \
     libldnhncr \
     libreverbwrapper \
-    libvisualizer
+    libvisualizer \
+    libtinycompress \
+    libtinycompress.vendor
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \

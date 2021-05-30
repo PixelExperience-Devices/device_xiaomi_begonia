@@ -18,8 +18,6 @@ vendor/lib/libaudiofmtconv.so
 vendor/lib/libaudioloudc.so
 vendor/lib/libaudiosmartpamtk.so
 vendor/lib/libaudiotoolkit_vendor.so
-vendor/lib/libtinycompress.so
-vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib64/libaudiocompensationfilterc.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocomponentenginec.so
@@ -30,8 +28,6 @@ vendor/lib64/libaudiofmtconv.so
 vendor/lib64/libaudioloudc.so
 vendor/lib64/libaudiosmartpamtk.so
 vendor/lib64/libaudiotoolkit_vendor.so
-vendor/lib64/libtinycompress.so
-vendor/lib64/soundfx/libaudiopreprocessing.so
 
 # Audio | From begonia 11 RP1A.200720.011 21.5.25
 vendor/lib/libaudio_param_parser-vnd.so|9af049e436838fcc7e0d031f0b61c49aeaef7832
@@ -162,18 +158,10 @@ vendor/etc/aurisys_param/FV-SAM-MTKXX.dat
 vendor/etc/aurisys_param/Speech_AudioParam.xml
 
 # Audio Hardware
-vendor/lib/hw/audio.primary.default.so
-vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.r_submix.mt6785.so
-vendor/lib/hw/audio.usb.default.so
 vendor/lib/hw/audio.usb.mt6785.so
-vendor/lib/hw/audio_policy.stub.so
-vendor/lib64/hw/audio.primary.default.so
-vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.r_submix.mt6785.so
-vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/audio.usb.mt6785.so
-vendor/lib64/hw/audio_policy.stub.so
 
 # Audio Hardware | From begonia 11 RP1A.200720.011 21.5.25
 vendor/lib/hw/audio.primary.mt6785.so|af9de1c8bceb91ab557904791885509cc3c9d689
@@ -195,17 +183,13 @@ vendor/lib64/libvow_ap_testing_alexa.vendor.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
-vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/libbluetoothem_mtk.so
-vendor/lib/libbluetooth_audio_session.so
 vendor/lib/libbluetooth_mtk.so
 vendor/lib/libbluetooth_mtk_pure.so
 vendor/lib/libbluetooth_relayer.so
 vendor/lib/libbt-vendor.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
-vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/libbluetoothem_mtk.so
-vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbluetooth_relayer.so
