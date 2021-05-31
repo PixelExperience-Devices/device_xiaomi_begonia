@@ -2016,6 +2016,3 @@ vendor/etc/init/wlan_assistant.rc|32ed0c40b58acc747c83bf467dde7f72634e9732
 vendor/lib/libwpa_client.so|749c548e3e8098d5a0446b46d91021badd2a4c22
 vendor/lib64/libwpa_client.so|63ced1886a6b7858aec6b6466c3b0c8b6d533c81
 vendor/lib64/libwifi-hal.so|e2f6ff7a054982880b9902cae684bcf0dad509fb
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so|cbf9bd9a24c96e9af056b02ee4752a5a05e3bd47
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so|a2d1f545a8372a4812a5c075b8138b605c893cdd
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.2.so|4e468b73726587e3de1dd0324b291f32a2ef9406
