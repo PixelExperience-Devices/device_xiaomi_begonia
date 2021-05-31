@@ -1981,10 +1981,6 @@ vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta
 vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
 vendor/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta
 
-# USB Hardware
-vendor/bin/hw/android.hardware.usb@1.1-service-mediatek
-vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc
-
 # Volte
 vendor/bin/bip
 vendor/bin/wfca
