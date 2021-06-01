@@ -1942,10 +1942,6 @@ vendor/etc/thermal-youtube.conf
 vendor/etc/thermald-devices.conf
 vendor/lib/libthermalalgo.so
 
-# Thermal Hardware
-vendor/lib/hw/thermal.mt6785.so
-vendor/lib64/hw/thermal.mt6785.so
-
 # Thh Firmware
 vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta
 vendor/thh/ta/020b0000000000000000000000000000.ta
