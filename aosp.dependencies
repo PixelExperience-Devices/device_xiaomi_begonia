@@ -12,6 +12,12 @@
    "branch"      : "eleven"
  },
  {
+   "repository"  : "device_mediatek_common",
+   "target_path" : "device/mediatek/common",
+   "remote"      : "pixel",
+   "branch"      : "eleven"
+ },
+ {
    "repository"  : "vendor_xiaomi_begonia",
    "target_path" : "vendor/xiaomi/begonia",
    "remote"      : "pixel-devices-blobs",
