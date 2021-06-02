@@ -907,14 +907,6 @@ bin/charger:bin/chargeonlymode|bb74c36cee72b1f2e2c8090eb6f21352eba8e83f
 # Device Feature
 vendor/etc/device_features/begonia.xml
 
-# DFPS Hardware
-vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service
-vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc
-vendor/lib/hw/dfps.mt6785.so
-vendor/lib/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
-vendor/lib64/hw/dfps.mt6785.so
-vendor/lib64/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
-
 # DRM
 vendor/lib/liboemcrypto.so
 vendor/lib/libwvkeybox.so
@@ -1341,7 +1333,6 @@ vendor/lib/libDR.so
 vendor/lib/libdre.so
 vendor/lib/libfgauge_gm30.so
 vendor/lib/libfile_op.so
-vendor/lib/libfpspolicy.so
 vendor/lib/libfvaudio.so
 vendor/lib/libged.so
 vendor/lib/libgpud.so
@@ -1454,7 +1445,6 @@ vendor/lib64/libem_camera_jni.so
 vendor/lib64/libfft_vendor.so
 vendor/lib64/libfile_op.so
 vendor/lib64/libforkexecwrap.so
-vendor/lib64/libfpspolicy.so
 vendor/lib64/libfvaudio.so
 vendor/lib64/libged.so
 vendor/lib64/libgpud.so
