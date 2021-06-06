@@ -1332,7 +1332,6 @@ vendor/lib/libdirect-coredump.so
 vendor/lib/libDR.so
 vendor/lib/libdre.so
 vendor/lib/libfgauge_gm30.so
-vendor/lib/libfile_op.so
 vendor/lib/libfvaudio.so
 vendor/lib/libged.so
 vendor/lib/libgpud.so
@@ -1347,7 +1346,6 @@ vendor/lib/libh264enc_sa.ca7.so
 vendor/lib/libhdrvideo.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/lib/libhevce_sb.ca7.android.so
-vendor/lib/libhwm.so
 vendor/lib/libhydra.so
 vendor/lib/libimageio.so
 vendor/lib/libimageio_plat_drv.so
@@ -1381,7 +1379,6 @@ vendor/lib/libssl-md.so
 vendor/lib/libssl-ss.so
 vendor/lib/libstorage_otp.so
 vendor/lib/libstrongswan.so
-vendor/lib/libsysenv.so
 vendor/lib/libteeclientjni@1.1.so
 vendor/lib/libTEECommon.so
 vendor/lib/libtflite_mtk.so
@@ -1443,7 +1440,6 @@ vendor/lib64/libdre.so
 vendor/lib64/libeffecthal.base.so
 vendor/lib64/libem_camera_jni.so
 vendor/lib64/libfft_vendor.so
-vendor/lib64/libfile_op.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libfvaudio.so
 vendor/lib64/libged.so
@@ -1453,7 +1449,6 @@ vendor/lib64/libgz_gp_client.so
 vendor/lib64/libgz_uree.so
 vendor/lib64/libhdrvideo.so
 vendor/lib64/libhevce_sb.ca7.android.so
-vendor/lib64/libhwm.so
 vendor/lib64/libhydra.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/libimageio.so
@@ -1489,7 +1484,6 @@ vendor/lib64/libssl-md.so
 vendor/lib64/libssl-ss.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
 vendor/lib64/libstrongswan.so
-vendor/lib64/libsysenv.so
 vendor/lib64/libteeclientjni@1.1.so
 vendor/lib64/libTEECommon.so
 vendor/lib64/libtflite_mtk.so
@@ -1584,10 +1578,6 @@ vendor/lib64/libgwsd-ril.so
 vendor/lib64/secure_element-impl.so
 
 # Nvram Hardware
-vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
-vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
-vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
-vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib64/libwifitest.so
 
 # Neural Networks | From begonia 11 RP1A.200720.011 21.5.25
@@ -1623,11 +1613,9 @@ vendor/lib64/hw/vendor.mediatek.hardware.pq@2.3-impl.so
 # Radio
 vendor/bin/ccci_fsd
 vendor/bin/wmt_loader
-vendor/bin/ccci_mdinit
 vendor/bin/wmt_launcher
 vendor/bin/ccci_rpcd
 vendor/bin/fuelgauged
-vendor/bin/nvram_daemon
 vendor/bin/gsm0710muxd
 vendor/bin/hw/mtkfusionrild
 vendor/bin/fuelgauged_nvram
@@ -1645,15 +1633,9 @@ vendor/etc/ecc_list_OP20.xml
 vendor/etc/init/init.cccifsd.rc
 vendor/etc/init/init.cccirpcd.rc
 vendor/etc/init/gsm0710muxd.rc
-vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/init_connectivity.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
-vendor/lib/libcustom_nvram.so
-vendor/lib/libnvram.so
-vendor/lib/libnvram_daemon_callback.so
-vendor/lib/libnvram_platform.so
-vendor/lib/libnvram_sec.so
 vendor/lib/libmtkares.so
 vendor/lib/libmtkcutils.so
 vendor/lib/libmtkhardware_legacy.so
@@ -1665,13 +1647,7 @@ vendor/lib/libmtkshifter_vendor.so
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/libmtksysutils.so
 vendor/lib/libmtk_drvb.so
-vendor/lib/libccci_util.so
 vendor/lib/libcarrierconfig.so
-vendor/lib64/libcustom_nvram.so
-vendor/lib64/libnvram.so
-vendor/lib64/libnvram_daemon_callback.so
-vendor/lib64/libnvram_platform.so
-vendor/lib64/libnvram_sec.so
 vendor/lib64/libmtk-ril.so
 vendor/lib64/libmtk-rilop.so
 vendor/lib64/libmtkares.so
@@ -1691,7 +1667,6 @@ vendor/lib64/libmtksysutils.so
 vendor/lib64/libmtktinyxml.so
 vendor/lib64/libmtkutils.so
 vendor/lib64/libmtk_drvb.so
-vendor/lib64/libccci_util.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libcarrierconfig.so
 vendor/lib64/librilfusion.so
