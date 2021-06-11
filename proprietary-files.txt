@@ -179,22 +179,6 @@ vendor/lib64/libvowp25testing_alexa.vendor.so
 vendor/lib64/libvowp2training_alexa.vendor.so
 vendor/lib64/libvow_ap_testing_alexa.vendor.so
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
-vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
-vendor/lib/libbluetoothem_mtk.so
-vendor/lib/libbluetooth_mtk.so
-vendor/lib/libbluetooth_mtk_pure.so
-vendor/lib/libbluetooth_relayer.so
-vendor/lib/libbt-vendor.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
-vendor/lib64/libbluetoothem_mtk.so
-vendor/lib64/libbluetooth_mtk.so
-vendor/lib64/libbluetooth_mtk_pure.so
-vendor/lib64/libbluetooth_relayer.so
-vendor/lib64/libbt-vendor.so
-
 # Bluetooth AptX
 lib64/libaptXHD_encoder.so
 lib64/libaptX_encoder.so
