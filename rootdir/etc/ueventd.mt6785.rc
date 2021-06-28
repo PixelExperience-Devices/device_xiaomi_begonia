@@ -1,4 +1,3 @@
-#change partition permission
 # eMMC only
 /dev/block/mmcblk0                               0660    root    system
 /dev/block/mmcblk0boot0                          0660    root    system
@@ -57,15 +56,15 @@
 /dev/fm                   0660   media     media
 
 # NFC
-/dev/msr3110              0666   root       root
-/dev/mt6605               0660   nfc        radio
 /dev/st21nfc              0660   nfc        radio
+/dev/st54spi              0660   secure_element        secure_element
 
 # MTK BTIF driver
 /dev/btif                 0600   system     system
 
 # Trusty driver
 /dev/trusty-ipc-dev0      0660   system     system
+/dev/nebula-ipc-dev0      0660   system     system
 
 # RPMB (for Trusty)
 /dev/block/mmcblk0rpmb    0660   root       system
@@ -104,11 +103,12 @@
 /dev/eemcs_aud            0660   audio      audio
 /dev/irtx                 0660   system     system
 /dev/ir-learning          0660   system     system
+
 # SGX device node
 /dev/pvrsrvkm             0666   root       root
 /dev/pvr_sync             0666   root       root
 
-
+# Leds node
 /sys/devices/platform/leds-mt65xx/leds/green   delay_on      0664  system   system
 /sys/devices/platform/leds-mt65xx/leds/green   delay_off      0664  system   system
 /sys/devices/platform/leds-mt65xx/leds/red   delay_on      0664  system   system
@@ -122,11 +122,10 @@
 /sys/class/leds/blue   delay_on      0664  system   system
 /sys/class/leds/blue   delay_off      0664  system   system
 
-#GPIO
+# GPIO
 /dev/mtgpio               0600   radio      root
 
-
-#FOR VIA MODEM
+# FOR VIA MODEM
 /dev/ttySDIO*             0660   radio      sdcard_rw
 /dev/ttyRB*               0660   radio      radio
 
@@ -136,13 +135,13 @@
 # Change ION driver permission
 /dev/ion                  0666   system     graphics
 
-#touch
+# Touch
 /dev/touch                0660   root       system
 /dev/hotknot              0660   root       system
 
-#hang_detect
-/dev/RT_Monitor           0600   system     system
-/dev/kick_powerkey        0600   system     system
+# Hang_detect
+/dev/RT_Monitor           0660   system     system
+/dev/kick_powerkey        0660   system     system
 
-#MTK In-House TEE
+# MTK TEE
 /dev/ttyACM0              0660   radio      radio
