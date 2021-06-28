@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright (C) 2014 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -47,13 +47,13 @@
         </MediaCodec>
         <MediaCodec name="c2.android.g711.alaw.decoder" type="audio/g711-alaw">
             <Alias name="OMX.google.g711.alaw.decoder" />
-            <Limit name="channel-count" max="1" />
+            <Limit name="channel-count" max="6" />
             <Limit name="sample-rate" ranges="8000-48000" />
             <Limit name="bitrate" range="64000" />
         </MediaCodec>
         <MediaCodec name="c2.android.g711.mlaw.decoder" type="audio/g711-mlaw">
             <Alias name="OMX.google.g711.mlaw.decoder" />
-            <Limit name="channel-count" max="1" />
+            <Limit name="channel-count" max="6" />
             <Limit name="sample-rate" ranges="8000-48000" />
             <Limit name="bitrate" range="64000" />
         </MediaCodec>
@@ -66,7 +66,7 @@
         <MediaCodec name="c2.android.opus.decoder" type="audio/opus">
             <Alias name="OMX.google.opus.decoder" />
             <Limit name="channel-count" max="8" />
-            <Limit name="sample-rate" ranges="48000" />
+            <Limit name="sample-rate" ranges="8000,12000,16000,24000,48000" />
             <Limit name="bitrate" range="6000-510000" />
         </MediaCodec>
         <MediaCodec name="c2.android.raw.decoder" type="audio/raw">

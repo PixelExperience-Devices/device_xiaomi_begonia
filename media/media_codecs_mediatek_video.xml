@@ -143,18 +143,14 @@ Only the three quirks included above are recognized at this point:
             <Limit name="concurrent-instances" max="16" />
             <Limit name="performance-point-3840x2160" value="30" />
         </MediaCodec>
-        <MediaCodec name="OMX.MTK.VIDEO.DECODER.DIVX" type="video/divx" >
-            <Limit name="size" min="16x16" max="2048x1088" />
+        <MediaCodec name="OMX.MTK.VIDEO.DECODER.VP9.secure" type="video/x-vnd.on2.vp9" >
+            <Limit name="size" min="16x16" max="1920x1088" />
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
-            <Limit name="concurrent-instances" max="16" />
-            <Limit name="performance-point-1920x1088" value="30" />
-        </MediaCodec>
-        <MediaCodec name="OMX.MTK.VIDEO.DECODER.DIVX3" type="video/divx3" >
-            <Limit name="size" min="16x16" max="2048x1088" />
-            <Quirk name="requires-allocate-on-input-ports" />
-            <Quirk name="requires-allocate-on-output-ports" />
-            <Limit name="concurrent-instances" max="16" />
+            <Feature name="secure-playback" required="true" />
+            <Feature name="adaptive-playback"/>
+            <Feature name="can-swap-width-height"/>
+            <Limit name="concurrent-instances" max="1" />
             <Limit name="performance-point-1920x1088" value="30" />
         </MediaCodec>
         <MediaCodec name="OMX.MTK.VIDEO.DECODER.XVID" type="video/xvid" >
@@ -204,7 +200,7 @@ Only the three quirks included above are recognized at this point:
         </MediaCodec>
         <MediaCodec name="OMX.MTK.VIDEO.ENCODER.HEVC" type="video/hevc" >
             <Limit name="size" min="160x128" max="3840x2176" />
-            <Limit name="alignment" value="16x16" />
+            <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="quality" range="0-100" default="50" />
             <Quirk name="requires-allocate-on-input-ports" />
@@ -213,16 +209,16 @@ Only the three quirks included above are recognized at this point:
             <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
             <Limit name="performance-point-3840x2160" value="30" />
         </MediaCodec>
-        <!--MediaCodec name="OMX.MTK.VIDEO.ENCODER.HEIF" type="image/vnd.android.heic" >
+        <MediaCodec name="OMX.MTK.VIDEO.ENCODER.HEIF" type="image/vnd.android.heic" >
             <Limit name="size" min="160x128" max="16880x16880" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="quality" range="0-100" default="50" />
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
-            <Limit name="concurrent-instances" max="1" />
+            <Limit name="concurrent-instances" max="2" />
             <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
             <Limit name="performance-point-3840x2160" value="30" />
-        </MediaCodec-->
+        </MediaCodec>
     </Encoders>
 </Included>

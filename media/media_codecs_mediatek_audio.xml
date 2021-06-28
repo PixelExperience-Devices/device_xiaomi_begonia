@@ -83,7 +83,6 @@ Only the three quirks included above are recognized at this point:
             <Quirk name="supports-multiple-frames-per-input-buffer" />
         </MediaCodec>
         <MediaCodec name="OMX.MTK.AUDIO.DECODER.GSM" type="audio/gsm" />
-        <MediaCodec name="OMX.MTK.AUDIO.DECODER.WMA" type="audio/x-ms-wma" />
         <MediaCodec name="OMX.MTK.AUDIO.DECODER.ADPCM.MS" type="audio/x-adpcm-ms" />
         <MediaCodec name="OMX.MTK.AUDIO.DECODER.ADPCM.DVI" type="audio/x-adpcm-dvi-ima" />
         <MediaCodec name="OMX.MTK.AUDIO.DECODER.APE" type="audio/ape" >

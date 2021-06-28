@@ -210,7 +210,7 @@ Only the three quirks included above are recognized at this point:
         <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
             <Limit name="measured-frame-rate-320x240" range="110-243" />
             <Limit name="measured-frame-rate-720x480" range="31-68" />
-            <Limit name="measured-frame-rate-1280x720" range="10-23" />
+            <Limit name="measured-frame-rate-1280x720" range="21-47" />
             <Limit name="measured-frame-rate-1920x1080" range="7-15" />
         </MediaCodec>
         <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" update="true">
