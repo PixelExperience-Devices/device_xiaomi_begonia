@@ -1018,14 +1018,12 @@ vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
 vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
 vendor/bin/mi_thermald
 vendor/bin/thermal
-vendor/bin/thermalloadalgod
 vendor/bin/thermal_manager
 vendor/etc/.tp/.thermal_policy_08
 vendor/etc/.tp/thermal.conf
 vendor/etc/.tp/thermal.off.conf
 vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
 vendor/etc/init/init.thermal.rc
-vendor/etc/init/init.thermalloadalgod.rc
 vendor/etc/init/init.thermal_manager.rc
 vendor/etc/thermal-arvr.conf
 vendor/etc/thermal-camera.conf
@@ -1038,7 +1036,6 @@ vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-youtube.conf
 vendor/etc/thermald-devices.conf
 vendor/lib/hw/android.hardware.thermal@2.0-impl.so
-vendor/lib/libthermalalgo.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 
 # Vibrator
@@ -1651,7 +1648,6 @@ vendor/lib/libteeclientjni@1.1.so
 vendor/lib/libTEECommon.so
 vendor/lib/libtflite_mtk.so
 vendor/lib/libtflite_mtk_static_R.so
-vendor/lib/libthha.so
 vendor/lib/libtlcWidevineModularDrm.so
 vendor/lib/libvc1dec_sa.ca7.so
 vendor/lib/libvcodecdrv.so
@@ -1837,7 +1833,6 @@ vendor/lib64/libteeclientjni@1.1.so
 vendor/lib64/libTEECommon.so
 vendor/lib64/libtflite_mtk.so
 vendor/lib64/libtflite_mtk_static_R.so
-vendor/lib64/libthha.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/libvcodec_oal.so
 vendor/lib64/libverno.so
