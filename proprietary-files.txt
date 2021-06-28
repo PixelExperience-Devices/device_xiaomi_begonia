@@ -1050,10 +1050,8 @@ vendor/etc/init/vibrator-mtk-default.rc
 # WiFi
 vendor/bin/hw/wpa_supplicant
 vendor/bin/hw/hostapd
-vendor/bin/wlan_assistant
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/hostapd.android.rc
-vendor/etc/init/wlan_assistant.rc
 -vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 vendor/lib/libwpa_client.so
 vendor/lib64/libwpa_client.so
