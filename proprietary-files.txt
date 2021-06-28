@@ -1094,15 +1094,12 @@ vendor/etc/init_panel_info.sh
 vendor/etc/partition_permission.sh
 
 # Misc
-system_ext/lib/drm/cta/libdrmctaplugin.so
 system_ext/lib/libaed.so
 system_ext/lib/libapuwareapusys.mtk.so
 system_ext/lib/libapuwareutils.mtk.so
 system_ext/lib/libapuwarexrp.mtk.so
 system_ext/lib/libarmnn_ndk.mtk.so
 system_ext/lib/libcmdl_ndk.mtk.so
-system_ext/lib/libdrmmtkutil.so
-system_ext/lib/libdrmmtkwhitelist.so
 system_ext/lib/libjpgt.so
 system_ext/lib/liblept.so
 system_ext/lib/libneuronusdk_adapter.mtk.so
@@ -1114,15 +1111,12 @@ system_ext/lib/libtflite_mtk.mtk.so
 system_ext/lib/libvpuapi.mtk.so
 system_ext/lib/vendor.mediatek.hardware.touchll@1.0.so
 system_ext/lib/vendor.mediatek.hardware.vpu@1.0.so
-system_ext/lib64/drm/cta/libdrmctaplugin.so
 system_ext/lib64/libaed.so
 system_ext/lib64/libapuwareapusys.mtk.so
 system_ext/lib64/libapuwareutils.mtk.so
 system_ext/lib64/libapuwarexrp.mtk.so
 system_ext/lib64/libarmnn_ndk.mtk.so
 system_ext/lib64/libcmdl_ndk.mtk.so
-system_ext/lib64/libdrmmtkutil.so
-system_ext/lib64/libdrmmtkwhitelist.so
 system_ext/lib64/libfmjni.so
 system_ext/lib64/libjpgt.so
 system_ext/lib64/liblept.so
