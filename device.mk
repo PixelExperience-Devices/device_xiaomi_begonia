@@ -10,7 +10,7 @@ DEVICE_PATH := device/xiaomi/begonia
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # MTK Vendor Repos
-MTK_PLATFORM := mt6785
+MTK_PLATFORM_FOLDER := mt6785
 $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 $(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
 $(call inherit-product, vendor/mediatek/ims/mtk-rill.mk)
