@@ -16,13 +16,13 @@ vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,co
 # Display
 ro.opengles.version=196610
 ro.zygote.preload.enable=0
-ro.xiaomi.bl.poll=true
-ro.colorpick_adjust=true
-ro.all_modes.colorpick_adjust=true
-ro.whitepoint_calibration_enable=false
-ro.displayfeature.histogram.enable=false
-sys.displayfeature_hidl=true
-sys.displayfeature.entry.enable=true
+ro.vendor.xiaomi.bl.poll=true
+ro.vendor.colorpick_adjust=true
+ro.vendor.all_modes.colorpick_adjust=true
+ro.vendor.whitepoint_calibration_enable=false
+ro.vendor.histogram.enable=false
+vendor.displayfeature_hidl=true
+vendor.displayfeature.entry.enable=true
 
 # IPO
 sys.ipo.disable=1
