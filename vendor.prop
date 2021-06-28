@@ -11,6 +11,7 @@ ro.vendor.mtk_audio_ape_support=1
 ro.vendor.mtk_audio_tuning_tool_ver=V2.2
 ro.vendor.mtk_besloudness_support=1
 ro.vendor.mtk_hifiaudio_support=1
+vendor.audio.spkcal.copy.inhal=true
 
 # Camera
 persist.vendor.camera3.operationMode.superNightMode=0x800A
@@ -40,6 +41,11 @@ ro.vendor.mtk_camera_app_version=3
 ro.vendor.mtk_hdr_video_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
 
+# Camera (Aux list)
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera,org.pixelexperience.faceunlock
+vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
+
 # CONNSYS (connectivity)
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.dynamic.dump=0
@@ -60,6 +66,15 @@ ro.vendor.mtk_tee_gp_support=1
 drm.service.enabled=true
 
 # Display
+ro.opengles.version=196610
+ro.zygote.preload.enable=0
+ro.vendor.xiaomi.bl.poll=true
+ro.vendor.colorpick_adjust=true
+ro.vendor.all_modes.colorpick_adjust=true
+ro.vendor.whitepoint_calibration_enable=false
+ro.vendor.histogram.enable=false
+vendor.displayfeature_hidl=true
+vendor.displayfeature.entry.enable=true
 debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
 ro.surface_flinger.primary_display_orientation=0
@@ -155,9 +170,18 @@ ro.vendor.mtk_nn_support=1
 ro.vendor.nfc.repair=1
 ro.hardware.nfc_nci=nqx.default
 
+# Perf
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# Power
+sys.ipo.pwrdncap=2
+
 # Radio
 telephony.active_modems.max_count=2
 telephony.lteOnCdmaDevice=1
+persist.radio.sar_sar_sensor=true
 persist.radio.multisim.config=dsds
 persist.vendor.mtk_sim_switch_policy=2
 persist.vendor.log.tel_log_ctrl=1
@@ -192,10 +216,24 @@ ro.vendor.mtk_md_world_mode_support=1
 ro.vendor.mtk_modem_monitor_support=1
 ro.vendor.mtk_lte_support=1
 
+# USB
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+persist.vendor.quick.charge=1
+
 # Widevine
 ro.vendor.mtk_widevine_drm_l1_support=1
 
 # WiFi
+wifi.interface=wlan0
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+mediatek.wlan.ctia=0
+wifi.tethering.interface=ap0
+wifi.direct.interface=p2p0
+ro.vendor.net.enable_dual_wifi=1
 ro.vendor.wfd.dummy.enable=1
 ro.vendor.wfd.iframesize.level=0
 ro.vendor.wifi.sap.interface=ap0
