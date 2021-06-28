@@ -13,6 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 MTK_PLATFORM := mt6785
 $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 $(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
+$(call inherit-product, vendor/mediatek/ims/mtk-rill.mk)
 $(call inherit-product, device/mediatek/common/target.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
