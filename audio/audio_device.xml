@@ -63,6 +63,13 @@
         <path name="ext_speaker_output" value="turnoff">
             <kctl name="Ext_Speaker_Amp Switch" value="0" />
         </path>
+        <!--external_headphone_amp switch-->
+        <path name="ext_headphone_output" value="turnon">
+            <kctl name="Ext_Headphone_Amp_Switch" value="1" />
+        </path>
+        <path name="ext_headphone_output" value="turnoff">
+            <kctl name="Ext_Headphone_Amp_Switch" value="0" />
+        </path>
         <!--mic setting-->
         <path name="builtin_Mic_Mic1" value="turnon">
             <kctl name="MISO0_MUX" value="UL1_CH1" />
@@ -820,6 +827,38 @@
             <kctl name="I2S3_CH1 DL5_CH1" value="0" />
             <kctl name="I2S3_CH2 DL5_CH2" value="0" />
         </path>
+        <path name="ADDA_TO_HW_GAIN2" value="turnon">
+            <kctl name="HW_GAIN2_IN_CH1 ADDA_UL_CH1" value="1" />
+            <kctl name="HW_GAIN2_IN_CH2 ADDA_UL_CH2" value="1" />
+        </path>
+        <path name="ADDA_TO_HW_GAIN2" value="turnoff">
+            <kctl name="HW_GAIN2_IN_CH1 ADDA_UL_CH1" value="0" />
+            <kctl name="HW_GAIN2_IN_CH2 ADDA_UL_CH2" value="0" />
+        </path>
+        <path name="HW_GAIN2_TO_CAPTURE7" value="turnon">
+            <kctl name="UL7_CH1 HW_GAIN2_OUT_CH1" value="1" />
+            <kctl name="UL7_CH2 HW_GAIN2_OUT_CH2" value="1" />
+        </path>
+        <path name="HW_GAIN2_TO_CAPTURE7" value="turnoff">
+            <kctl name="UL7_CH1 HW_GAIN2_OUT_CH1" value="0" />
+            <kctl name="UL7_CH2 HW_GAIN2_OUT_CH2" value="0" />
+        </path>
+        <path name="HW_GAIN2_TO_HW_SRC2" value="turnon">
+            <kctl name="HW_SRC_2_IN_CH1 HW_GAIN2_OUT_CH1" value="1" />
+            <kctl name="HW_SRC_2_IN_CH2 HW_GAIN2_OUT_CH2" value="1" />
+        </path>
+        <path name="HW_GAIN2_TO_HW_SRC2" value="turnoff">
+            <kctl name="HW_SRC_2_IN_CH1 HW_GAIN2_OUT_CH1" value="0" />
+            <kctl name="HW_SRC_2_IN_CH2 HW_GAIN2_OUT_CH2" value="0" />
+        </path>
+        <path name="HW_SRC2_TO_CAPTURE7" value="turnon">
+            <kctl name="UL7_CH1 HW_SRC_2_OUT_CH1" value="1" />
+            <kctl name="UL7_CH2 HW_SRC_2_OUT_CH2" value="1" />
+        </path>
+        <path name="HW_SRC2_TO_CAPTURE7" value="turnoff">
+            <kctl name="UL7_CH1 HW_SRC_2_OUT_CH1" value="0" />
+            <kctl name="UL7_CH2 HW_SRC_2_OUT_CH2" value="0" />
+        </path>
         <path name="ADDA_TO_CAPTURE7" value="turnon">
             <kctl name="UL7_CH1 ADDA_UL_CH1" value="1" />
             <kctl name="UL7_CH2 ADDA_UL_CH2" value="1" />
@@ -1180,6 +1219,22 @@
             <kctl name="I2S5_Out_Mux" value="Normal" />
             <kctl name="I2S5_HD_Mux" value="Normal" />
         </path>
+        <path name="DL1_TO_MD1_ECHO_REF" value="turnon">
+            <kctl name="PCM_2_PB_CH4 DL1_CH1" value="1" />
+            <kctl name="PCM_2_PB_CH5 DL1_CH2" value="1" />
+        </path>
+        <path name="DL1_TO_MD1_ECHO_REF" value="turnoff">
+            <kctl name="PCM_2_PB_CH4 DL1_CH1" value="0" />
+            <kctl name="PCM_2_PB_CH5 DL1_CH2" value="0" />
+        </path>
+        <path name="DL4_TO_MD1_ECHO_REF" value="turnon">
+            <kctl name="PCM_2_PB_CH4 DL4_CH1" value="1" />
+            <kctl name="PCM_2_PB_CH5 DL4_CH2" value="1" />
+        </path>
+        <path name="DL4_MD1_ECHO_REF" value="turnoff">
+            <kctl name="PCM_2_PB_CH4 DL4_CH1" value="0" />
+            <kctl name="PCM_2_PB_CH5 DL4_CH2" value="0" />
+        </path>
         <path name="MD1_ECHO_REF_I2S0_ON" value="setting">
             <kctl name="PCM_2_PB_CH4 I2S0_CH1" value="1" />
             <kctl name="PCM_2_PB_CH5 I2S0_CH2" value="1" />
@@ -1195,6 +1250,18 @@
         <path name="MD1_ECHO_REF_I2S2_OFF" value="setting">
             <kctl name="PCM_2_PB_CH4 I2S2_CH1" value="0" />
             <kctl name="PCM_2_PB_CH5 I2S2_CH2" value="0" />
+        </path>
+        <path name="DL1_TO_MD2_ECHO_REF" value="turnon">
+            <kctl name="PCM_1_PB_CH4 DL1_CH2" value="1" />
+        </path>
+        <path name="DL1_TO_MD2_ECHO_REF" value="turnoff">
+            <kctl name="PCM_1_PB_CH4 DL1_CH2" value="0" />
+        </path>
+        <path name="DL4_TO_MD2_ECHO_REF" value="turnon">
+            <kctl name="PCM_1_PB_CH4 DL4_CH2" value="1" />
+        </path>
+        <path name="DL4_TO_MD2_ECHO_REF" value="turnoff">
+            <kctl name="PCM_1_PB_CH4 DL4_CH2" value="0" />
         </path>
         <path name="MD2_ECHO_REF_I2S0_ON" value="setting">
             <kctl name="PCM_1_PB_CH4 I2S0_CH2" value="1" />
@@ -1494,6 +1561,22 @@
         </path>
         <path name="PLAYBACK6_TO_DSPDL" value="turnoff">
             <kctl name="DSP_DL DSP_DL6" value="0" />
+        </path>
+        <path name="MIC_TO_CAPTURE8" value="turnon">
+            <kctl name="UL8_CH1 ADDA_UL_CH1" value="1" />
+            <kctl name="UL8_CH2 ADDA_UL_CH2" value="1" />
+        </path>
+        <path name="MIC_TO_CAPTURE8" value="turnoff">
+            <kctl name="UL8_CH1 ADDA_UL_CH1" value="0" />
+            <kctl name="UL8_CH2 ADDA_UL_CH2" value="0" />
+        </path>
+        <path name="PLAYBACK8_TO_ADDA_DL" value="turnon">
+            <kctl name="ADDA_DL_CH1 DL8_CH1" value="1" />
+            <kctl name="ADDA_DL_CH2 DL8_CH2" value="1" />
+        </path>
+        <path name="PLAYBACK8_TO_ADDA_DL" value="turnoff">
+            <kctl name="ADDA_DL_CH1 DL8_CH1" value="0" />
+            <kctl name="ADDA_DL_CH2 DL8_CH2" value="0" />
         </path>
     </mixercontrol>
 </root>
