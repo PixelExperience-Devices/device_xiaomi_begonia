@@ -786,12 +786,10 @@ vendor/lib/egl/libGLES_mali.so
 vendor/lib/egl/libGLES_meow.so
 vendor/lib/egl/libMEOW_gift.so
 vendor/lib/egl/libMEOW_trace.so
-vendor/lib/libOpenCL.so
 vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/egl/libGLES_meow.so
 vendor/lib64/egl/libMEOW_gift.so
 vendor/lib64/egl/libMEOW_trace.so
-vendor/lib64/libOpenCL.so
 
 # HotwordEnrollment
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
