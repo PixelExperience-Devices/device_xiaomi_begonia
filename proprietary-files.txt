@@ -1761,7 +1761,6 @@ vendor/lib64/libfeature_eis.so
 vendor/lib64/libfeature_fsc.so
 vendor/lib64/libfeature_lmv.so
 vendor/lib64/libfeature_rss.so
-vendor/lib64/libfft_vendor.so
 vendor/lib64/libfmq.so
 vendor/lib64/libFrameRecord.so
 vendor/lib64/libfvaudio.so
