@@ -1018,13 +1018,11 @@ vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
 vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
 vendor/bin/mi_thermald
 vendor/bin/thermal
-vendor/bin/thermal_manager
 vendor/etc/.tp/.thermal_policy_08
 vendor/etc/.tp/thermal.conf
 vendor/etc/.tp/thermal.off.conf
 vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
 vendor/etc/init/init.thermal.rc
-vendor/etc/init/init.thermal_manager.rc
 vendor/etc/thermal-arvr.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
@@ -1624,7 +1622,6 @@ vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmp4enc_xa.ca7.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libmt.so
-vendor/lib/libmtcloader.so
 vendor/lib/libneuroeara.so
 vendor/lib/libneuropilot_hal_utils.so
 vendor/lib/libneuropilot_jni_R.so
@@ -1806,7 +1803,6 @@ vendor/lib64/libmfllcore.so
 vendor/lib64/libminiui.so
 vendor/lib64/libmmprofile.so
 vendor/lib64/libmsbc_mtk.so
-vendor/lib64/libmtcloader.so
 vendor/lib64/libneuroeara.so
 vendor/lib64/libneuron_adapter.so
 vendor/lib64/libneuron_platform.so
