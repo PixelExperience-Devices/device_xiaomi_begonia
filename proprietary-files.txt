@@ -1017,12 +1017,10 @@ vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
 # Thermal
 vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
 vendor/bin/mi_thermald
-vendor/bin/thermal
 vendor/etc/.tp/.thermal_policy_08
 vendor/etc/.tp/thermal.conf
 vendor/etc/.tp/thermal.off.conf
 vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
-vendor/etc/init/init.thermal.rc
 vendor/etc/thermal-arvr.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
