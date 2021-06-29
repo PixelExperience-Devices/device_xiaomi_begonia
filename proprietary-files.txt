@@ -1612,7 +1612,6 @@ vendor/lib/libjpeg-alpha_vendor.so
 vendor/lib/libJpgEncPipe.so
 vendor/lib/liblogwrap_vendor.so
 vendor/lib/libminiui.so
-vendor/lib/libmmprofile.so
 vendor/lib/libmnl.so
 vendor/lib/libmp4enc_sa.ca7.so
 vendor/lib/libmp4enc_xa.ca7.so
@@ -1797,7 +1796,6 @@ vendor/lib64/liblogwrap_vendor.so
 vendor/lib64/liblpcnr.so
 vendor/lib64/libmfllcore.so
 vendor/lib64/libminiui.so
-vendor/lib64/libmmprofile.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libneuroeara.so
 vendor/lib64/libneuron_adapter.so
