@@ -1603,8 +1603,6 @@ vendor/lib/libimageio_plat_drv.so
 vendor/lib/libimageio_plat_pipe.so
 vendor/lib/libimgsensorca.so
 vendor/lib/libimsg_log.so
-vendor/lib/libion_mtk.so
-vendor/lib/libion_ulit.so
 vendor/lib/libipsec_ims_shr.so
 vendor/lib/libispcameraca.so
 vendor/lib/libjpeg-alpha-oal_vendor.so
@@ -1783,8 +1781,6 @@ vendor/lib64/libimageio_plat_drv.so
 vendor/lib64/libimageio_plat_pipe.so
 vendor/lib64/libimgsensorca.so
 vendor/lib64/libimsg_log.so
-vendor/lib64/libion_mtk.so
-vendor/lib64/libion_ulit.so
 vendor/lib64/libipsec_ims_shr.so
 vendor/lib64/libispcameraca.so
 vendor/lib64/libjpeg-alpha-oal_vendor.so
