@@ -25,8 +25,4 @@ allow mi_thermald sysfs:file w_file_perms;
 r_dir_file(mi_thermald, sysfs_leds)
 allow mi_thermald sysfs_leds:file w_file_perms;
 
-allow mi_thermald sysfs_battery_supply:dir r_dir_perms;
-allow mi_thermald sysfs_battery_supply:file rw_file_perms;
-allow mi_thermald sysfs_battery_supply:lnk_file r_file_perms;
-
 allow mi_thermald sysfs_devices_system_cpu:file rw_file_perms;
