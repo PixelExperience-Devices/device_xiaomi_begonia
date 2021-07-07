@@ -1,6 +1,4 @@
-# Copyright (C) 2009 The Android Open Source Project
-# Copyright (C) 2019 The Mokee Open Source Project
-# Copyright (C) 2019-2020 The LineageOS Open Source Project
+# Copyright (C) 2020-2021 The LineageOS Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -35,10 +33,10 @@ def AddImageOnly(info, basename, incremental, firmware):
 
 def AddImage(info, basename, dest, incremental):
   AddImageOnly(info, basename, incremental, False)
+  info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
 
 def OTA_InstallEnd(info, incremental):
-  info.script.Print("Patching vbmeta and dtbo images...")
   AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta", incremental)
   AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo", incremental)
   Firmware_Images(info, incremental)
@@ -65,29 +63,9 @@ def Firmware_Images(info, incremental):
   pl = 'preloader_ufs'
   pl_part = ['sda', 'sdb']
 
-  fw_cmd = 'ifelse(getprop("ro.boot.hwc") == "India",\n(\n'
-  fw_cmd += 'ui_print("Flashing begoniain (Indian) firmware...");\n'
+  fw_cmd = 'ui_print("Flashing begonia firmware...");\n'
 
-  # Flash Indian Firmware
-  AddImageOnly(info, "{}_in.img".format(pl), incremental, True)
-  for part in pl_part:
-      fw_cmd += 'package_extract_file("{}_in.img", "/dev/block/{}");\n'.format(pl, part)
-
-  for img in img_map.keys():
-    AddImageOnly(info, '{}_in.img'.format(img), incremental, True)
-    for part in img_map[img]:
-      fw_cmd += 'package_extract_file("{}_in.img", "/dev/block/bootdevice/by-name/{}");\n'.format(img, part)
-
-  for _bin in bin_map.keys():
-    AddImageOnly(info, '{}_in.bin'.format(_bin), incremental, True)
-    for part in bin_map[_bin]:
-      fw_cmd += 'package_extract_file("{}_in.bin", "/dev/block/bootdevice/by-name/{}");\n'.format(_bin, part)
-  # END Flash Indian Firmware
-
-  fw_cmd += '),\n(\n'
-  fw_cmd += 'ui_print("Flashing begonia (Global) firmware...");\n'
-
-  # Flash Global Firmware
+  # Start Flash Begonia Firmware
   AddImageOnly(info, "{}.img".format(pl), incremental, True)
   for part in pl_part:
       fw_cmd += 'package_extract_file("{}.img", "/dev/block/{}");\n'.format(pl, part)
@@ -101,7 +79,6 @@ def Firmware_Images(info, incremental):
     AddImageOnly(info, '{}.bin'.format(_bin), incremental, True)
     for part in bin_map[_bin]:
       fw_cmd += 'package_extract_file("{}.bin", "/dev/block/bootdevice/by-name/{}");\n'.format(_bin, part)
-  # END Flash Global Firmware
+  # END Flash Begonia Firmware
 
-  fw_cmd += ')\n);'
   info.script.AppendExtra(fw_cmd)
