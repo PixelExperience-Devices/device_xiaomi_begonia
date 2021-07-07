@@ -1,4 +1,9 @@
 # FingerPrint
+/mnt/vendor/persist/goodix(/.*)? u:object_r:fp_data_file:s0
+/mnt/vendor/persist/fpc(/.*)?    u:object_r:fp_data_file:s0
+/data/vendor/fpdump(/.*)?        u:object_r:fp_data_file:s0
+/data/vendor/goodix(/.*)?        u:object_r:fp_data_file:s0
+/data/vendor/fpc(/.*)?           u:object_r:fp_data_file:s0
 /data/gf_data(/.*)?              u:object_r:fp_data_file:s0
 /dev/goodix_fp                   u:object_r:fp_device:s0
 

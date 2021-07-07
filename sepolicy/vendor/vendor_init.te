@@ -1,2 +1,4 @@
 get_prop(vendor_init, persist_atm_prop)
 get_prop(vendor_init, persist_recovery_update_prop)
+
+allow vendor_init fp_data_file:dir { rw_dir_perms relabelto setattr };
