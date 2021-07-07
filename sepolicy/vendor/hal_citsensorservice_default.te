@@ -9,5 +9,7 @@ allow hal_citsensorservice_default input_device:dir rw_dir_perms;
 allow hal_citsensorservice_default hidl_base_hwservice:hwservice_manager add;
 allow hal_citsensorservice_default hwservicemanager:binder { call transfer };
 allow hal_citsensorservice_default citsensorservice_hwservice:hwservice_manager { add find };
+allow hal_citsensorservice_default sysfs_leds:dir r_dir_perms;
+allow hal_citsensorservice_default sysfs_leds:file rw_file_perms;
 
 get_prop(hal_citsensorservice_default, hwservicemanager_prop)
