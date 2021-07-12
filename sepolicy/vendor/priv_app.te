@@ -1,1 +1,2 @@
 get_prop(priv_app, vendor_displayfeature_prop)
+get_prop(priv_app, vendor_fp_prop)
