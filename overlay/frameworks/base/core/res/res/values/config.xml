@@ -41,8 +41,6 @@
     <!-- If true, the doze component is not started until after the screen has been turned off
          and the screen off animation has been performed. -->
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
-    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
-    <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
     <!-- Whether to enable network location overlay which allows network
          location provider to be replaced by an app at run-time. When disabled,
@@ -117,12 +115,7 @@
     <dimen name="rounded_corner_radius_top">95.0px</dimen>
     <dimen name="rounded_corner_radius_bottom">90.0px</dimen>
 
-    <!-- Screen brightness used to dim the screen while dozing in a very low power state.
-         May be less than the minimum allowed brightness setting
-         that can be set by the user. -->
-    <integer name="config_screenBrightnessDoze">32</integer>
-
-    <!-- Whether the display blanks itself when going from a doze to a non-doze state -->
+    <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
@@ -156,43 +149,52 @@
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
-         in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
-         config_screenBrightnessMaximumNits, the display brightness is defined as the measured
-         brightness of an all-white image.
-         If this is defined then:
-            - config_autoBrightnessLcdBacklightValues should not be defined
-            - config_screenBrightnessNits must be defined
-            - config_screenBrightnessBacklight must be defined
-         This array should have size one greater than the size of the config_autoBrightnessLevels
-         array. The brightness values must be non-negative and non-decreasing. This must be
-         overridden in platform specific overlays -->
+      in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
+      config_screenBrightnessMaximumNits, the display brightness is defined as the measured
+      brightness of an all-white image.
+
+      If this is defined then:
+      - config_autoBrightnessLcdBacklightValues should not be defined
+      - config_screenBrightnessNits must be defined
+      - config_screenBrightnessBacklight must be defined
+
+      This array should have size one greater than the size of the config_autoBrightnessLevels
+      array. The brightness values must be non-negative and non-decreasing. This must be
+      overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-      <item>5.139055</item>       <!--  0 - 1  -->
-      <item>9.962018965</item>    <!--  1 - 2  -->
-      <item>18.34822964</item>    <!--  2 - 3  -->
-      <item>21.55068128</item>    <!--  3 - 4  -->
-      <item>24.0167788</item>     <!--  4 - 8  -->
-      <item>30.62162162</item>    <!--  8 - 12  -->
-      <item>35.09486396</item>    <!--  12 - 20  -->
-      <item>41.2249643</item>     <!--  20 - 33  -->
-      <item>47.6760716</item>     <!--  33 - 55  -->
-      <item>55.73002427</item>    <!--  55 - 90  -->
-      <item>66.24126116</item>    <!--  90 - 148  -->
-      <item>79.67614115</item>    <!--  148 - 245  -->
-      <item>98.04727274</item>    <!--  245 - 403  -->
-      <item>125.1221991</item>    <!--  403 - 665  -->
-      <item>161.6875093</item>    <!--  665 - 1097  -->
-      <item>208.4885553</item>    <!--  1097 - 1808  -->
-      <item>264.8221315</item>    <!--  1808 - 2981  -->
-      <item>327.8974352</item>    <!--  2981 - 5000  -->
-      <item>401.1676739</item>    <!--  5000 - 10000  -->
-      <item>494.0846144</item>    <!--  10000+  -->
+      <item>5.139055</item>       <!--  0 - 1 -->
+      <item>9.962018965</item>    <!--  1 - 2 -->
+      <item>18.34822964</item>    <!--  2 - 3 -->
+      <item>21.55068128</item>    <!--  3 - 4 -->
+      <item>24.0167788</item>     <!--  4 - 8 -->
+      <item>30.62162162</item>    <!--  8 - 12 -->
+      <item>35.09486396</item>    <!--  12 - 20 -->
+      <item>41.2249643</item>     <!--  20 - 33 -->
+      <item>47.6760716</item>     <!--  33 - 55 -->
+      <item>55.73002427</item>    <!--  55 - 90 -->
+      <item>66.24126116</item>    <!--  90 - 148 -->
+      <item>79.67614115</item>    <!--  148 - 245 -->
+      <item>98.04727274</item>    <!--  245 - 403 -->
+      <item>125.1221991</item>    <!--  403 - 665 -->
+      <item>161.6875093</item>    <!--  665 - 1097 -->
+      <item>208.4885553</item>    <!--  1097 - 1808 -->
+      <item>264.8221315</item>    <!--  1808 - 2981 -->
+      <item>327.8974352</item>    <!--  2981 - 5000 -->
+      <item>401.1676739</item>    <!--  5000 - 10000 -->
+      <item>600.0</item>          <!--  10000+ -->
     </array>
 
-    <!-- Screen brightness used to dim the screen when the user activity
-         timeout expires.  May be less than the minimum allowed brightness setting
-         that can be set by the user. -->
+    <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">6</integer>
+
+    <!-- Screen brightness when dozing. -->
+    <integer name="config_screenBrightnessDoze">17</integer>
+
+    <!-- Whether the always on display mode is available. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+    <!-- Disable AOD by default -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
     <!-- True if the display hardware only has brightness buckets rather than a full range of
          backlight values -->
@@ -206,27 +208,20 @@
     <integer name="config_screenBrightnessForVrSettingMaximum">7</integer>
 
     <!-- Minimum screen brightness setting allowed by power manager.
-         -2 is invalid so setting will resort to int value specified above.
-         Set this to 0.0 to allow screen to go to minimal brightness.
          The user is forbidden from setting the brightness below this level. -->
     <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.0</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
-         -2 is invalid so setting will resort to int value specified above.
-         Set this to 1.0 for maximum brightness range.
-         The user is forbidden from setting the brightness above this level. -->
+         The user is forbidden from setting the brightness above this level -->
     <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item>
 
     <!-- Default screen brightness setting
          Must be in the range specified by minimum and maximum. -->
-    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.318897637795</item>
-
-    <!-- Maximum screen brightness setting allowed by the power manager.
-         The user is forbidden from setting the brightness above this level. -->
-    <integer name="config_screenBrightnessSettingMaximum">255</integer>
+    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.29019607843</item>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
+
          This array should be equal in size to config_screenBrightnessBacklight. -->
     <integer-array name="config_screenBrightnessBacklight">
         <item>1</item>
@@ -238,10 +233,11 @@
          should be measured with an all white image while the display is in the fully on state.
          Note that this value should *not* reflect the maximum brightness value for any high
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
+
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
         <item>2.0</item>
-        <item>450.0</item>
+        <item>500.0</item>
     </array>
 
     <!-- The nominal white coordinates, in CIE1931 XYZ color space, for Display White Balance to
@@ -258,8 +254,8 @@
          when adapting to brighter or darker environments.  This parameter controls how quickly
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">4000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">8000</integer>
 
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
     <integer name="config_shutdownBatteryTemperature">590</integer>
