@@ -1,8 +1,5 @@
-import /init.recovery.mtk.usb.rc
-
-on fs
-    wait /dev/block/platform/bootdevice/
-    symlink /dev/block/platform/bootdevice/ /dev/block/bootdevice
+on init
+    setprop sys.usb.configfs 1
 
 on boot
     # Turn backlight on and switch to backlight trigger
