@@ -1,7 +1,7 @@
 on init
     setprop sys.usb.configfs 1
 
-on boot
-    # Turn backlight on and switch to backlight trigger
-    write /sys/class/leds/lcd-backlight/brightness "1000"
-    write /sys/class/leds/lcd-backlight/trigger "backlight"
+service init-recovery-mt6785-sh /init.recovery.mt6785.sh
+    user root
+    group root
+    seclabel u:r:recovery:s0
