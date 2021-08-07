@@ -22,6 +22,7 @@ $(call inherit-product, device/xiaomi/begonia/device.mk)
 
 # Inherit some PE source stuff
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USES_AOSP_RECOVERY := true
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Boot Animation
