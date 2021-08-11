@@ -209,11 +209,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Tag \
     NfcNci \
+    libchrome.vendor \
     com.android.nfc_extras \
     android.hardware.nfc@1.1-service
-
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/nfc/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
@@ -221,6 +219,9 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    init_panel_info.sh \
+    partition_permission.sh \
+    throttle.sh \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6785.rc \
