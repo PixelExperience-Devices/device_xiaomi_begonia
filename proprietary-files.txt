@@ -1496,15 +1496,7 @@ vendor/lib/libHEVCdec_sa.ca7.android.so
 # WiFi
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
-vendor/bin/hw/wpa_supplicant
-vendor/bin/hw/hostapd
-vendor/etc/init/hostapd.android.rc
 vendor/etc/init/init_connectivity.rc
-vendor/etc/init/android.hardware.wifi.supplicant-service.rc
--vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
-vendor/lib/libwapi.so
-vendor/lib64/libwapi.so
-vendor/lib64/libwpa_client.so
 
 # WiFi Firmware
 vendor/firmware/wifi.cfg

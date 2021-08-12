@@ -274,6 +274,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libtinyxml
 
+# WiFi
+PRODUCT_PACKAGES += \
+    hostapd \
+    libwpa_client \
+    wpa_supplicant
+
 # WiFi Overlays
 PRODUCT_PACKAGES += \
     WifiOverlay \
