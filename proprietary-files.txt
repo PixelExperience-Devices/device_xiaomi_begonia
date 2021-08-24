@@ -690,12 +690,9 @@ vendor/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc
 
 # DRM
 vendor/lib/libwvkeybox.so
+vendor/lib/liboemcrypto.so
 vendor/lib/libwvkeyboxext.so
 vendor/lib/libtlcWidevineModularDrm.so
-vendor/lib64/libwvkeybox.so
-vendor/lib64/liboemcrypto.so
-vendor/lib64/libwvkeyboxext.so
-vendor/lib64/libtlcWidevineModularDrm.so
 
 # DRM Hardware
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
@@ -705,8 +702,6 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 # DRM Widevine
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib64/libwvhidl.so
-vendor/lib64/mediadrm/libwvdrmengine.so
 
 # Fingerprint
 vendor/bin/hw/mfp-daemon
