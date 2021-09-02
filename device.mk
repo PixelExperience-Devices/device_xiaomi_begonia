@@ -285,8 +285,5 @@ PRODUCT_PACKAGES += \
     WifiOverlay \
     TetheringConfigOverlay
 
-# Kernel
-$(call inherit-product, device/xiaomi/begonia-kernel/kernel.mk)
-
 # Inherit vendor
 $(call inherit-product, vendor/xiaomi/begonia/begonia-vendor.mk)
