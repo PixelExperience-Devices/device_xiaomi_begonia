@@ -1,35 +1,29 @@
 on post-fs-data
-
-#/dev/ttyMT2 for Connectivity BT/FM/GPS usage
+    # /dev/ttyMT2 for Connectivity BT/FM/GPS usage
     chmod 0660 /dev/ttyMT2
     chown system system /dev/ttyMT2
 
-#/dev/ttyMT1 for GPS 3337 usage
+    # /dev/ttyMT1 for GPS 3337 usage
     chmod 0660 /dev/ttyMT1
     chown system system /dev/ttyMT1
 
-# GPS
+    # GPS
     mkdir /data/vendor/gps 0770 gps system
     mkdir /data/vendor/log 0770 gps system
     mkdir /data/vendor/log/gps 0770 gps system
 
-# GPS EMI
+    # GPS EMI
     chmod 0660 /dev/gps_emi
 
-# WiFi
+    # WiFi
     mkdir /data/vendor/wifi 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
 
-# BT relayer mode used VCOM
+    # BT relayer mode used VCOM
     chown bluetooth bluetooth /dev/ttyGS2
     chmod 0660 /dev/ttyGS2
 
-on boot
-
-#
-# Connectivity related services (Begin)
-#
 # GPS
 service mnld /vendor/bin/mnld
     class main
@@ -37,13 +31,3 @@ service mnld /vendor/bin/mnld
     capabilities WAKE_ALARM
     group gps inet misc sdcard_rw sdcard_r media_rw system radio wakelock
     socket mnld stream 660 gps system
-
-# GPS Debug Process
-service lbs_dbg /system/bin/lbs_dbg
-    class main
-    user shell
-    group log system gps inet misc sdcard_rw sdcard_r media_rw radio
-    socket lbs_dbg stream 660 gps system
-
-on property:persist.vendor.em.dy.debug=1
-    stop lbs_dbg
