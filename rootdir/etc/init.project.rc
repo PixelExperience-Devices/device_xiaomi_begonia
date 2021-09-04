@@ -84,7 +84,7 @@ service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/
     class late_start
     disabled
 
-service panel-info-sh /system/vendor/bin/sh /vendor/etc/init_panel_info.sh
+service panel-info-sh /vendor/bin/init.panel_info.sh
     class core
     user root
     oneshot
