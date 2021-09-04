@@ -926,10 +926,6 @@ on property:sys.boot_completed=1
 on property:vendor.mtk.md1.status=reset
     setprop persist.vendor.atm.mdmode normal
 
-# FPSGO FBT Game
-on boot
-    insmod /vendor/lib/modules/fpsgo.ko
-
 on init
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
 
