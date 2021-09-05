@@ -107,14 +107,6 @@
          from DOZE to ON, in millis. -->
     <integer name="config_wakeUpDelayDoze">32</integer>
 
-    <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">78.0px</dimen>
-    <dimen name="status_bar_height_landscape">24.0dp</dimen>
-
-    <!-- Rounded corner padding and radius -->
-    <dimen name="rounded_corner_radius_top">95.0px</dimen>
-    <dimen name="rounded_corner_radius_bottom">90.0px</dimen>
-
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
