@@ -20,9 +20,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from begonia device makefile
 $(call inherit-product, device/xiaomi/begonia/device.mk)
 
-# Inherit some PE source stuff
+# Inherit some Evolution X source stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2340
@@ -30,7 +30,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := aosp_begonia
+PRODUCT_NAME := evolution_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi
