@@ -25,6 +25,9 @@ import android.content.IntentFilter;
 import android.os.IBinder;
 import android.util.Log;
 
+import org.lineageos.settings.sensors.PickupSensor;
+import org.lineageos.settings.sensors.ProximitySensor;
+
 public class DozeService extends Service {
     private static final String TAG = "DozeService";
     private static final boolean DEBUG = false;
