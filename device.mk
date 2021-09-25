@@ -224,7 +224,6 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init_panel_info.sh \
     partition_permission.sh \
     throttle.sh \
     init.connectivity.rc \
