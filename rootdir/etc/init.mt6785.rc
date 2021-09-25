@@ -940,7 +940,7 @@ service charger /system/bin/chargeonlymode
     seclabel u:r:healthd:s0
 
 # MI Thermald
-service mi_thermald /system/vendor/bin/mi_thermald
+service mi_thermald /vendor/bin/mi_thermald
     class main
     user root
     group system
