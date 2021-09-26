@@ -17,7 +17,7 @@
 
 # External-Devices (SDCARD | OTG)
 /devices/platform/externdevice*                  auto       auto   defaults    voldmanaged=sdcard1:auto,encryptable=userdata
-/devices/platform/usb3_xhci*                     auto       vfat   defaults    voldmanaged=usbotg:auto
+/devices/platform/usb3_xhci*                     auto       auto   defaults    voldmanaged=usbotg:auto
 
 # Factory Reset Protection (FRP)
 /dev/block/platform/bootdevice/by-name/frp      /persistent emmc   defaults    defaults
