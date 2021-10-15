@@ -20,25 +20,12 @@ on init
     write /proc/sys/net/core/wmem_max 8388608
     write /proc/sys/net/core/rmem_max 8388608
 
-    # add cpuset for big demand
-    mkdir /dev/cpuset/foreground/boost
-    write /dev/cpuset/foreground/boost/mems 0
-    chown system system /dev/cpuset/foreground/boost
-    chown system system /dev/cpuset/foreground/boost/tasks
-    chmod 0660 /dev/cpuset/foreground/boost/tasks
-    mkdir /dev/cpuset/top-app/boost
-    write /dev/cpuset/top-app/boost/mems 0
-    chown system system /dev/cpuset/top-app/boost
-    chown system system /dev/cpuset/top-app/boost/tasks
-    chmod 0660 /dev/cpuset/top-app/boost/tasks
-
     # update cpus for cpuset cgroup
     write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/foreground/boost/cpus 6-7
+    write /dev/cpuset/foreground/boost/cpus 0-7
     write /dev/cpuset/background/cpus 0-3
     write /dev/cpuset/system-background/cpus 0-5
     write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/top-app/boost/cpus 6-7
     chown system system /dev/input/event2
 
 on late-init
