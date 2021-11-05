@@ -1443,6 +1443,34 @@ vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta
 vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
 vendor/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta
 
+# Volte Runner
+vendor/bin/bip
+vendor/bin/epdg_wod
+vendor/bin/volte_imcb
+vendor/bin/volte_imsm_93
+vendor/bin/volte_md_status
+vendor/bin/volte_stack
+vendor/bin/volte_ua
+vendor/bin/wfca
+vendor/bin/xcap
+vendor/etc/init/init.bip.rc
+vendor/etc/init/init.volte_imcb.rc
+vendor/etc/init/init.volte_imsm_93.rc
+vendor/etc/init/init.volte_md_status.rc
+vendor/etc/init/init.volte_stack.rc
+vendor/etc/init/init.volte_ua.rc
+vendor/etc/init/init.wfca.rc
+vendor/etc/init/init.wod.rc
+vendor/etc/init/init.xcap.rc
+vendor/lib/libverno.so
+vendor/lib/libwo.so
+vendor/lib/libvsim.so
+vendor/lib/libvolte_core_shr.so
+vendor/lib/libvolte_xdmc_shr.so
+vendor/lib64/libverno.so
+vendor/lib64/libwo.so
+vendor/lib64/libvsim.so
+
 # Vow dsp
 vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml
 
