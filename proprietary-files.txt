@@ -1160,7 +1160,6 @@ vendor/lib64/libarmnn.so
 vendor/lib64/libarmnn_ndk.mtk.so
 vendor/lib64/libcmdl.so
 vendor/lib64/libcmdl_ndk.mtk.so
-vendor/lib64/libfmq.so
 vendor/lib64/libneuroeara.so
 vendor/lib64/libneuron_adapter.so
 vendor/lib64/libneuron_platform.so
