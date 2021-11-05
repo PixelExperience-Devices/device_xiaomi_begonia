@@ -15,5 +15,8 @@ sys.ipo.disable=1
 # Kernel
 ro.kernel.zio=38,108,105,16
 
+# Ril
+persist.sys.fflag.override.settings_provider_model=false
+
 # Netflix
 ro.netflix.bsp_rev=MTK6785-18758-1
