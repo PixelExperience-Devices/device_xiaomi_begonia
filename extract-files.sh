@@ -59,6 +59,18 @@ if [ -z "${SRC}" ]; then
     SRC=adb
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        # Load audio shim
+        vendor/lib64/hw/audio.primary.mt6785.so)
+            patchelf --add-needed libshim_audio.so ${2}
+            ;;
+        vendor/lib/hw/audio.primary.mt6785.so)
+            patchelf --add-needed libshim_audio.so ${2}
+            ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${AOSP_ROOT}" false "${CLEAN_VENDOR}"
 
