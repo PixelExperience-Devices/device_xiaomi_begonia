@@ -678,7 +678,6 @@ vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6785.so
 vendor/lib64/hw/memtrack.mt6785.so
-vendor/lib64/android.hidl.allocator@1.0.so
 vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/libdpframework.so
 
