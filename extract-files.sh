@@ -68,6 +68,10 @@ function blob_fixup() {
         vendor/lib/hw/audio.primary.mt6785.so)
             patchelf --add-needed libshim_audio.so ${2}
             ;;
+        # Load VNDK-30 version of libutils
+        vendor/lib64/libmtkcam_stdutils.so)
+            patchelf --replace-needed libutils.so libutils-v30.so ${2}
+            ;;
     esac
 }
 
