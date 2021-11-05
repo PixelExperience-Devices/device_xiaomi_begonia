@@ -1194,14 +1194,7 @@ vendor/lib64/librgbwlightsensor.so
 vendor/lib64/libscltm.so
 
 # Radio
-vendor/bin/muxreport
-vendor/etc/init/muxreport.rc
-vendor/lib/libverno.so
-vendor/lib/libvt_custom.so
-vendor/lib/libwo.so
 vendor/lib64/libcapctrl.so
-vendor/lib64/libverno.so
-vendor/lib64/libwo.so
 
 # Sensors
 vendor/bin/hw/android.hardware.sensors@1.0-service-mediatek
