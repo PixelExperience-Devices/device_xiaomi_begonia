@@ -12,10 +12,12 @@ vendor/lib/libaudiodcrflt_vendor.so
 vendor/lib/libaudiofmtconv.so
 vendor/lib/libaudiosmartpamtk.so
 vendor/lib/libaudiotoolkit_vendor.so
+vendor/lib/libwebrtc_audio_preprocessing.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocomponentengine_vendor.so
 vendor/lib64/libaudiofmtconv.so
 vendor/lib64/libaudiosmartpamtk.so
+vendor/lib64/libwebrtc_audio_preprocessing.so
 
 # Audio Aurisys
 vendor/lib/libMtkSpeechEnh.so
