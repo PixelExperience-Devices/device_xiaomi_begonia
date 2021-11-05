@@ -161,11 +161,7 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor \
-    libunwindstack.vendor \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0_system \
-    android.hidl.manager@1.0 \
-    android.hidl.manager@1.0_system
+    libunwindstack.vendor
 
 # IR
 PRODUCT_PACKAGES += \
