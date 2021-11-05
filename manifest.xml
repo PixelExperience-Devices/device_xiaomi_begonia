@@ -434,7 +434,7 @@
     <hal format="hidl">
         <name>vendor.mediatek.hardware.mtkradioex</name>
         <transport>hwbinder</transport>
-        <version>1.5</version>
+        <version>2.0</version>
         <interface>
             <name>IMtkRadioEx</name>
             <instance>imsSlot1</instance>
@@ -452,20 +452,20 @@
             <instance>mtkSlot1</instance>
             <instance>mtkSlot2</instance>
         </interface>
-        <fqname>@1.5::IMtkRadioEx/imsSlot1</fqname>
-        <fqname>@1.5::IMtkRadioEx/imsSlot2</fqname>
-        <fqname>@1.5::IMtkRadioEx/mtkAssist1</fqname>
-        <fqname>@1.5::IMtkRadioEx/mtkAssist2</fqname>
-        <fqname>@1.5::IMtkRadioEx/mtkCap1</fqname>
-        <fqname>@1.5::IMtkRadioEx/mtkCap2</fqname>
-        <fqname>@1.5::IMtkRadioEx/mtkEm1</fqname>
-        <fqname>@1.5::IMtkRadioEx/mtkEm2</fqname>
-        <fqname>@1.5::IMtkRadioEx/mtkRcs1</fqname>
-        <fqname>@1.5::IMtkRadioEx/mtkRcs2</fqname>
-        <fqname>@1.5::IMtkRadioEx/mtkSe1</fqname>
-        <fqname>@1.5::IMtkRadioEx/mtkSe2</fqname>
-        <fqname>@1.5::IMtkRadioEx/mtkSlot1</fqname>
-        <fqname>@1.5::IMtkRadioEx/mtkSlot2</fqname>
+        <fqname>@2.0::IMtkRadioEx/imsSlot1</fqname>
+        <fqname>@2.0::IMtkRadioEx/imsSlot2</fqname>
+        <fqname>@2.0::IMtkRadioEx/mtkAssist1</fqname>
+        <fqname>@2.0::IMtkRadioEx/mtkAssist2</fqname>
+        <fqname>@2.0::IMtkRadioEx/mtkCap1</fqname>
+        <fqname>@2.0::IMtkRadioEx/mtkCap2</fqname>
+        <fqname>@2.0::IMtkRadioEx/mtkEm1</fqname>
+        <fqname>@2.0::IMtkRadioEx/mtkEm2</fqname>
+        <fqname>@2.0::IMtkRadioEx/mtkRcs1</fqname>
+        <fqname>@2.0::IMtkRadioEx/mtkRcs2</fqname>
+        <fqname>@2.0::IMtkRadioEx/mtkSe1</fqname>
+        <fqname>@2.0::IMtkRadioEx/mtkSe2</fqname>
+        <fqname>@2.0::IMtkRadioEx/mtkSlot1</fqname>
+        <fqname>@2.0::IMtkRadioEx/mtkSlot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.netdagent</name>
