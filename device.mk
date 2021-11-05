@@ -207,8 +207,7 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    libpcap.vendor \
-    netutils-wrapper-1.0
+    libpcap.vendor
 
 # NFC
 PRODUCT_PACKAGES += \
