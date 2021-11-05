@@ -6,8 +6,6 @@
 
 DEVICE_PATH := device/xiaomi/begonia
 
-BUILD_BROKEN_DUP_RULES := true
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
