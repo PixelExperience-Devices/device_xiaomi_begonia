@@ -111,10 +111,6 @@ ro.vendor.md_auto_setup_ims=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 
-# Media
-debug.stagefright.omx_default_rank.sw-audio=1
-debug.stagefright.omx_default_rank=0
-
 # Mediatek (Misc)
 debug.mediatek.disp_decompress=1
 debug.mediatek.game_pq_enable=1
