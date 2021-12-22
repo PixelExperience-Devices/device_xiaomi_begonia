@@ -18,12 +18,6 @@
    "branch"      : "eleven"
  },
  {
-   "repository"  : "vendor_xiaomi-firmware",
-   "target_path" : "vendor/xiaomi-firmware",
-   "remote"      : "pixel-devices-blobs",
-   "branch"      : "eleven"
- },
- {
    "repository"  : "device_mediatek_sepolicy_vndr",
    "target_path" : "device/mediatek/sepolicy_vndr",
    "remote"      : "pixel",
