@@ -661,13 +661,6 @@ vendor/etc/csot_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml
 vendor/etc/ebbg_fhd_ft8719_dsi_vdo_lcm_drv_mi.xml
 vendor/etc/tianma_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml
 
-# Display Feature
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
-vendor/lib64/hw/displayfeature.default.so
-vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-
 # Display Hardware
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
@@ -682,6 +675,7 @@ vendor/lib64/hw/hwcomposer.mt6785.so
 vendor/lib64/hw/memtrack.mt6785.so
 vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/libdpframework.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 # Dplanner
 vendor/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service
@@ -1506,23 +1500,3 @@ vendor/etc/init/init_connectivity.rc
 # WiFi Firmware
 vendor/firmware/WMT_SOC.cfg
 vendor/firmware/wifi.cfg
-
-# Xiaomi
-vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
-vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
-vendor/bin/vsimd
-vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc
--vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml
--vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml
-vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
-vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0_vendor.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
-vendor/lib64/vendor.xiaomi.hardware.micharge@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so

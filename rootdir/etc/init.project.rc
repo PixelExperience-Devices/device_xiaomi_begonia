@@ -84,15 +84,6 @@ service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/
     class late_start
     disabled
 
-on property:init.svc.surfaceflinger=stopped
-    stop displayfeature
-
-on property:init.svc.surfaceflinger=running
-    start displayfeature
-
-on property:init.svc.surfaceflinger=restarting
-    stop displayfeature
-
 # spkcal cit
 on property:vendor.audio.cit.spkcal.copy=true
     copy /data/vendor/cit/tfa9874_chk.txt /mnt/vendor/persist/audio/tfa9874_chk.txt

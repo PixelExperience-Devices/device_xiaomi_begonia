@@ -68,13 +68,10 @@ drm.service.enabled=true
 # Display
 ro.opengles.version=196610
 ro.zygote.preload.enable=0
-ro.vendor.xiaomi.bl.poll=true
 ro.vendor.colorpick_adjust=true
 ro.vendor.all_modes.colorpick_adjust=true
 ro.vendor.whitepoint_calibration_enable=false
 ro.vendor.histogram.enable=false
-vendor.displayfeature_hidl=true
-vendor.displayfeature.entry.enable=true
 debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
 ro.surface_flinger.primary_display_orientation=0
