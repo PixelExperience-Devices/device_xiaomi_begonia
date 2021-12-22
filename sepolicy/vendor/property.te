@@ -1,4 +1,0 @@
-type vendor_displayfeature_prop, property_type;
-type vendor_fp_prop, property_type;
-type persist_recovery_update_prop, property_type;
-type vendor_mi_camera_prop, property_type;

@@ -1,5 +1,0 @@
-# Set recovery to permissive
-recovery_only(`
-    permissive init;
-    permissive recovery;
-')

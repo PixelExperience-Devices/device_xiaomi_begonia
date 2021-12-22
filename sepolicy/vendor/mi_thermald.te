@@ -4,25 +4,31 @@ type thermal_data_file, data_file_type, file_type;
 
 init_daemon_domain(mi_thermald)
 
-set_prop(mi_thermald, thermal_engine_prop)
-
-allow mi_thermald thermal_data_file:dir rw_dir_perms;
-allow mi_thermald thermal_data_file:file create_file_perms;
-
 allow mi_thermald self:capability { fsetid sys_boot };
 allow mi_thermald mi_thermald:capability { chown fowner };
 allow mi_thermald mi_thermald:capability2 { wake_alarm block_suspend };
 
-r_dir_file(mi_thermald, sysfs_therm)
-allow mi_thermald sysfs_therm:file w_file_perms;
-
-r_dir_file(mi_thermald, sysfs_thermal)
-allow mi_thermald sysfs_thermal:file w_file_perms;
+# Allow mi_thermald to read thermal_data_file
+allow mi_thermald thermal_data_file:dir rw_dir_perms;
+allow mi_thermald thermal_data_file:file create_file_perms;
 
 r_dir_file(mi_thermald, sysfs)
-allow mi_thermald sysfs:file w_file_perms;
-
 r_dir_file(mi_thermald, sysfs_leds)
-allow mi_thermald sysfs_leds:file w_file_perms;
+r_dir_file(mi_thermald, sysfs_therm)
+r_dir_file(mi_thermald, sysfs_thermal)
+r_dir_file(mi_thermald, sysfs_power_supply)
 
-allow mi_thermald sysfs_devices_system_cpu:file rw_file_perms;
+# Allow mi_thermald to read and write to sysfs_*
+allow mi_thermald {
+  sysfs
+  sysfs_leds
+  sysfs_therm
+  sysfs_thermal
+  sysfs_power_supply
+  sysfs_devices_system_cpu
+}:{
+  file
+  lnk_file
+} rw_file_perms;
+
+set_prop(mi_thermald, thermal_engine_prop)

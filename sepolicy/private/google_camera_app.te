@@ -1,4 +1,0 @@
-# Duplicate all access that normal untrusted_app has, except for untrusted_app_domain
-app_domain(google_camera_app)
-net_domain(google_camera_app)
-bluetooth_domain(google_camera_app)

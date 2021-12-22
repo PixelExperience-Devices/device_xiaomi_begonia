@@ -1,3 +1,0 @@
-# Use a custom domain for GoogleCamera, to allow for Hexagon DSP access
-user=_app seinfo=platform name=com.google.android.GoogleCameraNext domain=google_camera_app type=app_data_file
-user=_app seinfo=platform name=com.GoogleCamera.Burial domain=google_camera_app type=app_data_file
