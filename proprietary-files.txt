@@ -1,4 +1,4 @@
-# Device proprietary files - from Begonia MIUI RP1A.200720.011 V12.5.1.0.RGGMIXM, unless pinned
+# Device proprietary files - from Begonia MIUI RP1A.200720.011 V12.5.5.0.RGGMIXM, unless pinned
 
 # Audio
 vendor/lib/soundfx/libaudiopreprocessing_mtk.so
@@ -608,7 +608,6 @@ vendor/etc/camera/CFR_para_UW.bin
 vendor/etc/camera/CFR_para_W.bin
 vendor/etc/camera/LDC_packdata_xiaomi_G7_src1.dat
 vendor/etc/camera/apu_miai_capture.bin
-vendor/etc/camera/apu_miai_fragment.bin
 vendor/etc/camera/apu_miai_preview.bin
 vendor/etc/camera/beauty_ui9_intelligent_params.config
 vendor/etc/camera/golden_rear_dc_cal_wt.bin
@@ -1459,13 +1458,13 @@ vendor/etc/init/init.wfca.rc
 vendor/etc/init/init.wod.rc
 vendor/etc/init/init.xcap.rc
 vendor/lib/libverno.so
-vendor/lib/libwo.so
-vendor/lib/libvsim.so
 vendor/lib/libvolte_core_shr.so
 vendor/lib/libvolte_xdmc_shr.so
+vendor/lib/libvsim.so
+vendor/lib/libwo.so
 vendor/lib64/libverno.so
-vendor/lib64/libwo.so
 vendor/lib64/libvsim.so
+vendor/lib64/libwo.so
 
 # Vow dsp
 vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml
