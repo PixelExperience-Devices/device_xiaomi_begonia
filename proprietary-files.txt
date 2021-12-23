@@ -1226,7 +1226,7 @@ vendor/etc/.tp/thermal.off.conf
 vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
 vendor/etc/thermal-arvr.conf
 vendor/etc/thermal-camera.conf
-vendor/etc/thermal-chg-only.conf
+vendor/etc/thermal-chg-only.conf|f965e59dd1b72fc4bb799085ffe60becf43c3f32
 vendor/etc/thermal-map.conf
 vendor/etc/thermal-nolimits.conf
 vendor/etc/thermal-normal.conf
