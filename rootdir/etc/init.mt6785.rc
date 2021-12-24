@@ -978,3 +978,9 @@ on post-fs && property:ro.boot.hwc=India_PA
     mount none /dev/null /vendor/etc/permissions/com.android.nfc_extras.xml bind
     mount none /dev/null /system/etc/permissions/android.software.nfc.beam.xml bind
     mount none /dev/null /system/etc/permissions/com.android.nfc_extras.xml bind
+
+# LogS
+service logcat_debug /bin/logcat -b all -f /data/logcat.txt -v threadtime
+    class main
+    user root
+    group system
