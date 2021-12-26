@@ -851,9 +851,6 @@ on boot
     chmod 660 /dev/ttyGS1
     chown system radio /dev/ttyGS1
 
-    # SELinux
-    write /sys/fs/selinux/enforce 1
-
 on property:vold.decrypt=trigger_reset_main
     write /proc/bootprof "INIT:vold.decrypt=trigger_reset_main"
     setprop sys.boot_completed 0
