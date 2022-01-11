@@ -53,6 +53,7 @@ TARGET_BOARD_PLATFORM_GPU := mali-g76mc4
 
 # Kernel
 BOARD_KERNEL_CMDLINE += bootopt=64S3,32N2,64N2
+BOARD_KERNEL_CMDLINE += androidboot.super_partition=system
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
 BOARD_KERNEL_PAGESIZE := 2048
