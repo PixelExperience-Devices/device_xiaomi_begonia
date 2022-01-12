@@ -1,0 +1,11 @@
+typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
+
+type fingerprint_data_file, file_type, data_file_type, core_data_file_type;
+type vendor_fingerprint_data_file, file_type, data_file_type;
+
+allow hal_fingerprint_default { fingerprint_data_file vendor_fingerprint_data_file }:dir r_dir_perms;
+allow hal_fingerprint_default { fingerprint_data_file vendor_fingerprint_data_file }:file rw_file_perms;
+
+allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
+
+set_prop(hal_fingerprint_default, vendor_fp_prop)

@@ -1,3 +1,4 @@
 get_prop(vendor_init, persist_atm_prop)
 
 allow vendor_init selinuxfs:file write;
+allow vendor_init { fingerprint_data_file vendor_fingerprint_data_file }:dir { rw_dir_perms relabelto setattr };
