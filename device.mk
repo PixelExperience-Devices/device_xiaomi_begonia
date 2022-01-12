@@ -29,7 +29,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # RRO (Runtime Resource Overlay)
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(DEVICE_PATH)/overlay-aosp/packages/apps/Snap
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(DEVICE_PATH)/overlay/packages/apps/CarrierConfig
 
 # Permissions
@@ -138,9 +137,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4.vendor \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor
-
-PRODUCT_PACKAGES += \
-    Snap
 
 # Device Specific Settings
 PRODUCT_PACKAGES += \
