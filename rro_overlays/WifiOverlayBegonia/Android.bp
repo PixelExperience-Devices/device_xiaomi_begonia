@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "WifiOverlay",
+    name: "WifiOverlayBegonia",
     theme: "WifiOverlay",
     sdk_version: "current",
     vendor: true

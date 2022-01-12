@@ -22,15 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-aosp
-
-# RRO (Runtime Resource Overlay)
-PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(DEVICE_PATH)/overlay/packages/apps/CarrierConfig
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -324,6 +315,17 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
+# Runtime Overlays
+PRODUCT_PACKAGES += \
+   BluetoothOverlayBegonia \
+   CarrierConfigOverlayBegonia \
+   FrameworksResOverlayBegonia \
+   SettingsOverlayBegonia \
+   SystemUIOverlayBegonia \
+   TelephonyOverlayBegonia \
+   TetheringConfigOverlayBegonia \
+   WifiOverlayBegonia
+
 # Sensors
 PRODUCT_PACKAGES += \
     libsensorndkbridge \
@@ -366,11 +368,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwpa_client \
     wpa_supplicant
-
-# WiFi Overlays
-PRODUCT_PACKAGES += \
-    WifiOverlay \
-    TetheringConfigOverlay
 
 # Inherit vendor
 $(call inherit-product, vendor/xiaomi/begonia/begonia-vendor.mk)
