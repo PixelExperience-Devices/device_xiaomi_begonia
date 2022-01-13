@@ -95,7 +95,6 @@ PRODUCT_PACKAGES += \
     libreverbwrapper \
     libvisualizer \
     libtinycompress \
-    libaudiofoundation \
     libaudiofoundation.vendor \
     libtinycompress.vendor
 
@@ -195,9 +194,7 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    libhidltransport \
     libhidltransport.vendor \
-    libhwbinder \
     libhwbinder.vendor \
     libunwindstack.vendor
 
@@ -243,7 +240,6 @@ PRODUCT_PACKAGES += \
 
 # Minijail
 PRODUCT_PACKAGES += \
-    libavservices_minijail \
     libavservices_minijail.vendor
 
 # Net
