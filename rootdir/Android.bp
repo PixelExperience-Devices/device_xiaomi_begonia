@@ -1,0 +1,67 @@
+prebuilt_etc {
+    name: "partition_permission.sh",
+    src: "bin/partition_permission.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "throttle.sh",
+    src: "bin/throttle.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.connectivity.rc",
+    src: "etc/init.connectivity.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.modem.rc",
+    src: "etc/init.modem.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6785.rc",
+    src: "etc/init.mt6785.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6785.usb.rc",
+    src: "etc/init.mt6785.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.project.rc",
+    src: "etc/init.project.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.sensor_1_0.rc",
+    src: "etc/init.sensor_1_0.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "fstab.mt6785",
+    required: ["fstab.mt6785_ramdisk"],
+    src: "etc/fstab.mt6785",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.mt6785.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.mt6785.rc",
+    vendor: true,
+}
