@@ -301,10 +301,6 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
-# Recovery
-PRODUCT_PACKAGES += \
-    init.recovery.mt6785.rc
-
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
