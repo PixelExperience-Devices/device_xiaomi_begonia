@@ -1,7 +1,6 @@
 # Device proprietary files - from Begonia MIUI RP1A.200720.011 V12.5.5.0.RGGMIXM, unless pinned
 
 # Audio
-vendor/lib/soundfx/libaudiopreprocessing_mtk.so
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib/libaudiocompensationfilter_vendor.so
 vendor/lib/libaudiocompensationfilterc.so
@@ -12,12 +11,10 @@ vendor/lib/libaudiodcrflt_vendor.so
 vendor/lib/libaudiofmtconv.so
 vendor/lib/libaudiosmartpamtk.so
 vendor/lib/libaudiotoolkit_vendor.so
-vendor/lib/libwebrtc_audio_preprocessing.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocomponentengine_vendor.so
 vendor/lib64/libaudiofmtconv.so
 vendor/lib64/libaudiosmartpamtk.so
-vendor/lib64/libwebrtc_audio_preprocessing.so
 
 # Audio Aurisys
 vendor/lib/libMtkSpeechEnh.so
