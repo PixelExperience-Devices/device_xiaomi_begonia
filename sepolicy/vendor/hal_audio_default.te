@@ -1,1 +1,27 @@
+allow hal_audio_default mtk_hal_power_hwservice:hwservice_manager find;
+binder_call(hal_audio_default, mtk_hal_power)
+
+allow hal_audio_default hal_audio_default:netlink_kobject_uevent_socket { create bind read setopt };
+allow hal_audio_default property_socket:sock_file write;
+allow hal_audio_default init:unix_stream_socket connectto;
+
+allow hal_audio_default adsp_device:chr_file rw_file_perms;
+allow hal_audio_default audio_ipi_device:chr_file rw_file_perms;
+allow hal_audio_default ccci_device:chr_file rw_file_perms;
+allow hal_audio_default ebc_device:chr_file rw_file_perms;
+allow hal_audio_default vow_device:chr_file rw_file_perms;
+
+allow hal_audio_default persist_data_file:dir search;
+allow hal_audio_default mnt_vendor_file:dir search;
+allow hal_audio_default mtk_audiohal_data_file:dir create_dir_perms;
+allow hal_audio_default mtk_audiohal_data_file:file create_file_perms;
+allow hal_audio_default sysfs_boot_mode:file r_file_perms;
+allow hal_audio_default debugfs_ion:dir search;
+
 get_prop(hal_audio_default, wmt_prop)
+get_prop(hal_audio_default, audiohal_prop)
+get_prop(hal_audio_default, mtk_default_prop)
+get_prop(hal_audio_default, tel_switch_prop)
+get_prop(hal_audio_default, vendor_audio_prop)
+set_prop(hal_audio_default, vendor_audio_prop)
+set_prop(hal_audio_default, audiohal_prop)
