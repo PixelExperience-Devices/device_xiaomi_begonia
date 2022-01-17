@@ -111,6 +111,14 @@ ro.vendor.md_auto_setup_ims=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 
+# Log
+persist.log.tag.GED=S
+persist.log.tag.hwcomposer=S
+persist.log.tag.libnfc_nci=S
+persist.log.tag.libPowerHal=S
+persist.log.tag.mTEE=S
+persist.log.tag.mtkpower@impl=S
+
 # Mediatek (Misc)
 debug.mediatek.disp_decompress=1
 debug.mediatek.game_pq_enable=1
