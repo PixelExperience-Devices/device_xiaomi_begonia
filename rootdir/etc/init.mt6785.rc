@@ -898,6 +898,7 @@ on property:sys.boot_completed=1
     write /dev/stune/foreground/schedtune.prefer_idle 0
     write /dev/stune/top-app/schedtune.prefer_idle 0
     write /dev/stune/rt/schedtune.prefer_idle 0
+    write /dev/stune/top-app/schedtune.boost 1
     write /proc/sys/kernel/sched_migration_cost_ns 200000
 
     # restore perf. parameters
