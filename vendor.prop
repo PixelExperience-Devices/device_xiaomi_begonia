@@ -99,6 +99,10 @@ ro.fastbootd.available=true
 # FRP
 ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
 
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
 # IMS
 persist.vendor.ims_support=1
 persist.vendor.mtk.volte.enable=1
