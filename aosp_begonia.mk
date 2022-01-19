@@ -24,6 +24,7 @@ $(call inherit-product, device/xiaomi/begonia/device.mk)
 $(call inherit-product, device/xiaomi/begonia/mtk-interfaces.mk)
 
 # Inherit some PE source stuff
+TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
