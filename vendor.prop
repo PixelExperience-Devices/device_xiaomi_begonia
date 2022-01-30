@@ -17,6 +17,7 @@ ro.vendor.mtk_besloudness_support=1
 ro.vendor.mtk_hifiaudio_support=1
 vendor.audio.adm.buffering.ms=3
 vendor.audio.spkcal.copy.inhal=true
+persist.bluetooth.bluetooth_audio_hal.disabled=true
 
 # Camera
 persist.vendor.camera3.operationMode.superNightMode=0x800A
