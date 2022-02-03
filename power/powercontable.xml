@@ -69,7 +69,7 @@
     <CMD name="PERF_RES_SCHED_BOOST" id="0x01410000">
         <Entry path="/sys/devices/system/cpu/sched/sched_boost"></Entry>
         <Compare>more</Compare>
-        <MaxValue>2</MaxValue>
+        <MaxValue>6</MaxValue>
         <MinValue>0</MinValue>
     </CMD>
     <CMD name="PERF_RES_SCHED_MIGRATE_COST" id="0x01414000">
