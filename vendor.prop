@@ -77,7 +77,6 @@ ro.vendor.all_modes.colorpick_adjust=true
 ro.vendor.whitepoint_calibration_enable=false
 ro.vendor.histogram.enable=false
 debug.sf.disable_backpressure=1
-debug.sf.latch_unsignaled=1
 ro.surface_flinger.primary_display_orientation=0
 ro.vendor.jpeg_decode_sw_opt=1
 ro.surface_flinger.has_HDR_display=true
