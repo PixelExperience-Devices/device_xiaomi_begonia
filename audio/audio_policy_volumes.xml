@@ -201,5 +201,12 @@ volume index from 0 to 100.
                                         ref="FULL_SCALE_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_PATCH" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
                                         ref="FULL_SCALE_VOLUME_CURVE"/>
+    <volume_ext stream="AUDIO_STREAM_ASSISTANT" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                        ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
+    <volume_ext stream="AUDIO_STREAM_ASSISTANT" deviceCategory="DEVICE_CATEGORY_SPEAKER"
+                                        ref="DEFAULT_DEVICE_CATEGORY_SPEAKER_VOLUME_CURVE"/>
+    <volume_ext stream="AUDIO_STREAM_ASSISTANT" deviceCategory="DEVICE_CATEGORY_EARPIECE"
+                                        ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
+    <volume_ext stream="AUDIO_STREAM_ASSISTANT" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                        ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
 </volumes>
-
