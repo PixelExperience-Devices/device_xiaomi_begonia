@@ -75,7 +75,6 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0.vendor \
     android.hardware.audio.common@7.0-util \
     android.hardware.audio.service \
     android.hardware.audio@7.0-impl \

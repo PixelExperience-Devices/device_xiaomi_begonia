@@ -11,10 +11,6 @@ vendor/lib/libaudiodcrflt_vendor.so
 vendor/lib/libaudiofmtconv.so
 vendor/lib/libaudiosmartpamtk.so
 vendor/lib/libaudiotoolkit_vendor.so
-vendor/lib64/libaudiocompensationfilter_vendor.so
-vendor/lib64/libaudiocomponentengine_vendor.so
-vendor/lib64/libaudiofmtconv.so
-vendor/lib64/libaudiosmartpamtk.so
 
 # Audio Aurisys
 vendor/lib/libMtkSpeechEnh.so
@@ -25,14 +21,6 @@ vendor/lib/libaudioloudc.so
 vendor/lib/libaurisysdemo.so
 vendor/lib/libfvaudio.so
 vendor/lib/libnxp_extamp_intf.so
-vendor/lib64/libMtkSpeechEnh.so
-vendor/lib64/lib_iir.so
-vendor/lib64/lib_smartpa_nxp_ap.so
-vendor/lib64/lib_speech_enh.so
-vendor/lib64/libaudioloudc.so
-vendor/lib64/libaurisysdemo.so
-vendor/lib64/libfvaudio.so
-vendor/lib64/libnxp_extamp_intf.so
 
 # Audio Aurisys Configs
 vendor/etc/aurisys_param/FV-SAM-MTKXX.dat
@@ -42,11 +30,9 @@ vendor/etc/aurisys_config_hifi3.xml
 
 # Audio Bessound HD
 vendor/lib/libbessound_hd_mtk_vendor.so
-vendor/lib64/libbessound_hd_mtk_vendor.so
 
 # Audio Blisrc Sound
 vendor/lib/libblisrc32_vendor.so
-vendor/lib64/libblisrc32_vendor.so
 
 # Audio Firmware
 vendor/firmware/tfa98xx.cnt
@@ -59,13 +45,6 @@ vendor/lib/libcvsd_mtk.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libspeech_enh_lib.so
 vendor/lib/libspeechparser_vendor.so
-vendor/lib64/hw/audio.primary.mt6785.so
-vendor/lib64/hw/audio.r_submix.mt6785.so
-vendor/lib64/hw/audio.usb.mt6785.so
-vendor/lib64/libcvsd_mtk.so
-vendor/lib64/libmsbc_mtk.so
-vendor/lib64/libspeech_enh_lib.so
-vendor/lib64/libspeechparser_vendor.so
 
 # Audio Param
 vendor/etc/audio_param/AudioParamOptions.xml
@@ -873,7 +852,6 @@ vendor/lib64/libjpeg-alpha_vendor.so
 # Keymaster
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
-vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 
 # Kmsetkey
@@ -897,12 +875,6 @@ vendor/lib/libvowp23_sid_testing.vendor.so
 vendor/lib/libvowp23_sid_training.vendor.so
 vendor/lib/libvowp25testing.vendor.so
 vendor/lib/libvowp2training.vendor.so
-vendor/lib64/hw/sound_trigger.primary.mt6785.so
-vendor/lib64/libvow_ap_testing.vendor.so
-vendor/lib64/libvowp23_sid_testing.vendor.so
-vendor/lib64/libvowp23_sid_training.vendor.so
-vendor/lib64/libvowp25testing.vendor.so
-vendor/lib64/libvowp2training.vendor.so
 
 # MD Monitor
 vendor/bin/md_monitor
@@ -1078,7 +1050,6 @@ vendor/lib64/libMtkOmxCore.so
 # MMS MTK
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.5-service
 vendor/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc
-vendor/lib/hw/vendor.mediatek.hardware.mms@1.5-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.mms@1.5-impl.so
 
 # MTK Aee
@@ -1088,7 +1059,6 @@ vendor/lib64/libaedv.so
 # Mtkcodecservice
 vendor/bin/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc
-vendor/lib/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so
 
 # NFC
@@ -1099,7 +1069,6 @@ vendor/lib/libsn100u_fw.so
 # NWK OPT
 vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service
 vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc
-vendor/lib/libnwk_opt_halwrap_vendor.so
 vendor/lib64/libnwk_opt_halwrap_vendor.so
 vendor/lib64/nwk_opt_imp.so
 
@@ -1172,12 +1141,7 @@ vendor/firmware/txpowerctrl.cfg
 # PQ
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/lib/hw/vendor.mediatek.hardware.pq@2.6-impl.so
-vendor/lib/libhdrvideo.so
-vendor/lib/libpq_cust_base.so
 vendor/lib/libpq_prot.so
-vendor/lib/librgbwlightsensor.so
-vendor/lib/libscltm.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so
 vendor/lib64/libhdrvideo.so
 vendor/lib64/libpq_cust_base.so
@@ -1230,7 +1194,6 @@ vendor/etc/thermal-phone.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-youtube.conf
 vendor/etc/thermald-devices.conf
-vendor/lib/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
 
 # Vendor Security
