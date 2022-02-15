@@ -164,10 +164,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.4.vendor
 
-# Fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
@@ -259,13 +255,6 @@ PRODUCT_PACKAGES += \
     libchrome.vendor \
     com.android.nfc_extras \
     android.hardware.nfc@1.1-service
-
-# Partitions
-PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/partitions/flash_super_dummy.sh:install/bin/flash_super_dummy.sh
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
