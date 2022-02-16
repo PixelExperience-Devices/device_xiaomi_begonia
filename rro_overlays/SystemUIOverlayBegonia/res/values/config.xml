@@ -22,7 +22,20 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Rounded corner -->
     <dimen name="rounded_corner_content_padding">10dp</dimen>
+
+    <!-- The padding on the top of the statusbar (usually 0) -->
+    <dimen name="status_bar_padding_top">2.5dp</dimen>
+
+    <!-- Height of the status bar header bar when on Keyguard (match status_bar_portrait) -->
+    <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height_portrait</dimen>
+
+    <!-- Margin on the right side of the system icon group on Keyguard. -->
+    <dimen name="system_icons_keyguard_padding_end">10dp</dimen>
+
+    <!-- Margin on the left side of the carrier text on Keyguard -->
+    <dimen name="keyguard_carrier_text_margin">25dp</dimen>
 
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>

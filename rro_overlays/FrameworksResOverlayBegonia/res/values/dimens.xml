@@ -22,9 +22,6 @@
          Max((status bar content height + waterfall top size), top cutout size) -->
     <dimen name="status_bar_height_portrait">100px</dimen>
 
-    <!-- Height of area above QQS where battery/time go (equal to status bar) -->
-    <dimen name="quick_qs_offset_height">@dimen/status_bar_height_portrait</dimen>
-
     <!-- Radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">110px</dimen>
 
