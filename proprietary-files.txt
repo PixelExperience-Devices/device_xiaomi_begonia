@@ -477,7 +477,6 @@ vendor/lib64/libmtkcam.featurepipe.streaming.so
 vendor/lib64/libmtkcam.featurepipe.vsdof_util.so
 vendor/lib64/libmtkcam.logicalmodule.so
 vendor/lib64/libmtkcam_3rdparty.core.so
-vendor/lib64/libmtkcam_3rdparty.customer.so
 vendor/lib64/libmtkcam_3rdparty.mtk.so
 vendor/lib64/libmtkcam_3rdparty.so
 vendor/lib64/libmtkcam_3rdparty.vidhance.so
@@ -489,7 +488,6 @@ vendor/lib64/libmtkcam_device3_app.so
 vendor/lib64/libmtkcam_dpe.so
 vendor/lib64/libmtkcam_exif.so
 vendor/lib64/libmtkcam_fdvt.so
-vendor/lib64/libmtkcam_featurepolicy.so
 vendor/lib64/libmtkcam_fwkutils.so
 vendor/lib64/libmtkcam_grallocutils.so
 vendor/lib64/libmtkcam_hwnode.so
@@ -577,6 +575,10 @@ vendor/bin/libccu_s5k3t2_mipi_raw.ddr
 vendor/bin/libccu_s5kgw1ofilm_mipi_raw.ddr
 vendor/bin/libccu_s5kgw1sunny_mipi_raw.ddr
 vendor/etc/init/camerahalserver.rc
+
+# Camera Buffer Fix
+vendor/lib64/libmtkcam_3rdparty.customer.so|cf7f79d0e8a1de1fc818b948553c261e1d35e1fc
+vendor/lib64/libmtkcam_featurepolicy.so|c1679591ed745f785ee2429ad448d4de0fcd07d0
 
 # Camera Configs
 vendor/etc/camera/CFR_para_T.bin
