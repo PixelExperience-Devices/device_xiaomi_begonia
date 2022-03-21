@@ -131,6 +131,9 @@ sys.ipo.disable=1
 # Kernel
 ro.kernel.zio=38,108,105,16
 
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
 # Mediatek (Misc)
 debug.mediatek.disp_decompress=1
 debug.mediatek.game_pq_enable=1
