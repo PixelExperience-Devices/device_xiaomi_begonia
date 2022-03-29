@@ -66,7 +66,6 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
-TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/begonia
 TARGET_KERNEL_CONFIG := begonia_user_defconfig
 
