@@ -1,16 +1,4 @@
 prebuilt_etc {
-    name: "partition_permission.sh",
-    src: "bin/partition_permission.sh",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "throttle.sh",
-    src: "bin/throttle.sh",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.connectivity.rc",
     src: "etc/init.connectivity.rc",
     sub_dir: "init/hw",

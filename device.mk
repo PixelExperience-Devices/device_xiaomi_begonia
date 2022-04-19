@@ -258,8 +258,6 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    partition_permission.sh \
-    throttle.sh \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6785.rc \
