@@ -113,10 +113,6 @@ ro.hardware.egl=meow
 # FRP
 ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
 
-# HWUI
-debug.hwui.target_cpu_time_percent=30
-debug.hwui.use_hint_manager=true
-
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
