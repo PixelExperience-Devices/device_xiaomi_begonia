@@ -287,10 +287,6 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
-# RenderScript
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # Runtime Overlays
 PRODUCT_PACKAGES += \
    BluetoothOverlayBegonia \
