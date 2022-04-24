@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AudioParam version="1.3">
+  <ParamTree>
+    <Param path="WB,Normal" param_id="0"/>
+    <Param path="Normal" param_id="1"/>
+    <Param path="3_pole_Headset,GSM" param_id="2"/>
+    <Param path="4_pole_Headset,GSM" param_id="2"/>
+    <Param path="5_pole_Headset,GSM" param_id="2"/>
+    <Param path="5_pole_Headset+ANC,GSM" param_id="2"/>
+    <Param path="Handsfree,GSM" param_id="2"/>
+    <Param path="BT_Earphone,GSM" param_id="3"/>
+    <Param path="BT_NREC_Off,GSM" param_id="3"/>
+    <Param path="MagiConference,GSM" param_id="0"/>
+    <Param path="HAC,GSM" param_id="2"/>
+    <Param path="Usb_Headset,GSM" param_id="3"/>
+    <Param path="Lpbk_Handset,GSM" param_id="3"/>
+    <Param path="Lpbk_Headset,GSM" param_id="3"/>
+    <Param path="Lpbk_Handsfree,GSM" param_id="3"/>
+    <Param path="Tty_HCO_Handset,GSM" param_id="3"/>
+    <Param path="Tty_VCO_Handset,GSM" param_id="3"/>
+    <Param path="Tty_HCO_Handsfree,GSM" param_id="3"/>
+    <Param path="Tty_VCO_Handsfree,GSM" param_id="3"/>
+    <Param path="Handset_SV,GSM" param_id="3"/>
+    <Param path="Handsfree_SV,GSM" param_id="3"/>
+  </ParamTree>
+  <ParamUnitPool>
+    <ParamUnit param_id="0">
+      <Param name="DL FIR visibility" value="1"/>
+      <Param name="DL DRC+DG visibility" value="1"/>
+      <Param name="DL NR visibility" value="1"/>
+      <Param name="DL Digital Gain visibility" value="1"/>
+      <Param name="DL Limiter TH visibility" value="1"/>
+      <Param name="DL TASTE visibility" value="1"/>
+      <Param name="UL FIR visibility" value="1"/>
+      <Param name="UL DRC+DG visibility" value="1"/>
+      <Param name="UL NREC visibility" value="1"/>
+      <Param name="UL cal. visibility" value="1"/>
+      <Param name="UL Digital Gain visibility" value="1"/>
+      <Param name="UL Limiter TH visibility" value="1"/>
+      <Param name="UL AEC visibility" value="1"/>
+      <Param name="UL NLP visibility" value="1"/>
+      <Param name="UL ES LB visibility" value="1"/>
+      <Param name="UL AES LB visibility" value="1"/>
+      <Param name="UL MIC2 TunableIIR visibility" value="1"/>
+      <Param name="UL DMNR mode_param visibility" value="1"/>
+      <Param name="UL DMNR common_param visibility" value="1"/>
+    </ParamUnit>
+    <ParamUnit param_id="1">
+      <Param name="DL FIR visibility" value="1"/>
+      <Param name="DL DRC+DG visibility" value="1"/>
+      <Param name="DL NR visibility" value="1"/>
+      <Param name="DL Digital Gain visibility" value="1"/>
+      <Param name="DL Limiter TH visibility" value="1"/>
+      <Param name="DL TASTE visibility" value="1"/>
+      <Param name="UL FIR visibility" value="1"/>
+      <Param name="UL DRC+DG visibility" value="1"/>
+      <Param name="UL NREC visibility" value="1"/>
+      <Param name="UL cal. visibility" value="0"/>
+      <Param name="UL Digital Gain visibility" value="1"/>
+      <Param name="UL Limiter TH visibility" value="1"/>
+      <Param name="UL AEC visibility" value="1"/>
+      <Param name="UL NLP visibility" value="1"/>
+      <Param name="UL ES LB visibility" value="1"/>
+      <Param name="UL AES LB visibility" value="1"/>
+      <Param name="UL MIC2 TunableIIR visibility" value="1"/>
+      <Param name="UL DMNR mode_param visibility" value="1"/>
+      <Param name="UL DMNR common_param visibility" value="1"/>
+    </ParamUnit>
+    <ParamUnit param_id="2">
+      <Param name="DL FIR visibility" value="1"/>
+      <Param name="DL DRC+DG visibility" value="1"/>
+      <Param name="DL NR visibility" value="1"/>
+      <Param name="DL Digital Gain visibility" value="1"/>
+      <Param name="DL Limiter TH visibility" value="1"/>
+      <Param name="DL TASTE visibility" value="1"/>
+      <Param name="UL FIR visibility" value="1"/>
+      <Param name="UL DRC+DG visibility" value="1"/>
+      <Param name="UL NREC visibility" value="1"/>
+      <Param name="UL cal. visibility" value="0"/>
+      <Param name="UL Digital Gain visibility" value="1"/>
+      <Param name="UL Limiter TH visibility" value="1"/>
+      <Param name="UL AEC visibility" value="1"/>
+      <Param name="UL NLP visibility" value="1"/>
+      <Param name="UL ES LB visibility" value="1"/>
+      <Param name="UL AES LB visibility" value="1"/>
+      <Param name="UL MIC2 TunableIIR visibility" value="0"/>
+      <Param name="UL DMNR mode_param visibility" value="0"/>
+      <Param name="UL DMNR common_param visibility" value="0"/>
+    </ParamUnit>
+    <ParamUnit param_id="3">
+      <Param name="DL FIR visibility" value="1"/>
+      <Param name="DL DRC+DG visibility" value="1"/>
+      <Param name="DL NR visibility" value="1"/>
+      <Param name="DL Digital Gain visibility" value="1"/>
+      <Param name="DL Limiter TH visibility" value="1"/>
+      <Param name="DL TASTE visibility" value="0"/>
+      <Param name="UL FIR visibility" value="1"/>
+      <Param name="UL DRC+DG visibility" value="1"/>
+      <Param name="UL NREC visibility" value="1"/>
+      <Param name="UL cal. visibility" value="0"/>
+      <Param name="UL Digital Gain visibility" value="1"/>
+      <Param name="UL Limiter TH visibility" value="1"/>
+      <Param name="UL AEC visibility" value="1"/>
+      <Param name="UL NLP visibility" value="1"/>
+      <Param name="UL ES LB visibility" value="1"/>
+      <Param name="UL AES LB visibility" value="1"/>
+      <Param name="UL MIC2 TunableIIR visibility" value="0"/>
+      <Param name="UL DMNR mode_param visibility" value="0"/>
+      <Param name="UL DMNR common_param visibility" value="0"/>
+    </ParamUnit>
+  </ParamUnitPool>
+</AudioParam>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AudioParam version="1.0">
+	<ParamTree>
+		<Param path="common" param_id="0"/>
+	</ParamTree>
+	<ParamUnitPool>
+		<ParamUnit param_id="0">
+			<Param name="Par_01" value="10"/>
+			<Param name="Par_02" value="7"/>
+			<Param name="Par_03" value="6"/>
+			<Param name="Par_04" value="8"/>
+			<Param name="Par_05" value="15"/>
+			<Param name="Par_06" value="4"/>
+			<Param name="Par_07" value="3"/>
+			<Param name="Par_08" value="4"/>
+			<Param name="Par_09" value="3"/>
+			<Param name="Par_10" value="0"/>
+			<Param name="vow_KR1" value="0"/>
+			<Param name="vow_KR2" value="0"/>
+			<Param name="vow_KR3" value="0"/>
+			<Param name="vow_KR4" value="0"/>
+			<Param name="vow_KRSR1" value="0"/>
+			<Param name="vow_KRSR2" value="0"/>
+			<Param name="vow_KRSR3" value="0"/>
+			<Param name="vow_KRSR4" value="0"/>
+			<Param name="PeriodicOnOff_90" value="0x8000,0x8000,0x81AA,0x0000,0x0000,0x0000,0x0000,0x01EC,0x1917,0x8021,0x1917,0x0000,0x0000,0x0000,0x0000,0x18F6"/>
+			<Param name="PeriodicOnOff_80" value="0x828F,0x828F,0x8439,0x0000,0x0000,0x0000,0x0000,0x047B,0x1917,0x82B0,0x1917,0x0000,0x0000,0x0000,0x0000,0x18F6"/>
+			<Param name="PeriodicOnOff_70" value="0x851F,0x851F,0x86C9,0x0000,0x0000,0x0000,0x0000,0x070A,0x1917,0x853F,0x1917,0x0000,0x0000,0x0000,0x0000,0x18F6"/>
+			<Param name="PeriodicOnOff_60" value="0x87AE,0x87AE,0x8958,0x0000,0x0000,0x0000,0xC0A4,0x099A,0x1917,0x87CF,0x1917,0x0000,0x0000,0x0000,0x1917,0x18F6"/>
+			<Param name="PeriodicOnOff_50" value="0x8A3D,0x8A3D,0x8BE7,0x0000,0x0000,0x0000,0xC333,0x0C29,0x1917,0x8A5E,0x1917,0x0000,0x0000,0x0000,0x1917,0x18F6"/>
+		</ParamUnit>
+	</ParamUnitPool>
+</AudioParam>

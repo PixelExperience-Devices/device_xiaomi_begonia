@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ParamUnitDesc tab_name="MicInfo" version="1.0">
+	<CategoryTypeList>
+		<CategoryType name="projects">
+			<Category name="amic_proj"/>
+			<Category name="dmic_proj"/>
+		</CategoryType>
+		<CategoryType name="microphones">
+			<Category name="main_mic"/>
+			<Category name="sub_mic"/>
+		</CategoryType>
+	</CategoryTypeList>
+	<ParamUnit>
+		<!-- Unique alphanumeric id for microphone. Guaranteed to be the same even after rebooting -->
+		<Param name="device_id" type="string"/>
+		<!-- Refer to the enum of audio_devices_t in include/system/audio.h -->
+		<Param name="device_in_type" type="string"/>
+		<!-- AUDIO_DEVICE_IN_BUILTIN_MIC: bottom, AUDIO_DEVICE_IN_BACK_MIC ==> "back"-->
+		<Param name="address" type="string"/>
+		<!--
+			Location of the microphone in regard to the body of the device
+			typedef enum {
+			    AUDIO_MICROPHONE_LOCATION_UNKNOWN = 0,
+			    AUDIO_MICROPHONE_LOCATION_MAINBODY = 1,
+			    AUDIO_MICROPHONE_LOCATION_MAINBODY_MOVABLE = 2,
+			    AUDIO_MICROPHONE_LOCATION_PERIPHERAL = 3,
+			    AUDIO_MICROPHONE_LOCATION_CNT = 4,
+			} audio_microphone_location_t;
+		-->
+		<Param name="mic_location" type="string"/>
+		<!-- Identifier to help group related microphones together -->
+		<Param name="device_group" type="int"/>
+		<!-- Index of this microphone within the group. -->
+		<Param name="index_in_the_group" type="int"/>
+		<!--
+			Position of the microphone's capsule in meters, from the bottom-left-back corner of the bounding box of device
+				float x;
+				float y;
+				float z;
+		-->
+		<Param name="geometric_location" type="double_array"/>
+		<!--
+		  Normalized point to signal the main orientation of the microphone's capsule. sqrt(x^2 + y^2 + z^2) = 1
+				(float x,  float y, float z)
+				0,0,0 by default
+		-->
+		<Param name="orientation" type="double_array"/>
+		<!--
+			Vector with ordered frequency responses (from low to high frequencies)
+			with the frequency response of the microphone.
+			Levels are in dB, relative to level at 1000 Hz
+			(freq in Hz, level in dB, freq in Hz, level in dB...)
+		-->
+		<Param name="frequency_responses" type="double_array"/>
+		<!--
+			Each element of the vector must describe the channel with the same index
+			Refer to the enum of audio_microphone_channel_mapping_t in system/media/audio/include/system/audio.h
+				AUDIO_MICROPHONE_CHANNEL_MAPPING_UNUSED = 0,
+				AUDIO_MICROPHONE_CHANNEL_MAPPING_DIRECT = 1,
+				AUDIO_MICROPHONE_CHANNEL_MAPPING_PROCESSED = 2,
+		-->
+		<!--<Param name="channel_mapping" type="string"/>-->
+		<!-- Level in dBFS produced by a 1000 Hz tone at 94 dB SPL -->
+		<Param name="sensitivity" type="float"/>
+		<!-- Level in dB of the max SPL supported at 1000 Hz -->
+		<Param name="max_spl" type="float"/>
+		<!-- Level in dB of the min SPL supported at 1000 Hz -->
+		<Param name="min_spl" type="float"/>
+		<!--
+			Standard polar pattern of the microphone
+		    AUDIO_MICROPHONE_DIRECTIONALITY_UNKNOWN = 0,
+		    AUDIO_MICROPHONE_DIRECTIONALITY_OMNI = 1,
+		    AUDIO_MICROPHONE_DIRECTIONALITY_BI_DIRECTIONAL = 2,
+		    AUDIO_MICROPHONE_DIRECTIONALITY_CARDIOID = 3,
+		    AUDIO_MICROPHONE_DIRECTIONALITY_HYPER_CARDIOID = 4,
+		    AUDIO_MICROPHONE_DIRECTIONALITY_SUPER_CARDIOID = 5,
+		    AUDIO_MICROPHONE_DIRECTIONALITY_CNT = 6,
+		-->
+		<Param name="directionality" type="string"/>
+	</ParamUnit>
+</ParamUnitDesc>

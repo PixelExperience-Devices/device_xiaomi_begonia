@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AudioParam version="1.0">
+  <ParamTree>
+    <Param path="amic_proj,main_mic" param_id="0"/>
+    <Param path="amic_proj,sub_mic" param_id="1"/>
+    <Param path="dmic_proj,main_mic" param_id="2"/>
+    <Param path="dmic_proj,sub_mic" param_id="3"/>
+  </ParamTree>
+  <ParamUnitPool>
+    <ParamUnit param_id="0">
+      <Param name="device_id" value="SPH1642HT5H_REV_B"/>
+      <Param name="device_in_type" value="AUDIO_DEVICE_IN_BUILTIN_MIC"/>
+      <Param name="address" value="bottom"/>
+      <Param name="mic_location" value="AUDIO_MICROPHONE_LOCATION_MAINBODY"/>
+      <Param name="device_group" value="0"/>
+      <Param name="index_in_the_group" value="0"/>
+      <Param name="geometric_location" value="0.500000,0.000000,0.500000"/>
+      <Param name="orientation" value="0.000000,-1.000000,0.000000"/>
+      <Param name="frequency_responses" value="80.000000,-2.000000,100.000000,-1.250000,500.000000,0.000000,1000.000000,0.000000,5000.000000,0.000000,10000.000000,1.750000"/>
+      <Param name="sensitivity" value="-41.000000"/>
+      <Param name="max_spl" value="124.000000"/>
+      <Param name="min_spl" value="124.000000"/>
+      <Param name="directionality" value="AUDIO_MICROPHONE_DIRECTIONALITY_OMNI"/>
+    </ParamUnit>
+    <ParamUnit param_id="1">
+      <Param name="device_id" value="SPH1642HT5H_REV_B"/>
+      <Param name="device_in_type" value="AUDIO_DEVICE_IN_BUILTIN_MIC|AUDIO_DEVICE_IN_BACK_MIC"/>
+      <Param name="address" value="back"/>
+      <Param name="mic_location" value="AUDIO_MICROPHONE_LOCATION_MAINBODY"/>
+      <Param name="device_group" value="1"/>
+      <Param name="index_in_the_group" value="0"/>
+      <Param name="geometric_location" value="0.500000,0.700000,0.000000"/>
+      <Param name="orientation" value="0.000000,0.000000,-1.000000"/>
+      <Param name="frequency_responses" value="80.000000,-2.000000,100.000000,-1.250000,500.000000,0.000000,1000.000000,0.000000,5000.000000,0.000000,10000.000000,1.750000"/>
+      <Param name="sensitivity" value="-41.000000"/>
+      <Param name="max_spl" value="124.000000"/>
+      <Param name="min_spl" value="124.000000"/>
+      <Param name="directionality" value="AUDIO_MICROPHONE_DIRECTIONALITY_OMNI"/>
+    </ParamUnit>
+    <ParamUnit param_id="2">
+      <Param name="device_id" value="SPK0641HT4H_1_Rev_A"/>
+      <Param name="device_in_type" value="AUDIO_DEVICE_IN_BUILTIN_MIC"/>
+      <Param name="address" value="bottom"/>
+      <Param name="mic_location" value="AUDIO_MICROPHONE_LOCATION_MAINBODY"/>
+      <Param name="device_group" value="0"/>
+      <Param name="index_in_the_group" value="0"/>
+      <Param name="geometric_location" value="0.500000,0.000000,0.500000"/>
+      <Param name="orientation" value="0.000000,-1.000000,0.000000"/>
+      <Param name="frequency_responses" value="20.000000,-7.500000,30.000000,-4.000000,100.000000,-1.000000,120.000000,0.000000,3000.000000,0.000000,10000.000000,2.000000"/>
+      <Param name="sensitivity" value="-26.000000"/>
+      <Param name="max_spl" value="120.000000"/>
+      <Param name="min_spl" value="120.000000"/>
+      <Param name="directionality" value="AUDIO_MICROPHONE_DIRECTIONALITY_OMNI"/>
+    </ParamUnit>
+    <ParamUnit param_id="3">
+      <Param name="device_id" value="SPK0641HT4H_1_Rev_A"/>
+      <Param name="device_in_type" value="AUDIO_DEVICE_IN_BUILTIN_MIC|AUDIO_DEVICE_IN_BACK_MIC"/>
+      <Param name="address" value="back"/>
+      <Param name="mic_location" value="AUDIO_MICROPHONE_LOCATION_MAINBODY"/>
+      <Param name="device_group" value="1"/>
+      <Param name="index_in_the_group" value="0"/>
+      <Param name="geometric_location" value="0.500000,0.700000,0.000000"/>
+      <Param name="orientation" value="0.000000,0.000000,-1.000000"/>
+      <Param name="frequency_responses" value="20.000000,-7.500000,30.000000,-4.000000,100.000000,-1.000000,120.000000,0.000000,3000.000000,0.000000,10000.000000,2.000000"/>
+      <Param name="sensitivity" value="-26.000000"/>
+      <Param name="max_spl" value="120.000000"/>
+      <Param name="min_spl" value="120.000000"/>
+      <Param name="directionality" value="AUDIO_MICROPHONE_DIRECTIONALITY_OMNI"/>
+    </ParamUnit>
+  </ParamUnitPool>
+</AudioParam>

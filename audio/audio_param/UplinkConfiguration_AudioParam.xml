@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AudioParam version="1.0">
+  <ParamTree>
+    <Param path="" param_id="1"/>
+    <Param path="VoIP" param_id="1"/>
+    <Param path="MIC" param_id="1"/>
+    <Param path="Camcorder" param_id="1"/>
+    <Param path="VoiceRecognition" param_id="1"/>
+    <Param path="FastRecord" param_id="1"/>
+    <Param path="Unprocessed" param_id="1"/>
+    <Param path="VoicePerformance" param_id="1"/>
+  </ParamTree>
+  <ParamUnitPool>
+    <ParamUnit param_id="0">
+      <Param name="offload" value="0"/>
+      <Param name="num of mic" value="2"/>
+    </ParamUnit>
+    <ParamUnit param_id="1">
+      <Param name="offload" value="1"/>
+      <Param name="num of mic" value="2"/>
+    </ParamUnit>
+  </ParamUnitPool>
+</AudioParam>

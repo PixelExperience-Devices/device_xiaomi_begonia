@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ParamUnitDesc tab_name="VOW" version="1.0">
+	<CategoryTypeList>
+		<CategoryType name="VOW">
+			<Category name="VOW_common"/>
+		</CategoryType>
+	</CategoryTypeList>
+	<ParamUnit>
+		<Param name="Par_01" type="int"/>
+		<Param name="Par_02" type="int"/>
+		<Param name="Par_03" type="int"/>
+		<Param name="Par_04" type="int"/>
+		<Param name="Par_05" type="int"/>
+		<Param name="Par_06" type="int"/>
+		<Param name="Par_07" type="int"/>
+		<Param name="Par_08" type="int"/>
+		<Param name="Par_09" type="int"/>
+		<Param name="Par_10" type="int"/>
+		<Param name="vow_KR1" type="int"/>
+		<Param name="vow_KR2" type="int"/>
+		<Param name="vow_KR3" type="int"/>
+		<Param name="vow_KR4" type="int"/>
+		<Param name="vow_KRSR1" type="int"/>
+		<Param name="vow_KRSR2" type="int"/>
+		<Param name="vow_KRSR3" type="int"/>
+		<Param name="vow_KRSR4" type="int"/>
+		<Param name="PeriodicOnOff_90" type="uint_array"/>
+		<Param name="PeriodicOnOff_80" type="uint_array"/>
+		<Param name="PeriodicOnOff_70" type="uint_array"/>
+		<Param name="PeriodicOnOff_60" type="uint_array"/>
+		<Param name="PeriodicOnOff_50" type="uint_array"/>
+	</ParamUnit>
+</ParamUnitDesc>
