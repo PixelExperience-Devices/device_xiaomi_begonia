@@ -279,10 +279,6 @@
 
 		<Param name="sph_in_iir_enh_dsp" type="ushort_array"/>
 		<Param name="sph_out_iir_enh_dsp" type="ushort_array"/>
-		<Param name="sph_in_iir_enh_eq_freq" type="double_array"/>
-		<Param name="sph_out_iir_enh_eq_freq" type="double_array"/>
-		<Param name="sph_in_iir_enh_eq_mag" type="double_array"/>
-		<Param name="sph_out_iir_enh_eq_mag" type="double_array"/>
 		<Param name="sph_in_parameter" type="double_array"/>
 		<Param name="sph_out_parameter" type="double_array"/>
 	</ParamUnit>
