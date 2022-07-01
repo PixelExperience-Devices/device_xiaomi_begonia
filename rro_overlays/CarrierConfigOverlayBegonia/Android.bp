@@ -3,4 +3,5 @@ runtime_resource_overlay {
     sdk_version: "current",
     resource_dirs: ["res"],
     vendor: true,
+    aaptflags: ["--keep-raw-values"]
 }
