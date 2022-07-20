@@ -224,6 +224,10 @@ PRODUCT_PACKAGES += \
     com.android.media.swcodec \
     libsfplugin_ccodec
 
+# MTK In-Call volumes adjusting service
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
 # Minijail
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor
