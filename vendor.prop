@@ -250,6 +250,9 @@ telephony.lteOnCdmaDevice=1
 # Ril
 persist.sys.fflag.override.settings_provider_model=false
 
+# Thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal/
+
 # USB
 persist.vendor.quick.charge=1
 ro.sys.usb.bicr=no
