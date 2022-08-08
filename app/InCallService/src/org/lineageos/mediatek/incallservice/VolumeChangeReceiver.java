@@ -15,36 +15,31 @@ public class VolumeChangeReceiver extends BroadcastReceiver {
 
     private AudioManager mAudioManager;
 
-    public VolumeChangeReceiver(Context context) {
-        mAudioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
+    public VolumeChangeReceiver(AudioManager audioManager) {
+        mAudioManager = audioManager;
     }
 
-    @Override
-    public void onReceive(Context context, Intent intent) {
-        int streamType = intent.getIntExtra(AudioManager.EXTRA_VOLUME_STREAM_TYPE, -1);
-        if (streamType == AudioSystem.STREAM_VOICE_CALL) {
+    private void handleVolumeStateChange(Intent intent) {
+        if (intent.getIntExtra(AudioManager.EXTRA_VOLUME_STREAM_TYPE, -1) == AudioManager.STREAM_VOICE_CALL) {
             AudioDeviceInfo callDevice = mAudioManager.getCommunicationDevice();
-            if (callDevice.getInternalType() != AudioDeviceInfo.TYPE_BUILTIN_EARPIECE) {
+            if (callDevice.getType() != AudioDeviceInfo.TYPE_BUILTIN_EARPIECE) {
                 // Device is not the built in earpiece, we don't need to do anything.
                 return;
             }
 
-            // Start building parameters
-            String parameters = "volumeDevice=" + (callDevice.getId() - 1) + ";";
+            // Try to get volumeIndex
             int volumeIndex = intent.getIntExtra(AudioManager.EXTRA_VOLUME_STREAM_VALUE, -1);
             if (volumeIndex < 0) {
                 Log.w(LOG_TAG, "Could not get volumeIndex!");
                 return;
             }
 
-            // Limit volumeIndex to a max of 7 since that's the size of
-            // MediaTek's gain table.
-            parameters += "volumeIndex=" + Math.min(7, volumeIndex) + ";";
-            parameters += "volumeStreamType=" + streamType;
-
-            // Set gain parameters
-            Log.d(LOG_TAG, "Setting audio parameters: " + parameters);
-            AudioSystem.setParameters(parameters);
+            GainUtils.setGainLevel(callDevice.getPort().type(), volumeIndex, AudioSystem.STREAM_VOICE_CALL);
         }
+    }
+
+    @Override
+    public void onReceive(Context context, Intent intent) {
+            handleVolumeStateChange(intent);
     }
 }
