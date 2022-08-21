@@ -1,0 +1,2 @@
+# Vibrator
+genfscon sysfs /kernel/thunderquake_engine/level       u:object_r:sysfs_vibrator:s0
