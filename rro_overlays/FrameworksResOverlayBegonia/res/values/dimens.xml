@@ -20,7 +20,9 @@
 <resources>
     <!-- Height of the status bar in portrait. The height should be
          Max((status bar content height + waterfall top size), top cutout size) -->
-    <dimen name="status_bar_height">100px</dimen>
+    <dimen name="status_bar_height_default">100.0px</dimen>
+    <dimen name="status_bar_height_landscape">40dp</dimen>
+    <dimen name="status_bar_height_portrait">@dimen/status_bar_height_default</dimen>
 
     <!-- Radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">110px</dimen>
