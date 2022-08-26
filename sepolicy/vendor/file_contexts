@@ -1,5 +1,4 @@
 # Fingerprint
-/dev/goodix_fp                                    u:object_r:fingerprint_device:s0
 /data/gf_data(/.*)?                               u:object_r:fingerprint_data_file:s0
 /data/vendor/fpc(/.*)?                            u:object_r:vendor_fingerprint_data_file:s0
 /data/vendor/goodix(/.*)?                         u:object_r:vendor_fingerprint_data_file:s0
@@ -9,4 +8,3 @@
 
 # Mi Thermald
 /vendor/bin/mi_thermald                           u:object_r:mi_thermald_exec:s0
-/data/vendor/thermal(/.*)?                        u:object_r:thermal_data_file:s0
