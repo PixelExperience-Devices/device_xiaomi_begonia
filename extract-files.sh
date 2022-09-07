@@ -61,9 +61,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        # Load audio shim
+        # Link libmedia_helper-v30
         vendor/lib/hw/audio.primary.mt6785.so)
-            patchelf --add-needed libshim_audio.so ${2}
+            patchelf --replace-needed libmedia_helper.so libmedia_helper-v30.so ${2}
             ;;
         # Load VNDK-30 version of libutils
         vendor/lib64/libmtkcam_stdutils.so)
