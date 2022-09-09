@@ -39,7 +39,7 @@ static std::map<Effect, int32_t> vibEffects = {
 static std::map<EffectStrength, int32_t> vibStrengths = {
     { EffectStrength::LIGHT, 5},
     { EffectStrength::MEDIUM, 7},
-    { EffectStrength::STRONG, 11}
+    { EffectStrength::STRONG, 9}
 };
 
 class Vibrator : public BnVibrator {
