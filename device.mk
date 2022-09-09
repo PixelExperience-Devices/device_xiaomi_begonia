@@ -206,6 +206,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-V1-ndk.vendor
+
 # Media
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/media/,$(TARGET_COPY_OUT_VENDOR)/etc)

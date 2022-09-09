@@ -69,6 +69,10 @@ function blob_fixup() {
         vendor/lib64/libmtkcam_stdutils.so)
             patchelf --replace-needed libutils.so libutils-v30.so ${2}
             ;;
+        # Load android.hardware.light-V1-ndk
+        vendor/bin/hw/android.hardware.lights-service.mediatek)
+            patchelf --replace-needed android.hardware.light-V1-ndk_platform.so android.hardware.light-V1-ndk.so ${2}
+            ;;
     esac
 }
 
