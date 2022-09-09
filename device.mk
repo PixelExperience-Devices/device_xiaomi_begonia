@@ -335,7 +335,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-V1-ndk_platform.vendor
+    android.hardware.vibrator-service.mediatek
 
 # WiFi
 PRODUCT_PACKAGES += \
