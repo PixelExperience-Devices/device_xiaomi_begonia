@@ -1,0 +1,30 @@
+cc_library_static {
+    name: "android.hardware.vibrator-impl.mediatek",
+    vendor: true,
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V2-ndk",
+    ],
+    export_include_dirs: ["include"],
+    srcs: [
+        "Vibrator.cpp",
+    ],
+}
+
+cc_binary {
+    name: "android.hardware.vibrator-service.mediatek",
+    relative_install_path: "hw",
+    init_rc: ["vibrator-mtk.rc"],
+    vintf_fragments: ["vibrator-mtk.xml"],
+    vendor: true,
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.vibrator-V2-ndk",
+    ],
+    static_libs: [
+        "android.hardware.vibrator-impl.mediatek",
+    ],
+    srcs: ["main.cpp"],
+}
