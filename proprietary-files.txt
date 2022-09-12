@@ -39,6 +39,7 @@ vendor/lib/libcvsd_mtk.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libspeech_enh_lib.so
 vendor/lib/libspeechparser_vendor.so
+vendor/lib/libaudioprimarydevicehalifclient.so
 
 # Batteryd
 vendor/bin/batteryd
