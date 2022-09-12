@@ -526,6 +526,12 @@ vendor/lib64/libstrongswan.so
 # Device Features
 vendor/etc/device_features/begonia.xml
 
+# Dfps
+vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service
+vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc
+vendor/lib64/hw/dfps.mt6785.so
+vendor/lib64/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
+
 # Display
 vendor/lib/libged.so
 vendor/lib/libgpu_aux.so
