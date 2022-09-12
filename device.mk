@@ -247,6 +247,10 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     android.hardware.nfc@1.1-service
 
+# Power configs
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/power/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # Properties
 include $(DEVICE_PATH)/vendor_logtag.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true

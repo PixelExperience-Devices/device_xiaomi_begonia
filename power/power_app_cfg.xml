@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The source code provided herein is for optimizing power and performance of gaming software
+and certain applications (e.g. Sina Weibo, QQ) only and should not be used and/or included in
+any software that is unrelated to enhancing end-user experience. -->
+<WHITELIST>
+    <Package name="com.tencent.tmgp.yongyong.clx">
+        <Activity name="Common">
+            <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="cn.wsds.gamemaster">
+        <Activity name="Common">
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="2"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.sgame">
+        <Activity name="Common">
+            <data cmd="PERF_RES_POWERHAL_WHITELIST_APP_LAUNCH_TIME_COLD" param1="25000"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+            <data cmd="PERF_RES_NET_WIFI_LOW_LATENCY" param1="1"></data>
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="110"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="1"></data>
+            <data cmd="PERF_RES_GPU_GED_TIMER_BASE_DVFS_MARGIN" param1="10"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.sgamece">
+        <Activity name="Common">
+            <data cmd="PERF_RES_POWERHAL_WHITELIST_APP_LAUNCH_TIME_COLD" param1="25000"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+            <data cmd="PERF_RES_NET_WIFI_LOW_LATENCY" param1="1"></data>
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="110"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="1"></data>
+            <data cmd="PERF_RES_GPU_GED_TIMER_BASE_DVFS_MARGIN" param1="10"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+        </Activity>
+    </Package>
+    <Package name="com.mt.mtxx.mtxx">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="2"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_A" param1="19"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_B" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+        </Activity>
+    </Package>
+    <Package name="com.ngame.allstar.eu">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.ngame.allstar.in">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.netmarble.penta">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.garena.game.kgtw">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.garena.game.kgvn">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.garena.game.kgth">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.garena.game.kgid">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.garena.game.kgsam">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.garena.game.kgvntest">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.mobileqq">
+        <Activity name="Common">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_GPU_BLOCK_BOOST" param1="80"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+        </Activity>
+    </Package>
+    <Package name="com.madfingergames.legends">
+        <Activity name="Common">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+        </Activity>
+    </Package>
+    <Package name="com.netease.ko">
+        <Activity name="Common">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+        </Activity>
+    </Package>
+    <Package name="com.netease.hyxd">
+        <Activity name="Common">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="110"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="100"></data>
+            <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT" param1="50"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.netease.hyxd.mi">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.netease.mrzh">
+        <Activity name="Common">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="110"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="1"></data>
+            <data cmd="PERF_RES_GPU_GED_TIMER_BASE_DVFS_MARGIN" param1="10"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.netease.mrzh.mi">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.epicgames.fortnite">
+        <Activity name="Common">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.maimiao.live.tv">
+        <Activity name="Common">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+        </Activity>
+    </Package>
+    <Package name="com.happyelements.AndroidAnimal.qq">
+        <Activity name="Common">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.cf">
+        <Activity name="Common">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="110"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.pubgmhd">
+        <Activity name="Common">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="110"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="2"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_A" param1="9"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_B" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+            <data cmd="PERF_RES_NET_WIFI_LOW_LATENCY" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.pubgmhdce">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.ig">
+        <Activity name="Common">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="110"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="2"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_A" param1="9"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_B" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.igce">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.pubg.krmobile">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.speedmobile">
+        <Activity name="Common">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="15"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_SUB_QUE_DEQUE_PERIOD" param1="1"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.speedmobileEx">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="15"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_SUB_QUE_DEQUE_PERIOD" param1="1"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.pubgm">
+        <Activity name="Common">
+            <data cmd="PERF_RES_THERMAL_POLICY" param1="8"></data>
+            <data cmd="PERF_RES_GPU_GED_MARGIN_MODE" param1="110"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE" param1="2"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_A" param1="9"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_MARGIN_MODE_DBNC_B" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.estrongs.android.pop.pro">
+        <Activity name="Common">
+            <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="1000000"></data>
+            <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+            <data cmd="PERF_RES_IO_BLKDEV_READAHEAD" param1="512"></data>
+            <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+            <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+            <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+            <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+            <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.ss.android.ugc.aweme">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_GPU_BLOCK_BOOST" param1="50"></data>
+        </Activity>
+    </Package>
+    <Package name="com.ss.android.ugc.live">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_GPU_BLOCK_BOOST" param1="30"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.kaopu.jzpaj">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FBT_SHORT_RESCUE_NS" param1="16666666"></data>
+            <data cmd="PERF_RES_FPS_FBT_MIN_RESCUE_PERCENT" param1="50"></data>
+            <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT" param1="50"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.coslegend">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FBT_FLOOR_BOUND" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FBT_KMIN" param1="20"></data>
+        </Activity>
+    </Package>
+    <Package name="com.gameloft.android.ANMP.GloftA9HM">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FBT_SHORT_RESCUE_NS" param1="16666666"></data>
+            <data cmd="PERF_RES_FPS_FBT_MIN_RESCUE_PERCENT" param1="50"></data>
+        </Activity>
+    </Package>
+    <Package name="com.sina.weibo">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+        </Activity>
+    </Package>
+    <Package name="com.miHoYo.enterprise.NGHSoD">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.miHoYo.bh3.mi">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.miHoYo.bh3.uc">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.tencent.tmgp.bh3">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_FPS_FBT_RESCUE_F" param1="100"></data>
+            <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT" param1="50"></data>
+            <data cmd="PERF_RES_FPS_FBT_ULTRA_RESCUE" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FBT_SHORT_RESCUE_NS" param1="16666666"></data>
+            <data cmd="PERF_RES_FPS_FBT_MIN_RESCUE_PERCENT" param1="50"></data>
+        </Activity>
+    </Package>
+    <Package name="com.studiowildcard.wardrumstudios.ark.ncr">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.studiowildcard.wardrumstudios.ark">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.netease.dwrg.mi">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.netease.dwrg">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.netease.lx12.mi">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.netease.lx12">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.netease.h48">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.netease.h48.mi">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.t2ksports.nba2k18and">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+    <Package name="com.t2ksports.nba2k19and">
+        <Activity name="Common">
+            <data cmd="PERF_RES_FPS_FPSGO_ADJ_LOADING" param1="1"></data>
+            <data cmd="PERF_RES_FPS_FPSGO_LLF_TH" param1="25"></data>
+            <data cmd="PERF_RES_NET_NETD_BOOST_UID" param1="1"></data>
+            <data cmd="PERF_RES_NET_MD_WEAK_SIG_OPT" param1="1"></data>
+        </Activity>
+    </Package>
+</WHITELIST>
