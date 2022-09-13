@@ -3,42 +3,42 @@
    "repository"  : "kernel_xiaomi_begonia",
    "target_path" : "kernel/xiaomi/begonia",
    "remote"      : "pixel-devices",
-   "branch"      : "twelve"
+   "branch"      : "thirteen"
  },
  {
    "repository"  : "device_mediatek_common",
    "target_path" : "device/mediatek/common",
    "remote"      : "pixel",
-   "branch"      : "twelve"
+   "branch"      : "thirteen"
  },
  {
    "repository"  : "vendor_xiaomi_begonia",
    "target_path" : "vendor/xiaomi/begonia",
    "remote"      : "pixel-devices-blobs",
-   "branch"      : "twelve"
+   "branch"      : "thirteen"
  },
  {
    "repository"  : "device_mediatek_sepolicy_vndr",
    "target_path" : "device/mediatek/sepolicy_vndr",
    "remote"      : "pixel",
-   "branch"      : "twelve"
+   "branch"      : "thirteen"
  },
  {
    "repository"  : "vendor_mediatek-opensource",
    "target_path" : "vendor/mediatek/opensource",
    "remote"      : "pixel",
-   "branch"      : "twelve"
+   "branch"      : "thirteen"
  },
  {
    "repository"  : "vendor_mediatek_ims",
    "target_path" : "vendor/mediatek/ims",
    "remote"      : "pixel",
-   "branch"      : "twelve"
+   "branch"      : "thirteen"
  },
  {
    "repository"  : "vendor_mediatek_interfaces",
    "target_path" : "vendor/mediatek/interfaces",
    "remote"      : "pixel",
-   "branch"      : "twelve"
+   "branch"      : "thirteen"
  }
 ]
