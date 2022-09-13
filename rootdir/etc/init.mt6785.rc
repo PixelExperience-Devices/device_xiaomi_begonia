@@ -940,7 +940,7 @@ service vendor.media.omx /vendor/bin/hw/android.hardware.media.omx@1.0-service
     user mediacodec
     group camera drmrpc mediadrm media_rw sdcard_rw media system audio inet net_bt net_bt_admin net_bw_acct sdcard_r
     ioprio rt 4
-    writepid /dev/cpuset/foreground/tasks
+    task_profiles ProcessCapacityHigh
 
 # Bind NFC on Indian device
 on post-fs && property:ro.product.device=begoniain
