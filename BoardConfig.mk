@@ -128,7 +128,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
