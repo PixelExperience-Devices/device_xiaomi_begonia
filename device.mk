@@ -370,6 +370,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
+    libnl \
     hostapd \
     libwpa_client \
     wpa_supplicant
