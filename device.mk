@@ -289,6 +289,7 @@ PRODUCT_PACKAGES += \
 
 # Runtime Overlays
 PRODUCT_PACKAGES += \
+   ApertureOverlay \
    BluetoothOverlayBegonia \
    CarrierConfigOverlayBegonia \
    FrameworksResOverlayBegonia \
