@@ -72,7 +72,6 @@ vendor.camera.mdp.dre.enable=1
 # Camera (Aux list)
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,com.microsoft.teams,com.discord
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera,org.pixelexperience.faceunlock
 
 # CONNSYS (connectivity)
 persist.vendor.connsys.chipid=-1
