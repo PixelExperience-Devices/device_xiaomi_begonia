@@ -938,23 +938,30 @@ vendor/etc/mdota/MTK_OTA.mcfota
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libbwc.so
-vendor/lib/libstagefrighthw.so
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libbwc.so
-vendor/lib64/libstagefrighthw.so
 
-# Media OMX
+# Media OMX- from mtk android-13.0.0_r13
+vendor/bin/osal_ut|1a86b3fa07f2297b33993075a07e331fb291f79e
+vendor/lib/libMtkOmxAdpcmDec.so|abc6a9ee95eddf215ff23c04f0b80b1cf85b1d10
+vendor/lib/libMtkOmxAlacDec.so|1185d6a90b68f045cc6a2bb52f52948d32b718b8
+vendor/lib/libMtkOmxApeDec.so|e7c2a880c8858971f98be984fb917587c5b4aa5f
+vendor/lib/libMtkOmxCore.so|499fb56c7bbdf9b60f3d908cab5cc8530860b593
+vendor/lib/libMtkOmxGsmDec.so|4dd316a203754e0cb0e9b056e87be1f8ad1d0ba4
+vendor/lib/libMtkOmxMp3Dec.so|9f847048643bf86d3588163f8b6f7df5fbb9a140
+vendor/lib/libMtkOmxVdecEx.so|bc4b072426f801dda74b7472c366dae86344f69d
+vendor/lib/libMtkOmxVenc.so|6750cfd75a947fe3b8111ba578b3c63b9da01a39
+vendor/lib/libstagefrighthw.so|8deb7fd19eae795f7af9350e1a71c5b58ede5ae7
+vendor/lib/libwlparser.so|2fc4d95a75e27a7e0509bd2005645c6cb11ec6ad
+vendor/lib/libwlservice.so|d6739e626b280e2025c7549b6d511851f6baa0b5
+vendor/lib64/libMtkOmxCore.so|54222f6105f6b54e862771bdec44c0e172cde67d
+vendor/lib64/libstagefrighthw.so|df56a53d5c3dba7fe59bc219dad2b23a648c4cd8
+vendor/lib64/libwlparser.so|211ecad772588451bcaf3e66d1b582d92c66e1dd
+vendor/lib64/libwlservice.so|5e44d3cd4f5d0912e4829444af58d7bff51fc43a
+
+# Media OMX Config
 vendor/etc/mtk_omx_core.cfg
-vendor/lib/libMtkOmxAdpcmDec.so
-vendor/lib/libMtkOmxAlacDec.so
-vendor/lib/libMtkOmxApeDec.so
-vendor/lib/libMtkOmxCore.so
-vendor/lib/libMtkOmxGsmDec.so
-vendor/lib/libMtkOmxMp3Dec.so
-vendor/lib/libMtkOmxVdecEx.so
-vendor/lib/libMtkOmxVenc.so
-vendor/lib64/libMtkOmxCore.so
 
 # MMS MTK
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.5-service
