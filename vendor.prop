@@ -165,6 +165,7 @@ debug.mediatek.disp_decompress=1
 debug.mediatek.game_pq_enable=1
 debug.mtk_tflite.target_nnapi=29
 debug.sf.disable_client_composition_cache=1
+debug.sf.enable_gl_backpressure=1
 persist.sys.gz.enable=true
 persist.sys.powmillet.enable=true
 persist.vendor.md_c2k_cap_dep_check=0
