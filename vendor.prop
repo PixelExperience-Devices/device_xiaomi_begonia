@@ -297,3 +297,6 @@ ro.vendor.wlan.gen=gen4m
 wifi.direct.interface=p2p0
 wifi.interface=wlan0
 wifi.tethering.interface=ap0
+
+# Zygote
+zygote.critical_window.minute=10
