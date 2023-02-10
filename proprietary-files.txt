@@ -1,4 +1,4 @@
-# Device proprietary files - from Begonia MIUI RP1A.200720.011 V12.5.8.0.RGGMIXM, unless pinned
+# Device proprietary files - from Begonia MIUI RP1A.200720.011 V12.5.15.0.RGGEUXM, unless pinned
 
 # Audio
 -vendor/lib/libaudio_param_parser-vnd.so
