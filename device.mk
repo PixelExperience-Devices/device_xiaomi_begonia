@@ -315,9 +315,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
 
-# VNDK
-PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
-
 # VNDK v30 Coppy Files
 PRODUCT_PACKAGES += \
     libutils-v30
