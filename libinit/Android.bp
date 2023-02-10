@@ -1,0 +1,16 @@
+//
+// Copyright (C) 2023 The PixelExperience Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "libinit_begonia",
+    recovery_available: true,
+    shared_libs: ["libbase"],
+    srcs: ["init_begonia.cpp"],
+    include_dirs: [
+        "system/core/init",
+        "system/libbase/include"
+    ]
+}
