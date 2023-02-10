@@ -325,9 +325,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
 
 # VNDK v30 Coppy Files
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v30/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v30.so \
-    prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v30.so
+PRODUCT_PACKAGES += \
+    libutils-v30
 
 # Vulkan
 PRODUCT_COPY_FILES += \
