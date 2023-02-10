@@ -32,11 +32,11 @@ vendor/lib/libblisrc32_vendor.so
 vendor/firmware/tfa98xx.cnt
 
 # Audio Hardware
+vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libcvsd_mtk.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libspeech_enh_lib.so
 vendor/lib/libspeechparser_vendor.so
-vendor/lib/libaudioprimarydevicehalifclient.so
 
 # Audio Hardware - from mtk android-13.0.0_r16
 vendor/lib/hw/audio.primary.mt6785.so|f51ba0df90f3e74d51cef8c041eab4308d77c31c
@@ -760,6 +760,12 @@ vendor/lib64/libdre.so
 vendor/lib64/libjpeg-alpha-oal_vendor.so
 vendor/lib64/libjpeg-alpha_vendor.so
 
+# Keylayout
+usr/idc/uinput-fpc.idc:vendor/usr/idc/uinput-fpc.idc
+usr/idc/uinput-goodix.idc:vendor/usr/idc/uinput-goodix.idc
+usr/keylayout/uinput-fpc.kl:vendor/usr/keylayout/uinput-fpc.kl
+usr/keylayout/uinput-goodix.kl:vendor/usr/keylayout/uinput-goodix.kl
+
 # Keymaster
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
@@ -944,6 +950,14 @@ vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libbwc.so
 
+# Media Configs
+vendor/etc/media_codecs.xml
+vendor/etc/media_codecs_c2.xml
+vendor/etc/media_codecs_mediatek_audio.xml
+vendor/etc/media_codecs_mediatek_video.xml
+vendor/etc/media_codecs_performance.xml
+vendor/etc/media_profiles_V1_0.xml
+
 # Media OMX- from mtk android-13.0.0_r13
 vendor/bin/osal_ut|1a86b3fa07f2297b33993075a07e331fb291f79e
 vendor/lib/libMtkOmxAdpcmDec.so|abc6a9ee95eddf215ff23c04f0b80b1cf85b1d10
@@ -988,6 +1002,9 @@ lib64/extractors/libmtkaviextractor.so
 lib64/extractors/libmtkflvextractor.so
 lib64/extractors/libmtkmp3extractor.so
 lib64/extractors/libmtkmpeg2extractor.so
+
+# Native libraries permissions
+vendor/etc/public.libraries.txt
 
 # NFC
 vendor/etc/libnfc-nci.conf
@@ -1088,6 +1105,9 @@ vendor/lib64/hw/sensors.mt6785.so
 vendor/lib64/libksensor.so
 vendor/lib64/libsensor_custom.so
 vendor/lib64/libssccalapi.so
+
+# Sensors Conf
+vendor/etc/sensors/hals.conf
 
 # Soter
 -app/SoterService/SoterService.apk:vendor/app/SoterService/SoterService.apk

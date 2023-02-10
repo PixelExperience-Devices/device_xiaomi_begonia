@@ -61,6 +61,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        # Remove touchfeature from sensor HALs loading list
+        vendor/etc/sensors/hals.conf)
+            sed -i "/sensors.touch.so/d" "${2}"
+            ;;
         # Link libmedia_helper-v30
         vendor/lib/hw/audio.primary.mt6785.so)
             patchelf --replace-needed libmedia_helper.so libmedia_helper-v30.so ${2}
