@@ -65,10 +65,6 @@ function blob_fixup() {
         vendor/etc/sensors/hals.conf)
             sed -i "/sensors.touch.so/d" "${2}"
             ;;
-        # Link libmedia_helper-v30
-        vendor/lib/hw/audio.primary.mt6785.so)
-            patchelf --replace-needed libmedia_helper.so libmedia_helper-v30.so ${2}
-            ;;
         # Load VNDK-30 version of libutils
         vendor/lib64/libmtkcam_stdutils.so)
             patchelf --replace-needed libutils.so libutils-v30.so ${2}
