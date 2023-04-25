@@ -65,6 +65,14 @@ function blob_fixup() {
         vendor/etc/sensors/hals.conf)
             sed -i "/sensors.touch.so/d" "${2}"
             ;;
+        # Blacklist fingerprint(fpc) HAL key events
+        vendor/usr/keylayout/uinput-fpc.kl)
+            sed -i "s/key  304/#key  304/" "${2}"
+            ;;
+        # Blacklist fingerprint(goodix) HAL key events
+        vendor/usr/keylayout/uinput-goodix.kl)
+            sed -i "s/key  353/#key  353/" "${2}"
+            ;;
         # Load VNDK-30 version of libutils
         vendor/lib64/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" ${2}
