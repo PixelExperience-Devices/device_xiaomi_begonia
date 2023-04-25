@@ -491,11 +491,7 @@
     -->
     <string name="config_mainBuiltInDisplayCutout">M84.0014003,24.5894039 C80.2302822,27.7392649 77.4240774,30.1581206 75.582786,31.8459711 L49.3779759,55.8579101 C21.4353154,81.4596806 -21.4353154,81.4596806 -49.3779759,55.8579101 L-75.5773038,31.8459711 C-77.4198664,30.1585533 -80.2273557,27.7402869 -83.9997716,24.5911719 L-84,-4.19220214e-13 L84.0014003,-4.19220214e-13 L84.0014003,24.5894039 Z</string>
 
-    <!-- MMS user agent string -->
-    <string name="config_mms_user_agent">Android-Mms/0.1</string>
-
     <!-- MMS user agent prolfile url -->
-    <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
     <string name="config_qualified_networks_service_package">com.android.phone</string>
 
     <!-- Configure wifi tcp buffersizes in the form:
