@@ -268,4 +268,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.log.tag.GraphicBuffer=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.libnfc_nci=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.libPowerHal=$(VENDOR_LOG_LEVEL) \
-    persist.log.tag.mTEE=$(VENDOR_LOG_LEVEL)
+    persist.log.tag.mTEE=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.lsc_nvram=$(VENDOR_LOG_LEVEL)
