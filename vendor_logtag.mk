@@ -4,7 +4,7 @@ else
 VENDOR_LOG_LEVEL=S
 endif
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.RILMUXD=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.AT=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.RILC-MTK=$(VENDOR_LOG_LEVEL) \
