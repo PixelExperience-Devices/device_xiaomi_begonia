@@ -330,7 +330,8 @@ PRODUCT_PACKAGES += \
     libnl \
     hostapd \
     libwpa_client \
-    wpa_supplicant
+    wpa_supplicant \
+    android.hardware.wifi@1.0-service-lazy
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
