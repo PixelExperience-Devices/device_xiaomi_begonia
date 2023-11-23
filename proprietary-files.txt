@@ -64,12 +64,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
 -vendor/lib64/libbt-vendor.so
 
 # Camera
--vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-mediatek.so
--vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
--vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
--vendor/lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
--vendor/lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so
--vendor/lib64/hw/vendor.mediatek.hardware.camera.postproc@1.0-impl.so
 -vendor/lib64/gc2375af_mipi_raw_IdxMgr.so
 -vendor/lib64/gc2375af_mipi_raw_tuning.so
 -vendor/lib64/gc2375alpha_mipi_raw_IdxMgr.so
@@ -78,6 +72,12 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
 -vendor/lib64/gc2375beta_mipi_raw_tuning.so
 -vendor/lib64/gc5035_mipi_raw_IdxMgr.so
 -vendor/lib64/gc5035_mipi_raw_tuning.so
+-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-mediatek.so
+-vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
+-vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
+-vendor/lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
+-vendor/lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so
+-vendor/lib64/hw/vendor.mediatek.hardware.camera.postproc@1.0-impl.so
 -vendor/lib64/lib3a.ae.core.so
 -vendor/lib64/lib3a.ae.so
 -vendor/lib64/lib3a.af.core.so
@@ -546,22 +546,22 @@ vendor/etc/tianma_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml
 # Display Hardware
 -vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek|b6fa0dedf2f63d1e50f5971d8ce0d08ac879e262
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
+-vendor/lib/arm.graphics-V1-ndk_platform.so
 -vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so|9f896ca7b981834be9e1a1116c971394f95ece07
 -vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so|30bc6b9fd5abe37f1c0b265b7448441776ee8f13
 -vendor/lib/hw/memtrack.mt6785.so
--vendor/lib/arm.graphics-V1-ndk_platform.so
 -vendor/lib/libdpframework.so
+-vendor/lib64/arm.graphics-V1-ndk_platform.so
 -vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so|20290857ee049b423dd1a8e493bf85a8653c4fea
 -vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so|54b3be407037e4ac1f64c51ba4d0b96aba75d393
 -vendor/lib64/hw/hwcomposer.mt6785.so
 -vendor/lib64/hw/memtrack.mt6785.so
--vendor/lib64/arm.graphics-V1-ndk_platform.so
 -vendor/lib64/libdpframework.so
 -vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 # Dplanner
--vendor/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service
 -vendor/bin/dexecutor
+-vendor/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service
 vendor/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc
 -vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml
 
@@ -577,16 +577,16 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 
 # DRM Widevine
--vendor/lib/mediadrm/libwvdrmengine.so
 -vendor/lib/libwvhidl.so
+-vendor/lib/mediadrm/libwvdrmengine.so
 
 # Fingerprint
 -vendor/bin/hw/mfp-daemon
 vendor/etc/init/init.mfp-daemon.rc
 -vendor/etc/vintf/manifest/fp_manifest.xml
+-vendor/lib64/com.fingerprints.extension@1.0.so
 -vendor/lib64/hw/fpc_fingerprint.default.so
 -vendor/lib64/hw/gf_fingerprint.default.so
--vendor/lib64/com.fingerprints.extension@1.0.so
 -vendor/lib64/libgf_ca.so
 -vendor/lib64/libgf_hal.so
 -vendor/lib64/libgoodixhwfingerprint.so
@@ -642,10 +642,10 @@ vendor/firmware/soc3_0_ram_mcu_e1_hdr.bin
 -vendor/bin/lbs_hidl_service
 -vendor/bin/mnld
 -vendor/bin/mtk_agpsd
+vendor/etc/MNL_Config.xml
 vendor/etc/init/android.hardware.gnss@2.1-service-mediatek.rc
 vendor/etc/init/lbs_hidl_service.rc
 vendor/etc/init/mtk_agpsd_p.rc
-vendor/etc/MNL_Config.xml
 vendor/etc/mpe.conf
 vendor/etc/slp_conf
 -vendor/lib/hw/gps.default.so
@@ -658,6 +658,7 @@ vendor/etc/slp_conf
 -vendor/lib64/lbs_hidl_service-impl.so
 
 # GPS Gnss XML
+vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CT.xml
@@ -671,7 +672,6 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
-vendor/etc/gnss/agps_profiles_conf2.xml
 
 # GPU
 -vendor/bin/hw/vendor.mediatek.hardware.gpu@1.0-service
@@ -719,6 +719,7 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 # Ipsec Keys
 -vendor/bin/ipsec_mon
 vendor/etc/init/ipsec_mon.rc
+vendor/etc/ipsec/ipsec.conf
 vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt
 vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt
 vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG3.crt
@@ -734,7 +735,6 @@ vendor/etc/ipsec/ipsec.d/cacerts/VeriSignUniversalRootCertification.der
 vendor/etc/ipsec/ipsec.d/cacerts/gold.cer
 vendor/etc/ipsec/ipsec.d/cacerts/thawte.der
 vendor/etc/ipsec/ssl/openssl.cnf
-vendor/etc/ipsec/ipsec.conf
 vendor/etc/ipsec/strongswan.conf
 
 # Jpeg
@@ -1047,9 +1047,9 @@ vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml
 
 # Neural Networks Apu
-vendor/etc/init/networksetting.rc
 vendor/etc/armnn_app.config
 vendor/etc/factory.ini
+vendor/etc/init/networksetting.rc
 vendor/etc/nhw
 -vendor/lib64/APUWareUtilsServer.so
 -vendor/lib64/APUWareXrpServer.so
@@ -1279,6 +1279,12 @@ vendor/etc/security/cacerts/facacbc6.0
 vendor/etc/security/cacerts/fb5fa911.0
 vendor/etc/security/cacerts/fd08c599.0
 vendor/etc/security/cacerts/fde84897.0
+vendor/etc/security/cacerts_supl/111e6273.0
+vendor/etc/security/cacerts_supl/3ad48a91.0
+vendor/etc/security/cacerts_supl/7651b327.0
+vendor/etc/security/cacerts_supl/c542733d.0
+vendor/etc/security/cacerts_supl/c90bc37d.0
+vendor/etc/security/cacerts_supl/f336e3d1.0
 vendor/etc/security/cacerts_supl/lab/18dc3a8d.0
 vendor/etc/security/cacerts_supl/lab/1bc5ca0c.0
 vendor/etc/security/cacerts_supl/lab/1bc5ca0c.1
@@ -1298,12 +1304,6 @@ vendor/etc/security/cacerts_supl/lab/b5805141.0
 vendor/etc/security/cacerts_supl/lab/b805b58a.0
 vendor/etc/security/cacerts_supl/lab/ed7b215e.0
 vendor/etc/security/cacerts_supl/lab/ef4b31e6.0
-vendor/etc/security/cacerts_supl/111e6273.0
-vendor/etc/security/cacerts_supl/3ad48a91.0
-vendor/etc/security/cacerts_supl/7651b327.0
-vendor/etc/security/cacerts_supl/c542733d.0
-vendor/etc/security/cacerts_supl/c90bc37d.0
-vendor/etc/security/cacerts_supl/f336e3d1.0
 
 # Vendor Thh
 vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta
