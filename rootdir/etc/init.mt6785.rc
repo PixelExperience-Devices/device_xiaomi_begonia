@@ -920,7 +920,7 @@ on init
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
 
 # Offline Charger
-service charger /system/bin/chargeonlymode
+service charger /bin/charger
     class charger
     critical
     group system graphics

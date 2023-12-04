@@ -493,9 +493,6 @@ vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/visidon_clearshot_params_algoup.xml
 
-# Charger
--bin/charger:bin/chargeonlymode
-
 # Charon
 -vendor/bin/charon
 -vendor/bin/starter
