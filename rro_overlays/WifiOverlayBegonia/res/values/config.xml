@@ -31,4 +31,7 @@
     <!-- Default access point SSID used for tethering -->
     <string name="wifi_tether_configure_ssid_default" translatable="false">Redmi</string>
 
+    <!-- Indicates that connected MAC randomization is supported on this device -->
+     <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
+
 </resources>
